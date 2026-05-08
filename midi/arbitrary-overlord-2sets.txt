@@ -1,0 +1,172 @@
+# arbitrary-overlord-2sets.mid
+# format: type=0  tracks=1  ticks_per_beat=480
+# length: 368.73s
+
+## Track 0: 'Inst 1'
+  t=       0  MetaMessage('channel_prefix', channel=0, time=0)
+  t=       0  MetaMessage('track_name', name='Inst 1', time=0)
+  t=       0  MetaMessage('instrument_name', name='Inst 1', time=0)
+  t=       0  MetaMessage('time_signature', numerator=4, denominator=4, clocks_per_click=24, notated_32nd_notes_per_beat=8, time=0)
+  t=       0  MetaMessage('key_signature', key='C#m', time=0)
+  t=       0  MetaMessage('smpte_offset', frame_rate=25, hours=1, minutes=0, seconds=0, frames=0, sub_frames=0, time=0)
+  t=       0  MetaMessage('set_tempo', tempo=951270, time=0)  # 63.07 BPM
+  t=       0  note_on channel=0 note=72 velocity=80 time=0
+  t=     120  note_off channel=0 note=72 velocity=64 time=120
+  t=   14880  MetaMessage('set_tempo', tempo=951270, time=14760)  # 63.07 BPM
+  t=   15360  MetaMessage('set_tempo', tempo=927449, time=480)  # 64.69 BPM
+  t=   17280  MetaMessage('set_tempo', tempo=899954, time=1920)  # 66.67 BPM
+  t=   21120  MetaMessage('set_tempo', tempo=884923, time=3840)  # 67.80 BPM
+  t=   24960  MetaMessage('set_tempo', tempo=700126, time=3840)  # 85.70 BPM
+  t=   25440  MetaMessage('set_tempo', tempo=571229, time=480)  # 105.04 BPM
+  t=   25920  MetaMessage('set_tempo', tempo=594511, time=480)  # 100.92 BPM
+  t=   26880  MetaMessage('set_tempo', tempo=588612, time=960)  # 101.93 BPM
+  t=   28800  MetaMessage('marker', text='Drums', time=1920)
+  t=   30720  MetaMessage('set_tempo', tempo=592773, time=1920)  # 101.22 BPM
+  t=   34560  MetaMessage('set_tempo', tempo=586792, time=3840)  # 102.25 BPM
+  t=   36480  MetaMessage('set_tempo', tempo=599740, time=1920)  # 100.04 BPM
+  t=   40320  MetaMessage('set_tempo', tempo=600032, time=3840)  # 99.99 BPM
+  t=   42240  MetaMessage('set_tempo', tempo=606365, time=1920)  # 98.95 BPM
+  t=   44160  MetaMessage('set_tempo', tempo=620927, time=1920)  # 96.63 BPM
+  t=   46080  MetaMessage('set_tempo', tempo=606873, time=1920)  # 98.87 BPM
+  t=   49920  MetaMessage('set_tempo', tempo=587089, time=3840)  # 102.20 BPM
+  t=   51840  MetaMessage('marker', text='D, E-A-D', time=1920)
+  t=   51840  MetaMessage('set_tempo', tempo=567188, time=0)  # 105.79 BPM
+  t=   53760  MetaMessage('set_tempo', tempo=561547, time=1920)  # 106.85 BPM
+  t=   55680  MetaMessage('set_tempo', tempo=548802, time=1920)  # 109.33 BPM
+  t=   59520  MetaMessage('set_tempo', tempo=545063, time=3840)  # 110.08 BPM
+  t=   61440  MetaMessage('set_tempo', tempo=555979, time=1920)  # 107.92 BPM
+  t=   62400  MetaMessage('set_tempo', tempo=468625, time=960)  # 128.03 BPM
+  t=   62880  MetaMessage('set_tempo', tempo=499750, time=480)  # 120.06 BPM
+  t=   63360  MetaMessage('set_tempo', tempo=571646, time=480)  # 104.96 BPM
+  t=   63840  MetaMessage('set_tempo', tempo=580500, time=480)  # 103.36 BPM
+  t=   64320  MetaMessage('set_tempo', tempo=532865, time=480)  # 112.60 BPM
+  t=   65280  MetaMessage('set_tempo', tempo=516198, time=960)  # 116.23 BPM
+  t=   67200  MetaMessage('set_tempo', tempo=584396, time=1920)  # 102.67 BPM
+  t=   67680  MetaMessage('set_tempo', tempo=560313, time=480)  # 107.08 BPM
+  t=   68160  MetaMessage('set_tempo', tempo=549823, time=480)  # 109.13 BPM
+  t=   69120  MetaMessage('set_tempo', tempo=530750, time=960)  # 113.05 BPM
+  t=   71040  MetaMessage('set_tempo', tempo=541552, time=1920)  # 110.79 BPM
+  t=   74880  MetaMessage('set_tempo', tempo=543047, time=3840)  # 110.49 BPM
+  t=   76800  MetaMessage('set_tempo', tempo=492188, time=1920)  # 121.90 BPM
+  t=   77760  MetaMessage('set_tempo', tempo=502490, time=960)  # 119.41 BPM
+  t=   78720  MetaMessage('set_tempo', tempo=536141, time=960)  # 111.91 BPM
+  t=   80640  MetaMessage('set_tempo', tempo=490938, time=1920)  # 122.22 BPM
+  t=   81600  MetaMessage('set_tempo', tempo=505604, time=960)  # 118.67 BPM
+  t=   82560  MetaMessage('set_tempo', tempo=559031, time=960)  # 107.33 BPM
+  t=   83520  MetaMessage('set_tempo', tempo=520792, time=960)  # 115.21 BPM
+  t=   84480  MetaMessage('set_tempo', tempo=515109, time=960)  # 116.48 BPM
+  t=   86400  MetaMessage('set_tempo', tempo=526531, time=1920)  # 113.95 BPM
+  t=   88320  MetaMessage('set_tempo', tempo=498125, time=1920)  # 120.45 BPM
+  t=   88800  MetaMessage('set_tempo', tempo=487459, time=480)  # 123.09 BPM
+  t=   89280  MetaMessage('set_tempo', tempo=527438, time=480)  # 113.76 BPM
+  t=   89760  MetaMessage('set_tempo', tempo=509646, time=480)  # 117.73 BPM
+  t=   90240  MetaMessage('set_tempo', tempo=556896, time=480)  # 107.74 BPM
+  t=   90720  MetaMessage('set_tempo', tempo=546771, time=480)  # 109.74 BPM
+  t=   91200  MetaMessage('set_tempo', tempo=513719, time=480)  # 116.80 BPM
+  t=   92160  MetaMessage('set_tempo', tempo=512297, time=960)  # 117.12 BPM
+  t=   94080  MetaMessage('set_tempo', tempo=526703, time=1920)  # 113.92 BPM
+  t=   96000  MetaMessage('set_tempo', tempo=492583, time=1920)  # 121.81 BPM
+  t=   96480  MetaMessage('set_tempo', tempo=488334, time=480)  # 122.87 BPM
+  t=   96960  MetaMessage('set_tempo', tempo=511334, time=480)  # 117.34 BPM
+  t=   97440  MetaMessage('set_tempo', tempo=504063, time=480)  # 119.03 BPM
+  t=   97920  MetaMessage('set_tempo', tempo=531141, time=480)  # 112.96 BPM
+  t=   99840  MetaMessage('set_tempo', tempo=523839, time=1920)  # 114.54 BPM
+  t=  101760  MetaMessage('set_tempo', tempo=534271, time=1920)  # 112.30 BPM
+  t=  103680  MetaMessage('set_tempo', tempo=506365, time=1920)  # 118.49 BPM
+  t=  104640  MetaMessage('set_tempo', tempo=500240, time=960)  # 119.94 BPM
+  t=  105600  MetaMessage('set_tempo', tempo=538521, time=960)  # 111.42 BPM
+  t=  106080  MetaMessage('set_tempo', tempo=559709, time=480)  # 107.20 BPM
+  t=  106560  MetaMessage('set_tempo', tempo=506511, time=480)  # 118.46 BPM
+  t=  107520  MetaMessage('set_tempo', tempo=503662, time=960)  # 119.13 BPM
+  t=  109440  MetaMessage('set_tempo', tempo=520344, time=1920)  # 115.31 BPM
+  t=  111360  MetaMessage('set_tempo', tempo=502813, time=1920)  # 119.33 BPM
+  t=  113280  MetaMessage('marker', text='Heavy2', time=1920)
+  t=  113280  MetaMessage('set_tempo', tempo=512047, time=0)  # 117.18 BPM
+  t=  115200  MetaMessage('set_tempo', tempo=501266, time=1920)  # 119.70 BPM
+  t=  117120  MetaMessage('set_tempo', tempo=507464, time=1920)  # 118.23 BPM
+  t=  119040  MetaMessage('set_tempo', tempo=491703, time=1920)  # 122.02 BPM
+  t=  120960  MetaMessage('set_tempo', tempo=505995, time=1920)  # 118.58 BPM
+  t=  122880  MetaMessage('set_tempo', tempo=491646, time=1920)  # 122.04 BPM
+  t=  123840  MetaMessage('set_tempo', tempo=466938, time=960)  # 128.50 BPM
+  t=  124320  MetaMessage('set_tempo', tempo=483250, time=480)  # 124.16 BPM
+  t=  124800  MetaMessage('set_tempo', tempo=519855, time=480)  # 115.42 BPM
+  t=  125280  MetaMessage('set_tempo', tempo=526542, time=480)  # 113.95 BPM
+  t=  125760  MetaMessage('set_tempo', tempo=488886, time=480)  # 122.73 BPM
+  t=  126720  MetaMessage('set_tempo', tempo=484136, time=960)  # 123.93 BPM
+  t=  128640  MetaMessage('set_tempo', tempo=499844, time=1920)  # 120.04 BPM
+  t=  130560  MetaMessage('set_tempo', tempo=483500, time=1920)  # 124.10 BPM
+  t=  132480  MetaMessage('set_tempo', tempo=500000, time=1920)  # 120.00 BPM
+  t=  132960  MetaMessage('set_tempo', tempo=529417, time=480)  # 113.33 BPM
+  t=  133440  MetaMessage('set_tempo', tempo=485042, time=480)  # 123.70 BPM
+  t=  134400  MetaMessage('set_tempo', tempo=476099, time=960)  # 126.02 BPM
+  t=  136320  MetaMessage('set_tempo', tempo=491031, time=1920)  # 122.19 BPM
+  t=  138240  MetaMessage('set_tempo', tempo=476610, time=1920)  # 125.89 BPM
+  t=  140160  MetaMessage('set_tempo', tempo=484177, time=1920)  # 123.92 BPM
+  t=  144000  MetaMessage('set_tempo', tempo=532917, time=3840)  # 112.59 BPM
+  t=  144480  MetaMessage('set_tempo', tempo=553271, time=480)  # 108.45 BPM
+  t=  144960  MetaMessage('set_tempo', tempo=487459, time=480)  # 123.09 BPM
+  t=  145920  MetaMessage('set_tempo', tempo=494037, time=960)  # 121.45 BPM
+  t=  147840  MetaMessage('set_tempo', tempo=499802, time=1920)  # 120.05 BPM
+  t=  149760  MetaMessage('set_tempo', tempo=483844, time=1920)  # 124.01 BPM
+  t=  153600  MetaMessage('set_tempo', tempo=482333, time=3840)  # 124.40 BPM
+  t=  155520  MetaMessage('set_tempo', tempo=490313, time=1920)  # 122.37 BPM
+  t=  157440  MetaMessage('set_tempo', tempo=485177, time=1920)  # 123.67 BPM
+  t=  158400  MetaMessage('set_tempo', tempo=518250, time=960)  # 115.77 BPM
+  t=  158880  MetaMessage('set_tempo', tempo=577563, time=480)  # 103.88 BPM
+  t=  159360  MetaMessage('marker', text='Heavy2Fade', time=480)
+  t=  159360  MetaMessage('set_tempo', tempo=697302, time=0)  # 86.05 BPM
+  t=  161280  MetaMessage('set_tempo', tempo=719977, time=1920)  # 83.34 BPM
+  t=  165120  MetaMessage('marker', text='MainGuitIn', time=3840)
+  t=  165120  MetaMessage('set_tempo', tempo=752605, time=0)  # 79.72 BPM
+  t=  167040  MetaMessage('set_tempo', tempo=732693, time=1920)  # 81.89 BPM
+  t=  168960  MetaMessage('set_tempo', tempo=703136, time=1920)  # 85.33 BPM
+  t=  172800  MetaMessage('marker', text='MainAll', time=3840)
+  t=  172800  MetaMessage('set_tempo', tempo=685680, time=0)  # 87.50 BPM
+  t=  176640  MetaMessage('set_tempo', tempo=689172, time=3840)  # 87.06 BPM
+  t=  178560  MetaMessage('set_tempo', tempo=659573, time=1920)  # 90.97 BPM
+  t=  180480  MetaMessage('marker', text='Verse1', time=1920)
+  t=  180480  MetaMessage('set_tempo', tempo=682183, time=0)  # 87.95 BPM
+  t=  182400  MetaMessage('set_tempo', tempo=673600, time=1920)  # 89.07 BPM
+  t=  184320  MetaMessage('set_tempo', tempo=689646, time=1920)  # 87.00 BPM
+  t=  186240  MetaMessage('set_tempo', tempo=669703, time=1920)  # 89.59 BPM
+  t=  188160  MetaMessage('set_tempo', tempo=679526, time=1920)  # 88.30 BPM
+  t=  190080  MetaMessage('set_tempo', tempo=668834, time=1920)  # 89.71 BPM
+  t=  192000  MetaMessage('set_tempo', tempo=681625, time=1920)  # 88.02 BPM
+  t=  193920  MetaMessage('set_tempo', tempo=672318, time=1920)  # 89.24 BPM
+  t=  195840  MetaMessage('marker', text='Chor1', time=1920)
+  t=  195840  MetaMessage('set_tempo', tempo=664362, time=0)  # 90.31 BPM
+  t=  199680  MetaMessage('set_tempo', tempo=672303, time=3840)  # 89.25 BPM
+  t=  203520  MetaMessage('set_tempo', tempo=680565, time=3840)  # 88.16 BPM
+  t=  207360  MetaMessage('set_tempo', tempo=693451, time=3840)  # 86.52 BPM
+  t=  211200  MetaMessage('marker', text='Verse2', time=3840)
+  t=  211200  MetaMessage('set_tempo', tempo=668459, time=0)  # 89.76 BPM
+  t=  215040  MetaMessage('set_tempo', tempo=665995, time=3840)  # 90.09 BPM
+  t=  216960  MetaMessage('set_tempo', tempo=643323, time=1920)  # 93.27 BPM
+  t=  218880  MetaMessage('set_tempo', tempo=659870, time=1920)  # 90.93 BPM
+  t=  222720  MetaMessage('set_tempo', tempo=666042, time=3840)  # 90.08 BPM
+  t=  224640  MetaMessage('set_tempo', tempo=649618, time=1920)  # 92.36 BPM
+  t=  226560  MetaMessage('marker', text='Chor2', time=1920)
+  t=  228480  MetaMessage('set_tempo', tempo=657662, time=1920)  # 91.23 BPM
+  t=  230400  MetaMessage('set_tempo', tempo=647782, time=1920)  # 92.62 BPM
+  t=  234240  MetaMessage('set_tempo', tempo=665777, time=3840)  # 90.12 BPM
+  t=  238080  MetaMessage('marker', text='Bridge', time=3840)
+  t=  238080  MetaMessage('set_tempo', tempo=661433, time=0)  # 90.71 BPM
+  t=  245760  MetaMessage('set_tempo', tempo=641462, time=7680)  # 93.54 BPM
+  t=  249600  MetaMessage('set_tempo', tempo=651604, time=3840)  # 92.08 BPM
+  t=  251520  MetaMessage('set_tempo', tempo=671729, time=1920)  # 89.32 BPM
+  t=  253440  MetaMessage('marker', text='BridgeFin', time=1920)
+  t=  255360  MetaMessage('set_tempo', tempo=679266, time=1920)  # 88.33 BPM
+  t=  257280  MetaMessage('set_tempo', tempo=745125, time=1920)  # 80.52 BPM
+  t=  258240  MetaMessage('set_tempo', tempo=697355, time=960)  # 86.04 BPM
+  t=  259200  MetaMessage('marker', text='Main2', time=960)
+  t=  259200  MetaMessage('set_tempo', tempo=675443, time=0)  # 88.83 BPM
+  t=  261120  MetaMessage('set_tempo', tempo=664333, time=1920)  # 90.32 BPM
+  t=  263040  MetaMessage('set_tempo', tempo=672719, time=1920)  # 89.19 BPM
+  t=  264960  MetaMessage('set_tempo', tempo=640698, time=1920)  # 93.65 BPM
+  t=  266880  MetaMessage('set_tempo', tempo=667938, time=1920)  # 89.83 BPM
+  t=  268800  MetaMessage('set_tempo', tempo=657961, time=1920)  # 91.19 BPM
+  t=  272640  MetaMessage('set_tempo', tempo=654334, time=3840)  # 91.70 BPM
+  t=  274560  MetaMessage('set_tempo', tempo=666414, time=1920)  # 90.03 BPM
+  t=  278400  MetaMessage('set_tempo', tempo=759850, time=3840)  # 78.96 BPM
+  t=  280320  MetaMessage('set_tempo', tempo=799938, time=1920)  # 75.01 BPM
+  t=  281280  MetaMessage('end_of_track', time=960)
