@@ -1,0 +1,6 @@
+# Manual source PDFs — large and re-downloadable via docs/manuals/sources.toml.
+# Only the converted .md, INDEX.md, and sources.toml are tracked.
+docs/manuals/**/*.pdf
+
+# macOS
+.DS_Store

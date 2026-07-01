@@ -5,12 +5,12 @@ description: Answer Logic Pro questions using the converted manuals in docs/manu
 
 # logichelp
 
-Answer the user's Logic Pro question using the manuals at `docs/manuals/`:
+Answer the user's Logic Pro question using the manuals at `docs/manuals/daw-video/`:
 
 - `logic-pro-mac-user-guide.md` — main app (mixing, arranging, automation, etc.)
 - `logic-pro-mac-instruments-user-guide.md` — software instruments (Sculpture, ES2, Drum Kit Designer, etc.)
 - `logic-pro-mac-effects-user-guide.md` — effect plug-ins (Space Designer, ChromaVerb, amps, etc.)
-- `INDEX.md` — TOC for all three with page numbers from the source PDFs
+- `INDEX.md` (in `daw-video/`) — per-manual TOC; the repo-wide `docs/manuals/INDEX.md` links every category
 
 The full guides are too large to load into main context. Always delegate the lookup.
 
@@ -21,7 +21,7 @@ The full guides are too large to load into main context. Always delegate the loo
 2. **Pick the likely manual(s)** from the question — effects vs instruments vs main guide. If unclear, search all three.
 
 3. **Spawn an Explore subagent** with a self-contained prompt that:
-   - Names the specific .md file(s) to search under `docs/manuals/`
+   - Names the specific .md file(s) to search under `docs/manuals/daw-video/`
    - States the user's question verbatim
    - Asks the agent to return: relevant verbatim excerpts (with `file:line` citations), section headings for context, and a one-line note on what the excerpt covers
    - Caps the response (e.g. "under 400 words, excerpts only — do not paraphrase or interpret")
@@ -30,7 +30,7 @@ The full guides are too large to load into main context. Always delegate the loo
 
 ## Example subagent prompt shape
 
-> Search `docs/manuals/logic-pro-mac-effects-user-guide.md` for content about sidechain compression on the Compressor plug-in. Return verbatim excerpts (with file:line citations) plus the heading each excerpt sits under. Under 400 words. Do not paraphrase — I need the source text so I can answer the user accurately.
+> Search `docs/manuals/daw-video/logic-pro-mac-effects-user-guide.md` for content about sidechain compression on the Compressor plug-in. Return verbatim excerpts (with file:line citations) plus the heading each excerpt sits under. Under 400 words. Do not paraphrase — I need the source text so I can answer the user accurately.
 
 ## Notes
 

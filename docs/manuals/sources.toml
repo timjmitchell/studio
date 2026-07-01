@@ -1,0 +1,414 @@
+# Source-of-truth metadata for every manual in docs/manuals/.
+#
+# `file` is the path relative to docs/manuals/. `url` is where to re-download the
+# latest official PDF (leave "" if unknown — fill it in when you find it).
+# convert_manuals.py reads this and injects name/vendor/version/url into each
+# category INDEX.md and the master INDEX.md.
+
+# ============================== daw-video ==============================
+
+[[manual]]
+file = "daw-video/logic-pro-mac-user-guide.pdf"
+name = "Logic Pro User Guide (Mac)"
+vendor = "Apple"
+version = ""
+url = "https://help.apple.com/pdf/logicpro/en_US/logic-pro-mac-user-guide.pdf"
+
+[[manual]]
+file = "daw-video/logic-pro-mac-instruments-user-guide.pdf"
+name = "Logic Pro Instruments User Guide (Mac)"
+vendor = "Apple"
+version = ""
+url = "https://help.apple.com/pdf/logicpro-instruments/en_US/logic-pro-mac-instruments-user-guide.pdf"
+
+[[manual]]
+file = "daw-video/logic-pro-mac-effects-user-guide.pdf"
+name = "Logic Pro Effects User Guide (Mac)"
+vendor = "Apple"
+version = ""
+url = "https://help.apple.com/pdf/logicpro-effects/en_US/logic-pro-mac-effects-user-guide.pdf"
+
+[[manual]]
+file = "daw-video/DaVinci-Resolve.pdf"
+name = "DaVinci Resolve Reference Manual"
+vendor = "Blackmagic Design"
+version = ""
+url = "https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion"
+
+[[manual]]
+file = "daw-video/Ableton-Live-12-Manual.pdf"
+name = "Ableton Live 12 Manual"
+vendor = "Ableton"
+version = "12"
+url = "https://www.ableton.com/en/manual/"
+
+[[manual]]
+file = "daw-video/Guitar-Pro-8-user-guide.pdf"
+name = "Guitar Pro 8 User Guide"
+vendor = "Arobas Music"
+version = ""
+url = "https://support.guitar-pro.com/hc/en-us/articles/5018404823069-GP8-Guitar-Pro-8-User-Guide"
+
+# =============================== plugins ===============================
+
+[[manual]]
+file = "plugins/UAD-Plug-Ins-Manual.pdf"
+name = "UAD Plug-Ins Manual"
+vendor = "Universal Audio"
+version = ""
+url = "https://help.uaudio.com/hc/en-us/articles/13443257772436-UAD-2-Plug-Ins-Manual-PDF"
+
+[[manual]]
+file = "plugins/LUNA-2.0.1-Manual.pdf"
+name = "LUNA Recording System Manual"
+vendor = "Universal Audio"
+version = "2.0.1"
+url = "https://help.uaudio.com/hc/en-us/articles/360041758592-Download-LUNA-Manual"
+
+[[manual]]
+file = "plugins/Soundtoys-Users-Guide.pdf"
+name = "Soundtoys User's Guide"
+vendor = "Soundtoys"
+version = ""
+url = "https://www.soundtoys.com/wp-content/uploads/Soundtoys-Users-Guide.pdf"
+
+[[manual]]
+file = "plugins/Sonnox-Limiter-Manual.pdf"
+name = "Oxford Limiter Manual"
+vendor = "Sonnox"
+version = ""
+url = "https://dload.sonnoxplugins.com/pub/plugins/manuals/SonnoxLimMan.pdf"
+
+[[manual]]
+file = "plugins/oeksound-soothe2-User-Manual.pdf"
+name = "soothe2 User Manual"
+vendor = "oeksound"
+version = ""
+url = "https://storage.googleapis.com/oeksound-downloads/soothe2/soothe2_ManualFAQ.pdf"
+
+[[manual]]
+file = "plugins/Klanghelm-VUMT-deluxe-Manual.pdf"
+name = "VUMT deluxe Manual"
+vendor = "Klanghelm"
+version = ""
+url = "https://klanghelm.com/docs/VUMTdeluxe-manual.pdf"
+
+[[manual]]
+file = "plugins/Youlean-Loudness-Meter-2-Manual.pdf"
+name = "Youlean Loudness Meter 2 Manual"
+vendor = "Youlean"
+version = ""
+url = "https://youlean.co/wp-content/uploads/2021/02/Youlean-Loudness-Meter-2-MANUAL.pdf"
+
+[[manual]]
+file = "plugins/Melodyne-5-studio-Standalone.pdf"
+name = "Melodyne 5 studio Reference Manual (Stand-alone)"
+vendor = "Celemony"
+version = "5"
+url = "https://helpcenter.celemony.com/M5/pdf/melodyneStudio5/en?env=standAlone"
+
+[[manual]]
+file = "plugins/Melodyne-5-studio-Other-DAW-no-ARA.pdf"
+name = "Melodyne 5 studio Reference Manual (Other DAW, no ARA)"
+vendor = "Celemony"
+version = "5"
+url = "https://helpcenter.celemony.com/M5/pdf/melodyneStudio5/en?env=dawsWithoutAra"
+
+[[manual]]
+file = "plugins/Scaler-2-Manual.pdf"
+name = "Scaler 2 Manual"
+vendor = "Plugin Boutique"
+version = "2"
+url = ""
+
+[[manual]]
+file = "plugins/Scaler-3-User-Guide.pdf"
+name = "Scaler 3 User Guide"
+vendor = "Plugin Boutique"
+version = "3"
+url = "https://downloads.scalermusic.com/Scaler-3_User_Guide.pdf"
+
+[[manual]]
+file = "plugins/Scaler-1-Manual.pdf"
+name = "Scaler Manual"
+vendor = "Plugin Boutique"
+version = "1"
+url = "https://forum.scalermusic.com/uploads/short-url/rHEYlsPbqJeH5g0yhICXaft8AdR.pdf"
+
+[[manual]]
+file = "plugins/Superior-Drummer-3-Manual.pdf"
+name = "Superior Drummer 3 Manual"
+vendor = "Toontrack"
+version = "3"
+url = "https://www.toontrack.com/manual/superior-drummer-3/"
+
+[[manual]]
+file = "plugins/Akai-VIP-3.0-User-Guide.pdf"
+name = "VIP 3.0 User Guide"
+vendor = "Akai Professional"
+version = "3.0"
+url = "https://cdn.inmusicbrands.com/akai/VIP/VIP%203.0%20-%20User%20Guide.pdf"
+
+# ======================== controllers-interfaces ========================
+
+[[manual]]
+file = "controllers-interfaces/Akai-MPK249-User-Guide.pdf"
+name = "MPK249 User Guide"
+vendor = "Akai Professional"
+version = "1.0"
+url = "https://cdn.inmusicbrands.com/akai/attachments/MPK249/MPK249%20-%20User%20Guide%20-%20v1.0.pdf"
+
+[[manual]]
+file = "controllers-interfaces/Novation-Launchkey-Mk4-Mini-25-User-Guide.pdf"
+name = "Launchkey Mini Mk4 (25) User Guide"
+vendor = "Novation"
+version = "1.1"
+url = "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/launchkey_mk4_mini_25_user_guide_v3_en.pdf"
+
+[[manual]]
+file = "controllers-interfaces/IK-iRig-HD-X-User-Manual.pdf"
+name = "iRig HD X User Manual"
+vendor = "IK Multimedia"
+version = ""
+url = ""
+
+# ============================= boss-roland =============================
+
+[[manual]]
+file = "boss-roland/Boss-CE-2W-Chorus.pdf"
+name = "CE-2W Chorus"
+vendor = "Boss"
+version = "eng02"
+url = "https://static.roland.com/assets/media/pdf/CE-2W_eng02_W.pdf"
+
+[[manual]]
+file = "boss-roland/Boss-DD-200-Delay.pdf"
+name = "DD-200 Delay"
+vendor = "Boss"
+version = "eng03"
+url = "https://www.boss.info/global/support/by_product/dd-200/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-ES-8-Switcher.pdf"
+name = "ES-8 Effects Switching System"
+vendor = "Boss"
+version = "e02"
+url = "https://www.boss.info/global/support/by_product/es-8/owners_manuals/f6711c3a-5658-4e20-9cbc-158ddeaa2be3/"
+
+[[manual]]
+file = "boss-roland/Boss-ES-8-Editor.pdf"
+name = "ES-8 Editor Manual"
+vendor = "Boss"
+version = ""
+url = "https://static.roland.com/assets/media/pdf/ES-8_Editor_eng02_W.pdf"
+
+[[manual]]
+file = "boss-roland/Boss-ES-8-Supplement.pdf"
+name = "ES-8 Supplemental Manual (v2)"
+vendor = "Boss"
+version = "v2 eng01"
+url = "https://static.roland.com/assets/media/pdf/ES-8_v2_eng01_W.pdf"
+
+[[manual]]
+file = "boss-roland/Boss-RC-1-Loop-Station.pdf"
+name = "RC-1 Loop Station"
+vendor = "Boss"
+version = "eng02"
+url = "https://static.roland.com/assets/media/pdf/RC-1_eng03_W.pdf"
+
+[[manual]]
+file = "boss-roland/Boss-SY-1-Synth.pdf"
+name = "SY-1 Synthesizer"
+vendor = "Boss"
+version = "eng03"
+url = "https://static.roland.com/assets/media/pdf/SY-1_eng02_W.pdf"
+
+[[manual]]
+file = "boss-roland/Roland-TD-17.pdf"
+name = "TD-17 Owner's Manual"
+vendor = "Roland"
+version = "eng01"
+url = "https://static.roland.com/assets/media/pdf/TD-17_eng01_W.pdf"
+
+[[manual]]
+file = "boss-roland/Roland-TD-17-DataList.pdf"
+name = "TD-17 Data List"
+vendor = "Roland"
+version = "eng03"
+url = "https://static.roland.com/assets/media/pdf/TD-17_DataList_eng01_W.pdf"
+
+[[manual]]
+file = "boss-roland/Roland-TD-17-Addendum.pdf"
+name = "TD-17 Addendum"
+vendor = "Roland"
+version = "eng01"
+url = "https://www.roland.com/global/support/by_product/td-17/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-GM-800-Reference.pdf"
+name = "GM-800 Reference Manual"
+vendor = "Boss"
+version = "eng02"
+url = "https://static.roland.com/assets/media/pdf/GM-800_ReferenceManual_eng02_W.pdf"
+
+[[manual]]
+file = "boss-roland/Boss-GM-800-Parameter-Guide.pdf"
+name = "GM-800 Parameter Guide"
+vendor = "Boss"
+version = "eng02"
+url = ""
+
+[[manual]]
+file = "boss-roland/Boss-GM-800-Sound-List.pdf"
+name = "GM-800 Sound List"
+vendor = "Boss"
+version = "multi01"
+url = ""
+
+[[manual]]
+file = "boss-roland/Roland-FP-30X-Piano.pdf"
+name = "FP-30X Digital Piano"
+vendor = "Roland"
+version = "eng04"
+url = "https://static.roland.com/assets/media/pdf/FP-30X_eng04_W.pdf"
+
+# =============================== pedals ===============================
+
+[[manual]]
+file = "pedals/Dunlop-CryBaby-535Q.pdf"
+name = "Cry Baby 535Q Multi-Wah"
+vendor = "Dunlop"
+version = ""
+url = "https://www.jimdunlop.com/content/manuals/535Q.pdf"
+
+[[manual]]
+file = "pedals/Strymon-Flint-v2.pdf"
+name = "Flint v2 (Tremolo & Reverb)"
+vendor = "Strymon"
+version = "Rev B"
+url = "https://www.strymon.net/manuals/Flint_v2_UserManual_RevC.pdf"
+
+[[manual]]
+file = "pedals/Radial-EXTC-Stereo.pdf"
+name = "EXTC-Stereo Guitar Effects Interface"
+vendor = "Radial Engineering"
+version = ""
+url = "https://www.radialeng.com/wp-content/uploads/2025/09/EXTC-Stereo-manual-WEB-09-2025.pdf"
+
+[[manual]]
+file = "pedals/KHE-ACS-Series.pdf"
+name = "ACS Series Audio Controller"
+vendor = "KHE Audio"
+version = "1.3"
+url = ""
+
+[[manual]]
+file = "pedals/Pinwheel-Expression-Pedal-Guide.pdf"
+name = "Pinwheel Expression Pedal Guide"
+vendor = "Pinwheel"
+version = ""
+url = ""
+
+[[manual]]
+file = "pedals/Pinwheel-Rev-B.pdf"
+name = "The Pinwheel (Rev B)"
+vendor = "Pinwheel"
+version = "Rev B"
+url = ""
+
+[[manual]]
+file = "pedals/Meteore-Reverb.pdf"
+name = "Meteore Reverb"
+vendor = "Meteore"
+version = ""
+url = ""
+
+[[manual]]
+file = "pedals/Catalinbread-Naga-Viper.pdf"
+name = "Naga Viper Treble Booster"
+vendor = "Catalinbread"
+version = ""
+url = "https://catalinbread.com/pages/manuals"
+
+[[manual]]
+file = "pedals/SourceAudio-Vertigo-Tremolo.pdf"
+name = "Vertigo Tremolo"
+vendor = "Source Audio"
+version = ""
+url = "https://www.sourceaudio.net/usermanuals.html"
+
+[[manual]]
+file = "pedals/IK-TONEX-Pedal-User-Manual.pdf"
+name = "TONEX Pedal User Manual"
+vendor = "IK Multimedia"
+version = ""
+url = "https://g1.ikmultimedia.com/plugins/Manuals/TONEXPedal/TONEX_Pedal_User_Manual.pdf"
+
+[[manual]]
+file = "pedals/IK-TONEX-Pedal-Quick-Start.pdf"
+name = "TONEX Pedal Quick Start Guide"
+vendor = "IK Multimedia"
+version = ""
+url = "https://g1.ikmultimedia.com/html/Manuals/TONEXPedal/TONEX_Pedal_Quick_Start_Guide_English.pdf"
+
+[[manual]]
+file = "pedals/Vertex-Boost-MKII.pdf"
+name = "Boost MKII"
+vendor = "Vertex Effects"
+version = ""
+url = ""
+
+[[manual]]
+file = "pedals/ChaseBliss-MOOD.pdf"
+name = "MOOD"
+vendor = "Chase Bliss Audio"
+version = ""
+url = "https://static1.squarespace.com/static/622176a9b8d15d57ffbf5700/t/622cbf0fad4c9b4e4b077fb5/1647099667314/MOOD_Manual_Pedal_Chase+Bliss.pdf"
+
+# ============================= guitar-gear =============================
+
+[[manual]]
+file = "guitar-gear/EMG-JMaster-Set.pdf"
+name = "JMaster Pickup Set Installation"
+vendor = "EMG"
+version = "0230-0378rA"
+url = "https://www.emgpickups.com/pub/media/Mageants/j/m/jmaster_set_0230-0378ra.pdf"
+
+[[manual]]
+file = "guitar-gear/EMG-JMaster-System.pdf"
+name = "JMaster Pickguard System Installation"
+vendor = "EMG"
+version = "0230-0377rB"
+url = "https://www.emgpickups.com/pub/media/Mageants/j/m/jmaster_system_0230-0377rb.pdf"
+
+[[manual]]
+file = "guitar-gear/Certano-T-Bender.pdf"
+name = "T-Bender Installation Guide"
+vendor = "Certano"
+version = ""
+url = ""
+
+# ============================== monitors ==============================
+
+[[manual]]
+file = "monitors/Turbosound-TFM-AN-Monitors.pdf"
+name = "TFM-AN Floor Monitors"
+vendor = "Turbosound"
+version = ""
+url = ""
+
+[[manual]]
+file = "monitors/Turbosound-TFM-AN-Quick-Start.pdf"
+name = "TFM-AN / TFX-AN Series Quick Start Guide"
+vendor = "Turbosound"
+version = ""
+url = ""
+
+# =============================== loopers ===============================
+
+[[manual]]
+file = "loopers/HeadRush-Looperboard-User-Guide.pdf"
+name = "Looperboard User Guide"
+vendor = "HeadRush"
+version = "2.0.0"
+url = ""
