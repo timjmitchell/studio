@@ -388,6 +388,13 @@ vendor = "Certano"
 version = ""
 url = ""
 
+[[manual]]
+file = "guitar-gear/UAD-OX-Amp-Top-Box.pdf"
+name = "OX Amp Top Box Manual"
+vendor = "Universal Audio"
+version = "210811"
+url = "https://media.uaudio.com/support/ox/OX+Amp+Top+Box+Manual+210811.pdf"
+
 # ============================== monitors ==============================
 
 [[manual]]
