@@ -25,8 +25,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_DIR = REPO_ROOT / "kb" / "indexes"
 
-# field -> weight
-WEIGHTS = {"title": 3.0, "tags": 2.0, "rel_path": 1.0, "snippet": 1.0}
+# field -> weight. `headings` sits just under title: for large reference guides
+# the section headings are the real routing surface (see kb/index.py).
+WEIGHTS = {"title": 3.0, "headings": 2.5, "tags": 2.0, "rel_path": 1.0, "snippet": 1.0}
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 
 
@@ -49,6 +50,7 @@ def load_indexes(store: str | None) -> list[dict]:
 def score_doc(doc: dict, terms: list[str]) -> float:
     fields = {
         "title": doc.get("title", ""),
+        "headings": doc.get("headings", ""),
         "tags": " ".join(str(t) for t in doc.get("tags", [])),
         "rel_path": doc.get("rel_path", ""),
         "snippet": doc.get("snippet", ""),

@@ -2,5 +2,8 @@
 # Only the converted .md, INDEX.md, and sources.toml are tracked.
 docs/manuals/**/*.pdf
 
+# KB indexes — rebuildable artifact from `uv run kb/index.py`, not tracked.
+kb/indexes/
+
 # macOS
 .DS_Store

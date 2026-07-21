@@ -1,0 +1,45 @@
+# Document stores indexed by kb/index.py.
+#
+# Each store becomes a thin index at kb/indexes/<name>.json that skills
+# (logichelp, kb) read FIRST, opening individual docs only when needed.
+#
+# Fields:
+#   name    : index file name (kb/indexes/<name>.json) and query key
+#   kind    : free-form label (corpus | markdown | ...)
+#   root    : directory to scan. Relative to the repo root, or an absolute path.
+#   globs   : list of glob patterns under root (recursive ** supported)
+#   exclude : list of glob patterns (matched against the path relative to root) to skip
+#
+# Rebuild after editing:  uv run kb/index.py
+
+stores:
+  # Owned-equipment reference — every gear manual, all categories (pedals,
+  # plugins, boss-roland, daw-video, monitors, guitar-gear, loopers,
+  # controllers-interfaces). This is what logichelp and kb search.
+  - name: manuals
+    kind: corpus
+    root: "docs/manuals"
+    globs: ["**/*.md"]
+    exclude:
+      - "INDEX.md"
+      - "**/INDEX.md"
+
+  # Everything else in the repo: rig plans, setup notes, song/lyric docs,
+  # music-format investigations. Excludes the manuals tree (its own store).
+  - name: docs
+    kind: markdown
+    root: "docs"
+    globs: ["**/*.md"]
+    exclude:
+      - "manuals/**"
+
+  # --- Cross-repo (optional) -------------------------------------------------
+  # Uncomment to also search the sibling backoffice-pr knowledge base from
+  # studio. Absolute roots are supported (that's how backoffice indexes its
+  # Obsidian vault). Requires the sibling checkout at ../backoffice-pr.
+  #
+  # - name: backoffice-manuals
+  #   kind: corpus
+  #   root: "/Users/tim/Documents/GitHub/backoffice-pr/manuals"
+  #   globs: ["**/*.md"]
+  #   exclude: ["README.md"]

@@ -39,7 +39,37 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from frontmatter import parse_frontmatter  # noqa: E402
 
 HEADING_RE = re.compile(r"^#\s+(.+?)\s*$", re.MULTILINE)
+# Any ATX heading level 1-6 — the section surface used for routing into large
+# reference guides (a 5 MB Logic manual is unrepresentable by its opening snippet
+# alone, but its section headings — "Compressor", "Space Designer" — route well).
+ANY_HEADING_RE = re.compile(r"^#{1,6}\s+(.+?)\s*$", re.MULTILINE)
 SNIPPET_LEN = 280
+# Cap the joined heading text per doc so a giant TOC can't bloat the index
+# unboundedly. Generous — a full Logic guide's headings fit well under this.
+HEADINGS_CAP = 20000
+
+
+def collect_headings(body: str) -> str:
+    """Deduped, order-preserving join of every section heading in the doc.
+
+    This is what lets a keyword route into a large multi-section guide: the
+    scorer tokenizes it just like title/snippet, so "sidechain" hits the
+    Compressor's Side Chain section heading even when it's nowhere near the top
+    of a 5 MB file."""
+    seen: set[str] = set()
+    out: list[str] = []
+    total = 0
+    for m in ANY_HEADING_RE.finditer(body):
+        h = m.group(1).strip()
+        key = h.lower()
+        if not h or key in seen:
+            continue
+        seen.add(key)
+        out.append(h)
+        total += len(h) + 1
+        if total >= HEADINGS_CAP:
+            break
+    return " ".join(out)
 
 
 def derive_title(fm: dict, body: str, path: Path) -> str:
@@ -112,6 +142,7 @@ def build_store(store: dict) -> dict:
                 "type": fm.get("type"),
                 "tags": fm.get("tags") if isinstance(fm.get("tags"), list) else [],
                 "frontmatter": scalar_frontmatter(fm),
+                "headings": collect_headings(body),
                 "snippet": make_snippet(body),
                 "size": st.st_size,
                 "mtime": datetime.fromtimestamp(st.st_mtime).isoformat(timespec="seconds"),
