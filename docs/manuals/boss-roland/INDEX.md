@@ -279,6 +279,174 @@ _(no embedded TOC in PDF)_
 </details>
 
 
+## [VE-500 Editor Manual](Boss-VE-500-Editor.md)
+
+**Vendor:** Boss · **Version:** eng01 · **PDF:** `Boss-VE-500-Editor.pdf` (0 MB) · **Download:** https://www.boss.info/global/support/by_product/ve-500/owners_manuals/
+
+<details>
+<summary>Table of contents</summary>
+
+- Installing VE-500 Editor (p. 2)
+  - Windows Users (p. 2)
+  - Mac Users (p. 2)
+- Uninstalling VE-500 Editor (p. 2)
+  - Windows Users (p. 2)
+  - Mac Users (p. 2)
+- Initial Settings (p. 3)
+  - Connecting to a Computer (p. 3)
+  - Making Settings in VE-500 Editor (p. 3)
+- Screen Descriptions (p. 4)
+- Editing the Parameters (p. 5)
+  - Editing Patch Parameters (p. 5)
+  - Writing Patch Parameters to the VE-500 (p. 5)
+  - Editing the SYSTEM Parameters (p. 5)
+  - Saving System Parameters to a File (p. 5)
+  - Restoring System Parameters from a File to the VE-500 (p. 5)
+- About the Librarian (p. 6)
+  - Changing the Order of the Patches (p. 6)
+  - Renaming a Patch (p. 6)
+  - Copying a Patch (p. 6)
+  - Saving the Selected Patch(es) to a File (p. 7)
+  - Saving All of the VE-500’s Patches (EXPORT) (p. 7)
+  - Importing Patches from a File to the VE-500 (IMPORT) (p. 7)
+
+</details>
+
+
+## [VE-500 MIDI Implementation Chart](Boss-VE-500-MIDI-Implementation.md)
+
+**Vendor:** Boss · **Version:** eng01 · **PDF:** `Boss-VE-500-MIDI-Implementation.pdf` (0 MB) · **Download:** https://www.boss.info/global/support/by_product/ve-500/owners_manuals/
+
+<details>
+<summary>Table of contents</summary>
+
+_(no embedded TOC in PDF)_
+
+</details>
+
+
+## [VE-500 Vocal Performer Owner's Manual](Boss-VE-500-Owners-Manual.md)
+
+**Vendor:** Boss · **Version:** eng04 · **PDF:** `Boss-VE-500-Owners-Manual.pdf` (3 MB) · **Download:** https://www.boss.info/global/support/by_product/ve-500/owners_manuals/
+
+<details>
+<summary>Table of contents</summary>
+
+- Getting Ready (p. 3)
+  - Connecting the Equipment (p. 3)
+  - Connecting the Equipment (p. 4)
+  - Top Panel (p. 5)
+  - Screen Structure (p. 6)
+  - Operation of the [1]–[3] Knobs (p. 7)
+  - Switching Pages (p. 7)
+  - Turning On/Off the Power (p. 8)
+  - Tuning (Tuner) (p. 8)
+- Playing (p. 9)
+  - Mic Settings (p. 9)
+    - Adjusting the Mic Sensitivity (p. 9)
+    - Phantom Power Settings (p. 9)
+  - Patch Structure (p. 9)
+  - Switching Between Memory and Manual Modes (p. 9)
+  - Switching Patches (p. 10)
+  - Adding a Harmony Effect (p. 10)
+  - About the Play Screen (p. 10)
+- Editing a Patch (p. 11)
+  - Basic Operation (p. 11)
+    - Changing the Effect Connections (p. 12)
+    - Changing the CTL & ASSIGN Settings (p. 13)
+    - Matching the Harmony to the Key of the Song (p. 14)
+  - Saving a Patch (Write) (p. 15)
+    - Exchanging Patches (p. 15)
+    - Initializing a Patch (p. 15)
+- System Settings (MENU) (p. 16)
+  - Basic Operation (p. 16)
+  - Adjusting the Display Contrast (p. 17)
+  - Enabling/Disabling the Auto-Off Function (p. 17)
+  - Returning to the Factory Settings (Factory Reset) (p. 17)
+- Synchronizing with a DAW or External MIDI Device (p. 18)
+  - Installing the USB Driver (p. 18)
+  - Installing the Dedicated Software (p. 18)
+- Appendix (p. 19)
+  - Error Messages (p. 19)
+  - Attaching the Rubber Feet (p. 19)
+  - Main Specifications (p. 19)
+- USING THE UNIT SAFELY (p. 20)
+- IMPORTANT NOTES (p. 20)
+
+</details>
+
+
+## [VE-500 Parameter Guide](Boss-VE-500-Parameter-Guide.md)
+
+**Vendor:** Boss · **Version:** eng01 · **PDF:** `Boss-VE-500-Parameter-Guide.pdf` (4 MB) · **Download:** https://www.boss.info/global/support/by_product/ve-500/owners_manuals/
+
+<details>
+<summary>Table of contents</summary>
+
+- Contents (p. 2)
+- Basic Operation (p. 3)
+  - Basic Procedure for Effect Editing (p. 3)
+    - Changing the Effect Connections (p. 3)
+    - Changing the CTL & ASSIGN Settings (p. 3)
+    - Matching the Harmony to the Key of the Song (p. 4)
+  - Saving a Patch (Write) (p. 4)
+    - Exchanging Patches (p. 4)
+    - Initializing a Patch (p. 4)
+- EFFECT (p. 5)
+  - ENHANCE (p. 5)
+  - PITCH CORRECT (p. 5)
+  - HARMONY/VOCODER (p. 6)
+    - HARMONY (p. 6)
+    - VOCODER (p. 7)
+  - FX1-4 (p. 8)
+    - DISTORTION (p. 8)
+    - RADIO (p. 8)
+    - LO-FI (p. 8)
+    - FILTER (p. 8)
+    - T.WAH (p. 9)
+    - RING MODULATOR (p. 9)
+    - CHORUS (p. 9)
+    - FLANGER (p. 9)
+    - TREMOLO (p. 10)
+    - PHASER (p. 10)
+    - ROTARY (p. 10)
+    - SLICER (p. 11)
+    - ISOLATOR (p. 11)
+    - VIBRATO (p. 11)
+    - PAN (p. 11)
+    - ROLL (p. 12)
+    - FREEZE (p. 12)
+    - GRANULAR DELAY (p. 12)
+    - DELAY (p. 12)
+    - REVERB (p. 13)
+  - REV1/REV2 (p. 14)
+    - Common to AMBIENCE, ROOM, HALL, PLATE, MOD (p. 14)
+    - DELAY (p. 14)
+  - LOOP (p. 15)
+  - KEY SETTING (p. 16)
+  - MASTER (p. 16)
+  - CTL&ASSIGN SETTING (p. 17)
+    - Common to DOWN, UP, FX1, FX2, HRM, CTL1, CTL2, MEM/MAN, BYPASS (p. 17)
+    - EXP (p. 18)
+    - ASSIGN 1–8 (p. 18)
+    - ASSIGN COMMON (p. 19)
+    - Virtual Expression Pedal System (Internal Pedal/Wave Pedal) (p. 23)
+- MENU (p. 24)
+  - DISPLAY (p. 24)
+  - INPUT (p. 24)
+  - OUTPUT (p. 24)
+  - PLAY (PLAY OPTION) (p. 25)
+  - KNOB (KNOB SETTING) (p. 25)
+  - PREF (PREFERENCE) (p. 28)
+  - TUNER (p. 29)
+  - MIDI (p. 29)
+  - USB (p. 30)
+  - AUTO OFF (p. 30)
+  - F.RESET (FACTORY RESET) (p. 30)
+
+</details>
+
+
 ## [FP-30X Digital Piano](Roland-FP-30X-Piano.md)
 
 **Vendor:** Roland · **Version:** eng04 · **PDF:** `Roland-FP-30X-Piano.pdf` (4 MB) · **Download:** https://static.roland.com/assets/media/pdf/FP-30X_eng04_W.pdf

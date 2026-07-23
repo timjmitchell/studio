@@ -272,6 +272,34 @@ vendor = "Roland"
 version = "eng04"
 url = "https://static.roland.com/assets/media/pdf/FP-30X_eng04_W.pdf"
 
+[[manual]]
+file = "boss-roland/Boss-VE-500-Owners-Manual.pdf"
+name = "VE-500 Vocal Performer Owner's Manual"
+vendor = "Boss"
+version = "eng04"
+url = "https://www.boss.info/global/support/by_product/ve-500/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-VE-500-Parameter-Guide.pdf"
+name = "VE-500 Parameter Guide"
+vendor = "Boss"
+version = "eng01"
+url = "https://www.boss.info/global/support/by_product/ve-500/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-VE-500-Editor.pdf"
+name = "VE-500 Editor Manual"
+vendor = "Boss"
+version = "eng01"
+url = "https://www.boss.info/global/support/by_product/ve-500/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-VE-500-MIDI-Implementation.pdf"
+name = "VE-500 MIDI Implementation Chart"
+vendor = "Boss"
+version = "eng01"
+url = "https://www.boss.info/global/support/by_product/ve-500/owners_manuals/"
+
 # =============================== pedals ===============================
 
 [[manual]]
