@@ -2,6 +2,9 @@
 
 ## Verse
 
+heartbreak and bedlam comes to mind    
+makes me shiver 
+
 Buy!
 
 Like I’m sellin your …
