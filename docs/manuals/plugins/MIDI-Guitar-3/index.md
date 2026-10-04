@@ -1,0 +1,30 @@
+# MIDI Guitar 3 documentation (offline mirror)
+
+Mirrored from https://jam.live/ by `scripts/fetch_jamlive_docs.py`. Re-run with `--force` to refresh.
+
+See also: [Field Notes](MIDI-Guitar-3-Field-Notes.md).
+
+- [JAM API](developers.md)
+- [Flappy Guitar Scales](developers/examples/flappyguitar.md)
+- [MIDI Guitar Mini code](developers/examples/midiguitarmini.md)
+- [Web Whammy](developers/examples/webwhammy.md)
+- [JAM API, Lua](developers/lua.md)
+- [JAM API, WebSocket](developers/websocket.md)
+- [Downloads](downloads.md)
+- [Changelog](downloads/changelog.md)
+- [Mirrored from https://jam.live/ by `scripts/fetch_jamlive_docs.py`. Re-run with `--force` to refresh.](index.md)
+- [MIDI Guitar & MIDI Bass (legacy MIDI Guitar 2 docs)](legacy/mg2-daw-guide.md)
+- [Overview](modules.md)
+- [DAW Guides](modules/daw-guides.md)
+- [Modules](modules/modules.md)
+- [This page is under construction!](modules/patches.md)
+- [This page is under construction!](modules/tutorial.md)
+- [Videos](modules/videos.md)
+- [Products](products.md)
+- [Guitar Mods](products/GM.md)
+- [MIDI Bass 3](products/MB3.md)
+- [MIDI Cello 3](products/MC3.md)
+- [MIDI Guitar 3](products/MG3.md)
+- [MIDI Guitar 3 Hex](products/MG3Hex.md)
+- [MIDI Guitar 3 for Logic](products/MG3forLogic.md)
+- [F.A.Q.](support.md)
