@@ -1,0 +1,73 @@
+Source: https://music21.org/music21docs/moduleReference/moduleAnalysisPatel.html
+
+# music21.analysis.patel
+
+## Functions
+
+music21.analysis.patel.melodicIntervalVariability(*streamForAnalysis*, *\*\*skipKeywords*)[[source]](../_modules/music21/analysis/patel.html#melodicIntervalVariability)
+:   Gives the Melodic Interval Variability (MIV) for a Stream,
+    as defined by Aniruddh D. Patel in “Music, Language, and the Brain”
+    p. 223, as 100 x the coefficient of variation (standard deviation/mean)
+    of the interval size (measured in semitones) between consecutive elements.
+
+    The multiplication by 100x exists to put it in the same range as nPVI.
+
+    Keywords are passed on to
+    Stream.findConsecutiveNotes() via Stream.melodicIntervals for
+    determining how to find consecutive intervals.
+
+    ```python
+    >>> s2 = converter.parse('tinynotation: 4/4 C4 D E F# G#')[note.Note].stream()
+    >>> analysis.patel.melodicIntervalVariability(s2)
+    0.0
+    >>> s3 = converter.parse('tinynotation: 4/4 C4 D E F G C')[note.Note].stream()
+    >>> analysis.patel.melodicIntervalVariability(s3)
+    85.266688...
+    >>> s4 = corpus.parse('bwv66.6').parts[0][note.GeneralNote].stream()
+    >>> analysis.patel.melodicIntervalVariability(s4)
+    65.287...
+    ```
+
+    Too short streams raise a ValueError:
+
+    ```python
+    >>> s5 = converter.parse('tinynotation: 4/4 C2 D2')[note.Note].stream()
+    >>> analysis.patel.melodicIntervalVariability(s5)
+    Traceback (most recent call last):
+    ValueError: need at least three notes to have a std-deviation of intervals (and thus a MIV)
+    ```
+
+    * Changed in v9: ValueError rather than a Music21Exception raised.
+
+music21.analysis.patel.nPVI(*streamForAnalysis*)[[source]](../_modules/music21/analysis/patel.html#nPVI)
+:   Algorithm to give the normalized pairwise variability index
+    (Low, Grabe, & Nolan, 2000) of the rhythm of a stream.
+
+    Used by Aniruddh D. Patel to argue for national differences between musical
+    themes. First encountered it in a presentation by Patel, Chew, Francois,
+    and Child at MIT.
+
+    n.b. – takes the distance between each element, including clefs, keys, etc.
+    use .notesAndRests etc. to filter out elements that are not useful (though this will skip
+    zero length objects)
+
+    n.b. – duration is used rather than actual distance – for gapless
+    streams (the norm) these two measures will be identical.
+
+    ```python
+    >>> s2 = converter.parse('tinynotation: 4/4 C4 D E F G').flatten().notesAndRests.stream()
+    >>> analysis.patel.nPVI(s2)
+    0.0
+    ```
+
+    ```python
+    >>> s3 = converter.parse('tinynotation: 4/4 C4 D8 C4 D8 C4').flatten().notesAndRests.stream()
+    >>> analysis.patel.nPVI(s3)
+    66.6666...
+    ```
+
+    ```python
+    >>> s4 = corpus.parse('bwv66.6').parts[0].flatten().notesAndRests.stream()
+    >>> analysis.patel.nPVI(s4)
+    12.96296...
+    ```

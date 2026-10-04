@@ -73,6 +73,9 @@ Supporting cast:
 - `scripts/midi_dump.py` — `mido`-based MIDI→text dumper (the pattern above)
 - `docs/hot-fog/midi/` — `.mid`, dumped `.txt`, and a Logic MusicXML `.xml`
 - `docs/one-man-band/songs/*` — ASCII tab / chords / lyrics in markdown
+- `docs/manuals/libraries/music21/` — offline markdown mirror of the music21
+  docs (User's Guide, Module Reference, Installing); refresh with
+  `uv run scripts/fetch_music21_docs.py --force`
 
 ## Next step
 
