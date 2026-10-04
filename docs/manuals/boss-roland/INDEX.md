@@ -14,6 +14,18 @@ _(no embedded TOC in PDF)_
 </details>
 
 
+## [DD-200 Delay (eng02, superseded)](Boss-DD-200-Delay-eng02.md)
+
+**Vendor:** Boss · **Version:** eng02 · **PDF:** `Boss-DD-200-Delay-eng02.pdf` (1 MB) · **Download:** https://www.boss.info/global/support/by_product/dd-200/owners_manuals/
+
+<details>
+<summary>Table of contents</summary>
+
+_(no embedded TOC in PDF)_
+
+</details>
+
+
 ## [DD-200 Delay](Boss-DD-200-Delay.md)
 
 **Vendor:** Boss · **Version:** eng03 · **PDF:** `Boss-DD-200-Delay.pdf` (1 MB) · **Download:** https://www.boss.info/global/support/by_product/dd-200/owners_manuals/

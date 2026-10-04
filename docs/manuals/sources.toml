@@ -121,12 +121,22 @@ vendor = "Plugin Boutique"
 version = "2"
 url = ""
 
+# Scaler 3 plug-in, installed v3.3.1: Scaler 3.app (standalone) plus
+# Scaler 3 / Scaler 3 Audio as AU, VST and VST3, and Scaler 3 Control (AU).
+# The installer also drops this guide at /Users/Shared/Scaler Music/Scaler 3/.
 [[manual]]
 file = "plugins/Scaler-3-User-Guide.pdf"
 name = "Scaler 3 User Guide"
-vendor = "Plugin Boutique"
-version = "3"
+vendor = "Scaler Music"
+version = "3.3.1"
 url = "https://downloads.scalermusic.com/Scaler-3_User_Guide.pdf"
+
+[[manual]]
+file = "plugins/Scaler-3-User-Guide-2025-03.pdf"
+name = "Scaler 3 User Guide (2025-03, superseded)"
+vendor = "Plugin Boutique"
+version = "2025-03"
+url = ""
 
 [[manual]]
 file = "plugins/Scaler-1-Manual.pdf"
@@ -186,6 +196,13 @@ file = "boss-roland/Boss-DD-200-Delay.pdf"
 name = "DD-200 Delay"
 vendor = "Boss"
 version = "eng03"
+url = "https://www.boss.info/global/support/by_product/dd-200/owners_manuals/"
+
+[[manual]]
+file = "boss-roland/Boss-DD-200-Delay-eng02.pdf"
+name = "DD-200 Delay (eng02, superseded)"
+vendor = "Boss"
+version = "eng02"
 url = "https://www.boss.info/global/support/by_product/dd-200/owners_manuals/"
 
 [[manual]]
@@ -446,4 +463,20 @@ file = "loopers/HeadRush-Looperboard-User-Guide.pdf"
 name = "Looperboard User Guide"
 vendor = "HeadRush"
 version = "2.0.0"
+url = ""
+
+# ========================== computer-hardware ==========================
+
+[[manual]]
+file = "computer-hardware/Anker-PowerExpand-Elite-12-in-1-Thunderbolt-4-Dock.pdf"
+name = "PowerExpand Elite 12-in-1 Thunderbolt 4 Dock (A8397)"
+vendor = "Anker"
+version = "V02"
+url = ""
+
+[[manual]]
+file = "computer-hardware/OWC-ThunderBay-4-TB3-User-Guide.pdf"
+name = "ThunderBay 4 (Thunderbolt 3) Assembly Manual & User Guide"
+vendor = "OWC"
+version = ""
 url = ""

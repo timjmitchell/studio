@@ -1129,14 +1129,138 @@ _(no embedded TOC in PDF)_
 </details>
 
 
-## [Scaler 3 User Guide](Scaler-3-User-Guide.md)
+## [Scaler 3 User Guide (2025-03, superseded)](Scaler-3-User-Guide-2025-03.md)
 
-**Vendor:** Plugin Boutique · **Version:** 3 · **PDF:** `Scaler-3-User-Guide.pdf` (32 MB) · **Download:** https://downloads.scalermusic.com/Scaler-3_User_Guide.pdf
+**Vendor:** Plugin Boutique · **Version:** 2025-03 · **PDF:** `Scaler-3-User-Guide-2025-03.pdf` (32 MB) · **Download:** _(url TBD)_
 
 <details>
 <summary>Table of contents</summary>
 
 _(no embedded TOC in PDF)_
+
+</details>
+
+
+## [Scaler 3 User Guide](Scaler-3-User-Guide.md)
+
+**Vendor:** Scaler Music · **Version:** 3.3.1 · **PDF:** `Scaler-3-User-Guide.pdf` (22 MB) · **Download:** https://downloads.scalermusic.com/Scaler-3_User_Guide.pdf
+
+<details>
+<summary>Table of contents</summary>
+
+- Introduction (p. 6)
+  - Disclaimer (p. 6)
+  - Scaler 3: Empowering Creativity (p. 7)
+  - Learning Resources (p. 8)
+  - Installation & Registration (p. 9)
+  - Quick Start (p. 11)
+  - Quick Tips (p. 13)
+  - Operating Modes (p. 16)
+    - Plugin Operation (p. 16)
+    - Standalone Operation (p. 17)
+  - Interface Overview (p. 18)
+  - Recurring Features (p. 19)
+    - Binding Chords (p. 19)
+    - Keyswitches (p. 20)
+    - Suggest Mode (p. 20)
+    - Colors (p. 20)
+    - Live Sync (p. 21)
+- Header Section (p. 23)
+  - About Menu (p. 23)
+  - Navigation Tabs (p. 24)
+  - Presets (p. 25)
+  - Detection (p. 27)
+    - Detect MIDI (p. 28)
+    - Detect Audio (p. 29)
+    - Detection History (p. 30)
+    - Capture MIDI (p. 31)
+  - Transport Controls (p. 32)
+    - DAW Sync (p. 32)
+  - Timing Indicators (p. 33)
+  - Exporting (p. 34)
+  - Misc. Header Features (p. 35)
+    - Midi Panic (p. 35)
+    - Undo & Redo (p. 35)
+    - Output Level (p. 35)
+  - Settings Menu (p. 36)
+    - Quick Actions (p. 36)
+    - Playback Menu (p. 37)
+    - Preferences Menu (p. 38)
+- Browse Page (p. 39)
+  - Overview (p. 39)
+  - Section A (p. 40)
+    - Browsing Scales (p. 40)
+    - Browsing Chord Sets (p. 42)
+    - User Chord Set Management (p. 43)
+    - Section A Header (p. 45)
+    - Lock to Scale (p. 45)
+  - Section B (p. 46)
+    - Section B Header (p. 46)
+    - Scale List (p. 47)
+  - Section C (p. 48)
+    - Working with Chords (p. 48)
+  - Suggest Mode (p. 50)
+    - Per Scale (p. 50)
+    - Tonal (p. 51)
+  - Additional Section C Features (p. 52)
+- Create Page (p. 53)
+  - Overview (p. 53)
+  - Interactivity with Sections B & C (p. 54)
+  - Circle of Fifths (p. 55)
+  - Modulation (p. 56)
+    - Progression (p. 56)
+    - Secondary Scale (p. 58)
+    - Modal Interchange (p. 59)
+    - Mediants (p. 60)
+    - Neo-Riemannian (p. 61)
+  - Explore (p. 62)
+  - Colors (p. 64)
+  - Sketch (p. 66)
+- Arrange Page (p. 67)
+  - Overview (p. 67)
+  - Main Track (p. 68)
+  - Arrange Page Header (p. 69)
+  - Motions (p. 70)
+    - Motions Browser (p. 71)
+    - Motion Tracks (p. 72)
+    - Multitrack Bind (p. 74)
+    - User Track (p. 75)
+  - Scenes (p. 77)
+  - Multi-Channel MIDI Out (p. 79)
+  - Working with MIDI (p. 80)
+    - MIDI Modifier Controls (p. 81)
+    - MIDI Editor (p. 83)
+  - Mixer (p. 84)
+    - Track Controls (p. 84)
+    - Loading Sounds (p. 85)
+    - Adjusting Sounds (p. 87)
+    - Loading Effects (p. 88)
+    - Adjusting Effects (p. 89)
+- Instrument Panel (p. 90)
+  - Keyboard Visualization (p. 91)
+  - Fretboard Visualization (p. 92)
+    - Chord Charts (p. 93)
+- Global Controls (p. 94)
+  - Main Track Motions (p. 94)
+  - Humanize (p. 95)
+  - Keys Lock (p. 96)
+  - Voice Grouping (p. 97)
+- Scaler 3 for iPad (p. 98)
+  - Adjusting Parameters (p. 98)
+    - Pop‑up interaction (p. 99)
+    - Direct numeric entry for broad‑range parameters (p. 99)
+  - Instrument Panel Controls (p. 100)
+    - Resizing the Instrument Panel (p. 100)
+    - Keyboard Display Settings (p. 100)
+  - Right-Click Menus (p. 101)
+  - Resizing Chords & MIDI Notes (p. 102)
+  - Moving & Copying Chords (p. 103)
+  - Exporting iPad Presets (p. 104)
+- Appendix (p. 105)
+  - Color-Coding System (p. 105)
+  - Musical Notation (p. 106)
+  - Troubleshooting (p. 107)
+  - Legal (p. 108)
 
 </details>
 
@@ -1206,7 +1330,7 @@ _(no embedded TOC in PDF)_
 
 ## [Superior Drummer 3 Manual](Superior-Drummer-3-Manual.md)
 
-**Vendor:** Toontrack · **Version:** 3 · **PDF:** `Superior-Drummer-3-Manual.pdf` (31 MB) · **Download:** https://www.toontrack.com/manual/superior-drummer-3/
+**Vendor:** Toontrack · **Version:** 3 · **PDF:** `Superior-Drummer-3-Manual.pdf` (38 MB) · **Download:** https://www.toontrack.com/manual/superior-drummer-3/
 
 <details>
 <summary>Table of contents</summary>

@@ -1,32 +1,26 @@
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-**==> picture [557 x 261] intentionally omitted <==**
-
-Great deals on software, sounds and MIDI!* 
-
-SAVE NOW 
+**==> picture [558 x 99] intentionally omitted <==**
 
 ## SUPERIOR DRUMMER 3 0. INTRODUCTION 
 
 Thank you for purchasing Superior Drummer 3, the complete drum production studio. 
 
-**==> picture [33 x 32] intentionally omitted <==**
+Superior Drummer 3 was designed from the ground up as the “be all end all” virtual instrument solution for drums. Its goal is to provide an unobtainable level of quality and control to both the professional producer and the hobbyist alike. In the simplest of definitions, Superior Drummer 3 is a virtual instrument that gives the user a fully malleable multi-track drum recording, and all of the tools necessary to program, mix, and produce this drum recording in any way imaginable. 
 
-Superior Drummer 3 was designed from the ground up as the “be all end all” virtual instrument solution for drums. Its goal is to provide an unobtainable level of quality and control to both the professional producer and the hobbyist alike. In the simplest of definitions, Superior Drummer 3 is a virtual instrument that gives the user a fully malleable multi-track drum recording, and all of 
+Toontrack’s core value with respect to sound has always been realism. To achieve this goal the recording of the Superior Drummer 3 core library was captured in such detail that it allows the software engine to recreate a drum performance full of every nuance and subtle quality that makes it sound unmistakably human. This recording detail in combination with nearly 2 decades of software development provides the user with endless 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 1/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-the tools necessary to program, mix, and produce this drum recording in any way imaginable. 
-
-Toontrack’s core value with respect to sound has always been realism. To achieve this goal the recording of the Superior Drummer 3 core library was captured in such detail that it allows the software engine to recreate a drum performance full of every nuance and subtle quality that makes it sound unmistakably human. This recording detail in combination with nearly 2 decades of software development provides the user with endless sound shaping options, and the most advanced drum production tool available. 
+sound shaping options, and the most advanced drum production tool available. 
 
 Mac, OS X and Audio Units are trademarks of Apple Inc., registered in the U.S. and other countries. Windows is a trademark of Microsoft Corporation. VST is a trademark of Steinberg Media Technology AG. AAX is a trademark of Avid Corp. Overloud is a trademark of Almateq srl. All other trademarks held by their respective owners. 
 
@@ -36,17 +30,21 @@ This manual is copyright Toontrack Music AB. No duplication or copying permitted
 
 Effects powered by Overloud 
 
+**==> picture [76 x 87] intentionally omitted <==**
+
+SUPERIOR DRUMMER® is a registered trademark owned by Toontrack Music AB in the United States (US Registration Number: 3171463), Canada (Registration no. TMA979813), 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 2/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-**==> picture [76 x 88] intentionally omitted <==**
+United Kingdom (International Registration no. 1301338), 
 
-SUPERIOR DRUMMER® is a registered trademark owned by Toontrack Music AB in the United States (US Registration Number: 3171463), Canada (Registration no. TMA979813), United Kingdom (International Registration no. 1301338), Sweden (no. 530797) and other countries. 
+Sweden (no. 530797) and other countries. 
 
 The Superior Drummer 3 design is registered by Toontrack Music AB, RCD No.: 004171270-0001 – RCD No.: 004171270-0012. 
 
@@ -56,63 +54,57 @@ The purchase of Superior Drummer 3, The Superior Drummer 3 Upgrade, or the Super
 
 The Superior Drummer 3 software (i.e. the Stand alone version of the software and all of its various plugin formats for use in your DAW). This is the “technology engine” if you will. It is the tool that makes it possible to playback and manipulate the sound libraries, as well as mix, process, and convert audio to MIDI. 
 
+- The Superior Drummer 3 core sound library. These are the actual drum audio files, recorded by George Massenburg at Galaxy studios, Belgium. These proprietary format sounds are used by The Superior Drummer 3 software engine to play back infinitely customizable drum performances. 
+
+- SD3 Electronic Library: In addition to the acoustic sounds there is also a selection of electronic drum machine sounds, and acoustic / electronic percussion sounds provided as part of the core library.  Its important to note that the Electronic sounds are found in the Search for Instrument section of 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 3/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-- The Superior Drummer 3 core sound library. These are the actual drum audio files, recorded by George Massenburg at Galaxy studios, Belgium. These proprietary format sounds are used by The Superior Drummer 3 software engine to play back infinitely customizable drum performances. 
+Superior Drummer 3, as it is a part of the Superior Drummer 
 
-- SD3 Electronic Library: In addition to the acoustic sounds there is also a selection of electronic drum machine sounds, and acoustic / electronic percussion sounds provided as part of the core library.  Its important to note that the Electronic sounds are found in the Search for Instrument section of Superior Drummer 3, as it is a part of the Superior Drummer 3 core library. Therefore it is not available as a seprate selection in the Library selection menu. 
+3 core library. Therefore it is not available as a seprate selection in the Library selection menu. 
 
-- The Superior Drummer 3 core MIDI library.  This is a package of hundreds of MIDI files recorded by session drummer Norman Garschke on an electronic drum kit. Once installed it can be found on the grooves page. Because these files were performed by a human (like all Toontrack MIDI packs) they are complete with all of the subtle timing and velocity nuances that make a performance undeniably human. 
+The Superior Drummer 3 core MIDI library.  This is a 
 
-- Superior Drummer 3 Factory Presets.  A wide selection of presets for many musical genres created by 
+package of hundreds of MIDI files recorded by session drummer Norman Garschke on an electronic drum kit. Once installed it can be found on the grooves page. Because these files were performed by a human (like all Toontrack MIDI packs) they are complete with all of the subtle timing and velocity nuances that make a performance undeniably human. 
 
-renowned engineers and producers. These include George Massenburg, Richard Devine, Bob Rock, Andy Sneap, Mark Lewis and so on. 
+Superior Drummer 3 Factory Presets.  A wide selection of presets for many musical genres created by renowned engineers and producers. These include George Massenburg, Richard Devine, Bob Rock, Andy Sneap, Mark Lewis and so on. 
 
 Additionally, if you purchased the Superior Drummer 3 hard drive option (for an additional cost) you will receive the SD3 Core Sound Library pre installed on a physical SSD hard drive. 
-
-https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
-
-4/340 
-
-3/28/25, 11:26 AM 
-
-Superior Drummer 3 | Manual | Toontrack 
 
 ## 0.2 WHAT'S NEW IN SUPERIOR DRUMMER 3 
 
 The Graphic below provides a feature comparison to Superior Drummer 2 and Superior Drummer 3. All features in Superior Drummer 3 are explained in this manual. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
+
+4/340 
+
+11/21/23, 8:54 AM 
+
+Superior Drummer 3 | Manual | Toontrack 
+
+**==> picture [409 x 692] intentionally omitted <==**
 
 5/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
-
-**==> picture [409 x 684] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 6/340 
 
-3/28/25, 11:26 AM 
-
-Superior Drummer 3 | Manual | Toontrack 
-
-https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
-
-7/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -132,9 +124,9 @@ The following is a step by step guide for using the Toontrack product manager to
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-8/340 
+7/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -144,9 +136,7 @@ both Superior Drummer 3 and its sound/MIDI library.
 
 If you are already a Toontrack user and you have previously installed The Toontrack Product Manager you can skip this step. 
 
-- Open this link in a web browser and click the Mac / PC button to download the Toontrack Product 
-
-- Manager. https://www.toontrack.com/product-manager/ 
+- Open this link in a web browser and click the Mac / PC button to download the Toontrack Product Manager. https://www.toontrack.com/product-manager/ 
 
 - Once the Toontrack Product Manager has been downloaded run the installer for the Product Manager on your Mac or PC. Launch the Toontrack Product Manager application on your computer. Upon the first launch you will be prompted to login to your toontrack.com account, or create an account if you do not already have one. 
 
@@ -156,9 +146,9 @@ The Toontrack Product Manager is a stand alone application that acts as a portal
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-9/340 
+8/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -178,9 +168,9 @@ Once the download of the file is complete, Click the Install Product button and 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-10/340 
+9/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -194,7 +184,9 @@ The Sound Library is divided into 5 parts. Not all parts need to be installed, b
 
 - Download 2: “Room Mics 1” (The rest of the Room mics: OH Cond, Amb Near, Amb Mid). 
 
-- Download 3: “Room Mics 2 – Surround (5 ch)” (extra mics to achieve 5.0 surround, Front L/R, Center and Surround L/R) 
+- Download 3: “Room Mics 2 – Surround (5 ch)” (extra mics to 
+
+- achieve 5.0 surround, Front L/R, Center and Surround L/R) 
 
 - Download 4: “Room Mics 3 – Height Surround (6 ch)” (extra mics to achieve 11.0 surround, Front Height, Rear Height and Rear Height Wide ) 
 
@@ -202,9 +194,9 @@ The Sound Library is divided into 5 parts. Not all parts need to be installed, b
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-11/340 
+10/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -222,9 +214,9 @@ Superior Drummer 3 | Manual | Toontrack
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-12/340 
+11/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -244,13 +236,13 @@ Locate the Superior Drummer 3 Library Part 2 - Room
 
 Mics option in the Toontrack Product Manager. 
 
-**==> picture [137 x 8] intentionally omitted <==**
+**==> picture [137 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-13/340 
+12/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -270,13 +262,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 - Setup option in the Toontrack Product Manager. 
 
-**==> picture [136 x 8] intentionally omitted <==**
+**==> picture [136 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-14/340 
+13/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -296,13 +288,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 - Surround option in the Toontrack Product Manager. 
 
-**==> picture [135 x 8] intentionally omitted <==**
-
-15/340 
+**==> picture [135 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+14/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -322,13 +314,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 - Locate the Superior Drummer 3 Library - Additional Bleed option in the Toontrack Product Manager. 
 
-**==> picture [136 x 8] intentionally omitted <==**
+**==> picture [136 x 9] intentionally omitted <==**
+
+15/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-16/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -350,9 +342,9 @@ This optional separate purchase contains the full core sound library pre-install
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-17/340 
+16/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -366,7 +358,9 @@ The following is a step by step guide for using the Toontrack product manager to
 
 If you are already a Toontrack user and you have previously installed The Toontrack Product Manager you can skip this step. 
 
-- Open this link in a web browser and click the Mac / PC button to download the Toontrack Product Manager. https://www.toontrack.com/product-manager/ 
+- Open this link in a web browser and click the Mac / 
+
+- PC button to download the Toontrack Product Manager. https://www.toontrack.com/product-manager/ 
 
 - Once the Toontrack Product Manager has been downloaded run the installer for the Product Manager on your Mac or PC. Launch the Toontrack Product Manager application on your computer. Upon the first launch you will be prompted to login to your toontrack.com account, or create an account if you do not already have one. 
 
@@ -374,9 +368,9 @@ If you are already a Toontrack user and you have previously installed The Toontr
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-18/340 
+17/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -394,9 +388,9 @@ Once the download of the file is complete, Click the Install Product button and 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-19/340 
+18/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -426,9 +420,9 @@ The sound library will now be linked and available for use.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-20/340 
+19/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -450,17 +444,17 @@ The Stand Alone version of Superior Drummer 3 is used for live performance, drum
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-21/340 
+20/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-22/340 
+21/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -472,9 +466,9 @@ The following is a series of videos for each of the tabs found in Superior Drumm
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-23/340 
+22/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -492,9 +486,9 @@ Library Selection Menu        /     Preset Selection Menu
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-24/340 
+23/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -512,11 +506,11 @@ All factory presets found in the Presets Menu display a down facing arrow to the
 
 This is useful if for instance, you wanted to load the Drums from one preset and the Mixer Channels from another to create your own hybrid preset. 
 
-25/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+24/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -536,11 +530,11 @@ User Presets can be deleted by clicking the down facing arrow to the right of th
 
 ## PART PRESETS 
 
+25/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-26/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -556,9 +550,9 @@ The Parts Preset Mixers selection was added to Superior Drummer 3 to maintain co
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-27/340 
+26/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -570,13 +564,13 @@ The drum kit graphic in Superior 3 is interactive. Clicking on any instrument in
 
 Instruments can also be selected using the menu above the drum kit graphic on the grey Drums Tab header bar. Here its also possible to multi select instruments by either shift + clicking, or by command clicking (for non sequential selections). 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-28/340 
+27/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -592,9 +586,9 @@ This menu provides the option to load a different instrument in the selected pos
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-29/340 
+28/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -610,9 +604,9 @@ The Search for Instrument window is accessed by right clicking on an instrument 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-30/340 
+29/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -632,9 +626,9 @@ The Menu to the top right of the Search For Instrument window allows you to choo
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-31/340 
+30/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -652,9 +646,9 @@ You can also click on the selected instrument graphic to the right of the window
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-32/340 
+31/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -670,9 +664,9 @@ For example, imagine that you want to change the kick drum in the SD3 Core Libra
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-33/340 
+32/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -688,13 +682,13 @@ To the bottom left of the instrument search window is the Auto load option. When
 
 Finally, to the bottom right you can close the window, replace the selected instrument, and access the More menu. Here there are options to  Add as New Instrument, Replace the selected drum without closing the Search for Instrument window, Stack Without Closing the window, and load the chosen instrument on a different position in the kit. All of these options are outlined in the next section of this chapter. 
 
-**==> picture [342 x 8] intentionally omitted <==**
+**==> picture [342 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-34/340 
+33/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -714,25 +708,25 @@ With this menu you can
 
 add additional drums to the kit that are intended to be triggered by their own MIDI note (previously known as X-Drums). This is an important distinction, as the add instrument function is not intended to be used to layer multiple instruments to trigger at the same time by the same note (layering drums is performed with "Stacking" in Superior Drummer 3).  When the Add Instrument button is clicked you have the option to Search for Instrument, add a Future Hit Instrument, Import Audio File, or add any previously saved User Instruments. 
 
-35/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+34/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Search for Instrument will open the Search for Instrument window and it applies to 99.9% of all Toontrack samples. Future Hit Instrument applies to an instrument that Toontrack has sampled in a special way because they produce sound before their accent. An example of this would be a shaker, maraca, or a shaken tambourine. This type of instrument is also known as an "indirectly struck idiophone" in musical terms. They have been delineated as such because MIDI programming for these instruments is different (i.e. it is performed in Edit Play Style). Finally, User Instruments are instruments that have been modified and saved by the user from the More Menu. For example, a drum Stack that you have created and modified via the Property Boxes could be saved from the More > User Instruments menu. This saved user instrument could then be added as an additional instrument with the User Instruments selection. 
+Search for Instrument will open the Search for Instrument window and it applies to 99.9% of all Toontrack samples. Future Hit Instrument applies to an instrument that Toontrack has sampled in a special way because they produce sound before their accent. An example of this would be a shaker, maraca, or a shaken tambourine. This type of instrument is also known as an "indirectly struck idiophone" in musical terms. They have been delineated as such because MIDI programming for these instruments is different (i.e. it is performed in Edit Play Style or in the Grid Editor). Finally, User Instruments are instruments that have been modified and saved by the user from the More Menu. For example, a drum Stack that you have created and modified via the Property Boxes could be saved from the More > User Instruments menu. This saved user instrument could then be added as an additional instrument with the User Instruments selection. 
 
 When an instrument is added, a graphic for that drum will appear in the lower left corner of the drum kit interface. Just like any other drum in the kit you can click on the graphic to trigger sound or right click this graphic to a host of options. The Added Instrument is also automatically mapped to its own MIDI note. Mapping for the note can be viewed / changed in the MIDI Mapping Property Box which will be discussed later in this chapter. 
 
 In the search for instrument window you can also choose how you would like the newly added instruments sound to be output in the Mixer. As discussed in chapter 3.3 Search for Instrument includes an option to route the newly added instruments output through the existing close microphone channels in the mixer, or 
 
+35/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-36/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -744,13 +738,13 @@ This option was created specifically for using instruments that are not part of 
 
 The Add Instrument button also allows you to import an audio file. This can also be accomplished by simply dragging and dropping a suitable audio file to the Add Instrument Drop Zone (shown when an audio file is dragged in the upper left corner of the interface). WAV, AIFF, MP3, FLAC, OGG, WMA, and AU Audio files can be imported as custom samples. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-37/340 
+36/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -770,9 +764,9 @@ When an audio file is imported the Import Audio File dialog appears and provides
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-38/340 
+37/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -790,9 +784,9 @@ This menu allows you to change the instrument currently loaded in the selected p
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-39/340 
+38/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -802,11 +796,9 @@ the loaded sound library. This is the same menu that would appear by right click
 
 The More menu provides additional options for creating/altering kits, and customizing their settings as described below. 
 
-Stack: Stacking is a new term in Superior Drummer 3, and it simply means that two sounds are 
+Stack: Stacking is a new term in Superior Drummer 3, and it simply means that two sounds are triggered at the same time 
 
 **==> picture [191 x 226] intentionally omitted <==**
-
-triggered at the same time 
 
 by the same MIDI note. Stacking is typically intended for sound design purposes. When you select Add To you are presented with a list of the available articulations for the selected instrument. 
 
@@ -814,9 +806,9 @@ Stacking is performed on the articulation level therefore you must choose the ar
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-40/340 
+39/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -836,9 +828,9 @@ Route Instrument Microphones: This workspace allows you to choose the channels i
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-41/340 
+40/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -862,9 +854,9 @@ This menu shows all of the included articulations and CC triggers for the select
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-42/340 
+41/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -886,9 +878,9 @@ Each articulation in this menu has a dedicated power button. Power buttons that 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-43/340 
+42/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -908,9 +900,9 @@ All: This selection shows all Property Boxes
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-44/340 
+43/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -930,11 +922,11 @@ The Show menu displays a list of all of the available Property Boxes and allows 
 
 **==> picture [78 x 225] intentionally omitted <==**
 
-45/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+44/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -946,11 +938,11 @@ For example, if you select the snare drum and then select the sidestick articula
 
 As discussed in the previous section all Property Boxes can be hidden from view from the show menu but they can also be expanded and collapsed with the arrows to the right of their name. If you would like to expand or collapse all boxes at one time, hold down the Option key (Mac) Alt (PC), and click any 
 
+45/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-46/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -970,9 +962,9 @@ For example, if you selected the snare drum and lowered the Level slider by 3dB,
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-47/340 
+46/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -992,9 +984,9 @@ Tuning algorithm you MUST Process the sound. Processing will take longer for ins
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-48/340 
+47/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1016,9 +1008,9 @@ The Envelope and Offset affects volume of an instrument over time. Specifically,
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-49/340 
+48/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1040,11 +1032,11 @@ Trigger: When the Release anchor point is selected a drop down menu appears that
 
 Note on triggers the Release as usual and allows the sample to release naturally. 
 
-50/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+49/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1056,9 +1048,7 @@ Note off also allows the user to determine the onset of the Release by starting 
 
 MIDI note ends. Using this option, you can control the effect in real time by holding down (and then releasing at the desired time) a key on your keyboard to create cymbal chokes and snare rolls of varying length without the need for specialist equipment. 
 
-## Envelope and Offset 
-
-Menu: Here the Time Unit for the Hold and 
+Envelope and Offset Menu: Here the Time Unit for the Hold and 
 
 **==> picture [226 x 48] intentionally omitted <==**
 
@@ -1068,11 +1058,11 @@ Offset: The Offset value is available to shift the overall envelope in time.
 
 **==> picture [247 x 80] intentionally omitted <==**
 
-51/340 
+50/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1088,11 +1078,11 @@ during the playback of a sample in real time, where as the specialized algorithm
 
 Double clicking on the line creates breakpoints and right clicking allows their removal. Dragging a breakpoint up or down from center changes the instruments pitch at that point in time higher or lower. Breakpoints can also be dragged left or right to alter the timing of the pitch change. The Pitch value and time value are displayed in blue below the graph for the selected breakpoint. Custom values can be input by double clicking on the blue numbers for either pitch or time. 
 
-52/340 
+51/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1108,11 +1098,11 @@ The MIDI learn menu in the Real Time mode allows you assign a CC control sent by
 
 Each Instrument, Articulation, or Stack can be controlled by the Velocity Curve Property Box. The Velocity Curve Property Box is 
 
-53/340 
+52/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1122,13 +1112,13 @@ Breakpoints can be added to the curve by double clicking on the line. User added
 
 Output Velocity Limit: Each of the 4 sides of the Velocity Curve box has three dots that can be clicked and dragged inward. Changing these sets the Output Velocity Limit which will transform incoming velocities to new output velocity values. This is quite useful for live performance or for quickly tailoring an instruments response without editing MIDI. The following pictures provide examples for using the Output Velocity Limit. 
 
-**==> picture [165 x 8] intentionally omitted <==**
+**==> picture [165 x 9] intentionally omitted <==**
 
-54/340 
+53/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1140,13 +1130,13 @@ Moving the Output Velocity Limit down sets the upper ceiling for output velociti
 
 Moving the Limit from the right all the way to the left would result in a output of 127 for all incoming hits regardless of their incoming velocity. 
 
-**==> picture [165 x 8] intentionally omitted <==**
+**==> picture [165 x 9] intentionally omitted <==**
 
-55/340 
+54/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1158,11 +1148,11 @@ Breakpoints: Making breakpoints in the curve allows you to change the output vel
 
 You may wonder what practical use these features have, so let’s look at a few real-world cases when working with internal MIDI 
 
-56/340 
+55/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1176,11 +1166,11 @@ Alternatively, if the lower velocity value that is triggered is far above what i
 
 **==> picture [166 x 190] intentionally omitted <==**
 
-57/340 
+56/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1204,11 +1194,11 @@ Soft Curve: This allows you to curve the Velocity transform for a non linear vel
 
 ## 3.5.7 VELOCITY GATE 
 
-58/340 
+57/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1222,11 +1212,11 @@ The difference between the Velocity Gate and the previously described Velocity L
 
 A practical example of how this Property Box could be used is with stacking. Imagine that you have imported a custom snare drum sample, but you would only like this snare drum sample to trigger on the hardest snare hits (i.e. velocity of 127). In this case you would select the custom sample member of the stack, turn on the Velocity Gate Property Box, and raise the low slider up to 127 (as seen in the picture on the right). Now, this custom sample would only trigger when a velocity of 127 for the snare 
 
-59/340 
+58/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1240,11 +1230,11 @@ Soft hit is a volume slider specifically for the softest samples available for t
 
 In a way the Soft Hit Level picks up where the Velocity Curve leaves off. If the softest hits in a MIDI sequence are too loud (even with a velocity of 1) it would be impossible to improve 
 
+59/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-60/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1262,9 +1252,9 @@ In the MIDI Mapping Property Box double clicking on any note number will allow y
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-61/340 
+60/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1278,9 +1268,9 @@ MIDI Note Learn: Clicking on an articulation name will display a menu option to 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-62/340 
+61/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1298,9 +1288,9 @@ Specific mapping presets for various note mapping standards and brands of electr
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-63/340 
+62/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1320,9 +1310,9 @@ MIDI Monitor Menu: Here it is possible to Show internal MIDI (Grooves) by select
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-64/340 
+63/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1336,13 +1326,13 @@ Layer Limits: Higher values will use more RAM but resulting sequences will have 
 
 Like all Property Boxes the voice and layer section corresponds to the selected instrument or articulation. So, if you want to make a global change to all instruments or a group of instruments simply Shift + Click to select multiple instruments, and then make the change in the voice and layer section. Using the voice and layer section on a per instrument / articulation basis allows you to make valuable RAM saving changes without sacrificing playback quality. A maximum value of 99 can be set for each value, or the control can be set to unlimited by lowering the value until the dash "-" appears as seen in the picture below. 
 
-**==> picture [167 x 8] intentionally omitted <==**
-
-65/340 
+**==> picture [167 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+64/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1360,11 +1350,11 @@ Previously known as "Humanize" the Hit Variation Property Box allows you to set 
 
 Drummer 3 sound engine employs when choosing samples for playback. Turning off these options will remove the realistic feel that Superior Drummer 3 has while playing back a MIDI sequence. 
 
+65/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-66/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1378,9 +1368,9 @@ Velocity to Volume: Samples are adjusted in volume in relation to the MIDI veloc
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-67/340 
+66/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1392,9 +1382,9 @@ It should be noted that Toontrack MIDI packs do not currently use CC info for Hi
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-68/340 
+67/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1414,9 +1404,9 @@ The Mute Tail Trigger only applies to cymbals and it allows you to choose how th
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-69/340 
+68/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1432,9 +1422,9 @@ Superior Drummer 3 includes a drum/articulation Substitution System, allowing it
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-70/340 
+69/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1448,13 +1438,13 @@ You have loaded the Gretsch kit, which contains 1 floor tom and
 
 While the Groove is playing, you notice small orange "Not Loaded" icons on certain "Transparent wire frame" drum positions. However, while playing the Groove itself sounds complete. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-71/340 
+70/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1464,13 +1454,13 @@ This simply means that Superior Drummer 3 is substituting the MIDI note that wou
 
 This can also be seen in the Grid Editor. Here the names of instruments that are not loaded appear dimmer than those of loaded instruments. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-72/340 
+71/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1480,13 +1470,13 @@ Finally, in Superior Drummer 3 it is possible to unload specific articulations f
 
 In the picture below you can see that the MIDI sequence is triggering the Open Tip 1 articulation for the Hi-Hat. Because this articulation is not loaded (in order to save RAM) Superior Drummer 3 will intelligently substitute the Open Edge 1 articulation. The playing (substituted articulation) is indicated in the Articulations menu by a white highlight as seen in the picture below. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-73/340 
+72/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1496,9 +1486,9 @@ If you do not want Superior Drummer 3 to substitute alternative drums/articulati
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-74/340 
+73/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1510,11 +1500,11 @@ The Grooves Tab in Superior Drummer 3 is where you browse and audition your inst
 
 Superior Drummer 3 changes the Grooves tab from the previous version and EZdrummer 2 by combining both the traditional file browser and a selection of search filters into one location where they can work together to better filter your desired result. The following will be a description of the grooves page from left to right / top to bottom. 
 
-75/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+74/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1534,11 +1524,11 @@ Show MIDI from Subfolders: Show MIDI files from Subfolders only applies to user 
 
 When you select show MIDI Files from Subfolders and then click on a user linked MIDI folder in the browser section, you will see all MIDI files in this folder, and all MIDI files in all subfolders in the results area. If this is unchecked, you will only see the MIDI files that are in the 
 
+75/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-76/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1556,9 +1546,9 @@ Add Linked Folder: Here you can add a user created folder of drum MIDI to the Su
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-77/340 
+76/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1566,9 +1556,7 @@ Superior Drummer 3 | Manual | Toontrack
 
 - Advanced Sorting: Grooves in the results area will be sorted according to the selected options instead of numerical order. 
 
-   - Priority: Grooves are sorted in a way that Toontrack believes they will be useful, with simpler grooves at the start of the list and more esoteric grooves near the end. 
-
-   - Project Tempo: Displays grooves in the results area starting with the ones that match your SD3 projects tempo. 
+   - Priority: Grooves are sorted in a way that Toontrack believes they will be useful, with simpler grooves at the start of the list and more esoteric grooves near the end. Project Tempo: Displays grooves in the results area starting with the ones that match your SD3 projects tempo. 
 
    - Project Time Signature: Displays grooves in the results area starting with the ones that match your SD3 projects time signature. 
 
@@ -1580,9 +1568,9 @@ These maneuver through the folder browser below, retracing your steps just as th
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-78/340 
+77/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1602,9 +1590,9 @@ It’s important to mention that the 2/3x and 3/2x options simply slow down or s
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-79/340 
+78/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1622,9 +1610,9 @@ Show web shop MIDI connects to toontrack.com and allows you to preview MIDI that
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-80/340 
+79/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1648,9 +1636,9 @@ The Search Filters display a default set of useful filters, however right clicki
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-81/340 
+80/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1670,9 +1658,9 @@ If necessary, set a tempo and time signature in the transport controls. (Bottom 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-82/340 
+81/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1688,9 +1676,9 @@ The remaining filters to the right of tap to find allow you to specify a number 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-83/340 
+82/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1712,9 +1700,9 @@ displayed below the search field. Typed in filters are activated by either hitti
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-84/340 
+83/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1728,13 +1716,13 @@ The new Folder Browser section in the Grooves page makes each folder in the brow
 
 This means that you could tap a groove into Tap2Find, and then filter all of your results by a single or series of browser folders! 
 
-**==> picture [409 x 8] intentionally omitted <==**
-
-85/340 
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+84/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1760,11 +1748,11 @@ Adding linked folders to the Folder Browser is done by clicking the Grooves Menu
 
 Add MIDI files to the User MIDI Folder in the Folder Browser. User MIDI files can be dragged onto the root or sub folders in the Folder Browser section to be added to the Grooves page. Alternatively you could click the arrow on 
 
+85/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-86/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1780,9 +1768,9 @@ MIDI In/E-Drum Preset: E-drum presets can be applied to MIDI files that exist in
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-87/340 
+86/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1802,13 +1790,13 @@ Sync File Changes: This option will be available if you have added the user MIDI
 
 Once you have filtered down the type of groove that you are looking for you will see a selection of matching results in the results section. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-88/340 
+87/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1820,13 +1808,13 @@ Clicking the play button on any hovered groove will engage loop playback of the 
 
 These are the individual grooves (MIDI files) that can be used as the building blocks of your drum sequence. These grooves can be dragged to the Song Track in Superior Drummer for sequencing, they can be dragged out of the Superior Drummer 3 interface to a location on your computer, or they can be dragged and dropped on a MIDI track in your DAW. When dragged to the internal Song Track at the bottom of Superior Drummer 3 they are referred to as Song Blocks. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-89/340 
+88/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1836,19 +1824,19 @@ Right clicking on a Groove in the results section provides a few additional opti
 
 **==> picture [186 x 126] intentionally omitted <==**
 
-- Copy: You can copy the groove to paste at a later time. Search with Tags: Searching with tags makes it possible to use an individual groove as a group of search filters. Every single Toontrack groove is given a set of Tags that is stored in the Toontrack MIDI database. If you find a groove you like, and would like to find more similar grooves, Search With Tags is one good option. 
-
-- Search with Tap2Find: This selection is similar to Search With Tags, but this feature instead uses Tap2Find for the search criteria instead of the grooves associated tags. Show in Browser: This option will display the Browser folder path all the way to the final groove variation. 
+- Copy: You can copy the groove to paste at a later time. Search with Tags: Searching with tags makes it possible to use an individual groove as a group of search filters. Every single Toontrack groove is given a set of Tags that is stored in the Toontrack MIDI database. If you find a groove you like, and would like to find more similar grooves, Search With Tags is one good option. Search with Tap2Find: This selection is similar to Search With Tags, but this feature instead uses Tap2Find for the search criteria instead of the grooves associated tags. Show in Browser: This option will display the Browser folder path all the way to the final groove variation. 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-90/340 
+89/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-This is very useful if you would like to accompanying grooves from the same MIDI pack as the chosen Groove. 
+This is very useful if you would like to accompanying grooves 
+
+from the same MIDI pack as the chosen Groove. 
 
 - Use with Song Creator: loads the groove into the song creator and automatically expands the song creator window. The song creator will be explained in detail in chapter 7 (The Song Track). 
 
@@ -1860,9 +1848,9 @@ The Groove Parts Button located to the right of the results area allows the user
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-91/340 
+90/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1876,9 +1864,9 @@ Superior Drummer has always been designed so that the user can control a multi-t
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-92/340 
+91/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1894,13 +1882,13 @@ The Mixer Menu provides useful options for altering the mixer globally.
 
 Channel Mute Mode: Here you can set the Mute to occur before any sends used on the channel or after the sends. Please note: the output order of the send itself will effect how this option works (i.e. If the Channel Mute Mode is set to Post Send but the Send channel is set to Post Fader, all audio will be muted just as it would if the Channel Mute Mode was in Pre Send (Default)). 
 
-**==> picture [196 x 8] intentionally omitted <==**
+**==> picture [196 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-93/340 
+92/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1910,13 +1898,13 @@ To achieve the intended option for this control choose Post Send, and then make 
 
 This option is best clarified with an example. Imagine that you have used a send on the Top Snare channel with the intention of sending it to a reverb bus (bus 1 in this example). While dialing in the reverb plugin, you would like to hear the drum mix with the reverb only without the Snare Top Mic Direct audio. In this instance you would select Post Send in the Mixer Channel Mute Mode, then select Pre Fader (or Pre Effects) in the Snare Top Send. Now, with these selections made, muting the Snare Top Channel would still allow signal to be sent to the Reverb bus, therefore you would hear the entire drum mix with reverb minus the close mic snare top channel. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-94/340 
+93/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1928,11 +1916,11 @@ In this picture the Snare Top Channel is muted however, audio from its send is s
 
 - Stereo Reverse Mixer: This option will change all of the panning in the mixer for every channel to the opposite side. Channels panned in the center will remain in the center. 
 
-95/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+94/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1964,11 +1952,11 @@ The second menu on the grey Mixer Tab header bar is the Channel Menu.
 
 - Rescan User Presets: A useful option if you have manually added User Presets to your User Presets folder in your 
 
+95/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-96/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -1990,9 +1978,9 @@ The Mics, User Mics, Buses, and Outputs buttons will show or hide these channels
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-97/340 
+96/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2010,9 +1998,9 @@ To close Edit Visibility and hide all selected channels, simply click the Edit V
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-98/340 
+97/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2032,9 +2020,9 @@ Any hidden channels will also appear in this section under Hidden Channels.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-99/340 
+98/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2054,9 +2042,9 @@ To use Bleed from Instruments, first select the channel that you want to manipul
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-100/340 
+99/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2068,9 +2056,9 @@ BLEED FROM INSTRUMENTS MENU:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-101/340 
+100/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2094,15 +2082,13 @@ Finally, it should be mentioned that although Bleed from Instruments and Close M
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-102/340 
+101/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Parts of a preset from the Presets selection menu on the Drums 
-
-Tab. 
+Parts of a preset from the Presets selection menu on the Drums Tab. 
 
 **==> picture [226 x 97] intentionally omitted <==**
 
@@ -2116,9 +2102,9 @@ The Time Offset provides the ability to shift the audio signal forward in time u
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-103/340 
+102/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2136,9 +2122,9 @@ The Level Envelope Releases slider can also be moved to the right where it will 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-104/340 
+103/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2154,11 +2140,11 @@ Superior Drummer 3’s Mixer Tab features 3 different types of channels: Microph
 
 Microphone Channels (indicated in Blue) are named as such because they are different than typical audio tracks in a DAW. This is because the microphone channels do not simply control the instruments level, but rather the sound of all the instruments in the microphones present in the room. Adjusting a Microphone Channel strip in the mixer will not only affect the direct signal from the drum but also any other instruments that have been activated in the Bleed from Instruments (in the Mixer Properties). The different sections in the Microphone Channel strip are as follows: 
 
-105/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+104/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2174,11 +2160,11 @@ Effects: Here you can load any of the over 30 all new sound processing plugins i
 
 Bus Sends: Here you can route any Microphone Channel to a bus channel. Clicking the down arrow in the bus section will provide a list of 16 stereo buses. When a bus is chosen, its channel will automatically appear if it was hidden in the selected preset. Bus sends can be Option (Alt) dragged from one channel to another to duplicate the send on the new channel. 
 
+105/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-106/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2200,9 +2186,9 @@ Pan Control: Moving back to where we left off on the Microphone Channel strip is
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-107/340 
+106/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2222,13 +2208,13 @@ Channel Name: At the very bottom of the channel strip is the Channel name. The n
 
 Holding down the Option Key (Mac) or Alt Key (PC), then clicking and dragging an Effect or Bus Send to an new channel will copy the chosen effect or Bus Send to the new channel. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-108/340 
+107/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2244,9 +2230,9 @@ The Ambience Microphone Channels for the core sound library of Superior Drummer 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-109/340 
+108/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2262,9 +2248,9 @@ Bus channels also have FX inserts for sound processing just like microphone chan
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-110/340 
+109/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2280,15 +2266,17 @@ By default Superior Drummer 3 outputs into your DAW as any stereo instrument you
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-111/340 
+110/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
 **==> picture [70 x 300] intentionally omitted <==**
 
-MULTIPLE OUTPUTS (MULTI-OUT) Clicking the ‘Output’ selection at the bottom of the channel strip will reveal all possible outputs for this particular channel. Here it is possible to select different outputs for each 
+## MULTIPLE OUTPUTS (MULTI-OUT) 
+
+Clicking the ‘Output’ selection at the bottom of the channel strip will reveal all possible outputs for this particular channel. Here it is possible to select different outputs for each 
 
 channels (or for groups of channels) and send them to individual tracks in your host DAW. This is a common practice because many users like to have access to all of the individual instruments in the drum kit, so that they can be processed with other plugins along side all other instruments that they have recorded in their DAW 
 
@@ -2300,9 +2288,9 @@ Routing the outputs of Superior Drummer 3 to individual tracks in your DAW is ha
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-112/340 
+111/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2332,9 +2320,9 @@ Right clicking on any type of channel in the mixer will open a contextual menu w
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-113/340 
+112/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2346,7 +2334,7 @@ The following will provide a description of each effect included with Superior D
 
 All effects contain the following properties: 
 
-Bypass control in the top left of the effect window. 
+- Bypass control in the top left of the effect window. 
 
 - Preset menu: A selection of suggested parameters for different sonic goals. 
 
@@ -2364,9 +2352,9 @@ Bypass control in the top left of the effect window.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-114/340 
+113/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2394,11 +2382,11 @@ Low, mid, and high frequency selections are located in the top 1/3rd. All have p
 
 Gain controls for each of the 3 variable bands are located in the middle. 
 
-115/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+114/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2416,11 +2404,11 @@ Modulation
 
 Section: This is where you choose the type of modulation that will control the cut off frequency of the selected filter. In other words, its where you choose the style in which the below filter will be moved. 
 
+115/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-116/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2440,9 +2428,9 @@ Superior Drummer 3 | Manual | Toontrack
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-117/340 
+116/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2464,9 +2452,7 @@ in your host (if follow host is turned on).
 
 A classic feedback style compressor with modern features. 
 
-Side Chain 
-
-Input: Here you can select a different source channel in Superior Drummer 3 to trigger gain reduction on the 
+Side Chain Input: Here you can select a different source channel in Superior Drummer 3 to trigger gain reduction on the 
 
 channel that the compressor is inserted. 
 
@@ -2476,9 +2462,9 @@ the amount in dB that the signal is being attenuated by the
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-118/340 
+117/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2506,9 +2492,9 @@ the compression curve and threshold.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-119/340 
+118/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2536,15 +2522,13 @@ reduction on the channel that the compressor is inserted.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-120/340 
+119/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-setting possible, and a value of 7 is the slowest possible 
-
-attack setting. 
+setting possible, and a value of 7 is the slowest possible attack setting. 
 
 - Ratio Buttons: Classic Ratio’s of the hardware with a dedicated button for “All Buttons in Mode.” 
 
@@ -2566,9 +2550,9 @@ Lat Gain: Adjust the gain of the Side channel. Increasing only the side channel 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-121/340 
+120/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2592,13 +2576,13 @@ Gain: Input level sent into the compressor.
 
 Mix: Control the wet/dry ratio. 
 
-**==> picture [247 x 182] intentionally omitted <==**
+**==> picture [247 x 183] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-122/340 
+121/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2616,13 +2600,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 A simple, 3 control limiter capable of argessive compression. 
 
-Sensitivity: Input sensitivity, or input gain. 
+## Sensitivity: Input sensitivity, or input gain. 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-123/340 
+122/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2646,13 +2630,13 @@ sound. Decreasing this will soften the attack of the sound. Sustain: Increasing 
 
 Much like an Aural exciter, it will increase punch and brightness in the channel. 
 
-**==> picture [247 x 152] intentionally omitted <==**
+**==> picture [247 x 153] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-124/340 
+123/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2662,7 +2646,9 @@ Superior Drummer 3 | Manual | Toontrack
 
 ## PUNCH EXCITER 361 
 
-Similar to the 180, it acts as an aural exciter but adds the famous vocal mod that was 
+Similar to the 180, it 
+
+acts as an aural exciter but adds the famous vocal mod that was 
 
 often performed on the original hardware unit. 
 
@@ -2682,11 +2668,11 @@ A gate/expander with an added high and low pass filters in the side chain.
 
 - Attack, Hold, and Release: Standard gate controls that allow you to dial in the speed of the gates response. 
 
-125/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+124/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2714,11 +2700,11 @@ a unique type of distortion/modulation caused by the varying speed of analog tap
 
 Drive: Increases the amount of the effect. 
 
+125/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-126/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2742,9 +2728,9 @@ Model of a modern, high end, tube distortion unit commonly used in mixing and ma
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-127/340 
+126/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2774,9 +2760,9 @@ Drive: Increases the amount of input signal. Tone: Increases or decreases bright
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-128/340 
+127/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2800,9 +2786,9 @@ Drive: Increases the distortion.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-129/340 
+128/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2828,9 +2814,9 @@ Reverb Time: Controls the length of the reverberation.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-130/340 
+129/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2856,9 +2842,9 @@ direct sound and when the reverb sound begins.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-131/340 
+130/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2870,11 +2856,11 @@ the frequency response of a room.
 
 ## HALL REVERB 
 
+**==> picture [247 x 208] intentionally omitted <==**
+
 Reverb Time: Controls the length of the reverberation. Pre-Delay: The amount of time between the direct sound and when the reverb sound 
 
-begins. This length can be set in milliseconds / seconds, or 
-
-in note values with the selection to the right. 
+begins. This length can be set in milliseconds / seconds, or in note values with the selection to the right. 
 
 Size: Sets the apparent size of the hall emulated by the algorithm. Should be set coherently with the Time parameter: you can emulate a large hall (higher values for Size) with a short reverberation time (e.g. a cinema hall) or with a longer time (e.g. a church), but it’s improbable to have a small hall with a long reverberation time, unless you are seeking for a more creative effect. 
 
@@ -2882,13 +2868,15 @@ Shape: It determines the contour of the reverberation envelope. With Shape all t
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-132/340 
+131/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Diffusion: Controls the degree to which the initial echo density increases over the time. 
+Diffusion: Controls the degree to which the initial echo 
+
+density increases over the time. 
 
 - High: Attenuates high frequencies in the Reverb. 
 
@@ -2898,23 +2886,21 @@ Diffusion: Controls the degree to which the initial echo density increases over 
 
 **==> picture [247 x 213] intentionally omitted <==**
 
-Reverb Time: Sets 
-
-the duration of the reverberation. This time, added to the Pre-delay time, is the time that elapses from the direct sound to the 
+Reverb Time: Sets the duration of the reverberation. This time, added to the Pre-delay time, is the time that elapses from the direct sound to the 
 
 end of the reverberation. 
 
 Pre-Delay: The amount of time between the direct sound and when the reverb sound begins. This length can be set in milliseconds / seconds, or in note values with the selection to the right. 
 
-- Diffusion: Controls the degree to which the initial echo density increases over the time. 
+Diffusion: Controls the degree to which the initial echo density increases over the time. 
 
 EQ:Sets the frequency over which the reverberation is attenuated. Low and High parameters can be used to tweak the frequency response of the reverb. 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-133/340 
+132/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2954,9 +2940,9 @@ Decay: Shortens or lengthens the decay of the sound. Very short decay sounds can
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-134/340 
+133/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -2984,11 +2970,11 @@ Modeled after the famous tape delay machine from “outer space.”
 
 - Reverse Mode: Reverses the audio of the delayed signal Wet/dry Mix: Controls the ratio between dry signal and the reverb signal. 
 
-135/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+134/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3016,13 +3002,13 @@ Delay from the famous 80’s reverb and delay processor.
 
 Dry: Volume of the dry signal. 
 
-**==> picture [247 x 163] intentionally omitted <==**
+**==> picture [247 x 164] intentionally omitted <==**
+
+135/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-136/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3058,9 +3044,9 @@ Level: Controls the volume of the phased signal.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-137/340 
+136/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3088,9 +3074,9 @@ Speed: Determines the speed of the filters movement. Sensitivity: Adjusts the to
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-138/340 
+137/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3114,9 +3100,9 @@ LFO Speed: Controls the speed of the effect. Depth: Controls the intensity of th
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-139/340 
+138/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3140,9 +3126,9 @@ LFO Rate: Controls the speed of the Flanger. Range: Controls the width of the fr
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-140/340 
+139/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3162,9 +3148,9 @@ engaged in any combination to create different chorus effects.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-141/340 
+140/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3180,9 +3166,9 @@ Tracker is designed to take pre recorded, multi-track drum audio files and conve
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-142/340 
+141/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3200,9 +3186,9 @@ Once files are added to Tracker, it will go to work identifying each instrument 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-143/340 
+142/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3224,9 +3210,9 @@ Find Tempo provides a set of tools that allows tracker to analyze and track the 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-144/340 
+143/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3240,11 +3226,11 @@ The Find Tempo interface shows the wave forms of your imported audio and a serie
 
 When you drag one of the blue bar markers to a beat in your audio track, all other blue bar markers will adjust to attempt to find the first beat of all subsequent bars in the audio. Typically only 2 or 3 adjustments to the vertical bar markers need to be made in order for the tempo of the entire song to be mapped. However, if your song has widely varying tempos or multiple time signatures you will most likely need to make adjustments throughout the corse of the audio files. Further, if the first beat of 
 
-145/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+144/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3264,11 +3250,11 @@ Once you are happy with the tempo track click the blue Update Tempo Map button i
 
 **==> picture [409 x 54] intentionally omitted <==**
 
+145/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-146/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3290,27 +3276,25 @@ This is where you have the choice to export your final MIDI sequence. MIDI can b
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-147/340 
+146/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-## 3. It is also possible to drag MIDI for the individual instruments to 
-
-the Song Track as well. 
+3. It is also possible to drag MIDI for the individual instruments to the Song Track as well. 
 
 **==> picture [409 x 283] intentionally omitted <==**
 
 Alternatively, clicking the “Save Selection As” option allows you to choose a location on your computer to save the exported MIDI file. The "Save Selection As" command will (as the name implies) save the selection therefore, if you wish to save each instrument as a separate MIDI file you must select that specific instruments MIDI track, and then choose the Save Selection As command. Repeat this step for all remaining instrument MIDI files that you wish to export individually. 
 
-**==> picture [409 x 105] intentionally omitted <==**
+**==> picture [409 x 106] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-148/340 
+147/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3330,9 +3314,9 @@ The Tempo menu found in the Export MIDI window of Tracker provides the option to
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-149/340 
+148/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3360,11 +3344,11 @@ Region: The Region menu contains useful options for
 
    - Copy and Paste Settings. Using these menu options it is possible to copy all of the Tracker settings (such as the Amount, Velocity Threshold, and Sound Recognition 
 
-150/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+149/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3380,9 +3364,9 @@ Playheads: Controls the global function of both
 
 playheads. (Sub-menus described below). 
 
-- Synchronize conforms both the top Waveform view timeline and the bottom Trigger Point timeline to the same zoom level and play head position so that they move together in unison. 
+   - Synchronize conforms both the top Waveform view timeline and the bottom Trigger Point timeline to the same zoom level and play head position so that they move together in unison. 
 
-Move to Beginning will move both playheads to the start of the tracks. 
+   - Move to Beginning will move both playheads to the start of the tracks. 
 
 - Show Grid: Unchecking this option removes the visible grid lines from Tracker's interface. 
 
@@ -3394,11 +3378,11 @@ Global Tracks contain the Tempo Map and Time Signature track. They can be hidden
 
 Change Tempo: Tempo Changes can be made by double clicking on any tempo number in the track and inputting a new value. 
 
-151/340 
+150/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3422,11 +3406,11 @@ Load Tempo Map from MIDI file: This gives the user the
 
 ability to import a MIDI file that contains tempo information. 
 
-152/340 
+151/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3464,11 +3448,11 @@ Add at Playhead: This
 
 ## 6.3 THE TRACK WORKSPACE 
 
-153/340 
+152/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3488,11 +3472,11 @@ At the far left of the Track Workspace you will see the name of the audio file. 
 
 Clicking on the Source button provides the option to choose the source audio file for that track. The options presented in this list will be composed of all of your audio files that you have imported (i.e. they will not match the picture below). There is also a gain control in the source menu to increase or decrease the volume of the imported audio file. 
 
-154/340 
+153/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3506,11 +3490,11 @@ Next to the Source button are Solo and Mute buttons and a Mix knob. Solo, Mute a
 
 ## AUDITION MENU 
 
-155/340 
+154/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3528,11 +3512,11 @@ This displays the wave form of the imported audio file and also shows trigger po
 
 Trigger points are represented as vertical lines overlaid on the waveform. 
 
-156/340 
+155/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3544,13 +3528,13 @@ The Region sub-menu allows you to quickly copy and paste settings between region
 
 If a Trigger Point is selected the Articulation sub-menu will become active, which allows you to select the desired articulation for that specific Trigger point. In the picture below a kick drum Trigger Point was selected thus, the available articulations in SD3 are Hit and Open. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
-157/340 
+156/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3562,11 +3546,11 @@ Below the Track Workspace is the bottom half of the interface which includes the
 
 **==> picture [409 x 120] intentionally omitted <==**
 
-158/340 
+157/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3584,11 +3568,11 @@ Tracker is capable of recognizing the 6 classifications of instruments found in 
 
 into Tracker it will automatically recognize the predominant close mic’ed instrument in the audio file. However if Tracker gets this wrong, you can change its Target sound in the Sound Recognition menu by selecting another instrument. Upon changing its Target Sound you will notice that all of the Trigger Points change, as Tracker is now using a new set of criteria for finding hits. 
 
-159/340 
+158/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3606,11 +3590,11 @@ This menu shows all of the available recorded articulations for the selected ins
 
 It is extremely common for a drummer to vary the articulations that are performed on a hi-hat throughout the course of a track. Making a change in this menu will affect all trigger points in the track globally (by default). Alternatively selecting the Event or Region options in the Edit Replacement Sound window allows 
 
+159/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-160/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3628,9 +3612,9 @@ Users should be warned that while the above scenario is possible with a good ove
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-161/340 
+160/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3646,9 +3630,9 @@ Tip! If you notice Tracker is creating unintended flams on a track, reduce its A
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-162/340 
+161/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3662,9 +3646,9 @@ This threshold line represents the percentage in which the trigger point matches
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-163/340 
+162/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3680,13 +3664,13 @@ The velocity threshold works just like the Sound Recognition Match Threshold in 
 
 In the bottom left corner is the Reduce Bleed section. Reduce Bleed works by comparing trigger points in the selected track, to trigger points in other user definable tracks, in order to avoid double triggering across multiple tracks that bleed into each other. 
 
-**==> picture [197 x 8] intentionally omitted <==**
+**==> picture [197 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-164/340 
+163/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3698,11 +3682,11 @@ When using the Reduce bleed function, select a track in the Track Workspace, tha
 
 The Reduce Bleed knob sets the threshold required to de-trigger a Trigger Point. 
 
-165/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+164/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3722,19 +3706,17 @@ Essentially Reduce Bleed instructs Tracker to compare volume levels between a us
 
 **==> picture [159 x 157] intentionally omitted <==**
 
+165/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-166/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
 Raise the Reduce Bleed Threshold knob until the false 
 
-triggers go away. 
-
-The Reduce Bleed Threshold corresponds to a percentage. When raising the Reduce bleed knob you are instructing Tracker to ignore any trigger points in the chosen rack tom 1 track when trigger points from the selected Reduce Bleed tracks are louder by the set percentage of the Reduce Bleed knob. 
+triggers go away. The Reduce Bleed Threshold corresponds to a percentage. When raising the Reduce bleed knob you are instructing Tracker to ignore any trigger points in the chosen rack tom 1 track when trigger points from the selected Reduce Bleed tracks are louder by the set percentage of the Reduce Bleed knob. 
 
 Repeat this process for the other toms if necessary. 
 
@@ -3746,9 +3728,9 @@ Once the aforementioned broad strokes are completed more surgical note by note r
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-167/340 
+166/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3772,9 +3754,9 @@ The Preview button located to the right of Select Similar allows you to preview 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-168/340 
+167/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3792,15 +3774,15 @@ One reason this feature could be used, is if you have used the select 1/4 notes 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-169/340 
+168/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
 menu) to select all quarter note Trigger Points for your kick drum. You have done this because you know that your kick drum is playing quarter notes in the audio file. You could then use the Inverse Selection option to select all other Trigger Points that are not 1/4 notes and detrigger them with a single click. 
 
-- Select All Events: This will select all Trigger Points for the selected track. 
+Select All Events: This will select all Trigger Points for the selected track. 
 
 - Jump to Next Selected Event: Tracker will move from the selected to the next Trigger Point in the file. 
 
@@ -3818,9 +3800,9 @@ menu) to select all quarter note Trigger Points for your kick drum. You have don
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-170/340 
+169/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3842,13 +3824,13 @@ value. For example, say that you have found all triggers for a closed hi-hat tha
 
 6. Finally click OK. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-171/340 
+170/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3866,9 +3848,9 @@ We encourage users to work with Tracker in any way that is comfortable for them.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-172/340 
+171/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3892,9 +3874,9 @@ we have come up with a general workflow that can help when you are new to the so
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-173/340 
+172/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3918,9 +3900,9 @@ For the best possible results with Tracker we recommend that your audio files co
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-174/340 
+173/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3942,11 +3924,11 @@ possible.
 
 - Audio Files should contain drum sounds only. Tracker is not designed to work with full mixes that contain other instruments. 
 
-175/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+174/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3962,11 +3944,11 @@ The Song Track is a global function present on the Drums, Grooves, and Mixer tab
 
 The Song track can be reset to its default size in the Global view menu in the upper left of the interface. The View menu will be discussed in detail in chapter 9. 
 
+175/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-176/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -3992,13 +3974,13 @@ The Track Menu found in the top left of the Song track provides useful options f
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-177/340 
+176/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Set Track Length: Here its possible to choose the total 
+- Set Track Length: Here its possible to choose the total 
 
 length in bars for the song track. 
 
@@ -4016,9 +3998,9 @@ signature change is complete.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-178/340 
+177/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4044,9 +4026,9 @@ When using the Edit Time Signature view a menu will appear to the right of the S
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-179/340 
+178/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4066,9 +4048,9 @@ Add Breakpoint at Playhead: This allows you to raise, lower or keep the tempo at
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-180/340 
+179/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4094,9 +4076,9 @@ Alone). When a MIDI file is imported a dialog box will appear with the option to
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-181/340 
+180/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4108,13 +4090,13 @@ Import Tempo from MIDI File: Just as tempo’s can be imported for use with Trac
 
 The Bounce option in the Track menu is used for converting your completed MIDI sequence on the Song Track into a single, or multiple audio files. Due to the high number of samples involved, playing back all the sonic subtleties Superior Drummer 3 has to offer in real-time can be quite demanding on resources. For this reason we offer the offline Bounce option which due to the large amount of features is outlined in its own dedicated section of this manual (i.e. the next section, 7.1.1) 
 
-**==> picture [178 x 8] intentionally omitted <==**
+**==> picture [178 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-182/340 
+181/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4128,9 +4110,9 @@ Bounce is typically the last stage of working with Superior Drummer 3. For this 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-183/340 
+182/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4152,9 +4134,9 @@ When Bounce is selected a window will open with various options presented on 2 d
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-184/340 
+183/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4170,15 +4152,17 @@ bounce the entire track this option should be left unchecked.
 
 Bounce Output Channels: Choosing the Bounce Output Channels option will result in a single stereo audio file for each output pair that you have used in the mixer. For example, if you have only used the default out 1/2 then you will end up with a single stereo track that contains all drum sounds. If however you have routed channels in the mixer to multiple outputs this will result in a stereo audio file for each output pair that you have used. 
 
-185/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+184/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Bounce Microphone Channels: Choosing this option will bounce an individual audio file for each microphone channel before any effects, panning, or level adjustments in the mixer. Typically this is chosen for an unprocessed version of the audio files from Superior Drummer 3 that will be mixed in a separate host DAW. 
+## Bounce Microphone Channels: Choosing this option will 
+
+bounce an individual audio file for each microphone channel before any effects, panning, or level adjustments in the mixer. Typically this is chosen for an unprocessed version of the audio files from Superior Drummer 3 that will be mixed in a separate host DAW. 
 
 ## Split Microphone Channels by Close Mic Instruments: 
 
@@ -4186,15 +4170,17 @@ Under the bounce channels option there is a sub option that provides the ability
 
 Choosing these options will result in a single stereo audio file for each loaded cymbal in your kit. If you would like all cymbals to be contained within one stereo audio file leave these options unchecked. 
 
-Split Close Mic Audio from Bleed: Selecting this option will result in the primary instrument for the channel to be bounced to its own audio file with no bleed. All of the bleed that is present in this channel will be bounced to its own separate channel. For example, The kick drum audio from the Kick In channel will be bounced to its own audio file. All of the bleed that is present in the Kick In channel will be bounced to its own separate single audio file. Choosing this option gives the user the freedom to adjust bleed levels once the resulting audio files are imported into your host DAW. 
+## Split Close Mic Audio from Bleed: Selecting this option will 
+
+result in the primary instrument for the channel to be bounced to its own audio file with no bleed. All of the bleed that is present in this channel will be bounced to its own separate channel. For example, The kick drum audio from the Kick In channel will be bounced to its own audio file. All of the bleed that is present in the Kick In channel will be bounced to its own separate single audio file. Choosing this option gives the user the freedom to adjust bleed levels once the resulting audio files are imported into your host DAW. 
 
 Force Enable All Bleed: Checking this will bounce all bleed in every channel for the bounced audio files regardless of the bleed 
 
+185/340 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-186/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4216,9 +4202,9 @@ If the MIDI sequence that you would like to Bounce is located in your host DAW, 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-187/340 
+186/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4234,9 +4220,9 @@ The procedure for recording MIDI that contains tempo changes into Superior Drumm
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-188/340 
+187/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4262,9 +4248,9 @@ audio is as follows:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-189/340 
+188/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4276,13 +4262,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 The Block menu (i.e. Song Block) is accessed in the top left of the song track or by right clicking any song block on the Song Track. It contains all of the possible options for altering a single song block or multiple selected song blocks on the timeline. Please note that these changes only affect Song Blocks that are on the Song Track, they do NOT affect the master version of the MIDI file in the Grooves page. 
 
-**==> picture [203 x 8] intentionally omitted <==**
+**==> picture [203 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-190/340 
+189/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4294,21 +4280,21 @@ This is a useful feature if you wish to make hybrid MIDI files from a collection
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-191/340 
+190/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
 **==> picture [334 x 404] intentionally omitted <==**
 
-**==> picture [355 x 8] intentionally omitted <==**
+**==> picture [355 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-192/340 
+191/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4324,9 +4310,9 @@ Mute: This will stop the selected MIDI files from producing sound. This can be u
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-193/340 
+192/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4342,9 +4328,9 @@ Change Tempo: Here you can alter the tempo of the selected Song Bock(s) with sel
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-194/340 
+193/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4364,11 +4350,11 @@ Show in Browser: This will show you where the groove is located in the browser s
 
 Song Part: The Song Part menu option allows you to change the color / classification of Song Blocks on the Song Track. 
 
-195/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+194/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4388,9 +4374,9 @@ Use with Song Creator: This option will copy the selected Song Block on the Song
 
 Edit MIDI: This allows you to open the selected groove and edit its MIDI in 2 different ways. Either with Edit Play Style, or in the https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-196/340 
+195/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4406,13 +4392,13 @@ Edit Play Style and the Grid Editor are 2 different ways to Edit MIDI inside of 
 
 Edit Play Style is a powerful feature that can be used to modify how individual instruments in grooves added to the Song Track play back. Any single instrument or the whole kit can be affected by Edit Play Style. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-197/340 
+196/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4434,9 +4420,9 @@ Edit Play Style and the Grid Editor can be accessed in the following ways:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-198/340 
+197/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4462,15 +4448,13 @@ As with Song Track operations most functions affect only what is currently selec
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-199/340 
+198/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-When you open the Edit Play Style window, all instruments used in the selected block(s) are by default highlighted with a blue outline. Instruments not used are greyed out. Clicking an 
-
-instrument will select it and deselect all others. You can also click the “Select Instrument” button in the top right of the window to open a menu where all instruments are listed and the instruments used in the groove are marked with a green square. Select one or choose one of the grouped options “All Playing Drums”, “All Toms” or “All Crashes." 
+When you open the Edit Play Style window, all instruments used in the selected block(s) are by default highlighted with a blue outline. Instruments not used are greyed out. Clicking an instrument will select it and deselect all others. You can also click the “Select Instrument” button in the top right of the window to open a menu where all instruments are listed and the instruments used in the groove are marked with a green square. Select one or choose one of the grouped options “All Playing Drums”, “All Toms” or “All Crashes." 
 
 **==> picture [222 x 246] intentionally omitted <==**
 
@@ -4484,9 +4468,9 @@ Any action performed using Edit Play Style can be undone/redone using the Undo/R
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-200/340 
+199/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4510,9 +4494,9 @@ USING ADD / REMOVE HITS:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-201/340 
+200/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4536,9 +4520,9 @@ If you have previously added any additional percussion instruments (i.e. Future 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-202/340 
+201/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4564,9 +4548,9 @@ You can copy notes from a selected instrument (or from several instruments) and 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-203/340 
+202/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4582,13 +4566,13 @@ If you use this method to copy and paste within the same Song Block, it will res
 
 This command can be used to remove all notes played by one or several instruments. “Remove MIDI” will not place anything in the clipboard but will reduce the number of hits to zero. You can later use the Amount knob to restore the removed hits. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-204/340 
+203/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4608,11 +4592,11 @@ You can quantize notes played by individual instruments using Edit Play Style.
 
 2. Right click to open the context menu, and then select a value from the Quantize submenu. 
 
-205/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+204/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4634,13 +4618,13 @@ All grooves have a “Power Hand” instrument assigned, and Song Blocks on the 
 
 It is possible to change the Power Hand instrument for the selected Song Block to any other kit instrument by simply dragging the Power Hand flag to any other instrument in the kit. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
+
+205/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-206/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4662,9 +4646,9 @@ The Opening Hit adds a single hit to the beginning of the Song Block. Just like 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-207/340 
+206/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4686,9 +4670,9 @@ Double clicking on a Song Block in the Song Track Right clicking on a song block
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-208/340 
+207/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4720,9 +4704,9 @@ The Pointer tool allows you to select a note or group of notes by lassoing them.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-209/340 
+208/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4744,9 +4728,9 @@ The Quantize Percentage slider will move all selected notes to the nearest grid 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-210/340 
+209/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4764,9 +4748,9 @@ For example, lets say that you have selected a series of 1/8 notes for the Ride 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-211/340 
+210/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4798,9 +4782,9 @@ If a note lane (or multiple lanes) in the Grid Editor has been Soloed or
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-212/340 
+211/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4814,9 +4798,9 @@ The Select Menu provides useful options for selecting groups of notes by note di
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-213/340 
+212/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4830,9 +4814,9 @@ A practical example of how this would be used  would be to select all of the 1/4
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-214/340 
+213/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4846,15 +4830,17 @@ It’s important to mention that the 2/3x and 3/2x options simply slow down or s
 
 - Snap to Grid Options: Here you can choose for notes to snap to the selected Quantization level or the Relative Grid. Relative Grid uses the relative distance between notes regardless of if they sit on grid lines or not. For example, if you recorded MIDI yourself that is very slightly off of the grid and you want to adjust the timing moved notes would snap to a distance of the Quantization value rather than the grid itslef. This keeps the original timing and feel intact. 
 
-- Nudge Unit: These options control the behavior of the Nudge control. Here you can select 1/128th note, Milliseconds, or Follow Resolution, which will use the resolution setting in the Resolution menu. 
+- Nudge Unit: These options control the behavior of the Nudge control. Here you can select 1/128th note, 
+
+- Milliseconds, or Follow Resolution, which will use the resolution setting in the Resolution menu. 
 
 - Preview Sounds: This allows the user to turn off the sound preview of the articulation when clicking on a note. This is 
 
-215/340 
-
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+214/340 
+
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4872,13 +4858,13 @@ Moving this control from left to right will increase the zoom level in the note 
 
 This is the main area of the Grid Editor, and its where you will add, remove, and change the timing of notes. MIDI notes in Superior Drummer 3’s Grid Editor are represented as grey diamonds. Velocity is represented in the brightness of the diamond, meaning that the more bright a MIDI note appears in the interface the higher its velocity. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
+
+215/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-216/340 
-
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4894,9 +4880,9 @@ The Rows Menu allows for the following options:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-217/340 
+216/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4920,9 +4906,9 @@ Each Note Row contains the following:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-218/340 
+217/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4938,13 +4924,13 @@ Instruments that contain  multiple articulations of also contain an arrow. Click
 
 If an articulation is not mapped to a dedicated note it can be shown here in the Grid Editor so that you do not accidentally assign notes to that articulations. While most of MIDI notes are mapped, some are not mapped by default to make room for the more important notes (as there are only 128 available). If you find an articulation that you would like to use but it is not currently mapped to a note you can change this with the MIDI mapping property box on the Drums Tab. (Chapter 3.5). Remember that the "Show Unloaded/Not MIDI Mapped" option is de-selected by default in the Rows menu mentioned above. Therefore if you would like to see these not MIDI mapped notes you must first select the "Show Unloaded / Not MIDI Mapped" option. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-219/340 
+218/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4972,9 +4958,9 @@ Each MIDI note also has a corresponding velocity point that can be dragged up or
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-220/340 
+219/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -4992,13 +4978,13 @@ Clicking the detach icon to the right of the sliders allows for the 3 Sliders to
 
 **==> picture [186 x 131] intentionally omitted <==**
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-221/340 
+220/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5018,9 +5004,9 @@ Recent: Displays a list of recently selected options in this menu. This is usefu
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-222/340 
+221/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5032,19 +5018,35 @@ Superior Drummer 3 | Manual | Toontrack
 
 **==> picture [354 x 63] intentionally omitted <==**
 
-- Choke All (Channel Aftertouch): Aftertouch can be selected here for controlling all aftertouch on an entire MIDI channel. To edit Aftertouch manually, draw in (with the pencil tool) an aftertouch box some point in time after the instrument hit. When the playhead reaches the point of the aftertouch box the choke for that note will begin. A new aftertouch box needs to be drawn after each note. Remember that many cymbals have a choke articulation that can be added as a MIDI note to the Grid Editor to also choke the instrument. 
+- Channel Aftertouch: Here you can select from the available aftertouch channels for your kit. Aftertouch can be selected on a note basis or as a MIDI channel (for controlling all aftertouch on an entire MIDI channel). To edit Aftertouch manually first select the desired Aftertouch Note from the Aftertouch Menu, and then draw in (with the pencil tool) an aftertouch box some point in time after the note. When the playhead reaches the point of the aftertouch box the choke 
+
+https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
+
+222/340 
+
+11/21/23, 8:54 AM 
+
+Superior Drummer 3 | Manual | Toontrack 
+
+will begin. 
+
+For example, if you have a note on cymbal #2 and you 
+
+would like to choke this cymbal after its initial hit, select Cymbal 2 from the Aftertouch sub menu, then draw in an Aftertouch Box at the desired point (after the initial hit) that you would like to choke the cymbal. The Choke Start position indicated in the picture can be thought of as the moment that a hand grabs the cymbal, and the choke release position can be thought of as the point at which the hand releases the cymbal. For this reason, any cymbal notes that occur during the same time period that an Aftertouch "Box" occupies will have an instantly choked sound (just as if you were holding a cymbal in your hand while hitting it). 
+
+Not Assigned CC and Aftertouch: A list of all unused CC and Aftertouch values. 
+
+Its important to mention that CC data will not appear with Toontrack’s Grooves. All Toontrack grooves use dedicated 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 223/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Not Assigned CC and Aftertouch: A list of all unused CC and Aftertouch values. 
-
-Its important to mention that CC data will not appear with Toontrack’s Grooves. All Toontrack grooves use dedicated articulations translated from the original recorded CC data. This is done  for compatibility and ease of editing. CC data would only be present from MIDI that you have recorded yourself  with electronic drum kit or other MIDI controller. 
+articulations translated from the original recorded CC data. This is done  for compatibility and ease of editing. CC data would only be present from MIDI that you have recorded yourself  with electronic drum kit or other MIDI controller. 
 
 ## AUTOMATION 
 
@@ -5052,19 +5054,21 @@ In Superior Drummer 3 CC data can be used for more than typical e-drum controls.
 
 Once a parameter has been assigned to a CC value, the CC editor is where you would edit its automation. Clicking on drop down menu will display any currently assigned CC values below the preset CC values. Simply select the CC value that you want to edit and then use the pointer tools to create breakpoints. 
 
-https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
-
-224/340 
-
-3/28/25, 11:26 AM 
-
-Superior Drummer 3 | Manual | Toontrack 
-
 ## 7.4 EDITING SONG BLOCKS ON THE TIMELINE 
 
 Individual song blocks can be arranged in any order that you desire on the Song Track. Song Blocks are added to the Song Track by dragging them from the grooves page (Chapter 4). 
 
-**==> picture [409 x 192] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
+
+https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
+
+224/340 
+
+11/21/23, 8:54 AM 
+
+Superior Drummer 3 | Manual | Toontrack 
+
+**==> picture [409 x 185] intentionally omitted <==**
 
 Once on the song track These grooves can be moved, cut, copied, pasted, or re-organized however you see fit. 
 
@@ -5074,19 +5078,23 @@ Once on the song track These grooves can be moved, cut, copied, pasted, or re-or
 
 The 2 cursor tools to the left of the Song Track allow you to cut and move song blocks. The Arrow tool will be the most commonly used, and it allows you to select an move song blocks. Further if you move to the edge of a Song Block with the arrow tool selected, the cursor will change do a double arrow that allows you to shorten or extend any Song Block on the Song Track. 
 
-225/340 
-
-https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
-
-3/28/25, 11:26 AM 
-
-Superior Drummer 3 | Manual | Toontrack 
-
 The Scissor tool allows you to cut/segment Song Blocks on the Song Track. 
 
 ## ZOOMING: 
 
-Zooming can be accomplished by clicking the magnifying glass icons to the far right of the Song Track. It can also be done by holding down the Option/Alt key and using the mouse wheel. 
+**==> picture [43 x 74] intentionally omitted <==**
+
+Zooming can be accomplished by clicking the magnifying glass icons to the far right of the Song Track. It can also be 
+
+225/340 
+
+https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
+
+11/21/23, 8:54 AM 
+
+Superior Drummer 3 | Manual | Toontrack 
+
+done by holding down the Option/Alt key and using the mouse wheel. 
 
 ## 7.5 SONG CREATOR 
 
@@ -5100,41 +5108,43 @@ To open the Song Creator window, click the Song Creator button below the Song Tr
 
 ## CHOOSING A SOURCE MIDI FILE: 
 
+The Song Creator works by analyzing a given groove (or source MIDI) and based on that groove it instantly presents multiple variations categorized into song parts. To specify which groove is used as the source MIDI, you can drag it to the MIDI drop zone from the Song Track, or Grooves tab. It is also possible to rightclick any MIDI file and choose “Use with Song Creator." 
+
+**==> picture [247 x 9] intentionally omitted <==**
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 226/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-The Song Creator works by analyzing a given groove (or source MIDI) and based on that groove it instantly presents multiple variations categorized into song parts. To specify which groove is used as the source MIDI, you can drag it to the MIDI drop zone from the Song Track, or Grooves tab. It is also possible to rightclick any MIDI file and choose “Use with Song Creator." 
+**==> picture [247 x 144] intentionally omitted <==**
 
-**==> picture [247 x 152] intentionally omitted <==**
-
-**==> picture [409 x 154] intentionally omitted <==**
+**==> picture [409 x 155] intentionally omitted <==**
 
 Once you have specified a source file you will be presented with groove variations divided into columns sorted by song part (Intro, Verse, Chorus etc.), all based on the originally selected groove. The source file itself will appear in the section of its original classification from the Grooves Tab. 
 
 **==> picture [409 x 63] intentionally omitted <==**
 
-You can audition any groove by selecting it in the Song Creator. If it’s suitable, drag it to the Song Track. Using this method you 
+You can audition any groove by selecting it in the Song Creator. If it’s suitable, drag it to the Song Track. Using this method you can quickly build up a complete drum track. 
+
+SONG CREATOR CONTEXTUAL MENU (RIGHT CLICK SONG PART): 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 227/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-can quickly build up a complete drum track. 
+Right clicking on any of the Grooves in the Song Creator will 
 
-## SONG CREATOR CONTEXTUAL MENU (RIGHT CLICK SONG PART): 
+bring up a contextual menu with a few useful options. 
 
-Right clicking on any of the Grooves in the Song Creator will bring up a contextual menu with a few useful options. 
-
-**==> picture [279 x 168] intentionally omitted <==**
+**==> picture [279 x 167] intentionally omitted <==**
 
 Copy: This copies the Groove so that it can be pasted at a later time. Search with Tags: This option will use tags from the 
 
@@ -5148,17 +5158,19 @@ Copy: This copies the Groove so that it can be pasted at a later time. Search wi
 
 - Replace Selected Blocks on Track: This requires that grooves are selected on the Song Track. The selected blocks will then be replaced with the newly chosen groove in the Song Creator. 
 
+## USING SONG STRUCTURES: 
+
+Instead of dragging groove by groove from the Song Creator columns to the Song Track, you can complete an entire drum 
+
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 228/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-## USING SONG STRUCTURES: 
-
-Instead of dragging groove by groove from the Song Creator columns to the Song Track, you can complete an entire drum track even quicker by using Song Structures. 
+track even quicker by using Song Structures. 
 
 Several pre-made Song Structures are available from the list on the left in the Song Creator window. These are based on commonly used song structures where A, B and C represent verse, chorus and bridge, respectively. Additional song elements such as intro, ending and pre chorus may also be part of a structure. 
 
@@ -5170,17 +5182,15 @@ You can load a Song Structure to the Song Track by using the right click context
 
 If you have built a complete drum track, for example by dragging grooves from the Song Creator columns to the Song Track, you can save its structure as a User Song Structure in the Song Creator menu. Note that no MIDI is saved by this function, only the order and lengths of the song elements. The structure can then be used with any Source MIDI file to create new songs. 
 
-**==> picture [322 x 8] intentionally omitted <==**
+**==> picture [322 x 118] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 229/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
-
-**==> picture [322 x 111] intentionally omitted <==**
 
 User saved Song Structures can be loaded, renamed, or removed by right clicking them. 
 
@@ -5192,51 +5202,47 @@ The Transport, located at the bottom of Superior Drummer 3 controls the Song Tra
 
 **==> picture [334 x 50] intentionally omitted <==**
 
-Follow Host: This is only available when Superior Drummer 3 is used as a plug-in in a host application (DAW). When activated, the Superior Drummer 3 transport will follow the hosts transport/tempo. If you copy (or drag and drop) the contents of the Song Track to a track in your host program, 
+Follow Host: This is only available when Superior Drummer 3 is used as a plug-in in a host application (DAW). When activated, the Superior Drummer 3 transport will follow the hosts transport/tempo. If you copy (or drag and drop) the contents of the Song Track to a track in your host program, Follow Host should be deactivated. Otherwise, each note would be triggered twice, once by the host application and again by Superior Drummer 3's Song Track. 
+
+Loop: This Turns on the loop area for the Song Track. The loop area can be set by changing the duration of the blue 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 230/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Follow Host should be deactivated. Otherwise, each note 
+loop area above the song track. 
 
-would be triggered twice, once by the host application and again by Superior Drummer 3's Song Track. 
+- Stop: This stops the playback of the Song Track. 
 
-- Loop: This Turns on the loop area for the Song Track. The loop area can be set by changing the duration of the blue loop area above the song track. 
-
-**==> picture [381 x 105] intentionally omitted <==**
-
-- Stop: This stops the playback of the Song Track. Play: This starts playback on the Song Track. 
+- Play: This starts playback on the Song Track. 
 
 - Record: This function allows you to record any incoming, or internal MIDI to the song track. This includes MIDI from a connected MIDI controller or incoming MIDI from a DAW. 
 
    - The Song Track follows the MIDI merge functionality meaning that new incoming MIDI can be recorded over existing MIDI. This makes it easy to record one single instrument at a time. 
 
-   - All recorded MIDI can also be quantized by right clicking the recorded groove and selecting Quantize. 
-
-   - Both Edit Play Style and the Grid Editor can be utilized with user recorded MIDI. 
+   - All recorded MIDI can also be quantized by right clicking the recorded groove and selecting Quantize. Both Edit Play Style and the Grid Editor can be utilized with user recorded MIDI. 
 
 - Metronome On/Off: This turns on the metronome. The metronome will follow the changing time signatures if time signatures changes have been added. 
 
-- Time Signature: Clicking on the time signature will allow you to select a different time signature for the song track. If time signature changes have been made, the newly selected time 
+- Time Signature: Clicking on the time signature will allow you to select a different time signature for the song track. If time signature changes have been made, the newly selected time signature will effect the time signature region that the play head is currently inside. 
+
+   - Right clicking on the time signature in the transport provides the option to show the previously discussed Time Signature editor. 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 231/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-signature will effect the time signature region that the play head is currently inside. 
+- Tempo: This sets the tempo for the song Track. Double 
 
-Right clicking on the time signature in the transport provides the option to show the previously discussed Time Signature editor. 
-
-Tempo: This sets the tempo for the song Track. Double clicking on the number will allow you to input a specific value. Right clicking on the tempo number will bring up the tap tempo icon, which allows you to click a tempo in with your mouse. 
+clicking on the number will allow you to input a specific value. Right clicking on the tempo number will bring up the tap tempo icon, which allows you to click a tempo in with your mouse. 
 
 **==> picture [185 x 63] intentionally omitted <==**
 
@@ -5246,21 +5252,27 @@ In the bottom right corner of the Superior Drummer interface is the MIDI Menu, a
 
 **==> picture [409 x 141] intentionally omitted <==**
 
-Incoming or outgoing notes will illuminate the "In" or "Out" status indicators in the bottom corner. Please note that MIDI Output is ONLY possible when Superior Drummer 3 is used from inside of 
+Incoming or outgoing notes will illuminate the "In" or "Out" status indicators in the bottom corner. Please note that MIDI Output is ONLY possible when Superior Drummer 3 is used from inside of a host DAW. MIDI In is possible with Standalone or DAW operation. 
+
+MIDI MENU 
+
+Clicking the three line icon will open a menu that provides quick links to the MIDI In / E-Drum 
+
+**==> picture [99 x 58] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 232/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-a host DAW. MIDI In is possible with Standalone or DAW operation. 
+Settings, or the MIDI Out settings option. MIDI In / E-Drum 
 
-MIDI MENU 
+Settings is described in chapter 9.3.5, and MIDI Out is described 
 
-Clicking the three line icon will open a menu that provides quick links to the MIDI In / E-Drum Settings, or the MIDI Out settings option. MIDI In / E-Drum Settings is described in chapter 9.3.5, and MIDI Out is described in 9.3.1. If a MIDI In/E-Drums Preset is selected it will be 
+in 9.3.1. If a MIDI In/E-Drums Preset is selected it will be 
 
 indicated by a green dot on the menu icon. 
 
@@ -5270,7 +5282,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 233/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5284,13 +5296,13 @@ Show: To view the Macro Controls click the macro button at the bottom right of t
 
 Hide: To hide, either click the x in the top right of the Macro window, or again click the Macro Controls Button at the bottom of the interface. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 234/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5310,7 +5322,7 @@ There are 2 ways to bind a control to a Macro.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5320,17 +5332,17 @@ Right click the control and click bind to macro, then choose a specific macro.
 
 Select the specific macro knob # that you would like to bind. 
 
-- Open the Macro properties and click Add. Then move the control(s) that you want to bind to the Macro to the position that you believe should be its starting value. Next click, Save Start and move the the control(s) to the position that you believe should be the ending value and click Save End. 
+Open the Macro properties and click Add. Then move the control(s) that you want to bind to the Macro to the position that you believe should be its starting value. Next click, Save Start and move the the control(s) to the position that you believe should be the ending value and click Save End. 
 
 **==> picture [409 x 129] intentionally omitted <==**
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 236/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5352,7 +5364,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 237/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5374,7 +5386,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 238/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5396,7 +5408,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 239/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5414,15 +5426,15 @@ The slope control can be moved from -100 to 100.
 
 This picture shows a graphical representation for a slope of 0, where a change on the Macro Knob results in an equal change on the bound control. 
 
-**==> picture [305 x 8] intentionally omitted <==**
+**==> picture [305 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 240/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
-**==> picture [135 x 8] intentionally omitted <==**
+**==> picture [136 x 8] intentionally omitted <==**
 
 **----- Start of picture text -----**<br>
 Superior Drummer 3 | Manual | Toontrack<br>**----- End of picture text -----**<br>
@@ -5440,7 +5452,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 241/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5460,13 +5472,13 @@ If instead you would only like to bind a single articulation to a macro that eff
 
 Tab). 
 
-**==> picture [124 x 8] intentionally omitted <==**
+**==> picture [124 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 242/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5484,7 +5496,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 243/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5512,7 +5524,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 244/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5534,7 +5546,7 @@ The following will describe how to assign a custom operating range for a control
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5554,7 +5566,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 246/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5572,7 +5584,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 247/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5586,13 +5598,13 @@ The Global menus in the top left of the Superior Drummer 3 interface are availab
 
 The File menu offers options related to projects. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 248/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5606,7 +5618,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 249/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5638,7 +5650,7 @@ Projects saved from the file menu include essentially everything that you see in
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5680,13 +5692,13 @@ Property Box States
 
 The Edit menu contains useful options for editing song blocks on the song track. 
 
-**==> picture [185 x 8] intentionally omitted <==**
+**==> picture [185 x 9] intentionally omitted <==**
 
 251/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5714,7 +5726,7 @@ The Settings menu is divided into sub-categories that correspond to specific are
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5726,13 +5738,13 @@ tab of the settings window that you've chosen. The following will offer an in de
 
 As the name implies the General Tab of the settings window offers general workflow options for Superior Drummer 3. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 253/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5750,7 +5762,7 @@ MIDI Out: Checking this option allows MIDI to be sent from Superior Drummer 3 to
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5772,7 +5784,7 @@ Macro Controls: Selecting this option will automatically open the Macro controls
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5792,7 +5804,7 @@ Editing Keyboard Shortcuts:
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5808,13 +5820,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 The Metronome Settings page provides useful options for controlling the behavior of the metronome. The Metronome on and off button is located in the Transport at the bottom of Superior Drummer 3. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 257/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5834,7 +5846,7 @@ Like the General Tab all Metronome settings can be reset to their default values
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5852,7 +5864,7 @@ Description of Cached Mode: A very effective way to reduce the Superior Drummer 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5870,7 +5882,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 260/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5882,13 +5894,13 @@ In general CPU cores only need to be increased if you experience glitches becaus
 
 The Libraries Settings Tab is where you can alter, and set the installation path to your various installed Superior Drummer Sound Libraries (SDX’s). 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 261/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5906,11 +5918,11 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 262/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-In this case you would connect the hard drive containing the sound library(s), launch Superior Drummer, and use the Browse for Library Path feature to link the sound library to the Superior Drummer 3 software. 
+   - In this case you would connect the hard drive containing the sound library(s), launch Superior Drummer, and use the Browse for Library Path feature to link the sound library to the Superior Drummer 3 software. 
 
 - You have installed Superior Drummer 3 on a new computer where no previous version of Superior Drummer has ever been installed. You would then like to link previous installations of your installed SDX libraries on an external hard drive to Superior Drummer 3. 
 
@@ -5926,7 +5938,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 263/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5944,7 +5956,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 264/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5962,7 +5974,7 @@ Menu: Clicking the menu to the right of each library listing will provide you wi
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5976,13 +5988,13 @@ Time durations for the Auto-Save are set with the drop down menu, and like all o
 
 Auto-Saved projects can be accessed from the global File menu in the Auto-Save sub menu. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 266/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -5992,13 +6004,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 The Advanced tab provides options for reseting the databases of the instrument browser and MIDI browser. The database options should only be used if you encounter a problem with the Search Instrument window or the Search functions in the Grooves Tab. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 267/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6012,7 +6024,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 268/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6030,7 +6042,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 269/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6052,7 +6064,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 270/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6068,13 +6080,13 @@ Any change in Superior Drummer 3’s MIDI mapping Settings page must be performe
 
 Once the desired alterations to the preset have been made click Save As… to save your mapping preset for later use. User presets saved from the MIDI In / E-Drums Settings preset menu will save all changes made in this window, but noting outside of the MIDI In / E-Drums Settings page. This allows a user to load their MIDI In / E-Drums Preset independently of the loaded sound library. Clicking Manage in Finder / Explorer will navigate to these files in an operating system window. Additionally the User Presets folder can be Rescanned so that they are recognized by SD3 if you have manually added presets to this folder in your operating system. 
 
-**==> picture [181 x 8] intentionally omitted <==**
+**==> picture [181 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 271/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6090,7 +6102,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 272/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6110,7 +6122,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 273/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6126,13 +6138,13 @@ The menu to the top right of the MIDI In Settings page allows you to select a sp
 
 The MIDI Mapping Overview displays a comprehensive view of the mapping for each articulation in the loaded kit, and displays if the mapping for an articulation (note) has been adjusted. Clicking on an articulation or note number will play back the appropriate sound. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 274/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6148,13 +6160,13 @@ EDIT
 
 The Edit menu in the MIDI Mapping Overview allows you to Reset or Clear all notes, selected notes, or toggle the Select Played Note setting. 
 
-**==> picture [203 x 8] intentionally omitted <==**
+**==> picture [203 x 9] intentionally omitted <==**
 
 275/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6172,13 +6184,13 @@ Superior Drummer 3 | Manual | Toontrack
 
 The Analyzer is an advanced MIDI monitor. It shows the type of MIDI message, incoming note, note adjusted note, incoming velocity, and the adjusted velocity. This is useful for seeing exactly what notes are being sent to Superior Drummer 3 and understanding how a preset is transforming  incoming MIDI to conform it to Superior Drummer 3. With this information you could make better decisions on how to customize the preset for your E-Drums. Further, clicking on a MIDI event in the analyzer will select in the MIDI Mapping Overview above, and in the Edit MIDI Mapping and Response section to the right. This makes it quick and easy to re-map a note. 
 
-**==> picture [355 x 8] intentionally omitted <==**
+**==> picture [355 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 276/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6198,7 +6210,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 277/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6216,13 +6228,13 @@ To create your own custom mapping transformation preset please follow these step
 
 2. Open the Articulation Menu, and choose the desired articulation that you would like this MIDI note to trigger. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 278/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6238,7 +6250,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 279/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6248,11 +6260,13 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 280/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
-Choose a preset that gets you close to the desired result. Then use the Show menu in the MIDI Mapping overview section to filter the articulations for the instrument that you want to trigger. In the example below its the Rack Tom 1. 
+Choose a preset that gets you close to the desired result. Then 
+
+use the Show menu in the MIDI Mapping overview section to filter the articulations for the instrument that you want to trigger. In the example below its the Rack Tom 1. 
 
 **==> picture [247 x 183] intentionally omitted <==**
 
@@ -6262,13 +6276,13 @@ Select the articulation that you want to trigger in the list of the MIDI Mapping
 
 Click the Learn button in the Edit MIDI Mapping and Response section. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 281/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6284,7 +6298,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 282/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6302,7 +6316,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 283/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6314,15 +6328,13 @@ to use with your CC sensitive drum pad. It would be wise to confirm the total po
 
 **==> picture [247 x 229] intentionally omitted <==**
 
-3. Finally open the menus for each zone and choose a 
-
-   - new articulation for the zone.  The preview pad below allows you to audition each of the zones. Note 
+3. Finally open the menus for each zone and choose a new articulation for the zone.  The preview pad below allows you to audition each of the zones. Note 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 284/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6342,7 +6354,7 @@ Zone 3 is the center.
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6352,13 +6364,13 @@ The velocity tab in the Edit MIDI Mapping and Response section allows you to tra
 
 To Create a Velocity curve first select the desired articulation in the MIDI Mapping Overview Section. Each articulation (note) can have its own custom velocity curve. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 286/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6376,7 +6388,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 287/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6396,7 +6408,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 288/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6414,7 +6426,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 289/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6432,7 +6444,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 290/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6446,7 +6458,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 291/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6466,7 +6478,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 292/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6480,13 +6492,13 @@ articulation ends and the next begins. This gives you full control over your mul
 
 The Audio/MIDI Setup dialog can be opened from the Settings menu of the Superior Drummer 3 when launched in its standalone application. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 293/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6504,7 +6516,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 294/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6522,13 +6534,13 @@ Ticking Multi-out enables Superior Drummer 3 to send its audio out to any number
 
 The MIDI Device panel is used to select from the available connected MIDI interface(s). If several ports/devices are available, tick the appropriate port to activate it. If no devices are available in this window, ensure that your device is connected and then click Rescan devices. Its important to note that many MIDI devices require software drivers to be installed in order to work. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 295/340 
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6544,13 +6556,13 @@ In the MIDI Channel you can designate a specific channel for Superior Drummer 3 
 
 The view menu provides menu options for showing, hiding, or changing the layout of Superior Drummer 3. 
 
-**==> picture [221 x 8] intentionally omitted <==**
+**==> picture [221 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 296/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6570,7 +6582,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 297/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6578,7 +6590,7 @@ Superior Drummer 3 | Manual | Toontrack
 
 - Superior Drummer 3 window, or create a custom window 
 
-size. Note: when creating videos with Superior Drummer 3 
+- size. Note: when creating videos with Superior Drummer 3 
 
 the 1080p option is very convenient! 
 
@@ -6600,7 +6612,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 298/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6616,13 +6628,13 @@ The workflow for using Route Instrument Microphones is evident by its 3 columns.
 
 3. Click the drop down menu in Column 3 for each microphone in column 2 for which you would like to change the routing. You can route these microphones to existing channels, create new channels, or select none for no output. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 299/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6638,7 +6650,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 300/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6660,7 +6672,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 301/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6670,13 +6682,13 @@ Route Instrument Microphones.)
 
 Select the desired instrument. Route Instrument Microphones is divided into 3 columns. In the first column select the instrument that you want to route to a channel in the currently loaded sound libraries mixer. The second colum shows you all of the microphones that were used to record the selected instrument. Finally, the 3rd column shows you all of the available channels in the currently loaded sound libraries mixer. In this instance since we are concerned with the newly added kick (X-Drum) we will select X-Drum 1 from the instrument selection menu. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 302/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6692,17 +6704,11 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 303/340 
 
-3/28/25, 11:26 AM 
-
-**==> picture [135 x 8] intentionally omitted <==**
-
-**----- Start of picture text -----**<br>
-Superior Drummer 3 | Manual | Toontrack<br>**----- End of picture text -----**<br>
-
+11/21/23, 8:54 AM 
 
 **==> picture [152 x 243] intentionally omitted <==**
 
-To create a new channel, select the mixer channel menu in column 3 for the desired microphone and choose “Create new channel” in the drop down menu. Selecting “Create New Channel” will add an additional channel to the Superior Drummer 3 Mixer (all the way 
+Superior Drummer 3 | Manual | Toontrack To create a new channel, select the mixer channel menu in column 3 for the desired microphone and choose “Create new channel” in the drop down menu. Selecting “Create New Channel” will add an additional channel to the Superior Drummer 3 Mixer (all the way 
 
 **==> picture [61 x 243] intentionally omitted <==**
 
@@ -6716,7 +6722,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 304/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6728,7 +6734,7 @@ If the newly created X-Drum or Stacked drum is from a sound library that is diff
 
 ## EXAMPLE 2 
 
-**==> picture [247 x 235] intentionally omitted <==**
+**==> picture [247 x 236] intentionally omitted <==**
 
 Consider the following example with a stacked snare drum. When you select a stacked instrument in the instrument menu, all members of the stack will appear. You can then customize the 
 
@@ -6736,7 +6742,7 @@ Consider the following example with a stacked snare drum. When you select a stac
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6758,7 +6764,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 306/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6776,7 +6782,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 307/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6798,7 +6804,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 308/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6808,7 +6814,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 309/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6828,7 +6834,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 310/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6846,7 +6852,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 311/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6866,7 +6872,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 312/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6888,7 +6894,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 313/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6906,7 +6912,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 314/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6932,7 +6938,7 @@ It should be noted that the Hats Trig Articulation will only work with modules t
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6956,7 +6962,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 316/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -6980,7 +6986,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 317/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7006,7 +7012,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 318/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7030,7 +7036,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 319/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7050,7 +7056,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 320/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7068,7 +7074,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 321/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7084,7 +7090,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 322/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7102,7 +7108,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 323/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7120,7 +7126,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 324/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7138,7 +7144,7 @@ The following example will outline the process for setting multiple zones on a S
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7158,7 +7164,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 326/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7174,13 +7180,13 @@ This feature can also be used for much more than Snare pads! In this next exampl
 
 Finally, here is an example where either the rack tom 1 rim only, or rack tom 1 rimshot is triggered depending on whether the rim is hit on its own, or its hit together with the head on CC 18. 
 
-**==> picture [247 x 8] intentionally omitted <==**
+**==> picture [247 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 327/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7192,13 +7198,13 @@ Cymbal chokes will automatically be engaged by selecting an E- Drum preset from 
 
 First select an E-Drum preset. To engage the preset click the Use Preset button, then select a specific preset from the menu. E- Drum presets include MIDI transformations from the specific brand of E-drum mapping to the Superior Drummer 3 map. They will also automatically conform the Mute tail Trigger property box on the Drums page to accept aftertouch messages for cymbal chokes. 
 
-**==> picture [219 x 8] intentionally omitted <==**
+**==> picture [219 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 328/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7214,7 +7220,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 329/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7230,13 +7236,13 @@ Early Superior Drummer expansion libraries (SDX's) did not include the "Mute Tai
 
 When a cymbal is selected in one of these libraries the Release Anchor Point is automatically set up to respond to Aftertouch messages. 
 
-**==> picture [169 x 8] intentionally omitted <==**
+**==> picture [169 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 330/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7252,7 +7258,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 331/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7266,7 +7272,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 332/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7282,7 +7288,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 333/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7296,13 +7302,13 @@ It is important to understand that this figure does not include your sequencer�
 
 There is a side effect that should be noted however: caching introduces a delay in playback the very rst time a sound is requested. This will manifest itself as a temporary stuttering which will continue until samples are loaded in RAM. This inconvenience is a small price to pay however when RAM is at a premium. 
 
-**==> picture [409 x 8] intentionally omitted <==**
+**==> picture [409 x 9] intentionally omitted <==**
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
 334/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7322,7 +7328,7 @@ As implied above, there is an obvious relationship between kit composition and m
 
 https://www.toontrack.com/manual/superior-drummer-3/?print=yes 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7342,7 +7348,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 336/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7364,7 +7370,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 337/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7384,7 +7390,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 338/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
@@ -7400,7 +7406,7 @@ https://www.toontrack.com/manual/superior-drummer-3/?print=yes
 
 339/340 
 
-3/28/25, 11:26 AM 
+11/21/23, 8:54 AM 
 
 Superior Drummer 3 | Manual | Toontrack 
 
