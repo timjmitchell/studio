@@ -1,7 +1,10 @@
 # Arbitrary Overlord — Session Notes
 
-Notes from probing the open Logic session via Claude Code + AppleScript (2026-10-06).
+Song-specific notes from probing the open Logic session via Claude Code + AppleScript.
 Doubles as groundwork for a `/session <song>` skill that prepares the machine for a song.
+
+General Logic knowledge (Varispeed, Flex & Follow, project alternatives, key commands,
+scripting Logic) lives in [Logic Pro Field Notes](../../../data/manuals/daw-video/Logic-Pro-Field-Notes.md).
 
 ## Session snapshot (2026-10-06)
 
@@ -37,66 +40,24 @@ Note: track names spell it "Abitrary" (missing r).
 UAD Console, UAD Meter & Control Panel, Native Access, Kontakt 8, VE-500 Editor,
 Fastmail, Obsidian, Safari, Chrome, System Settings, Claude, VS Code.
 
-## What automation can do
+## Project alternatives (checked 2026-10-08)
 
-Logic Pro has almost no AppleScript dictionary. Everything below goes through
-**System Events / Accessibility** (UI scripting), so VS Code needs Accessibility
-permission (granted) and Automation permission per target app.
+On disk (`arbitrary-overlord.logicx/Alternatives/`):
 
-| Capability | Works | Method |
-|---|---|---|
-| Open a project | ✅ | `open "/Volumes/Samsung_X5/Hot Fog/<song>.logicx"` |
-| Confirm which project is open | ✅ | window title, or `AXDocument` attribute of window 1 (returns file URL) |
-| Read tempo / time sig / key / position | ✅ | Control Bar elements (`Tempo`, `Time Signature`, `Key Signature`, bar/beat sliders) |
-| Read transport state (play, record, cycle, click, count-in) | ✅ | Control Bar checkboxes, value 0/1 |
-| Read master volume | ✅ | `Master Volume` slider |
-| List tracks + mute state | ✅ | `AXLayoutItem` elements with description `Track N “Name”[, mute]` in the Tracks split group |
-| Press transport buttons | ✅ | `click` the Control Bar checkbox/button (preferred over keystrokes, see below). Tested 2026-10-06: Metronome Click 0 → 1 → 0, Logic in background |
-| Quit other apps | ✅ (expected) | `osascript -e 'quit app "Name"'` — not yet tested |
-| Open Google Docs/Drive | ✅ | `open "<url>"` |
-| Edit regions, plugin params, routing | ⚠️ | possible via UI clicking but fragile — use templates/screensets instead |
+| Folder | Likely name | Key | Last saved |
+|---|---|---|---|
+| `000` | Main | C major (template default?) | 2026-02-27 |
+| `001` | arb-overlord-feb (open now) | C♯ minor | 2026-10-06 |
 
-### Keyboard shortcuts
+The names are inferred from key and date. The folder metadata has no name field.
+See [Field Notes §2](../../../data/manuals/daw-video/Logic-Pro-Field-Notes.md#2-project-alternatives-not-workspace) for how alternatives work.
 
-Three ways to trigger Logic commands, most to least robust:
+## For the `/session` skill
 
-1. **Click the menu item by name.** `click menu item "Create Marker" of menu 1 of menu bar item "Navigate" of menu bar 1`.
-   Works no matter what the key command is bound to or which pane has focus.
-2. **Send the keystroke.** `keystroke "k"` / `key code 49` (space) with `using {command down, …}`.
-   Simple, and covers commands that have no menu item (Play, Stop, Record, Metronome). But it fires into whatever pane has focus, and it breaks if the key commands get remapped.
-3. **Control Surface / MIDI** (e.g. send MIDI CC via an IAC bus mapped in Logic). Most reliable for transport, but needs setup.
-
-Bound shortcuts are readable from the menus via the `AXMenuItemCmdChar` and
-`AXMenuItemCmdModifiers` attributes, so the skill can discover the current mapping rather than hardcoding it.
-Modifier bitmask: `0` = ⌘, `+1` Shift, `+2` Option, `+4` Control, `+8` *no* ⌘.
-Examples read 2026-10-06: Create Marker = ⌥' (10), New Audio Track = ⌥⌘A (2), Create Track Stack = ⇧⌘D (1).
-Special keys (Delete, Return, arrows) show an empty char. They live in `AXMenuItemCmdVirtualKey`.
-The Record menu reported no bindings this way. Transport keys (Space, R, K) are bound outside the menus.
-
-#### Local key command state (checked 2026-10-06)
-
-From `defaults read com.apple.logic10`:
-- `lastSelectedKeyCommandsPath` = stock **U.S.** preset (`…/Resources/Key Commands/U.S..logikcs`)
-- `lastSelectedKeyCommandsTouched = 0` and `…DeviateFromPreset… = 0`, so **no custom key commands**. The manual defaults apply.
-- The path still says `Logic Pro X.app`, but the installed app is `Logic Pro.app`. This is a stale pref and looks harmless.
-- `~/Music/Audio Music Apps/Key Commands/` (where saved/exported sets go) is empty.
-- `~/Library/Preferences/com.apple.logic.pro.cs` (~75 KB, modified today) holds **control surface / controller assignments**. It wasn't inspected yet.
-
-#### What the manual says (logic-pro-mac-user-guide.md)
-
-- Default transport keys: **Space** = play/stop, **Return** = play/stop/go to start (§ Control bar buttons, line ~3473), **R** = record (~7237), **C** = cycle (~3797). Metronome is **K** by Logic convention (not confirmed in this manual).
-- "Most of these transport key commands have no default assignment, and need to be assigned manually" (§ Use transport key commands, line 3565). Extras like Stop and Go to Left Locator need binding first.
-- **Full dump:** Key Commands window (⌥K) → Action menu → *Copy Key Commands to Clipboard* gives every command and its binding as a spreadsheet-pasteable list (§ Export key commands to a spreadsheet, line ~40248). Do this once and save it here to get the authoritative map.
-- **Learn New Assignment** (§ Learn a controller assignment): in the Key Commands window, select a command and send a MIDI message, and Logic binds it. This is the route for MIDI-over-IAC transport control from scripts.
-
-#### Recommendation
-
-For transport, **press the Control Bar buttons via accessibility** (`click checkbox "Play"`, `"Metronome Click"`, `"Cycle"` …). It doesn't depend on focus or key bindings, and the same element gives back its state for verification. Use menu-item clicks for menu commands. Use raw keystrokes only for commands that have neither.
-
-Gotchas:
-- `entire contents` on the whole window is slow; scope it to the Tracks split group.
-- Finder aliases in song folders couldn't be resolved via AppleScript — store real paths in each song README.
-- All Logic projects live on the external drive `Samsung_X5` (`/Volumes/Samsung_X5/Hot Fog/`); the skill should check it's mounted first.
+- All Logic projects live on the external drive `Samsung_X5` (`/Volumes/Samsung_X5/Hot Fog/`). Check it's mounted first.
+- Store real project paths in each song README. Finder aliases couldn't be resolved by script.
+- Opening `arbitrary-overlord.logicx` loads the last-used alternative. To get `arb-overlord-feb` for certain, pick it from File > Project Alternatives.
+- Scripting methods and snippets are in [Field Notes §4](../../../data/manuals/daw-video/Logic-Pro-Field-Notes.md#4-scripting-logic-from-claude-code) and the snippets below.
 
 ## Snippets
 
@@ -128,6 +89,15 @@ tell application "System Events" to tell process "Logic Pro"
 			-- filter entire contents of s: role "AXLayoutItem", description starts with "Track "
 		end try
 	end repeat
+end tell
+```
+
+Toggle the click (tested 2026-10-06):
+
+```applescript
+tell application "System Events" to tell process "Logic Pro"
+	set cb to (first UI element of window 1 whose description is "Control Bar")
+	click (first checkbox of cb whose name is "Metronome Click")
 end tell
 ```
 

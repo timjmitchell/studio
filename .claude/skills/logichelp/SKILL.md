@@ -1,15 +1,18 @@
 ---
 name: logichelp
-description: Answer Logic Pro questions using the converted manuals in docs/manuals/daw-video/. Routes with the kb index first, then reads only the relevant sections so the ~5MB guides stay out of main context.
+description: Answer Logic Pro questions using the converted manuals in data/manuals/daw-video/. Routes with the kb index first, then reads only the relevant sections so the ~5MB guides stay out of main context.
 ---
 
 # logichelp
 
-Answer the user's Logic Pro question from the manuals at `docs/manuals/daw-video/`:
+Answer the user's Logic Pro question from the manuals at `data/manuals/daw-video/`:
 
 - `logic-pro-mac-user-guide.md` — main app (mixing, arranging, automation, etc.)
 - `logic-pro-mac-instruments-user-guide.md` — software instruments (Sculpture, ES2, Drum Kit Designer, etc.)
 - `logic-pro-mac-effects-user-guide.md` — effect plug-ins (Space Designer, ChromaVerb, amps, etc.)
+- `Logic-Pro-Field-Notes.md` — Tim's own notes (Varispeed, Flex & Follow, alternatives,
+  key commands, scripting Logic). Small; check it first, since it records what's been
+  tested on this machine.
 
 The full guides are too large to load into main context. **Route with the kb
 index first, then read only the sections you need.** This skill is the
@@ -34,7 +37,8 @@ for non-Logic gear or a repo-wide search, use the `kb` skill instead.
 
 3. **Narrow to the Logic guide(s).** From the ranked hits, pick the
    `daw-video/logic-pro-mac-*.md` file(s) the question belongs to — effects vs
-   instruments vs main guide. (Non-Logic hits like a Boss pedal or a plugin are
+   instruments vs main guide — plus `Logic-Pro-Field-Notes.md` if it covers the
+   topic. (Non-Logic hits like a Boss pedal or a plugin are
    the `kb` skill's territory; ignore them here unless the user's question
    genuinely spans them.)
 
@@ -42,7 +46,7 @@ for non-Logic gear or a repo-wide search, use the `kb` skill instead.
    section — `grep -n` for the heading, then Read that line range — or, if the
    question spans several sections or files, spawn one Explore subagent per file
    with a self-contained prompt that:
-   - Names the specific `docs/manuals/daw-video/logic-pro-mac-*.md` file to search
+   - Names the specific `data/manuals/daw-video/logic-pro-mac-*.md` file to search
    - States the user's question verbatim
    - Asks for relevant **verbatim excerpts** (with `file:line` citations), the
      heading each excerpt sits under, and a one-line note on what it covers
