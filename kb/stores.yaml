@@ -18,20 +18,26 @@ stores:
   # controllers-interfaces). This is what logichelp and kb search.
   - name: manuals
     kind: corpus
-    root: "docs/manuals"
+    root: "data/manuals"
     globs: ["**/*.md"]
     exclude:
       - "INDEX.md"
       - "**/INDEX.md"
 
-  # Everything else in the repo: rig plans, setup notes, song/lyric docs,
-  # music-format investigations. Excludes the manuals tree (its own store).
+  # Authored docs: studio model / inventory rules / overview, research notes.
   - name: docs
     kind: markdown
     root: "docs"
     globs: ["**/*.md"]
-    exclude:
-      - "manuals/**"
+    exclude: []
+
+  # Music: one folder per project (hot-fog, one-man-band), one per song inside:
+  # song doc (frontmatter), lyrics, chords/tabs, session notes.
+  - name: music
+    kind: markdown
+    root: "music"
+    globs: ["**/*.md"]
+    exclude: []
 
   # --- Cross-repo (optional) -------------------------------------------------
   # Uncomment to also search the sibling backoffice-pr knowledge base from

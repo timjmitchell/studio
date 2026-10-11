@@ -1,7 +1,7 @@
 # /// script
 # requires-python = ">=3.11"
 # ///
-"""Query and validate the structured studio inventory in inventory/*.toml.
+"""Query and validate the structured studio inventory in data/inventory/*.toml.
 
 Units (with ports), connections (one file per rig) and scenarios are loaded together.
 Port specs may use ranges, which are expanded:
@@ -25,7 +25,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-INV = ROOT / "inventory"
+INV = ROOT / "data" / "inventory"
 
 
 def expand(spec: dict) -> list[dict]:

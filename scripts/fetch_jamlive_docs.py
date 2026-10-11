@@ -7,7 +7,7 @@
 Jam Origin has no PDF manual for MIDI Guitar 3; the docs are an MkDocs site
 at jam.live (jamorigin.com/beta redirects there). This crawls every same-site
 page reachable from the home page, strips the page chrome, and writes one .md
-per page under docs/manuals/plugins/MIDI-Guitar-3/<path>.md, plus an INDEX.md.
+per page under data/manuals/plugins/MIDI-Guitar-3/<path>.md, plus an INDEX.md.
 The kb `manuals` store picks these up (it globs **/*.md).
 
 Usage:
@@ -32,7 +32,7 @@ SKIP = ("shop/",)  # storefront, no docs content
 # Old jamorigin.com pages the new site still links to as its DAW setup reference.
 EXTRA = {"legacy/mg2-daw-guide.md": "https://www.jamorigin.com/docs/daw/"}
 ROOT = Path(__file__).resolve().parent.parent
-DEST = ROOT / "docs" / "manuals" / "plugins" / "MIDI-Guitar-3"
+DEST = ROOT / "data" / "manuals" / "plugins" / "MIDI-Guitar-3"
 
 session = requests.Session()
 session.headers["User-Agent"] = "studio-docs-mirror (personal offline reference)"

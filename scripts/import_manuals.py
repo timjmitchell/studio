@@ -2,7 +2,7 @@
 # requires-python = ">=3.10"
 # ///
 """One-time import: copy studio manuals from ~/Desktop and iCloud Drive into
-docs/manuals/<category>/ with clean, vendor-prefixed filenames.
+data/manuals/<category>/ with clean, vendor-prefixed filenames.
 
 Idempotent: skips a destination that already exists. Reports any missing
 sources instead of failing. Re-runnable as gear is added.
@@ -15,7 +15,7 @@ from pathlib import Path
 HOME = Path.home()
 DESK = HOME / "Desktop"
 ICLOUD = HOME / "Library/Mobile Documents/com~apple~CloudDocs/Documents/Manuals"
-DEST = Path(__file__).resolve().parent.parent / "docs" / "manuals"
+DEST = Path(__file__).resolve().parent.parent / "data" / "manuals"
 
 # (category, dest_filename, source_path)
 MANIFEST: list[tuple[str, str, Path]] = [

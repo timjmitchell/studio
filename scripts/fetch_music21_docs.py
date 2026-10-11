@@ -6,7 +6,7 @@
 
 music21 has no PDF manual, so this fetches the Sphinx HTML for the User's
 Guide, Module Reference, and Installing sections, strips the page chrome, and
-writes one .md per page under docs/manuals/libraries/music21/<section>/, plus
+writes one .md per page under data/manuals/libraries/music21/<section>/, plus
 an INDEX.md. The kb `manuals` store picks these up (it globs **/*.md).
 
 Usage:
@@ -29,7 +29,7 @@ from markdownify import markdownify
 BASE = "https://music21.org/music21docs/"
 SECTIONS = ["usersGuide", "moduleReference", "installing"]
 ROOT = Path(__file__).resolve().parent.parent
-DEST = ROOT / "docs" / "manuals" / "libraries" / "music21"
+DEST = ROOT / "data" / "manuals" / "libraries" / "music21"
 
 session = requests.Session()
 session.headers["User-Agent"] = "studio-docs-mirror (personal offline reference)"

@@ -7,7 +7,7 @@
 
 A **named technique** is a reusable recipe, usually named after a person, studio or label,
 whose name has become common language (like "1176-style"). In the [Studio
-Model](../studio-model.md) each one is a **Technique** (§6.14) with:
+Model](../studio/model.md) each one is a **Technique** (§6.14) with:
 
 - **an origin**: people, place, era;
 - **a recipe**: the idea in reference-layer terms (send, EQ, compressor, reverb, mic array,

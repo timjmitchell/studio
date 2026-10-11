@@ -23,8 +23,9 @@ headings are the routing surface, not a 280-char opening snippet.
 
 | Store | Root | What |
 | ----- | ---- | ---- |
-| `manuals` | `docs/manuals/` | Every owned-gear manual (pedals, plugins, boss-roland, daw-video, monitors, guitar-gear, loopers, controllers) |
-| `docs` | `docs/` (minus `manuals/`) | Rig plans, setup notes, song/lyric docs, music-format notes |
+| `manuals` | `data/manuals/` | Every owned-gear manual (pedals, plugins, boss-roland, daw-video, monitors, guitar-gear, loopers, controllers) |
+| `docs` | `docs/` | Studio model, inventory rules, overview; research notes |
+| `music` | `music/` | Projects and songs: song docs, lyrics, chords/tabs, session notes, rig plans |
 
 Add a store by appending to `stores.yaml` and rebuilding — no code change needed.
 `root` may be relative to the repo, or absolute (e.g. to point at the sibling

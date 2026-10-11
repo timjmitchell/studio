@@ -7,7 +7,7 @@
 UA publishes the Console manual only as Zendesk help-center articles, no PDF.
 The Zendesk API returns every article in the section, in manual order, with its
 HTML body and an updated_at stamp, so this needs no crawling. Writes one .md per
-article under docs/manuals/controllers-interfaces/UAD-Console/NN-<slug>.md plus
+article under data/manuals/controllers-interfaces/UAD-Console/NN-<slug>.md plus
 an INDEX.md. The kb `manuals` store picks these up (it globs **/*.md).
 
 Usage:
@@ -30,7 +30,7 @@ SECTION = 25052396869908  # "UAD Console for Apollo Manual"
 API = f"https://help.uaudio.com/api/v2/help_center/en-us/sections/{SECTION}/articles.json"
 SECTION_URL = f"https://help.uaudio.com/hc/en-us/sections/{SECTION}"
 ROOT = Path(__file__).resolve().parent.parent
-DEST = ROOT / "docs" / "manuals" / "controllers-interfaces" / "UAD-Console"
+DEST = ROOT / "data" / "manuals" / "controllers-interfaces" / "UAD-Console"
 
 session = requests.Session()
 session.headers["User-Agent"] = "studio-docs-mirror (personal offline reference)"

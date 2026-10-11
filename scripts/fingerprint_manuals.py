@@ -9,7 +9,7 @@ creation_date, page_count. Page count plus embedded title survive renaming,
 which md5 misses and filenames lie about.
 
 Usage:
-    uv run scripts/fingerprint_manuals.py docs/manuals ~/Desktop > out.json
+    uv run scripts/fingerprint_manuals.py data/manuals ~/Desktop > out.json
     uv run scripts/fingerprint_manuals.py --no-pdf-meta <root>   # md5 only
 
 Skips Google Drive stream-only placeholders (apparent size > 0, zero blocks

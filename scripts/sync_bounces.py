@@ -8,7 +8,7 @@ Bounces live in one Google Drive folder, synced locally by Drive for Desktop:
 
 Name each bounce  <song-slug>_<YYYY-MM-DD>_<tag>.mp3, e.g.
     arbitrary-overlord_2026-10-10_timmix.mp3
-<song-slug> is the song doc's filename (docs/hot-fog/**/<song-slug>.md). The date
+<song-slug> is the song doc's filename (music/hot-fog/<song-slug>/<song-slug>.md). The date
 and tag are optional; a missing date falls back to the file's modified date.
 
 For each bounce not yet mentioned in its song doc, this appends a row to the
@@ -28,7 +28,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SONGS = ROOT / "docs" / "hot-fog"
+SONGS = ROOT / "music" / "hot-fog"
 BOUNCES = (
     Path.home()
     / "Library/CloudStorage/GoogleDrive-sasakimitchell@gmail.com/My Drive"

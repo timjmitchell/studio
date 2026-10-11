@@ -6,13 +6,13 @@
 #     "tomli; python_version < '3.11'",
 # ]
 # ///
-"""Convert every PDF under docs/manuals/<category>/ to markdown and generate a
+"""Convert every PDF under data/manuals/<category>/ to markdown and generate a
 per-category INDEX.md plus a master INDEX.md.
 
 - Incremental: a PDF is skipped if its .md is already newer than the PDF.
   Pass --force to reconvert everything.
-- Metadata (name, vendor, version, source url) comes from docs/manuals/sources.toml,
-  keyed by the file's path relative to docs/manuals/.
+- Metadata (name, vendor, version, source url) comes from data/manuals/sources.toml,
+  keyed by the file's path relative to data/manuals/.
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ except ModuleNotFoundError:  # pragma: no cover
 import pymupdf
 import pymupdf4llm
 
-MANUALS = Path(__file__).resolve().parent.parent / "docs" / "manuals"
+MANUALS = Path(__file__).resolve().parent.parent / "data" / "manuals"
 FORCE = "--force" in sys.argv
 
 

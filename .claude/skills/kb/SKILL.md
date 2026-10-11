@@ -14,7 +14,8 @@ embeddings, no MCP. Same engine as the sibling `backoffice-pr`'s `/kb`.
 
 - `manuals` — every owned-gear manual: pedals, plugins, Boss/Roland, DAW/video,
   monitors, guitar-gear, loopers, controllers-interfaces.
-- `docs` — rig plans, setup notes, song/lyric docs, music-format notes.
+- `docs` — studio docs (overview, model, inventory rules) and research notes.
+- `music` — projects and songs: song docs, lyrics, chords/tabs, session notes, rig plans.
 
 For a Logic-Pro-specific question, prefer the `logichelp` skill (it narrows to
 the Logic guides and reads sections). Use `kb` for everything else or a repo-wide
@@ -42,7 +43,7 @@ Report the table and stop.
 uv run kb/query.py "<the question or key terms>" --limit 10 --json
 ```
 
-Scope with `--store manuals` or `--store docs` when the intent is clear. Results
+Scope with `--store manuals`, `--store docs` or `--store music` when the intent is clear. Results
 score against title / section **headings** / tags / path / snippet, so a term
 routes into a large guide by its section headings — enough to pick documents
 without opening them. If an obvious term returns nothing, the index may be stale:
