@@ -1,0 +1,44 @@
+# Studio rig: fixed connections (physical cables, RF links, standing virtual routes).
+# Endpoints are "unit:port". Per-session patches (which mic is in which snake channel) belong
+# in scenarios.toml, not here.
+#
+# confidence: declared (Tim said so) · console-label (from a Console input name Tim set)
+#             · observed (read from the machine) · inferred
+
+rig = "studio"
+
+connections = [
+  # Thunderbolt chain (observed: system_profiler + ioreg)
+  { from = "mac-studio:thunderbolt-bus-0", to = "apollo-x8:thunderbolt", medium = "physical", signal = "data", confidence = "observed" },
+  { from = "apollo-x8:thunderbolt", to = "uad2-satellite:thunderbolt-1", medium = "physical", signal = "data", confidence = "observed" },
+  { from = "uad2-satellite:thunderbolt-2", to = "apollo-twin-x:thunderbolt", medium = "physical", signal = "data", confidence = "observed" },
+
+  # Main monitors
+  { from = "apollo-x8:monitor-L", to = "hr824-pair:in-L", medium = "physical", confidence = "declared" },
+  { from = "apollo-x8:monitor-R", to = "hr824-pair:in-R", medium = "physical", confidence = "declared" },
+
+  # Headphones
+  { from = "apollo-twin-x:hp", to = "mdr-7506:plug", medium = "physical", confidence = "declared" },
+
+  # Wedge and in-ears (fed by monitor mixes via mirrors; see scenarios.toml)
+  { from = "apollo-x8:line-out-3", to = "turbosound-wedge:in", medium = "physical", confidence = "declared" },
+  { from = "apollo-x8:line-out-7", to = "psm300-tx:in-L", medium = "physical", confidence = "declared" },
+  { from = "apollo-x8:line-out-8", to = "psm300-tx:in-R", medium = "physical", confidence = "declared" },
+  { from = "psm300-tx:rf", to = "psm300-pack:rf", medium = "rf", confidence = "declared" },
+
+  # Snake tails → x8 mic inputs 1–4
+  { from = "gator-snake:tail-1", to = "apollo-x8:in-1", medium = "physical", connector = "xlr", confidence = "declared" },
+  { from = "gator-snake:tail-2", to = "apollo-x8:in-2", medium = "physical", connector = "xlr", confidence = "declared" },
+  { from = "gator-snake:tail-3", to = "apollo-x8:in-3", medium = "physical", connector = "xlr", confidence = "declared" },
+  { from = "gator-snake:tail-4", to = "apollo-x8:in-4", medium = "physical", connector = "xlr", confidence = "declared" },
+
+  # Guitar rig (from current Console input names)
+  { from = "ox-amp-top-box:line-out-L", to = "apollo-x8:in-5", medium = "physical", confidence = "console-label", notes = "A5 OX 1" },
+  { from = "ox-amp-top-box:line-out-R", to = "apollo-x8:in-6", medium = "physical", confidence = "console-label", notes = "A6 OX2 (pad on)" },
+  { from = "pedalboard:out", to = "apollo-twin-x:in-1", medium = "physical", confidence = "console-label", notes = "B1 PdlBrd" },
+  { from = "guitar-di:out", to = "apollo-twin-x:in-2", medium = "physical", confidence = "console-label", notes = "B2 Guit Dir" },
+
+  # Standing virtual routes
+  { from = "logic-pro:main-out", to = "apollo-twin-x:virtual-1", medium = "virtual", confidence = "declared", notes = "stereo pair with virtual-2" },
+  { from = "macos-audio:out", to = "apollo-x8:virtual-1", medium = "virtual", confidence = "declared", notes = "stereo pair with virtual-2; set in Audio MIDI Setup" },
+]

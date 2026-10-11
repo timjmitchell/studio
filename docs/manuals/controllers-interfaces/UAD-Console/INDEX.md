@@ -1,0 +1,43 @@
+# UAD Console for Apollo manual (offline mirror)
+
+Mirrored from https://help.uaudio.com/hc/en-us/sections/25052396869908 by `scripts/fetch_uad_console_docs.py` via the Zendesk API. Re-run to pick up updated articles.
+
+- [About the UAD Console for Apollo Manual](00-about-the-uad-console-for-apollo-manual.md) · updated 2026-04-08
+- [UAD Console Overview](01-uad-console-overview.md) · updated 2026-03-03
+- [Layout & General Operation](02-layout-general-operation.md) · updated 2026-03-03
+- [Meter Bridge](03-meter-bridge.md) · updated 2026-03-03
+- [Mixer Navigation Modifiers](04-mixer-navigation-modifiers.md) · updated 2025-03-31
+- [Info Bar](05-info-bar.md) · updated 2025-03-31
+- [Input Channel Strips](06-input-channel-strips.md) · updated 2025-03-31
+- [Preamp Controls](07-preamp-controls.md) · updated 2025-03-31
+- [Preamp Auto-Gain](08-preamp-auto-gain.md) · updated 2026-01-15
+- [Plug-Ins & Presets Browser](09-plug-ins-presets-browser.md) · updated 2025-04-01
+- [UAD Plug-In Inserts](10-uad-plug-in-inserts.md) · updated 2025-06-16
+- [Inserts Browser](11-inserts-browser.md) · updated 2025-03-31
+- [Plug-In Editor Window](12-plug-in-editor-window.md) · updated 2025-05-13
+- [Plug-In Scenes](13-plug-in-scenes.md) · updated 2025-03-31
+- [Using UAD Plug-In Presets](14-using-uad-plug-in-presets.md) · updated 2025-03-31
+- [Channel Strip Presets](15-channel-strip-presets.md) · updated 2025-04-01
+- [Unison](16-unison.md) · updated 2025-03-31
+- [Sends](17-sends.md) · updated 2025-03-31
+- [Cues](18-cues.md) · updated 2026-09-30
+- [Output Flex Routing](19-output-flex-routing.md) · updated 2025-03-31
+- [Monitor Mix Controls](20-monitor-mix-controls.md) · updated 2025-03-31
+- [Aux Returns](21-aux-returns.md) · updated 2025-03-31
+- [Monitor Column](22-monitor-column.md) · updated 2026-03-03
+- [Speaker Utilities](23-speaker-utilities.md) · updated 2025-04-02
+- [Talkback](24-talkback.md) · updated 2025-03-31
+- [Console Sessions](25-console-sessions.md) · updated 2026-03-03
+- [Console Recall Plug-In](26-console-recall-plug-in.md) · updated 2025-03-31
+- [Apollo Monitor Correction by Sonarworks](27-apollo-monitor-correction-by-sonarworks.md) · updated 2025-10-09
+- [Apollo X Bass Management](28-apollo-x-bass-management.md) · updated 2025-04-01
+- [Apollo X Surround Sound](29-apollo-x-surround-sound.md) · updated 2025-04-01
+- [Multi-Unit Cascading](30-multi-unit-cascading.md) · updated 2025-03-31
+- [Apollo x16D Networked Audio](31-apollo-x16d-networked-audio.md) · updated 2026-03-03
+- [UAD Console Settings](32-uad-console-settings.md) · updated 2025-03-31
+- [Hardware Settings Panel](33-hardware-settings-panel.md) · updated 2025-03-31
+- [I/O Matrix Settings Panel](34-i-o-matrix-settings-panel.md) · updated 2025-03-31
+- [Options Settings Panel](35-options-settings-panel.md) · updated 2025-03-31
+- [MIDI Settings Panel](36-midi-settings-panel.md) · updated 2025-03-31
+- [Network Panel](37-network-panel.md) · updated 2025-05-20
+- [UAD Console Menus](38-uad-console-menus.md) · updated 2026-05-12

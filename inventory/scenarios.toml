@@ -1,0 +1,59 @@
+# Scenarios: an intent (who listens, on what, hearing what) plus Tim's PREFERRED realization.
+# Possible realizations are derived from the inventory; only preferred ones are recorded here.
+# Model: docs/studio-model.md §2 (intent vs realization), §4.7 (monitor mix).
+
+[[scenario]]
+id = "desk-headphones"
+intent = "Tracking or mixing at the desk on headphones"
+listener = "tim"
+transducer = "mdr-7506:plug"
+mix = "main mix"
+realization = [
+  "UA cue 1 (Twin X 'HP'): MIX lit → carries the main mix",
+  "logic-pro:main-out → apollo-twin-x:virtual-1/2",
+]
+status = "live"   # matches the UA engine 2026-10-11
+
+[[scenario]]
+id = "wedge-vocal-ideas"
+intent = "Rehearsing, or singing vocal ideas to a floor wedge"
+listener = "tim"
+transducer = "turbosound-wedge:in"
+mix = "monitor mix (own blend, mono)"
+realization = [
+  "UA CUE 3: MIX dim (own cue mix), MONO lit",
+  "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
+]
+status = "live"
+
+[[scenario]]
+id = "in-ears"
+intent = "Recording or rehearsing on in-ears"
+listener = "tim"
+transducer = "psm300-pack:rf"
+mix = "monitor mix"
+realization = [
+  "A UA cue mirrored to Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
+]
+status = "not-routed"   # no cue mirrors to Line 7-8 right now [I24]
+
+[[scenario]]
+id = "guest-headphones"
+intent = "A second person on headphones with their own mix"
+listener = "guest"
+transducer = "apollo-x8:hp-2"
+mix = "monitor mix (own blend)"
+realization = ["UA CUE 2 → x8 HP 2 (front jack)"]
+status = "inferred"
+
+[[scenario]]
+id = "more-drums-in-cans"
+intent = "Headphone tracking with more of one element (e.g. drums)"
+listener = "tim"
+transducer = "mdr-7506:plug"
+mix = "monitor mix with a submix on its own fader"
+realization = [
+  "logic-pro:bus-out (drum submix) → apollo-x8:virtual-3/4",
+  "balance virtual 3/4 against virtual 1/2 and live inputs in the monitor mix",
+]
+status = "described"

@@ -1,0 +1,56 @@
+# UA system: Apollo x8 + UAD-2 Satellite + Apollo Twin X, one Console system.
+# Port labels are UA's exact names (from the UA Mixer Engine and Console I/O presets).
+# Model: docs/studio-model.md §6 · Facts and sources: docs/inventory-first-pass.md §3 · Rules: docs/studio-inventory.md
+
+[[unit]]
+id = "apollo-x8"
+name = "Apollo x8"
+kind = "interface"
+status = "owned"
+product = { vendor = "Universal Audio", model = "Apollo x8", variant = "HEXA" }
+functions = ["convert", "route", "mix", "host"]
+place = "?"
+notes = "First in the Thunderbolt chain. Main interface. MONITOR L/R → HR824s."
+manual = "docs/manuals/controllers-interfaces/UAD-Console/INDEX.md"   # Console software; hardware manual in parking lot
+
+ports = [
+  { id = "in-{n}", range = [1, 4], label = "MIC/LINE {n}", direction = "in", signal = "audio", level = "mic" },
+  { id = "in-{n}", range = [5, 8], label = "LINE {n}", direction = "in", signal = "audio", level = "line" },
+  { id = "virtual-{n}", range = [1, 8], label = "VIRTUAL {n}", direction = "in", signal = "audio", medium = "virtual" },
+  { id = "line-out-{n}", range = [1, 8], label = "LINE {n}", direction = "out", signal = "audio", level = "line" },
+  { id = "monitor-{ch}", channels = ["L", "R"], label = "MONITOR {ch}", direction = "out", signal = "audio", level = "line" },
+  { id = "hp-{n}", range = [1, 2], label = "HP {n}", direction = "out", signal = "audio", level = "headphone", notes = "front panel" },
+  { id = "thunderbolt", label = "Thunderbolt 3", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
+
+[[unit]]
+id = "uad2-satellite"
+name = "UAD-2 Satellite TB3"
+kind = "dsp-accelerator"
+status = "owned"
+product = { vendor = "Universal Audio", model = "UAD-2 Satellite Thunderbolt 3", variant = "QUAD" }
+functions = ["host"]
+place = "?"
+
+ports = [
+  { id = "thunderbolt-{n}", range = [1, 2], label = "Thunderbolt 3 ({n})", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
+
+[[unit]]
+id = "apollo-twin-x"
+name = "Apollo Twin X"
+kind = "interface"
+status = "owned"
+product = { vendor = "Universal Audio", model = "Apollo Twin X", variant = "QUAD" }
+functions = ["convert", "route", "mix", "host", "control"]
+place = "desk"
+notes = "Remote monitor controller for the system (RemoteMonitorController = true). Cues named HP and LINE 3/4."
+
+ports = [
+  { id = "in-{n}", range = [1, 2], label = "ANALOG {n}", direction = "in", signal = "audio", level = "mic" },  # mic/line; Hi-Z on the front
+  { id = "virtual-{n}", range = [1, 8], label = "VIRTUAL {n}", direction = "in", signal = "audio", medium = "virtual" },
+  { id = "monitor-{ch}", channels = ["L", "R"], label = "MONITOR {ch}", direction = "out", signal = "audio", level = "line" },
+  { id = "line-out-{n}", range = [3, 4], label = "LINE {n}", direction = "out", signal = "audio", level = "line" },
+  { id = "hp", label = "HP", direction = "out", signal = "audio", level = "headphone", notes = "front panel" },
+  { id = "thunderbolt", label = "Thunderbolt 3", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]

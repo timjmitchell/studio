@@ -7,3 +7,6 @@ kb/indexes/
 
 # macOS
 .DS_Store
+
+# Research paper PDFs — re-downloadable from the url in each converted .md.
+docs/research/**/*.pdf

@@ -1,0 +1,39 @@
+# Software units whose audio reaches Console through virtual channels.
+
+[[unit]]
+id = "logic-pro"
+name = "Logic Pro"
+kind = "daw"
+status = "owned"
+product = { vendor = "Apple", model = "Logic Pro", version = "11.2.2" }
+functions = ["record", "play", "mix", "host"]
+runs_on = "mac-studio"
+
+ports = [
+  { id = "main-out", label = "Main output (Output 1-2)", direction = "out", signal = "audio", medium = "virtual" },
+  { id = "bus-out", label = "Bus/aux output (on demand)", direction = "out", signal = "audio", medium = "virtual", notes = "e.g. a drum submix routed to x8 VIRTUAL 3/4" },
+]
+
+[[unit]]
+id = "macos-audio"
+name = "macOS default output"
+kind = "system-audio"
+status = "owned"
+runs_on = "mac-studio"
+notes = "Set in Audio MIDI Setup. Browser, YouTube, etc."
+
+ports = [
+  { id = "out", label = "Default output", direction = "out", signal = "audio", medium = "virtual" },
+]
+
+[[unit]]
+id = "mac-studio"
+name = "Mac Studio"
+kind = "computer"
+status = "owned"
+product = { vendor = "Apple", model = "Mac Studio (Mac13,1)", variant = "M1 Max, 32 GB" }
+functions = ["host", "store"]
+
+ports = [
+  { id = "thunderbolt-bus-0", label = "Thunderbolt bus 0", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
