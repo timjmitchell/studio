@@ -8,12 +8,22 @@ questions) and [inventory/](../../data/inventory/README.md) (structured data).
 
 ## Where things are
 
-- **The desk** is the working position. The Apollo Twin X is used there as the monitor
-  controller, with the headphones plugged into its front jack.
-- **On the floor:** the snake's box, where mics plug in, so you don't have to reach behind
-  the desk. The snake's tails run behind the desk into the Apollo x8.
-- *Not documented yet:* the room layout, and where the x8, Satellite, drives, monitors, wedge
-  and pedalboard physically sit.
+The studio is a **basement room, about 20 × 14 ft**.
+
+- **The desk** sits against a wall, offset from the door. It's the working position and holds
+  the Mac Studio, the Mackie HR824 monitors, all the UA hardware (Apollo x8, UAD-2 Satellite,
+  Apollo Twin X as the monitor controller), the Novation Launchkey Mini, the Shure PSM300
+  in-ear base unit, the Samsung X5
+  (the main audio drive) and the ThunderBay RAID enclosure (backup).
+- **Rolling shelves on the wall to the left of the desk** hold the guitar amps (1965 Fender
+  Bassman, 1973 Hiwatt DR103, Dr. Z Maz 18 Jr., Orange OR15, 1981 Fender Princeton Reverb II),
+  the KHE amp/cab/FX selector, the UA OX and a Weber speaker-impedance switcher.
+- **The floor beneath those shelves** has the pedalboard, built around a Boss ES-8 switcher.
+- **Behind the desk seat** is the Roland FP-30X digital piano. It feeds a DI box into snake
+  channel 5 (mono), but channel 5's tail isn't plugged in at the moment.
+- **The snake box** is on the floor, so mics plug in there; its tails run behind the desk into
+  the x8.
+- *Not placed yet:* the wedge, the mics, guitars, headphones storage, the Anker dock.
 
 ## Main devices
 
@@ -55,10 +65,18 @@ Console on its own fader, so it can be balanced against the live inputs.
 ```
 
 **Inputs**
-- **Mics:** plug into the snake box on the floor, which feeds x8 inputs 1–4. Input 1 is
-  usually the dynamic mic and input 3 the condenser.
-- **Guitar:** the OX Amp Top Box goes to x8 inputs 5–6. The pedalboard and a guitar DI go to
-  the Twin X inputs.
+- **Mics:** plug into the snake box on the floor, which feeds x8 inputs 1–4. A Shure SM58 is
+  on channel 1 (x8 input 1) and a Roswell K67x condenser, set up in a corner of the room, is
+  on channel 3 (x8 input 3).
+- **Guitar:** everything goes through the pedalboard's **Boss ES-8**, which has three outputs
+  (chosen per patch):
+  - **OUT 1** → the **KHE** amp/cab switcher → the selected amp (Princeton, Maz 18 Jr. or
+    OR15) → the **OX**, always in the KHE's attenuator insert → the Princeton's speaker. The
+    OX's emulated line outs feed **x8 inputs 5–6**.
+  - **OUT 2** → just loop 6, the **TONEX** amp modeller.
+  - **TUNER out** (before any effects) → Peterson tuner → **JHS Clover** DI → snake channel 4
+    → **x8 input 4**. This is a clean direct signal, recorded as a backup for reamping or used
+    for MIDI Guitar 3 and synths.
 - **The computer:** Logic's main output returns to Console on Twin X virtual 1/2. Mac system
   audio (browser, YouTube) returns on x8 virtual 1/2. x8 virtual 3/4 is spare, used for a DAW
   submix (e.g. drums) when one element needs its own level in a monitor mix.
@@ -66,6 +84,9 @@ Console on its own fader, so it can be balanced against the live inputs.
 **Outputs**
 - **Speakers:** the main mix goes to the HR824s from the x8 monitor outputs. The Twin X's knob
   controls the level and switches between speakers and headphones.
+- **Reference correction:** the speakers and headphones are EQ'd toward flat with **SoundID**,
+  integrated into Console (Apollo Monitor Correction). There's a calibrated profile for the
+  HR824s and one for the MDR-7506s.
 - **Monitor mixes** (UA calls them cues) are separate listening mixes:
   - **Headphones** (Twin X headphone out): normally hear the main mix.
   - **Wedge** (x8 output 3): its own mono mix, for rehearsing or singing vocal ideas.

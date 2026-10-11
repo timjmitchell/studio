@@ -1,0 +1,212 @@
+# Guitar amps and amp/cab switching, on the rolling shelves left of the desk.
+# Amps don't need manuals (Tim, 2026-10-11): they stay out of the parking lot.
+# Ports and wiring (amp → cab / load box via the KHE and Weber) are still to capture.
+
+[[unit]]
+id = "fender-bassman-1965"
+name = "Fender Bassman (blackface, 50 W)"
+kind = "amplifier"
+status = "owned"
+product = { vendor = "Fender", model = "Bassman", variant = "blackface, 50 W", year = 1965 }
+functions = ["process"]
+place = "amp-shelves"
+notes = "Not wired into the KHE at the moment. Its 4 Ω output needs the Weber impedance switcher to present 8 Ω (OX and Princeton speaker are 8 Ω)."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "speaker-out", label = "Speaker out", direction = "out", signal = "audio", level = "speaker", impedance_ohms = 4 },
+]
+
+
+[[unit]]
+id = "hiwatt-dr103-1973"
+name = "Hiwatt DR103"
+kind = "amplifier"
+status = "owned"
+product = { vendor = "Hiwatt", model = "DR103", year = 1973 }
+functions = ["process"]
+place = "amp-shelves"
+notes = "Not wired into the KHE at the moment."
+
+[[unit]]
+id = "dr-z-maz-18-jr"
+name = "Dr. Z Maz 18 Jr."
+kind = "amplifier"
+status = "owned"
+product = { vendor = "Dr. Z", model = "Maz 18 Jr.", year = 2023 }   # "~2023"
+functions = ["process"]
+place = "amp-shelves"
+notes = "KHE amp slot 3."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "speaker-out", label = "Speaker out", direction = "out", signal = "audio", level = "speaker" },
+]
+
+
+[[unit]]
+id = "orange-or15"
+name = "Orange OR15"
+kind = "amplifier"
+status = "owned"
+product = { vendor = "Orange", model = "OR15" }
+functions = ["process"]
+place = "amp-shelves"
+notes = "KHE amp slot 4."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "speaker-out", label = "Speaker out", direction = "out", signal = "audio", level = "speaker" },
+]
+
+
+[[unit]]
+id = "fender-princeton-reverb-ii-1981"
+name = "Fender Princeton Reverb II"
+kind = "amplifier"
+status = "owned"
+product = { vendor = "Fender", model = "Princeton Reverb II", year = 1981 }
+functions = ["process"]
+place = "amp-shelves"
+notes = "The only combo. Treated as a head: its speaker is wired out separately as KHE CABINET 1 (unit princeton-speaker), so any amp can use it. KHE amp slot 1."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "speaker-out", label = "Speaker out", direction = "out", signal = "audio", level = "speaker", impedance_ohms = 8 },
+]
+
+
+[[unit]]
+id = "princeton-speaker"
+name = "Princeton Reverb II speaker (used as a cabinet)"
+kind = "speaker-cabinet"
+status = "owned"
+part_of = "fender-princeton-reverb-ii-1981"
+functions = ["transduce"]
+place = "amp-shelves"
+notes = "The Princeton combo's own speaker, wired as KHE CABINET 1. Currently the only load on the KHE."
+
+ports = [
+  { id = "in", label = "Speaker input", direction = "in", signal = "audio", level = "speaker", impedance_ohms = 8 },
+]
+
+[[unit]]
+id = "khe-acs-4x4"
+name = "KHE ACS 4x4 FX amp / cab / FX selector"
+kind = "switcher"
+status = "owned"
+product = { vendor = "KHE Audio Electronics", model = "ACS series (Amplifier Cabinet Selector)", variant = "4x4 FX" }
+functions = ["route", "control"]
+place = "amp-shelves"
+notes = "Switches guitar amps, speaker cabinets and load boxes. Attenuator Insert (S-LINE SEND/RETURN) is used: the OX is always in the loop as the attenuator, whatever amp/cab is selected."
+manual = "data/manuals/pedals/KHE-ACS-Series.md"
+control_surfaces = ["front-panel", "midi-pc", "midi-cc"]   # capability: PC loads amp+cab presets; CC for single commands
+settings = { midi = "not used (front panel only)", dual_cab_mode = false, attenuator_insert = true, fx_loop_switching = "available (FX version)" }   # declared by Tim 2026-10-11
+constraints = [
+  "supervision: an amp slot is selectable only if BOTH its AMP INPUT n (guitar) and AMP OUTPUT n (speaker) are wired; unwired slots are locked out (e.g. nothing on amp 3 → the amp-3 switch does nothing)",
+  "supervision: cabinet jacks are sensed; unused CABINET jacks are locked out",
+  "safety interlock: an amp can switch on only if at least one load (cabinet or load box) is on. A tube amp without a load can be damaged",
+  "supervision: the Attenuator Insert activates only with an attenuator present (here the OX)",
+  "capacity: at most 2 loads active in parallel, and only with Dual Cab Mode (off here, so 1)",
+  "current consequence: CABINET 1 (the Princeton speaker) is the only load, so it must be on for ANY amp to switch on",
+  "current consequence: amp slot 2 has nothing wired, so it's locked out (slots 1, 3, 4 = Princeton, Maz 18 Jr., OR15)",
+  "never change wiring with the ACS, amps or load boxes powered on (manual)",
+]
+
+ports = [
+  { id = "guitar-input", label = "GUITAR INPUT", direction = "in", signal = "audio", level = "instrument", connector = "ts", notes = "rear panel" },
+  { id = "amp-input-{n}", range = [1, 4], label = "AMP INPUT {n}", direction = "out", signal = "audio", level = "instrument", notes = "to the amp's guitar input" },
+  { id = "amp-output-{n}", range = [1, 4], label = "AMP OUTPUT {n}", direction = "in", signal = "audio", level = "speaker", notes = "from the amp's speaker output" },
+  { id = "cabinet-{n}", range = [1, 4], label = "CABINET {n}", direction = "out", signal = "audio", level = "speaker" },
+  { id = "s-line-send", label = "S-LINE SEND (Attenuator Insert)", direction = "out", signal = "audio", level = "speaker" },
+  { id = "s-line-return", label = "S-LINE RETURN (Attenuator Insert)", direction = "in", signal = "audio", level = "speaker" },
+]
+
+[[unit]]
+id = "weber-impedance-switcher"
+name = "Weber speaker impedance switcher"
+kind = "switcher"
+status = "owned"
+product = { vendor = "Weber", model = "?" }
+functions = ["route"]
+place = "amp-shelves"
+notes = "Used with the Bassman: steps its 4 Ω output to an 8 Ω load (OX / Princeton speaker). Not in circuit at the moment (Bassman not wired)."
+
+[[unit]]
+id = "boss-es-8"
+name = "Boss ES-8 Effects Switching System"
+kind = "switcher"
+status = "owned"
+product = { vendor = "Boss", model = "ES-8" }
+functions = ["route", "control"]
+place = "floor-under-amp-shelves"
+part_of = "pedalboard"
+notes = """Everything on the pedalboard routes through the ES-8. One input used. Three outputs:
+OUT 1/L → KHE (amps, OX); OUT 2/R → loop 6 only (TONEX), destination?; TUNER → Peterson → JHS Clover → snake ch 4 (clean DI).
+Output selection is per patch (Output Sel 1 / 2 / 1&2). The TUNER output bypasses all effect loops (the input signal, before loops)."""
+manual = "data/manuals/boss-roland/Boss-ES-8-Switcher.md"
+
+ports = [
+  { id = "in-{n}", range = [1, 2], label = "IN {n}", direction = "in", signal = "audio", level = "instrument" },
+  { id = "out-1-l", label = "OUT 1/L", direction = "out", signal = "audio", level = "instrument" },
+  { id = "out-2-r", label = "OUT 2/R", direction = "out", signal = "audio", level = "instrument" },
+  { id = "send-{n}", range = [1, 7], label = "SEND {n}", direction = "out", signal = "audio" },
+  { id = "rtn-{n}", range = [1, 6], label = "RTN {n}", direction = "in", signal = "audio" },
+  { id = "rtn-7-{ch}", channels = ["l", "r"], label = "RTN 7{ch}", direction = "in", signal = "audio" },
+  { id = "send-8-{ch}", channels = ["l", "r"], label = "SEND 8{ch}", direction = "out", signal = "audio" },
+  { id = "rtn-8-{ch}", channels = ["l", "r"], label = "RTN 8{ch}", direction = "in", signal = "audio" },
+  { id = "send-vol", label = "SEND VOL", direction = "out", signal = "audio" },
+  { id = "rtn-vol", label = "RTN VOL", direction = "in", signal = "audio" },
+  { id = "tuner", label = "TUNER", direction = "out", signal = "audio" },
+]
+
+[[unit]]
+id = "ik-tonex-pedal"
+name = "IK Multimedia TONEX Pedal"
+kind = "amp-simulation"
+status = "owned"
+product = { vendor = "IK Multimedia", model = "TONEX Pedal" }
+functions = ["process"]
+place = "floor-under-amp-shelves"
+part_of = "pedalboard"
+notes = "In ES-8 loop 6. Patches that route 'loop 6 only → OUT 2/R' send just the TONEX amp model to output 2."
+manual = "data/manuals/pedals/IK-TONEX-Pedal-User-Manual.md"
+
+ports = [
+  { id = "input", label = "INPUT (mono, unbalanced)", direction = "in", signal = "audio", level = "instrument" },
+  { id = "output-{ch}", channels = ["L", "R"], label = "OUTPUT {ch} (stereo, unbalanced)", direction = "out", signal = "audio" },
+]
+
+[[unit]]
+id = "peterson-strobostomp-hd"
+name = "Peterson StroboStomp HD (tuner)"
+kind = "tuner"
+status = "owned"
+product = { vendor = "Peterson", model = "StroboStomp HD" }
+functions = ["measure", "route"]
+place = "floor-under-amp-shelves"
+part_of = "pedalboard"
+manual = "none-needed"
+notes = "On the ES-8 TUNER output. One footswitch: mute / unmute. Unmuted, it passes the signal on to the JHS Clover."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "output", label = "Output", direction = "out", signal = "audio", level = "instrument" },
+]
+
+[[unit]]
+id = "jhs-clover"
+name = "JHS Clover (preamp / DI)"
+kind = "di-box"
+status = "owned"
+product = { vendor = "JHS", model = "Clover" }
+functions = ["process", "convert"]
+place = "floor-under-amp-shelves"
+part_of = "pedalboard"
+notes = "Balanced XLR out → snake ch 4 → x8 input 4: the unaffected direct guitar, recorded alongside the processed signal for reamping later, or as a clean input for MIDI Guitar 3 / synths."
+
+ports = [
+  { id = "input", label = "Input", direction = "in", signal = "audio", level = "instrument" },
+  { id = "xlr-out", label = "XLR out (balanced)", direction = "out", signal = "audio", level = "mic", connector = "xlr" },
+]
+

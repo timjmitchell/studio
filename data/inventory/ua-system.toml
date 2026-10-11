@@ -9,7 +9,7 @@ kind = "interface"
 status = "owned"
 product = { vendor = "Universal Audio", model = "Apollo x8", variant = "HEXA" }
 functions = ["convert", "route", "mix", "host"]
-place = "?"
+place = "desk"
 notes = "First in the Thunderbolt chain. Main interface. MONITOR L/R → HR824s."
 manual = "data/manuals/controllers-interfaces/UAD-Console/INDEX.md"   # Console software; hardware manual in parking lot
 
@@ -30,7 +30,7 @@ kind = "dsp-accelerator"
 status = "owned"
 product = { vendor = "Universal Audio", model = "UAD-2 Satellite Thunderbolt 3", variant = "QUAD" }
 functions = ["host"]
-place = "?"
+place = "desk"
 
 ports = [
   { id = "thunderbolt-{n}", range = [1, 2], label = "Thunderbolt 3 ({n})", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
@@ -44,7 +44,7 @@ status = "owned"
 product = { vendor = "Universal Audio", model = "Apollo Twin X", variant = "QUAD" }
 functions = ["convert", "route", "mix", "host", "control"]
 place = "desk"
-notes = "Remote monitor controller for the system (RemoteMonitorController = true). Cues named HP and LINE 3/4."
+notes = "Remote monitor controller for the system (RemoteMonitorController = true). Cues named HP and LINE 3/4. Input 2 is labelled 'B2 Guit Dir' in Console but is stale: the clean guitar moved to x8 input 4."
 
 ports = [
   { id = "in-{n}", range = [1, 2], label = "ANALOG {n}", direction = "in", signal = "audio", level = "mic" },  # mic/line; Hi-Z on the front

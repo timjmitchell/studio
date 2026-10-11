@@ -13,6 +13,14 @@ connections = [
   { from = "apollo-x8:thunderbolt", to = "uad2-satellite:thunderbolt-1", medium = "physical", signal = "data", confidence = "observed" },
   { from = "uad2-satellite:thunderbolt-2", to = "apollo-twin-x:thunderbolt", medium = "physical", signal = "data", confidence = "observed" },
 
+  # Storage chain (observed: system_profiler)
+  { from = "mac-studio:thunderbolt-bus-3", to = "thunderbay-raid:thunderbolt-1", medium = "physical", signal = "data", confidence = "observed" },
+  { from = "thunderbay-raid:thunderbolt-2", to = "anker-dock:thunderbolt-upstream", medium = "physical", signal = "data", confidence = "observed", notes = "confirmed by Tim: dock is in series after the RAID" },
+  { from = "anker-dock:thunderbolt-downstream", to = "samsung-x5:thunderbolt", medium = "physical", signal = "data", confidence = "observed" },
+
+  # Controllers (observed: USB tree)
+  { from = "launchkey-mini-mk4:usb", to = "anker-dock:usb", medium = "physical", signal = "data", confidence = "observed" },
+
   # Main monitors
   { from = "apollo-x8:monitor-L", to = "hr824-pair:in-L", medium = "physical", confidence = "declared" },
   { from = "apollo-x8:monitor-R", to = "hr824-pair:in-R", medium = "physical", confidence = "declared" },
@@ -32,11 +40,42 @@ connections = [
   { from = "gator-snake:tail-3", to = "apollo-x8:in-3", medium = "physical", connector = "xlr", confidence = "declared" },
   { from = "gator-snake:tail-4", to = "apollo-x8:in-4", medium = "physical", connector = "xlr", confidence = "declared" },
 
-  # Guitar rig (from current Console input names)
-  { from = "ox-amp-top-box:line-out-L", to = "apollo-x8:in-5", medium = "physical", confidence = "console-label", notes = "A5 OX 1" },
-  { from = "ox-amp-top-box:line-out-R", to = "apollo-x8:in-6", medium = "physical", confidence = "console-label", notes = "A6 OX2 (pad on)" },
-  { from = "pedalboard:out", to = "apollo-twin-x:in-1", medium = "physical", confidence = "console-label", notes = "B1 PdlBrd" },
-  { from = "guitar-di:out", to = "apollo-twin-x:in-2", medium = "physical", confidence = "console-label", notes = "B2 Guit Dir" },
+  # Mics on the snake (Tim, 2026-10-11)
+  { from = "shure-sm58:out", to = "gator-snake:box-1", medium = "physical", connector = "xlr", confidence = "declared", notes = "x8 input 1, Console 'A1 Mic Dyn'" },
+  { from = "roswell-k67x:out", to = "gator-snake:box-3", medium = "physical", connector = "xlr", confidence = "declared", notes = "x8 input 3, Console 'A3 Mic Cond.'" },
+
+  # Piano: mono via DI into snake ch 5. The ch 5 tail is NOT plugged into anything right now,
+  # so the piano doesn't currently reach the interface (Tim, 2026-10-11).
+  { from = "roland-fp-30x:output-L", to = "di-box-piano:in", medium = "physical", confidence = "declared", notes = "mono; jack assumed L/mono" },
+  { from = "di-box-piano:out", to = "gator-snake:box-5", medium = "physical", connector = "xlr", confidence = "declared" },
+
+  # Guitar rig: ES-8 → KHE → (selected amp) → KHE Attenuator Insert → OX → (selected cab); OX line outs → x8 5/6
+  { from = "boss-es-8:out-1-l", to = "khe-acs-4x4:guitar-input", medium = "physical", connector = "ts", confidence = "declared", notes = "TS guitar cable into the KHE's rear GUITAR INPUT" },
+  { from = "khe-acs-4x4:s-line-send", to = "ox-amp-top-box:from-amplifier", medium = "physical", signal = "audio", confidence = "declared", notes = "speaker level; Attenuator Insert" },
+  { from = "ox-amp-top-box:to-speaker", to = "khe-acs-4x4:s-line-return", medium = "physical", signal = "audio", confidence = "declared", notes = "speaker level; Attenuator Insert" },
+  # KHE amp slots (speaker level returns). Slot 2 empty → locked out.
+  { from = "khe-acs-4x4:amp-input-1", to = "fender-princeton-reverb-ii-1981:input", medium = "physical", confidence = "declared" },
+  { from = "fender-princeton-reverb-ii-1981:speaker-out", to = "khe-acs-4x4:amp-output-1", medium = "physical", confidence = "declared", notes = "speaker level" },
+  { from = "khe-acs-4x4:amp-input-3", to = "dr-z-maz-18-jr:input", medium = "physical", confidence = "declared" },
+  { from = "dr-z-maz-18-jr:speaker-out", to = "khe-acs-4x4:amp-output-3", medium = "physical", confidence = "declared", notes = "speaker level" },
+  { from = "khe-acs-4x4:amp-input-4", to = "orange-or15:input", medium = "physical", confidence = "declared" },
+  { from = "orange-or15:speaker-out", to = "khe-acs-4x4:amp-output-4", medium = "physical", confidence = "declared", notes = "speaker level" },
+  # Guitar → ES-8 IN 1 (the one input used)
+  { from = "guitar:out", to = "boss-es-8:in-1", medium = "physical", connector = "ts", confidence = "declared" },
+
+  # ES-8 loop 6 = TONEX; patches can route loop 6 only → OUT 2/R
+  { from = "boss-es-8:send-6", to = "ik-tonex-pedal:input", medium = "physical", confidence = "declared" },
+  { from = "ik-tonex-pedal:output-L", to = "boss-es-8:rtn-6", medium = "physical", confidence = "declared", notes = "TONEX used mono (L/mono out) into loop 6's mono return" },
+  # ES-8 TUNER out → tuner → Clover → snake 4 → x8 input 4: unaffected direct guitar (bypasses all loops)
+  { from = "boss-es-8:tuner", to = "peterson-strobostomp-hd:input", medium = "physical", confidence = "declared" },
+  { from = "peterson-strobostomp-hd:output", to = "jhs-clover:input", medium = "physical", confidence = "declared", notes = "passes only when the tuner is unmuted" },
+  { from = "jhs-clover:xlr-out", to = "gator-snake:box-4", medium = "physical", connector = "xlr", confidence = "declared", notes = "x8 input 4: Console 'A4 Mic' (rename to 'A4 Guit DI'?)" },
+  { from = "khe-acs-4x4:cabinet-1", to = "princeton-speaker:in", medium = "physical", signal = "audio", confidence = "declared", notes = "speaker level; the only cabinet on the KHE" },
+  { from = "ox-amp-top-box:line-out-L", to = "apollo-x8:in-5", medium = "physical", connector = "trs", confidence = "declared", notes = "A5 OX 1" },
+  { from = "ox-amp-top-box:line-out-R", to = "apollo-x8:in-6", medium = "physical", connector = "trs", confidence = "declared", notes = "A6 OX2 (pad on)" },
+  { from = "boss-es-8:out-2-r", to = "apollo-twin-x:in-1", medium = "physical", confidence = "declared", notes = "Console 'B1 PdlBrd' (Hi-Z); carries loop 6 (TONEX) in patches that select OUT 2" },
+  # Twin X input 2: Console still says 'B2 Guit Dir', but the clean guitar moved to x8 input 4
+  # (via the Clover). Stale label; nothing recorded on Twin X input 2 now (Tim, 2026-10-11).
 
   # Standing virtual routes
   { from = "logic-pro:main-out", to = "apollo-twin-x:virtual-1", medium = "virtual", confidence = "declared", notes = "stereo pair with virtual-2" },

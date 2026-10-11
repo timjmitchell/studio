@@ -100,6 +100,15 @@ names) count as declared wiring. Keep them in a fixed form.
 > *Example:* the Console inputs "A5 OX 1", "B1 PdlBrd" and "B2 Guit Dir" became connections
 > with `confidence = "console-label"`. Convention: `A#` / `B#` plus the source.
 
+**R5a. Labels can go stale, so check what the system says when you can.** A track or channel
+name is only as current as the last time Tim renamed it. Before relying on a label, compare
+it with what the system reports: live signal on the input meter, the current routing, a
+snapshot. A mismatch is **drift**: record it, and suggest renaming.
+> *Example:* Twin X input 2 was still labelled "B2 Guit Dir", but Tim had moved the clean
+> guitar to x8 input 4 (labelled "A4 Mic"). Both labels were wrong. The fix is to rename them
+> to "A4 Guit DI" (and clear B2). The snapshot plus inventory can catch this automatically
+> (roadmap: drift check).
+
 **R6. Only Tim knows physical wiring, places, status and gear with no electronics.** Ask in
 batches, and record the answers as `declared`.
 > *Example:* "HR824s on x8 MONITOR L/R", "headphones in the Twin X HP", "PSM300 on x8 7/8",
@@ -141,6 +150,9 @@ preferred one per scenario.
 > `not-routed`, because no monitor mix mirrors to Line 7-8 right now.
 
 **R13. No manual → parking lot, with a priority.** Mirror the manual when it's online.
+*Exempt:* guitar amps and simple passive gear Tim marks as needing none, e.g. the SM58
+(Tim, 2026-10-11). Record their wiring and status, not documentation. In TOML, write
+`manual = "none-needed"`.
 > *Example:* the UAD Console manual came off the parking lot when
 > `scripts/fetch_uad_console_docs.py` mirrored all 39 help-center articles through the
 > Zendesk API. The Apollo x8 and Twin X *hardware* manuals are still high priority.
@@ -149,6 +161,13 @@ preferred one per scenario.
 execution safety rails (§8).
 > *Example:* the Console databases were copied to the scratchpad before inspection, and the
 > UA engine was only sent `get` commands.
+
+**R15. Be gentle with live surfaces.** Use one connection, throttle the queries, and never
+send bursts. Live services can be fragile in ways a file isn't.
+> *Example:* the first `ua_snapshot.py` run opened a new connection for every query
+> (hundreds in seconds). The UA Mixer Engine crashed in its connection handler
+> (2026-10-11 14:42), taking Console down until Tim relaunched it. The script now reuses one
+> connection, and runs only with Tim's go-ahead.
 
 ## 6. Fill methods: what each source can and can't tell us
 
@@ -229,7 +248,11 @@ undo, and log an Event.
 3. **Probe script** (`scripts/probe_studio.py`): generate the 🏷 data: devices, apps,
    plugins, and a UA engine snapshot.
 4. **Live-state reader for the UA engine**, so `trace` can continue past the mixer into
-   monitor mixes and mirrors.
+   monitor mixes and mirrors. `scripts/ua_snapshot.py` exists, throttled; its first run is
+   waiting for Tim's go-ahead.
+4a. **Drift check:** compare each snapshot's Console input names (and signal present on the
+   meters) with the inventory's connections, and list mismatches: stale labels, unlabelled
+   inputs with signal, labelled inputs that are silent.
 5. **Fix the stale notes**: the MIDI Guitar 3 version and input in its field notes.
 6. **Make `sources.toml` the Product registry**: add mirrored HTML manuals and owned gear
    without manuals.

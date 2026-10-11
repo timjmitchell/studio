@@ -15,6 +15,7 @@ Usage:
     uv run scripts/inventory.py trace <unit[:port]>   # follow signal upstream and downstream
     uv run scripts/inventory.py find <text>           # search ids, names, labels, notes
     uv run scripts/inventory.py scenarios             # intents and preferred realizations
+    uv run scripts/inventory.py places                # room → furniture → units, and what has no place
 """
 from __future__ import annotations
 
@@ -46,7 +47,7 @@ def expand(spec: dict) -> list[dict]:
 
 
 def load():
-    units, conns, scenarios, errors = {}, [], [], []
+    units, conns, scenarios, places, errors = {}, [], [], {}, []
     for f in sorted(INV.glob("*.toml")):
         data = tomllib.loads(f.read_text())
         for u in data.get("unit", []):
@@ -64,7 +65,16 @@ def load():
             c["rig"], c["_file"] = data.get("rig", "?"), f.name
             conns.append(c)
         scenarios += data.get("scenario", [])
-    return units, conns, scenarios, errors
+        for pl in data.get("place", []):
+            places[pl["id"]] = pl
+    for u in units.values():
+        pl = u.get("place")
+        if pl and pl != "?" and pl not in places:
+            errors.append(f"unknown place for {u['id']}: {pl}")
+    for pl in places.values():
+        if pl.get("in") and pl["in"] not in places:
+            errors.append(f"place {pl['id']} is in unknown place {pl['in']}")
+    return units, conns, scenarios, places, errors
 
 
 def port_of(units, ref):
@@ -73,7 +83,7 @@ def port_of(units, ref):
     return u, (u["ports"].get(port) if u and port else None)
 
 
-def check(units, conns, scenarios, errors) -> int:
+def check(units, conns, scenarios, places, errors) -> int:
     used_out, used_in = defaultdict(list), defaultdict(list)
     for c in conns:
         for end in ("from", "to"):
@@ -104,7 +114,7 @@ def check(units, conns, scenarios, errors) -> int:
         if v in ("?", "owned?") or (isinstance(v, str) and v.endswith("?"))
     ]
     nports = sum(len(u["ports"]) for u in units.values())
-    print(f"{len(units)} units, {nports} ports, {len(conns)} connections, {len(scenarios)} scenarios")
+    print(f"{len(units)} units, {nports} ports, {len(conns)} connections, {len(scenarios)} scenarios, {len(places)} places")
     if unknown:
         print(f"\nopen values ({len(unknown)}):")
         print("  " + "\n  ".join(unknown))
@@ -156,14 +166,27 @@ def trace(units, conns, ref):
                 continue
             seen.add(nxt)
             nu = nxt.split(":")[0]
-            if "mix" in units.get(nu, {}).get("functions", []):
-                # A mixer can route any input to any output; what actually flows is live
-                # state (e.g. Console sends and mirrors), not cabling. Stop and say so.
-                print("  " * (depth + 1) + f"⋯ mixed inside {nu}: check its live routing state")
+            nunit = units.get(nu, {})
+            if "mix" in nunit.get("functions", []) or nunit.get("kind") == "switcher":
+                # Mixers and switchers route by state (Console sends and mirrors, the selected
+                # amp/cab, ES-8 loops), not by cabling. Stop and say so.
+                verb = "mixed" if "mix" in nunit.get("functions", []) else "switched"
+                print("  " * (depth + 1) + f"⋯ {verb} inside {nu}: depends on its current state")
                 continue
-            # passive or single-path unit: continue through any port on the far side
-            for p in units.get(nu, {}).get("ports", {}):
-                walk(f"{nu}:{p}", index, key, arrow, depth + 1, seen)
+            # Passive unit: continue through the far side. Keep the channel when ports share a
+            # suffix (snake box-5 → tail-5); otherwise any other port (DI in → out).
+            here_port = nxt.split(":", 1)[1]
+            want = ("in", "bidirectional") if key == "from" else ("out", "bidirectional")
+            others = [p for p, spec in units.get(nu, {}).get("ports", {}).items()
+                      if p != here_port and spec.get("direction") in want]
+            suffix = here_port.rsplit("-", 1)[-1] if "-" in here_port else None
+            same = [p for p in others if suffix and p.rsplit("-", 1)[-1] == suffix]
+            for p in same or others:
+                ref = f"{nu}:{p}"
+                if not index.get(ref):
+                    print("  " * (depth + 1) + f"⋯ {ref}: nothing connected")
+                    continue
+                walk(ref, index, key, arrow, depth + 1, seen)
 
     for s in starts:
         if not (by_from.get(s) or by_to.get(s)):
@@ -171,6 +194,33 @@ def trace(units, conns, ref):
         print(s)
         walk(s, by_to, "from", "←", 1, {s})
         walk(s, by_from, "to", "→", 1, {s})
+
+
+def show_places(units, places):
+    kids = defaultdict(list)
+    for pl in places.values():
+        kids[pl.get("in")].append(pl["id"])
+    here = defaultdict(list)
+    for u in units.values():
+        here[u.get("place", "?")].append(u["id"])
+
+    def walk(pid, depth):
+        pl = places[pid]
+        extra = f" — {pl['position']}" if pl.get("position") else ""
+        print("  " * depth + f"{pl['name']} [{pid}]{extra}")
+        for uid in sorted(here.get(pid, [])):
+            print("  " * (depth + 1) + f"· {units[uid]['name']}")
+        for k in kids.get(pid, []):
+            walk(k, depth + 1)
+
+    for root in kids.get(None, []):
+        walk(root, 0)
+    unplaced = sorted(
+        u["id"] for u in units.values()
+        if u.get("place", "?") == "?" and "runs_on" not in u   # software has no physical place
+    )
+    if unplaced:
+        print(f"\nno place yet ({len(unplaced)}): " + ", ".join(unplaced))
 
 
 def find(units, conns, text):
@@ -189,13 +239,16 @@ def find(units, conns, text):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["check", "units", "ports", "trace", "find", "scenarios"])
+    ap.add_argument("cmd", choices=["check", "units", "ports", "trace", "find", "scenarios", "places"])
     ap.add_argument("arg", nargs="?")
     ap.add_argument("--kind")
     a = ap.parse_args()
-    units, conns, scenarios, errors = load()
+    units, conns, scenarios, places, errors = load()
     if a.cmd == "check":
-        return check(units, conns, scenarios, errors)
+        return check(units, conns, scenarios, places, errors)
+    if a.cmd == "places":
+        show_places(units, places)
+        return 0
     if a.cmd == "units":
         for u in units.values():
             if not a.kind or u.get("kind") == a.kind:

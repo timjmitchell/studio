@@ -932,6 +932,22 @@ to*. This includes unsaved tweaks, which a Preset alone can't capture.
 | `stored_in` | device slot, plugin preset file, editor backup → File |
 | `versions` | → Versions that use it |
 
+**Allowed states: interlocks and supervision.** Not every combination of parameter values is
+a valid State. Some devices enforce rules about which states are allowed, often for safety.
+They come in three kinds:
+
+| Kind | Means | Example (KHE ACS amp/cab switcher) |
+|---|---|---|
+| **Supervision** | The device senses its wiring. A slot or jack with nothing properly connected is locked out | Nothing plugged into amp 3, so the amp-3 switch does nothing. An amp slot needs *both* its AMP INPUT (guitar) and AMP OUTPUT (speaker) wired. The Attenuator Insert works only with an attenuator present |
+| **Safety interlock** | A state is refused unless another holds, to protect the gear | An amp can only switch on if at least one load (cabinet or load box) is on: a tube amp without a load can be damaged |
+| **Capacity** | A limit on how many things can be active together | At most 2 loads in parallel (Dual Cab Mode) |
+
+These live on the Product as `constraints`, and the agent uses them three ways:
+- **To explain:** "why won't amp 3 come on?" → slot not wired, or no cab selected.
+- **To plan only valid States:** a MIDI preset that selects an amp must also select a load.
+- **To never work around them:** interlocks are safety rules, not obstacles. The agent
+  never tries to defeat supervision or switch an amp on without a load.
+
 **State changes are Events** (`configure`). That covers a program change in the live set at
 bar 33, a mix automation move, and "I switched the GM-800 to patch 12 and lengthened the
 delay". A chain of state changes over time is how a session gets recalled.

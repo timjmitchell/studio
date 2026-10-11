@@ -1,0 +1,31 @@
+# MIDI controllers. CoreMIDI port names observed 2026-10-11.
+
+[[unit]]
+id = "launchkey-mini-mk4"
+name = "Novation Launchkey Mini MK4 25"
+kind = "controller"
+status = "owned"
+product = { vendor = "Novation", model = "Launchkey Mini MK4", variant = "25" }
+functions = ["control"]
+place = "desk"
+notes = "CoreMIDI ports: 'Launchkey Mini MK4 25 MIDI' (keys, pads) and '… DAW' (control-surface mode)."
+manual = "data/manuals/controllers-interfaces/Novation-Launchkey-Mk4-Mini-25-User-Guide.md"
+
+ports = [
+  { id = "usb", label = "USB-C", direction = "bidirectional", signal = "data", connector = "usb-c" },
+]
+
+[[unit]]
+id = "akai-mpk249"
+name = "Akai MPK249"
+kind = "controller"
+status = "owned"
+product = { vendor = "Akai Professional", model = "MPK249" }
+functions = ["control"]
+place = "?"
+notes = "Optional: a USB cable is run for it and plugged in when needed. Where is it kept, and where does the cable land (Anker hub or Mac)?"
+manual = "data/manuals/controllers-interfaces/Akai-MPK249-User-Guide.md"
+
+ports = [
+  { id = "usb", label = "USB", direction = "bidirectional", signal = "data", connector = "usb-b" },
+]

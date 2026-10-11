@@ -8,8 +8,9 @@ kind = "snake"
 status = "owned"
 product = { vendor = "Gator Cableworks", model = "Backline 6-channel snake" }
 functions = ["route"]
-place = "floor (box) → behind desk (tails)"
-notes = "Passive. Channels 5–6 and returns? [I23]"
+place = "floor-snake-box"
+notes_place = "tails run behind the desk (behind-desk) into the x8"
+notes = "Passive. Ch 1–4 tails → x8 mic inputs 1–4. Ch 5: piano DI on the box side; tail 5 currently unplugged. Ch 6 and returns? [I23]"
 
 ports = [
   { id = "box-{n}", range = [1, 6], label = "CH {n} (floor box XLR)", direction = "in", signal = "audio", level = "mic", connector = "xlr" },
@@ -17,24 +18,29 @@ ports = [
 ]
 
 [[unit]]
-id = "mic-dynamic"
-name = "Dynamic mic (SM7 in most Console sessions)"
+id = "shure-sm58"
+name = "Shure SM58"
 kind = "dynamic-microphone"
-status = "owned?"
-product = { vendor = "?", model = "?" }   # SM7B? [I13]
+status = "owned"
+product = { vendor = "Shure", model = "SM58" }
 functions = ["transduce"]
+place = "?"
+manual = "none-needed"
+notes = "On snake ch 1 → x8 input 1 (Console: 'A1 Mic Dyn'). Older Console sessions name an SM7 on this input. Is there an SM7 too?"
 
 ports = [
   { id = "out", label = "XLR out", direction = "out", signal = "audio", level = "mic", connector = "xlr" },
 ]
 
 [[unit]]
-id = "mic-condenser"
-name = "Condenser mic (KX67 / Rode in Console sessions)"
+id = "roswell-k67x"
+name = "Roswell K67x"
 kind = "condenser-microphone"
-status = "owned?"
-product = { vendor = "?", model = "?" }   # [I13]
+status = "owned"
+product = { vendor = "Roswell Pro Audio", model = "K67x" }
 functions = ["transduce"]
+place = "studio-corner"
+notes = "On snake ch 3 → x8 input 3 (Console 'A3 Mic Cond.'; older sessions 'KX67' / 'KX'). Condenser: check phantom power on A3. Inspired by the Neumann U67 (🔶, an emulation link to confirm)."
 
 ports = [
   { id = "out", label = "XLR out", direction = "out", signal = "audio", level = "mic", connector = "xlr" },
@@ -42,21 +48,18 @@ ports = [
 
 [[unit]]
 id = "pedalboard"
-name = "Pedalboard (output)"
+name = "Pedalboard"
 kind = "pedalboard"
 status = "owned"
-notes = "Treated as one unit until the board is inventoried [I14]."
-
-ports = [
-  { id = "out", label = "Board out", direction = "out", signal = "audio" },
-]
+place = "floor-under-amp-shelves"
+notes = "Container for the board's units (part_of = 'pedalboard'): Boss ES-8 (all routing), TONEX (loop 6), Peterson tuner, JHS Clover. Other pedals not inventoried yet [I14]."
 
 [[unit]]
-id = "guitar-di"
-name = "Guitar (direct)"
+id = "guitar"
+name = "Guitar (the one being played)"
 kind = "physical-instrument"
 status = "owned"
-notes = "Which guitar? [I12]"
+notes = "Plugs into ES-8 IN 1. Which guitars, and which have the EMG JMaster / T-Bender? [I12]"
 
 ports = [
   { id = "out", label = "Jack", direction = "out", signal = "audio", level = "instrument", connector = "ts" },
@@ -69,8 +72,18 @@ kind = "amp-simulation"
 status = "owned"
 product = { vendor = "Universal Audio", model = "OX Amp Top Box" }
 functions = ["process", "transduce"]
+place = "amp-shelves"
+notes = """Patched into the KHE Attenuator Insert, so it's always in the loop as the attenuator / load. Line outs (TRS) → x8 inputs 5/6.
+Two independent halves: the attenuator (Speaker Volume → TO SPEAKER) and the speaker/mic/room emulation (→ LINE OUT).
+Speaker Volume at 0 still sends the emulated signal to the interface."""
+components = [
+  { name = "attenuator", controls = "TO SPEAKER level (Speaker Volume)" },
+  { name = "speaker / mic / room emulation", feeds = "LINE OUT L/R" },
+]
 manual = "data/manuals/guitar-gear/UAD-OX-Amp-Top-Box.md"
 
 ports = [
-  { id = "line-out-{ch}", channels = ["L", "R"], label = "LINE OUT {ch}", direction = "out", signal = "audio", level = "line" },
+  { id = "from-amplifier", label = "FROM AMPLIFIER (red)", direction = "in", signal = "audio", level = "speaker", impedance_ohms = 8 },
+  { id = "to-speaker", label = "TO SPEAKER", direction = "out", signal = "audio", level = "speaker" },
+  { id = "line-out-{ch}", channels = ["L", "R"], label = "LINE OUT {ch}", direction = "out", signal = "audio", level = "line", connector = "trs" },
 ]

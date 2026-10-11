@@ -1,0 +1,65 @@
+# Physical places: the room and the furniture/structures that hold gear.
+# Places nest via `in` (room → desk → shelf). Units point at a place id with `place = "..."`.
+# Model: docs/studio/model.md §6 (Place) · Rules: docs/studio/inventory.md
+
+[[place]]
+id = "studio-room"
+name = "Studio room"
+kind = "room"
+level = "basement"
+size_ft = [20, 14]
+notes = "Basement room, roughly 20 × 14 ft."
+
+[[place]]
+id = "desk"
+name = "Desk"
+kind = "desk"
+in = "studio-room"
+position = "against a wall, offset from the door"
+notes = "Main working position. Twin X is used here (monitor controller, headphones)."
+
+[[place]]
+id = "behind-desk"
+name = "Behind the desk"
+kind = "cable-run"
+in = "studio-room"
+notes = "Snake tails run here into the Apollo x8."
+
+[[place]]
+id = "floor-snake-box"
+name = "Snake box (floor)"
+kind = "floor-position"
+in = "studio-room"
+notes = "Gator snake box, where mics plug in."
+
+[[place]]
+id = "amp-shelves"
+name = "Rolling shelves (amps)"
+kind = "shelving"
+in = "studio-room"
+position = "on the wall to the left of the desk"
+mobile = true
+notes = "Guitar amps, the KHE amp/cab/FX selector, the OX and the Weber impedance switcher."
+
+[[place]]
+id = "floor-under-amp-shelves"
+name = "Floor beneath the amp shelves"
+kind = "floor-position"
+in = "studio-room"
+notes = "The pedalboard lives here."
+
+[[place]]
+id = "behind-desk-seat"
+name = "Behind the desk seat"
+kind = "floor-position"
+in = "studio-room"
+position = "behind Tim when seated at the desk"
+notes = "Roland digital piano."
+
+[[place]]
+id = "studio-corner"
+name = "Corner of the room"
+kind = "floor-position"
+in = "studio-room"
+position = "a corner of the room (which one?)"
+notes = "Roswell K67x condenser on its stand."

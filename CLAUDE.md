@@ -39,7 +39,8 @@ Drive/Hot Fog/New- 3rd Album/Bounces`).
 ## Live studio surfaces
 
 - **UA Mixer Engine** (UAD Console state): TCP `127.0.0.1:4710`, send `get <path>\0` and get
-  JSON back. Paths: `/devices/N`, `/devices/N/inputs/M`, `/devices/N/outputs/M`. Device 0 is
+  JSON back. **Use one connection and throttle it.** A burst of new connections crashed the
+  engine (and Console) once; see `docs/studio/inventory.md` R15. Paths: `/devices/N`, `/devices/N/inputs/M`, `/devices/N/outputs/M`. Device 0 is
   the Apollo x8, device 1 the Twin X.
 - **Console files:** `~/Documents/Universal Audio/Sessions/*.uadmix` and `IOPresets/*.uadio`
   (XML).

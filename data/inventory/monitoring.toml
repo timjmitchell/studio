@@ -7,8 +7,8 @@ kind = "studio-monitor"
 status = "owned"
 product = { vendor = "Mackie", model = "HR824", variant = "?" }   # mk1 or mk2? [I13]
 functions = ["transduce"]
-place = "?"
-notes = "Main monitors. Speaker-correction profile on the x8: 'Mackie left mix – 2023-06-14' (off)."
+place = "desk"
+notes = "Main monitors. EQ'd flat for reference monitoring with SoundID, integrated in Console (Apollo Monitor Correction). Profile on the x8: 'Mackie left mix – 2023-06-14'."
 
 ports = [
   { id = "in-{ch}", channels = ["L", "R"], label = "INPUT ({ch} speaker)", direction = "in", signal = "audio", level = "line" },
@@ -17,6 +17,7 @@ ports = [
 [[unit]]
 id = "mdr-7506"
 name = "Sony MDR-7506"
+notes = "EQ'd flat for reference monitoring with SoundID in Console (Apollo Monitor Correction). Profile: 'Sony MDR-7506 Wired Average'."
 kind = "headphones"
 status = "owned"
 product = { vendor = "Sony", model = "MDR-7506" }
@@ -47,6 +48,8 @@ kind = "iem-transmitter"
 status = "owned"
 product = { vendor = "Shure", model = "PSM300", variant = "transmitter" }
 functions = ["route"]
+place = "desk"
+place_note = "Tim: 'Shure IEM receiver' on the desk. Assumed to be this base unit (the transmitter); the bodypack is the worn receiver. Confirm."
 
 ports = [
   { id = "in-{ch}", channels = ["L", "R"], label = "INPUT {ch}", direction = "in", signal = "audio", level = "line" },

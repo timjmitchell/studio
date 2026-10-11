@@ -619,7 +619,7 @@ API. Re-run the script to pick up UA's edits.
 
   For each: owned, planned, or gone?
 - **[I3]** Is there an LG display in use?
-- **[I4]** What are the generic "USB Audio" and "USB Storage" devices on the Anker hub?
+- ~~**[I4]** Generic USB devices on the Anker hub~~ *Resolved (inferred):* the dock's own SD card slot (Genesys reader) and its audio in/out jack, per the dock manual.
 - **[I5]** Is OneDrive used for anything music-related?
 - **[I6]** Add the Apollo x8, Apollo Twin X and UAD Console manuals to `data/manuals/`? (The
   models are now known: x8 HEXA, Twin X QUAD.)
@@ -649,6 +649,6 @@ API. Re-run the script to pick up UA's edits.
   is it the same one the wedge or headphones use? Is the PSM300 set to stereo or mono
   (mixed) mode?
 - **[I23]** Snake: what are channels 5–6 for, and does it have returns?
-- **[I20]** Is the MG3 setup still "guitar on x8 input 4", or is it now the Twin X "B2 Guit
+- ~~**[I20]**~~ *Resolved:* yes, the clean guitar is on x8 input 4, via ES-8 TUNER → Peterson → JHS Clover → snake 4. Console's name 'A4 Mic' was misleading. Was: Is the MG3 setup still "guitar on x8 input 4", or is it now the Twin X "B2 Guit
   Dir"?
 

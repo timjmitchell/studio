@@ -1,0 +1,33 @@
+# Instruments (physical). Guitars and drums to come.
+
+[[unit]]
+id = "roland-fp-30x"
+name = "Roland FP-30X digital piano"
+kind = "physical-instrument"
+status = "owned"
+product = { vendor = "Roland", model = "FP-30X" }
+functions = ["generate", "control"]
+place = "behind-desk-seat"
+notes = "Feeds the studio mono, through a DI into snake channel 5. Also USB-MIDI and Bluetooth (per manual)."
+manual = "data/manuals/boss-roland/Roland-FP-30X-Piano.md"
+
+ports = [
+  # The manual text names them only as "Output jacks"; exact panel labels not in the converted manual.
+  { id = "output-{ch}", channels = ["L", "R"], label = "Output ({ch})", direction = "out", signal = "audio", level = "line" },
+  { id = "phones-{n}", range = [1, 2], label = "Phones {n}", direction = "out", signal = "audio", level = "headphone" },
+  { id = "usb-computer", label = "USB Computer port", direction = "bidirectional", signal = "data" },
+]
+
+[[unit]]
+id = "di-box-piano"
+name = "Whirlwind Director DI (piano)"
+kind = "di-box"
+status = "owned"
+product = { vendor = "Whirlwind", model = "Director" }
+functions = ["convert", "route"]   # line/instrument → balanced mic level
+place = "behind-desk-seat"
+
+ports = [
+  { id = "in", label = "Input", direction = "in", signal = "audio", level = "line" },
+  { id = "out", label = "XLR out", direction = "out", signal = "audio", level = "mic", connector = "xlr" },
+]

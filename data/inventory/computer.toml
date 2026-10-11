@@ -1,0 +1,66 @@
+# Computer, storage and hubs. Thunderbolt topology observed with system_profiler (2026-10-11).
+
+[[unit]]
+id = "mac-studio"
+name = "Mac Studio"
+kind = "computer"
+status = "owned"
+product = { vendor = "Apple", model = "Mac Studio (Mac13,1)", variant = "M1 Max, 32 GB" }
+functions = ["host", "store"]
+place = "desk"
+
+ports = [
+  { id = "thunderbolt-bus-{n}", range = [0, 3], label = "Thunderbolt bus {n}", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
+
+[[unit]]
+id = "samsung-x5"
+name = "Samsung Portable SSD X5"
+kind = "storage"
+status = "owned"
+product = { vendor = "Samsung", model = "Portable SSD X5" }
+functions = ["store"]
+place = "desk"
+role = "main audio drive"
+notes = "Volume Samsung_X5, 1.8 TB. Logic projects live here (/Volumes/Samsung_X5/Hot Fog/)."
+
+ports = [
+  { id = "thunderbolt", label = "Thunderbolt 3", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
+
+[[unit]]
+id = "thunderbay-raid"
+name = "OWC ThunderBay 4 (RAID enclosure)"
+kind = "storage"
+status = "owned"
+product = { vendor = "OWC", model = "ThunderBay 4", variant = "Thunderbolt 3" }
+functions = ["store"]
+place = "desk"
+role = "backup"
+notes = "Four 2 TB drives (disk4–7) in one SoftRAID volume, RAID, 5.5 TB usable (observed). Also holds rehearsal recordings (/Volumes/RAID/Hot Fog/)."
+manual = "data/manuals/computer-hardware/OWC-ThunderBay-4-TB3-User-Guide.md"
+
+ports = [
+  { id = "thunderbolt-{n}", range = [1, 2], label = "Thunderbolt 3 ({n})", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+]
+
+[[unit]]
+id = "anker-dock"
+name = "Anker PowerExpand Elite 12-in-1 TB4 Dock"
+kind = "hub"
+status = "owned"
+product = { vendor = "Anker", model = "PowerExpand Elite 12-in-1 Thunderbolt 4 Dock", variant = "A8397" }
+functions = ["route"]
+place = "?"
+notes = "In series after the ThunderBay (Tim + observed). The drives hang off this chain: the X5 on the downstream Thunderbolt port. The probe's generic 'USB Storage' (Genesys 0x0764) and 'USB Audio' (0x4ef0) devices are the dock's own SD slot and audio jack (inferred from the manual)."
+manual = "data/manuals/computer-hardware/Anker-PowerExpand-Elite-12-in-1-Thunderbolt-4-Dock.md"
+
+ports = [
+  { id = "thunderbolt-upstream", label = "Thunderbolt 4 (host)", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+  { id = "thunderbolt-downstream", label = "Thunderbolt 4 (downstream)", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
+  { id = "usb", label = "USB hub (USB-A 3.1, USB-A 2.0, USB-C 3.1)", direction = "bidirectional", signal = "data" },
+  { id = "sd-slot", label = "SD 4.0 Card Slot (UHS-II)", direction = "bidirectional", signal = "data" },
+  { id = "audio", label = "Audio In and Out", direction = "bidirectional", signal = "audio" },
+  { id = "ethernet", label = "Gigabit Ethernet", direction = "bidirectional", signal = "data" },
+  { id = "hdmi", label = "HDMI 2.0", direction = "out", signal = "video" },
+]

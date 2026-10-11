@@ -27,13 +27,15 @@ ports = [
 ]
 
 [[unit]]
-id = "mac-studio"
-name = "Mac Studio"
-kind = "computer"
+id = "soundid-reference"
+name = "Sonarworks SoundID Reference"
+kind = "monitor-correction"
 status = "owned"
-product = { vendor = "Apple", model = "Mac Studio (Mac13,1)", variant = "M1 Max, 32 GB" }
-functions = ["host", "store"]
-
-ports = [
-  { id = "thunderbolt-bus-0", label = "Thunderbolt bus 0", direction = "bidirectional", signal = "data", connector = "thunderbolt" },
-]
+product = { vendor = "Sonarworks", model = "SoundID Reference", version = "5.13.5" }
+functions = ["process", "measure"]
+runs_on = "mac-studio"
+notes = """Used to EQ the speakers and headphones toward a flat reference. Runs inside UAD Console as
+Apollo Monitor Correction (realtime, on the Apollo), not as a DAW plugin. Profiles: speakers
+'Mackie left mix – 2023-06-14', headphones 'Sony MDR-7506 Wired Average'. On/off state is live
+Console state (see data/snapshots/ua-console/)."""
+manual = "data/manuals/controllers-interfaces/UAD-Console/27-apollo-monitor-correction-by-sonarworks.md"

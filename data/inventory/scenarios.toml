@@ -57,3 +57,17 @@ realization = [
   "balance virtual 3/4 against virtual 1/2 and live inputs in the monitor mix",
 ]
 status = "described"
+
+[[scenario]]
+id = "guitar-with-clean-di"
+intent = "Record guitar: the processed tone plus an unaffected direct signal as a backup"
+listener = "tim"
+transducer = "princeton-speaker:in"   # or headphones / speakers via Console
+mix = "processed guitar (OX emulation and/or TONEX) + clean DI on its own track"
+realization = [
+  "ES-8 patch: OUT 1/L → KHE → selected amp → OX (attenuator + emulation) → x8 in 5/6",
+  "optionally OUT 2/R (loop 6 only = TONEX) → ?",
+  "ES-8 TUNER (bypasses all loops) → Peterson (unmuted) → JHS Clover → snake 4 → x8 in 4: clean DI",
+  "use the DI later to reamp, or live as the MIDI Guitar 3 / synth input",
+]
+status = "described"
