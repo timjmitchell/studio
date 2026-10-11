@@ -3,7 +3,7 @@
 Cover songs for my one-man looping / live performance project (name TBD). One folder per
 song. Each folder has a song doc (`<song>.md`), plus lyrics and charts where I have them.
 
-- **Live rig:** [live-rig-plan.md](live-rig-plan.md)
+- **Live rig (planned):** [docs/studio/rigs/one-man-band-live-rig.md](../../docs/studio/rigs/one-man-band-live-rig.md)
 - **Unsorted files:** [_inbox/](_inbox/)
 
 ## Songs

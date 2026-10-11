@@ -11,7 +11,7 @@ so keep the layout human-friendly.
 | Path | What | Notes |
 |---|---|---|
 | `music/<project>/<song>/` | **Songs**: one folder per song, per project (`hot-fog`, `one-man-band`) | `<song>.md` is the song doc (frontmatter) and the **source of truth** for that song. See `music/README.md` |
-| `docs/studio/` | **Studio docs**: [overview](docs/studio/overview.md) (one page: devices and routing), [model](docs/studio/model.md) (theory: concepts, vocabulary, entities, the cascade), [inventory](docs/studio/inventory.md) (rules for deriving the inventory), [first-pass notes](docs/studio/inventory-first-pass.md) (evidence, UA live snapshot, vendor glossary, open questions) | Start with the overview |
+| `docs/studio/` | **Studio docs**: [overview](docs/studio/overview.md) (one page: devices and routing), [model](docs/studio/model.md) (theory: concepts, vocabulary, entities, the cascade), [inventory](docs/studio/inventory.md) (rules for deriving the inventory), [first-pass notes](docs/studio/inventory-first-pass.md) (evidence, UA live snapshot, vendor glossary, open questions), `rigs/` (planned rigs, e.g. the one-man-band live rig) | Start with the overview |
 | `data/inventory/` | **Structured inventory** (TOML): units, ports, connections, scenarios | Query with `uv run scripts/inventory.py check / ports / trace / find / scenarios` |
 | `data/manuals/` | **Manuals** for owned gear and software, converted to Markdown, plus hand-written `*-Field-Notes.md` | Registry: `data/manuals/sources.toml`. Mirrors: UAD Console, MIDI Guitar 3, music21 |
 | `docs/research/` | Research notes, music-format investigation, named techniques, papers | |

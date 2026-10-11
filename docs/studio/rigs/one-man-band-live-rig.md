@@ -1,5 +1,17 @@
 # Live Performance Rig — Design Summary
 
+> **Status: planned.** A potential future rig for live one-man-band shows. This is not the
+> current studio setup; that's in the [overview](../overview.md) and
+> [`data/inventory/`](../../../data/inventory/README.md). Before building it, check the gear
+> against what's owned ([first-pass notes](../inventory-first-pass.md), finding 4):
+> - The VG-800, GK-5, NUX Optima Air, MOTU M4 and AbleSet don't appear in the manuals or on
+>   the machine.
+> - The owned **GM-800** and the **Apollo** interfaces might stand in for the VG-800 and the
+>   M4.
+>
+> When it's built, its wiring goes in `data/inventory/connections.live-one-man.toml` (rig
+> `live-one-man`).
+
 ## Philosophy
 Solo singer-guitarist performing original songs. Technology should be invisible — the aesthetic is "guy with a guitar." Loops and backing elements support the songs rather than define them. Maximum setup and debugging at home; arrive at the gig and be ready in 10 minutes.
 

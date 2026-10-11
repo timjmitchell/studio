@@ -14,8 +14,8 @@ embeddings, no MCP. Same engine as the sibling `backoffice-pr`'s `/kb`.
 
 - `manuals` — every owned-gear manual: pedals, plugins, Boss/Roland, DAW/video,
   monitors, guitar-gear, loopers, controllers-interfaces.
-- `docs` — studio docs (overview, model, inventory rules) and research notes.
-- `music` — projects and songs: song docs, lyrics, chords/tabs, session notes, rig plans.
+- `docs` — studio docs (overview, model, inventory rules, rig plans) and research notes.
+- `music` — projects and songs: song docs, lyrics, chords/tabs, session notes.
 
 For a Logic-Pro-specific question, prefer the `logichelp` skill (it narrows to
 the Logic guides and reads sections). Use `kb` for everything else or a repo-wide

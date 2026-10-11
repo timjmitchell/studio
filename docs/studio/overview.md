@@ -72,6 +72,11 @@ Console on its own fader, so it can be balanced against the live inputs.
   - **In-ears** (x8 outputs 7/8 → PSM300): its own mix when needed. *Not routed at the
     moment.*
 
+## Planned rigs
+
+- [One-man-band live rig](rigs/one-man-band-live-rig.md): a potential future setup for solo
+  shows (Ableton, modelling guitar rig, VE-500, IEMs). Not built yet.
+
 ## Typical setups
 
 | Doing | Listening on | Mix |

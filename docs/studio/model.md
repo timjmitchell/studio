@@ -1328,7 +1328,7 @@ events: []                 # performances once it's played live
 | Work / Version | `music/<project>/<song>/<song>.md` (frontmatter song doc) | Work and Version are still one doc per folder. Fine while each Work has one Version |
 | Document (lyrics, tab) | `lyrics.md` and chord / tab files in each song folder; Google Docs (Hot Fog lyrics) | Covers have two lyric copies where both existed (`lyrics.md` and the chart file) |
 | Recording | Recordings table in song docs, filled by `scripts/sync_bounces.py` | Hot Fog only; reference recordings for covers aren't tracked |
-| Event | `session-notes.md` snapshots, bounce rows, `live-rig-plan.md` (prescriptive) | Informal; no who/using-what |
+| Event | `session-notes.md` snapshots, bounce rows, `docs/studio/rigs/one-man-band-live-rig.md` (prescriptive, planned) | Informal; no who/using-what |
 | Session | Song doc `logic:` block, `session-notes.md` snapshots | |
 | Release | Song doc `album:` field | No Release records |
 | Product (docs) | `data/manuals/sources.toml`, category `INDEX.md` | Only products that have a manual |
