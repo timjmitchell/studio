@@ -182,8 +182,8 @@ this studio, and how far each has been tested, are tracked in the
   | Scope | Question | UA example (2026-10-11) | Stored in |
   |---|---|---|---|
   | **capability** | What can this product do? | x8: 8 analog, 8 ADAT, 8 virtual, 2–4 cues | Product: manual, factory port lists |
-  | **configuration** | What is enabled from that? | 3 cues, x8 virtual 1–4, I/O Matrix 44 in / 42 out, 48 kHz | the unit or driver; I/O preset (`.uadio`) |
-  | **session** | What is chosen and laid out from what's enabled? | 13 visible strips, names, sends, cue mirrors, plugins | Console session (`.uadmix`), Logic project |
+  | **configuration** | What is enabled from that? | 3 cues, x8 virtual 1–4, I/O Matrix 44 in / 42 out, 48 kHz, **cue mirrors** (global: not saved in sessions ✅) | the unit or driver; I/O preset (`.uadio`) |
+  | **session** | What is chosen and laid out from what's enabled? | 13 visible strips, names, sends, plugins | Console session (`.uadmix`), Logic project |
   | **live** | What is it doing right now? | unsaved tweaks, mutes, meters | the device only |
 
   - **Search across capability, rank by scope.** The agent derives possible realizations from

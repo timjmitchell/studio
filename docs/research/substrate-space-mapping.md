@@ -64,8 +64,8 @@ bound at a place, emitting a table. Ours has levels, each with its own cost to c
 |---|---|---|---|
 | Product (a bundle of capabilities) | Apollo x8: 8 analog, 8 ADAT, 8 virtual, 2–4 cues | manual, factory port lists | never (firmware aside) |
 | Unit | this x8, its serial number, firmware, Thunderbolt chain | the machine | rarely |
-| Configuration | 3 cues, V1–4, I/O Matrix 44 in / 42 out, 48 kHz | the driver; I/O preset (`.uadio`) | rarely; disruptive (quit the DAW first) |
-| Session | 13 visible strips, names, sends, mirrors, plugins | Console session (`.uadmix`) | per task |
+| Configuration | 3 cues, V1–4, I/O Matrix 44 in / 42 out, 48 kHz, cue mirrors (global, not in sessions) | the driver; I/O preset (`.uadio`) | rarely; disruptive (quit the DAW first) |
+| Session | 13 visible strips, names, sends, plugins | Console session (`.uadmix`) | per task |
 | Live | unsaved tweaks, mutes, meters | the engine only | constantly |
 | Code (the execution surface) | engine API, AppleScript, `scripts/*` | this repo | as we build |
 
