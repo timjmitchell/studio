@@ -43,7 +43,8 @@ Drive/Hot Fog/New- 3rd Album/Bounces`).
   engine (and Console) once; see `docs/studio/inventory.md` R15. Paths: `/devices/N`, `/devices/N/inputs/M`, `/devices/N/outputs/M`. Device 0 is
   the Apollo x8, device 1 the Twin X.
 - **Console files:** `~/Documents/Universal Audio/Sessions/*.uadmix` and `IOPresets/*.uadio`
-  (XML).
+  (XML). Global settings that sessions don't save (cue mirrors, cue count, sample rate,
+  clock) are in `~/Library/Preferences/Universal Audio/UA Mixer Engine.ini` (XML).
 - **Logic Pro:** AppleScript via System Events (the `applescript` MCP server); snippets are in
   the Logic Field Notes and the Arbitrary Overlord session notes.
 - **Machine probes:** `system_profiler`, `ioreg` (vendor device names), CoreMIDI, plugin

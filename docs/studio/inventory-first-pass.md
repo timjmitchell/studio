@@ -187,6 +187,11 @@ in the Console UI). "How many channels" means a different thing at each layer:
 - **Talkback isn't a strip.** The Twin X TALKBACK slot is `Active` and not hidden, but Console doesn't show it as a channel.
 - **What gets saved where** (from the files 🏷):
   - A **Console session** (`Sessions/*.uadmix`) saves each input's `kPropChannelHidden` and `kPropEnabledByUser` (the "selected" part), plus its name, fader, sends and plugins. It does **not** save Cue Outputs (cue mirrors and their assignments), hardware gains, sample rate or the I/O Matrix: those are global and stay the same across session loads ✅ ([Console Sessions](../../data/manuals/controllers-interfaces/UAD-Console/25-console-sessions.md)). Confirmed in `Default-20261011.uadmix` 🧪: the cue outputs carry only fixed bus numbers (`kPropSynchOut`), with no mirror.
+  - **Global settings live in `~/Library/Preferences/Universal Audio/UA Mixer Engine.ini`** (XML) 🧪 2026-10-11. It can be read without touching the engine:
+    - `CueOutputDestinations`: the cue mirrors, per cue (`cueNum` 0 = CUE 1). The values use the session's `kPropSynchOut` numbers for x8 outputs: −1 = none, 8–15 = Line 1–8 (the first of the pair), 16–23 = ADAT 1–8, 6 = S/PDIF. Now: CUE 2 = 14 (Line 7-8), CUE 3 = 10 (Line 3-4), matching the engine.
+    - `CueMixInSources`: 0 = main mix, 2 = the cue's own mix (CUE 2 and 3 own).
+    - Also held here: `CueBusCount`, `MonMixToMono`, sample rate, clock, buffer size, alt monitors, dim, the correction on/off states, and the monitor level.
+    - ❓ The per-cue **mono** setting isn't in the ini, and isn't on the cue outputs in the session file. Where it persists is to test (does it survive a session load or a restart?).
   - Two root flags, `kPropHiddenChannelsInSession` and `kPropChannelNamesInSession` (both on in `Tracking.uadmix`), 🔶 decide whether hidden state and names load with the session or stay global.
   - An **I/O preset** (`IOPresets/*.uadio`) saves only the driver map: which hardware channel sits in each of the 44/42 driver slots, and their names (e.g. "UAD OX1").
   - Neither file holds the cue bus count or sample rate. Those are hardware settings.

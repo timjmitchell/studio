@@ -27,7 +27,7 @@ realization = [
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
 default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
-status = "tested"   # 🧪 2026-10-11: set by Tim in Console ~23:15, read back from the engine, signal heard at
+status = "tested"   # 🧪 2026-10-11: set by Tim in Console (by 23:08, engine ini), read back from the engine, signal heard at
                     # the wedge. (22:05 snapshot had no mirror.) Cue mirrors are global Console settings, not saved in
                     # sessions, so loading a session won't change this; Console session "Default-20261011" saved.
 # CUE 3 blend at 22:05: A1 Mic Dyn −18.2 dB, B1 PdlBrd −41.6 dB.
@@ -43,7 +43,7 @@ realization = [
   "Cue Mirror to: Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
 ]
 default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
-status = "tested"   # 🧪 2026-10-11: set by Tim in Console ~23:15, read back from the engine, signal heard on
+status = "tested"   # 🧪 2026-10-11: set by Tim in Console (by 23:08, engine ini), read back from the engine, signal heard on
                     # the in-ears. Cue mirrors are global (not in sessions); Console session "Default-20261011" saved.
 # Cue buses are shared across both Apollos (UAD Console manual, multi-unit cascading ✅), so the Twin X
 # names CUE 2 "LINE 3/4": its sends to "LINE 3-4" are sends to CUE 2. CUE 2 blend at 22:05:
