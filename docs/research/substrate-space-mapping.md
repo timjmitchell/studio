@@ -288,6 +288,30 @@ concepts (§6.3: `fast-attack`, `program-dependent-release`) that any product ca
 that way, character is reference vocabulary that a product *claims*, and it sits between
 purpose and product, not below the product. To think about.
 
+**"1176" is above the product: an archetype.** "The 1176" now names the whole family of
+compressors modelled on it, and there are many: the UA original and its revisions, hardware
+clones, and plugin emulations (the UAD 1176 Rev A on A1; Logic's Compressor has a "Vintage FET"
+circuit type, 🔶 1176-inspired). The original hardware is one member of the family, its
+**origin**, not the top of it:
+
+```text
+compressor ─► fet-compressor ─► 1176 (archetype: carries the traits)
+                                  ├── UA 1176 original, rev A "blue stripe"   ← origin
+                                  ├── hardware clones
+                                  ├── UAD 1176 Rev A plugin                   ← on A1
+                                  └── Logic Compressor "Vintage FET" 🔶
+```
+
+- **The traits live on the archetype**, so "1176-style" resolves to the archetype's traits,
+  and any member (or a non-member with those traits) can supply them.
+- **Members differ, and measurement shows how.** Each member claims the archetype; the data
+  layer (below) says how close it actually is to the origin, or to each other.
+- **Model change candidate:** the model says "an 1176" is an `alt` label for any FET
+  compressor, and makes the original the "reference Product" that emulations point to. The
+  archetype is a narrower concept than `fet-compressor`. The original's traits and those of the
+  archetype may differ (revision to revision). Same pattern for other elevated terms: LA-2A,
+  Pultec, Leslie.
+
 **Character has a data layer: measurement.** A trait is a claim (from the vendor, reputation or
 the manual). A measurement says what the device actually does, at a given setting and input
 level. That's the control plane vs data plane split again, applied to sound:
