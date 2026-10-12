@@ -226,6 +226,32 @@ Why it matters to an agent:
   explains latency, gain staging and why something is silent (no signal reaching the key input
   is a missing edge).
 
+### 4.4 The boundaries of the reference
+
+The console-and-tape archetype is one dimension of the reference. Music itself is the others.
+These are **boundaries, not a catalogue**: they say where reference addresses come from. Each
+one gets written down only when owned gear or real work needs it (the model's *not pedantic*
+principle).
+
+| Dimension | What it covers | Already in the model |
+|---|---|---|
+| **Signal: physical** | time, frequency, amplitude | |
+| **Signal: digital** | sample rate, bit depth, headroom; bitrate for compressed formats (the mp3 bounces) | |
+| **Signal: spatial** | mono, stereo field, surround / Atmos | mono sum (§4.7) |
+| **Music: abstract** | song and form, key, tempo, time signature, rhythm and groove (triplet feel, swing) | song-doc frontmatter; Work (§4.4) |
+| **Process** | writing, arranging, recording, editing, mixing, mastering, sound design | Events and activities (§5) |
+| **Signal path** | the console-and-tape primitives and the patterns built from them (§4, §4.3) | §4.7 mixing and monitoring |
+| **Instrument** | each instrument's own vocabulary and technique (guitar: bends, palm muting, open tunings; drums: rudiments) | effect types (§4.6) |
+
+How the dimensions meet:
+- **A product capability lands at a point in several dimensions.** A compressor acts on
+  amplitude over time, sits at an insert, and is used in mixing or tracking.
+- **The agent can cross dimensions.** "Make the verse feel more laid back" starts in groove,
+  moves into editing or performance, and possibly into the signal path (a slapback delay timed
+  to the tempo).
+- **Digital limits are capacity constraints.** Sample rate, for example: UA cues 3–4 aren't
+  available at 176.4 or 192 kHz.
+
 ## 5. Open questions
 
 - **X axis:** are the console-and-tape sections, §7 Functions, or both the "across" axis?
