@@ -192,6 +192,17 @@ in the Console UI). "How many channels" means a different thing at each layer:
     - `CueMixInSources`: 0 = main mix, 2 = the cue's own mix (CUE 2 and 3 own).
     - Also held here: `CueBusCount`, `MonMixToMono`, sample rate, clock, buffer size, alt monitors, dim, the correction on/off states, and the monitor level.
     - ❓ The per-cue **mono** setting isn't in the ini, and isn't on the cue outputs in the session file. Where it persists is to test (does it survive a session load or a restart?).
+  - **I/O Matrix presets** (`IOPresets/*.uadio`) 🧪 2026-10-11. The live map is **Default** (`IOMapUsingDefault`, no preset loaded; the engine also reports `IOMapPresetDirty = true` ❓). Compared by slot name with the live driver routes:
+
+    | Preset | Saved | What it changes from the live Default | Use 🔶 |
+    |---|---|---|---|
+    | `Preset 1` | 2023-04-03 | same map; driver inputs 5–6 renamed **UAD OX1 / UAD OX2** | names in the DAW's I/O labels |
+    | `Stream` | 2023-08-13 | driver inputs 1–2 = **MON L/R** (the main mix) | streaming apps that record the first two inputs |
+    | `Screencapture` | 2024-12-08 | driver inputs 1–2 = **AUX 2 L/R** | screen recording with a dedicated aux mix |
+    | `Reset?` | 2024-11-22 | an older order: outputs without CUE 4, MON after the virtuals | probably a reset/backup |
+    | 14 factory presets | (installer, 2026-09-09) | other Apollo models (A16, x16, 8p…), PT and Legacy layouts | not this rig |
+
+  - **Why the I/O Matrix matters to the DAW:** a Logic project's inputs and outputs refer to driver channel numbers, not to Apollo inputs. Loading `Stream` or `Screencapture` would make Logic's Input 1 record the main mix or Aux 2 instead of x8 mic 1. So an I/O preset change is a configuration-scope change that ripples into every DAW project. It needs the DAW closed (manual) and a check of the project's I/O afterwards.
   - Two root flags, `kPropHiddenChannelsInSession` and `kPropChannelNamesInSession` (both on in `Tracking.uadmix`), 🔶 decide whether hidden state and names load with the session or stay global.
   - An **I/O preset** (`IOPresets/*.uadio`) saves only the driver map: which hardware channel sits in each of the 44/42 driver slots, and their names (e.g. "UAD OX1").
   - Neither file holds the cue bus count or sample rate. Those are hardware settings.
