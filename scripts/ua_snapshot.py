@@ -175,7 +175,8 @@ def snapshot() -> dict:
     root = props("/")
     driver = clean({"input_routes": root.get("TotalDriverInputRoutes"), "output_routes": root.get("TotalDriverOutputRoutes"),
                     "io_preset": root.get("IOMapPreset") or None, "io_default": root.get("IOMapUsingDefault"),
-                    "sample_rate": root.get("SampleRate")})
+                    "sample_rate": root.get("SampleRate"), "console_session": root.get("Session"),
+                    "session_dirty": root.get("Dirty")})
     drivers = driver_names()
     devices = []
     for d in children("/devices"):
@@ -225,6 +226,7 @@ def markdown(data: dict) -> str:
     n_strips = sum(len(d["inputs"]) for d in data["devices"])
     lines += [f"**Channels:** {n_strips} visible strips · driver (I/O Matrix) {drv.get('input_routes', '?')} in / "
               f"{drv.get('output_routes', '?')} out · I/O preset: {drv.get('io_preset') or ('Default' if drv.get('io_default') else '(untitled)')}"
+              f" · Console session: {drv.get('console_session', '?')}{' (unsaved changes)' if drv.get('session_dirty') else ''}"
               " (see docs/studio/inventory-first-pass.md §3.1)", ""]
     for dev in data["devices"]:
         lines += [f"## {dev['name']}", ""]

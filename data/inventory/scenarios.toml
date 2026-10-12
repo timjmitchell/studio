@@ -27,9 +27,9 @@ realization = [
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
 default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
-status = "tested"   # 🧪 2026-10-11: set by Tim in Console (by 23:08, engine ini), read back from the engine, signal heard at
-                    # the wedge. (22:05 snapshot had no mirror.) Cue mirrors are global Console settings, not saved in
-                    # sessions, so loading a session won't change this; Console session "Default-20261011" saved.
+status = "not-routed"   # 2026-10-11 23:34: opening arbitrary-overlord with Console Recall SYNC cleared the CUE 3
+                        # mirror (→ None) and mono. Default realization above (🧪 tested 23:15). Restore: CUE 3 mirror
+                        # Line 3-4, MONO on. See Logic Field Notes §4.1, Recall test.
 # CUE 3 blend at 22:05: A1 Mic Dyn −18.2 dB, B1 PdlBrd −41.6 dB.
 
 [[scenario]]

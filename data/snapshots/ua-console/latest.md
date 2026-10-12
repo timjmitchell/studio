@@ -1,11 +1,11 @@
-# UAD Console snapshot: 2026-10-11T23:22:05
+# UAD Console snapshot: 2026-10-11T23:34:46
 
-**Label:** port identity: label vs generic vs driver name
+**Label:** Recall rerun C: after reopen without saving
 
-Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2322.toml`.
+Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2334.toml`.
 Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.md §4.7).
 
-**Channels:** 13 visible strips · driver (I/O Matrix) 44 in / 42 out · I/O preset: Default (see docs/studio/inventory-first-pass.md §3.1)
+**Channels:** 13 visible strips · driver (I/O Matrix) 44 in / 42 out · I/O preset: Default · Console session: ../../../Library/Preferences/Universal Audio/extAppSyncSession (see docs/studio/inventory-first-pass.md §3.1)
 
 ## Apollo x8
 
@@ -35,7 +35,7 @@ Hidden in Console (active, not shown): ADAT 1, ADAT 2, ADAT 3, ADAT 4, ADAT 5, A
 |---|---|---|---|---|---|---|
 | CUE 1 | Cue | main mix |  |  |  | active |
 | CUE 2 | Cue | own monitor mix | Line 7-8 |  |  | active |
-| CUE 3 | Cue | own monitor mix | Line 3-4 | yes |  | active |
+| CUE 3 | Cue | own monitor mix |  |  |  | active |
 | CUE 4 | Cue | main mix |  |  |  | inactive |
 | MONITOR | Monitor | main mix |  |  | -43 dB | inactive |
 | HP 1 | Headphone | cue1 |  |  |  | inactive |

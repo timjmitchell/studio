@@ -142,6 +142,13 @@ Gotchas:
 | UAD-2 DSP vs Native | `/Library/Audio/Plug-Ins/Components/` | 224 `UAD …` (DSP) components, 0 `UADx …` (Native): every UAD plugin in Logic runs on Apollo/Satellite DSP |
 | Console Recall | the same scans | installed (`Console Recall.component`). Wasn't in the project at first 🔶 (no match in ProjectData strings); **Tim added it with SYNC on, 2026-10-11 ~23:40**. Console still showed session `Default-20261011` (SYNC acts only on save + reload ✅) |
 
+- 🧪 **Console Recall test (2026-10-11, snapshots `ua-console/2026-10-11_2331` → `_2332` → `_2334`).**
+  Baseline A7 −10.5 dB and CUE 3 mono on, mirror Line 3-4. Logic project saved 23:31:29. Then A7 → −31 dB and mono off, nothing saved.
+  Closed without saving and reopened:
+  - Console session became `../../../Library/Preferences/Universal Audio/extAppSyncSession`, so Recall loaded. That path held no file afterwards.
+  - **A7 came back as −13.43 dB**, the `Default-20261011` value, not the −10.5 dB that was live at the save. 🔶 So Recall seems to capture Console's state when SYNC is switched on (Default at the time), not at each save. ❓ To retest: change something, save, reopen.
+  - **CUE 3's mirror was cleared (Line 3-4 → None), and mono was off.** CUE 2's mirror (Line 7-8) survived. `UA Mixer Engine.ini` was rewritten at 23:34:32 with CUE 3 = −1. So a Recall load **can change the global cue mirrors**, even though Console sessions don't save them. ❓ Why only CUE 3?
+  - ⚠️ Practical: after opening a project with Recall, check the monitor mixes (in-ears, wedge) before playing.
 - Logic shows only the **driver names** (I/O Matrix) for inputs and outputs, never Console labels (Tim).
 - The new-track defaults are stored in the same plist (`InputIndex`, `OutputIndex`, `InputMonitoring` per track type). For example, Vocals defaults to InputIndex 34 = driver input 35 = B MIC/LINE/HIZ 1 (the Twin X's input 1).
 - ❓ **Software Monitoring** (Settings > Audio > Devices) wasn't found in the plist. Read it from the settings UI, or find its key.

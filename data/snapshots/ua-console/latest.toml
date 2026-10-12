@@ -1,14 +1,16 @@
 [snapshot]
-taken = "2026-10-11T23:22:05"
-label = "port identity: label vs generic vs driver name"
+taken = "2026-10-11T23:34:46"
+label = "Recall rerun C: after reopen without saving"
 source = "UA Mixer Engine 127.0.0.1:4710 (read-only get)"
-file = "data/snapshots/ua-console/2026-10-11_2322.toml"
+file = "data/snapshots/ua-console/2026-10-11_2334.toml"
 
 [driver]
 input_routes = 44
 output_routes = 42
 io_default = true
 sample_rate = 48000
+console_session = "../../../Library/Preferences/Universal Audio/extAppSyncSession"
+session_dirty = false
 
 [[devices]]
 index = 0
@@ -354,8 +356,8 @@ name = "CUE 3"
 type = "Cue"
 active = true
 source = "cue"
-mirror_to = "Line 3-4"
-mono = true
+mirror_to = "None"
+mono = false
 
 [[devices.outputs]]
 name = "CUE 4"
