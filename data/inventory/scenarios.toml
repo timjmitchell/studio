@@ -24,7 +24,8 @@ realization = [
   "UA CUE 3: MIX dim (own cue mix), MONO lit",
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
-status = "live"
+status = "not-routed"   # contradicted 2026-10-11 22:05: CUE 3 had no mirror and mono off. At 23:xx Tim set
+                        # CUE 3 → Line 7-8 (mono) instead, so CUE 3 now serves in-ears. Was Line 3-4 ever set? ❓
 
 [[scenario]]
 id = "in-ears"
@@ -33,9 +34,12 @@ listener = "tim"
 transducer = "psm300-pack:rf"
 mix = "monitor mix"
 realization = [
-  "A UA cue mirrored to Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
+  "UA CUE 3: own cue mix, MONO lit",
+  "Cue Mirror to: Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
 ]
-status = "not-routed"   # no cue mirrors to Line 7-8 right now [I24]
+status = "routed"   # set by Tim in Console 2026-10-11 ~23:10, read back from the engine (first set to
+                    # ADAT 7-8 by mis-click, corrected). Not yet signal-tested at the pack. Not saved to the
+                    # "Tracking" Console session. Mono: "one speaker" (Tim)
 
 [[scenario]]
 id = "guest-headphones"
@@ -57,6 +61,10 @@ realization = [
   "balance virtual 3/4 against virtual 1/2 and live inputs in the monitor mix",
 ]
 status = "described"
+# x8 VIRTUAL 3/4 is kept active as a spare DAW return for this: nothing routed to it by default.
+# Tim routes a Logic aux/subgroup there when he wants, e.g., drums separate in the monitor mix
+# while recording (Tim, 2026-10-11). Console already sends VIRTUAL 3 to CUE 2 at 0 dB (snapshot
+# 2026-10-11), so a routed submix would appear in CUE 2.
 
 [[scenario]]
 id = "guitar-with-clean-di"
