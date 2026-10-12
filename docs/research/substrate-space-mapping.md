@@ -283,6 +283,33 @@ Two things this adds to the model:
   The model currently skips the "implementation layer" (circuits, algorithms). Keep skipping
   the internals, but record these interface facts.
 
+**Open: character may sit above the product.** The model already treats traits as reference
+concepts (§6.3: `fast-attack`, `program-dependent-release`) that any product can share. Read
+that way, character is reference vocabulary that a product *claims*, and it sits between
+purpose and product, not below the product. To think about.
+
+**Character has a data layer: measurement.** A trait is a claim (from the vendor, reputation or
+the manual). A measurement says what the device actually does, at a given setting and input
+level. That's the control plane vs data plane split again, applied to sound:
+
+| Claimed (control plane) | Measured (data plane) |
+|---|---|
+| "fast attack" | attack time at attack 7, in µs |
+| "aggressive", "saturates when driven" | harmonic distortion against input level |
+| ratio 4:1 | the static transfer curve |
+| "warm", "bright" | frequency response at a setting |
+| "zero latency" (DSP) | measured latency |
+
+- **Tools:** a plugin analyser such as Plugin Doctor (not installed here; ❓) measures
+  frequency and phase response, harmonics, dynamics and timing. Hardware can be measured by
+  looping it through the Apollo with a test signal.
+- **Measurements are conditional, like character.** Each one is tied to a State and an input
+  level, so it's recorded with them.
+- **The same binding statuses apply:** a trait the measurement confirms, one it contradicts
+  (the emulation doesn't behave like the original), and one nobody has measured (assumed).
+  Comparing an emulation with its target, or two emulations with each other, becomes a
+  data-plane question.
+
 Reading the stack upwards answers *what is this and why use it*. Reading it downwards answers
 *how do I get that sound here*: purpose → products with those traits → the state that produces
 the character on this signal → the controls this format actually has.
