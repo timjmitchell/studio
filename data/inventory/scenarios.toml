@@ -27,8 +27,8 @@ realization = [
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
 default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
-status = "routed"   # set by Tim in Console 2026-10-11 ~23:15, read back from the engine. Not saved to the
-                    # "Tracking" session; not yet signal-tested at the wedge. (22:05 snapshot had no mirror.)
+status = "tested"   # 🧪 2026-10-11: set by Tim in Console ~23:15, read back from the engine, signal heard at
+                    # the wedge. Not yet saved to a Console session. (22:05 snapshot had no mirror.)
 # CUE 3 blend at 22:05: A1 Mic Dyn −18.2 dB, B1 PdlBrd −41.6 dB.
 
 [[scenario]]
@@ -42,14 +42,14 @@ realization = [
   "Cue Mirror to: Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
 ]
 default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
-status = "routed"   # set by Tim in Console 2026-10-11 ~23:15, read back from the engine. Not saved to the
-                    # "Tracking" session; not yet signal-tested at the pack.
+status = "tested"   # 🧪 2026-10-11: set by Tim in Console ~23:15, read back from the engine, signal heard on
+                    # the in-ears. Not yet saved to a Console session.
 # Cue buses are shared across both Apollos (UAD Console manual, multi-unit cascading ✅), so the Twin X
 # names CUE 2 "LINE 3/4": its sends to "LINE 3-4" are sends to CUE 2. CUE 2 blend at 22:05:
 # A1 Mic Dyn −0.3, A5 OX 1 0, A6 OX2 −9.7, x8 VIRTUAL 3 0 (spare DAW return), B2 −4.4 (stale label),
 # Twin X VIRTUAL 1 = Logic main out −8.6, A2 −52 dB.
-# 🔶 The Twin X's physical LINE 3/4 outputs also carry CUE 2 (its "LINE 3/4" output source = cue2). What's
-# cabled to them? ❓
+# The Twin X's physical LINE 3/4 outputs also carry CUE 2 (its "LINE 3/4" output source = cue2), but nothing
+# is cabled to them (Tim, 2026-10-11), so it goes nowhere.
 
 [[scenario]]
 id = "guest-headphones"

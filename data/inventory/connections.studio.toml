@@ -29,10 +29,10 @@ connections = [
   { from = "apollo-twin-x:hp", to = "mdr-7506:plug", medium = "physical", confidence = "declared" },
 
   # Wedge and in-ears (fed by monitor mixes via mirrors; see scenarios.toml)
-  { from = "apollo-x8:line-out-3", to = "turbosound-wedge:in", medium = "physical", confidence = "declared" },
-  { from = "apollo-x8:line-out-7", to = "psm300-tx:in-L", medium = "physical", confidence = "declared" },
-  { from = "apollo-x8:line-out-8", to = "psm300-tx:in-R", medium = "physical", confidence = "declared" },
-  { from = "psm300-tx:rf", to = "psm300-pack:rf", medium = "rf", confidence = "declared" },
+  { from = "apollo-x8:line-out-3", to = "turbosound-wedge:in", medium = "physical", confidence = "tested", notes = "signal heard at the far end, 2026-10-11 (Tim)" },
+  { from = "apollo-x8:line-out-7", to = "psm300-tx:in-L", medium = "physical", confidence = "tested", notes = "signal heard at the far end, 2026-10-11 (Tim)" },
+  { from = "apollo-x8:line-out-8", to = "psm300-tx:in-R", medium = "physical", confidence = "tested", notes = "signal heard at the far end, 2026-10-11 (Tim)" },
+  { from = "psm300-tx:rf", to = "psm300-pack:rf", medium = "rf", confidence = "tested", notes = "signal heard at the far end, 2026-10-11 (Tim)" },
 
   # Snake tails → x8 mic inputs 1–4
   { from = "gator-snake:tail-1", to = "apollo-x8:in-1", medium = "physical", connector = "xlr", confidence = "declared" },
