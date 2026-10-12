@@ -1,9 +1,11 @@
-# UAD Console snapshot: 2026-10-11T22:05:00
+# UAD Console snapshot: 2026-10-11T23:00:36
 
-**Label:** issue 9 first snapshot
+**Label:** after opening Logic project (issue 9)
 
-Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2205.toml`.
+Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2300.toml`.
 Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.md §4.7).
+
+**Channels:** 13 visible strips · driver (I/O Matrix) 44 in / 42 out · I/O preset: Default (see docs/studio/inventory-first-pass.md §3.1)
 
 ## Apollo x8
 
@@ -24,6 +26,8 @@ Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.m
 | A8 | Line | -14.17 dB |  |  |  |  |
 | VIRTUAL 1 | Virtual | -17.66 dB |  |  |  |  |
 | VIRTUAL 3 | Virtual | -14.05 dB |  |  |  | CUE 2 0 |
+
+Hidden in Console (active, not shown): ADAT 1, ADAT 2, ADAT 3, ADAT 4, ADAT 5, ADAT 6, ADAT 7, ADAT 8, S/PDIF L
 
 **Outputs (main mix and monitor mixes)**
 
@@ -56,6 +60,8 @@ Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.m
 | B1 PdlBrd | Line | -6.58 dB | gain 25, Hi-Z |  |  | AUX 1 -19.6, CUE 3 -41.6 |
 | B2 Guit Dir | Mic | -0.49 dB (muted) | gain 13 | Manley VOXBOX (off) |  | AUX 1 -32.4, LINE 3-4 -4.4 |
 | VIRTUAL 1 | Virtual | -16.87 dB |  |  |  | LINE 3-4 -8.6 |
+
+Hidden in Console (active, not shown): S/PDIF L
 
 **Outputs (main mix and monitor mixes)**
 

@@ -1,8 +1,14 @@
 [snapshot]
-taken = "2026-10-11T22:05:00"
-label = "issue 9 first snapshot"
+taken = "2026-10-11T23:00:36"
+label = "after opening Logic project (issue 9)"
 source = "UA Mixer Engine 127.0.0.1:4710 (read-only get)"
-file = "data/snapshots/ua-console/2026-10-11_2205.toml"
+file = "data/snapshots/ua-console/2026-10-11_2300.toml"
+
+[driver]
+input_routes = 44
+output_routes = 42
+io_default = true
+sample_rate = 48000
 
 [[devices]]
 index = 0
@@ -12,6 +18,17 @@ cue_bus_count = 3
 alt_monitor_selection = 0
 dim_db = 17
 function_switch = "none"
+hidden_inputs = [
+    "ADAT 1",
+    "ADAT 2",
+    "ADAT 3",
+    "ADAT 4",
+    "ADAT 5",
+    "ADAT 6",
+    "ADAT 7",
+    "ADAT 8",
+    "S/PDIF L",
+]
 
 [devices.speaker_correction]
 profile = "Mackie left mix - 2023-06-14"
@@ -344,6 +361,9 @@ name = "Apollo Twin X"
 order = 1
 remote_monitor_controller = true
 cue_bus_count = 3
+hidden_inputs = [
+    "S/PDIF L",
+]
 
 [[devices.inputs]]
 name = "B1 PdlBrd"
