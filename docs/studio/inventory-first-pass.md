@@ -171,6 +171,27 @@ inserts were **Pure Plate** (15), **1176 Rev A** (11) and **RealVerb-Pro** (6).
 > `A5 OX 1`, `B2 Guit Dir`). That makes them a reliable wiring declaration the agent can read
 > live.
 
+**Channel counts: three levels** (read from the engine 2026-10-11 22:05 🧪, 13 confirmed by Tim
+in the Console UI). "How many channels" means a different thing at each layer:
+
+| Layer | Count now | What it is | Engine source |
+|---|---|---|---|
+| **Driver routes** (I/O Matrix) | **44 in / 42 out** (36 / 34 active) | Core Audio channels Logic sees. Mode Default, no I/O preset loaded | `/` `TotalDriverInputRoutes` / `TotalDriverOutputRoutes`; `/inputroutes/N`, `/outputroutes/N` |
+| **Mixer input slots** | **50** (x8 28, Twin X 22) | Every input the Console mixer could show, including talkback and `N/A` placeholders | `/devices/N/inputs/M` |
+| **Visible channel strips** | **13** (x8 10, Twin X 3) | What Console shows | input slots where `Active` and not `ChannelHidden`, minus talkback |
+
+- The 44 driver inputs are split as follows. x8 has 34: 8 analog, 8 ADAT, 2 S/PDIF, 8 virtual (5–8 inactive), MON L/R, AUX 1–2 L/R and talkback 1–2 (inactive). Twin X has 10: 2 analog, 4 virtual (3–4 inactive), 2 S/PDIF and talkback 1–2. MON, AUX and talkback appear only as driver inputs (for recording the mix), not as strips.
+- The 42 driver outputs are split as follows. x8 has 36: MON L/R, LINE 1–8, 8 ADAT, 2 S/PDIF, 8 virtual (5–8 inactive) and CUE 1–4 L/R (CUE 4 inactive). Twin X has 6: MON L/R and 4 virtual (3–4 inactive).
+- **A stereo pair is one strip.** The right side reports `Active = false` (e.g. VIRTUAL 2, VIRTUAL 4, S/PDIF R).
+- **Hidden is not off.** x8 ADAT 1–8 and both units' S/PDIF L are `Active` but `ChannelHidden`, so they are hidden with Show/Hide Inputs. Hiding removes the strip and its meter-bridge meter ✅ ([Meter Bridge](../../data/manuals/controllers-interfaces/UAD-Console/03-meter-bridge.md)). 🔶 It probably doesn't stop audio, so a hidden input could still feed a mix. ❓ to test.
+- **Talkback isn't a strip.** The Twin X TALKBACK slot is `Active` and not hidden, but Console doesn't show it as a channel.
+- **What gets saved where** (from the files 🏷):
+  - A **Console session** (`Sessions/*.uadmix`) saves each input's `kPropChannelHidden` and `kPropEnabledByUser` (the "selected" part), plus its name, fader, sends, plugins and cue mirrors.
+  - Two root flags, `kPropHiddenChannelsInSession` and `kPropChannelNamesInSession` (both on in `Tracking.uadmix`), 🔶 decide whether hidden state and names load with the session or stay global.
+  - An **I/O preset** (`IOPresets/*.uadio`) saves only the driver map: which hardware channel sits in each of the 44/42 driver slots, and their names (e.g. "UAD OX1").
+  - Neither file holds the cue bus count or sample rate. Those are hardware settings.
+- The virtual channel count is set per unit: x8 V1–4 (2 stereo strips: V1, V3), Twin X V1–2 (1 strip). Twin X VIRTUAL 5–8 also have `EnabledByUser = false`.
+
 ### 3.2 How the UA system is used (from Tim, 2026-10-11)
 
 **What Console is.** UAD Console is a control surface for the UA devices. It closely emulates

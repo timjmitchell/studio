@@ -7,8 +7,9 @@
 Talks to the UA Mixer Engine on 127.0.0.1:4710 using only `get` requests, so it never
 changes anything. Captures, per Apollo:
   - device roles and monitor section (remote monitor controller, alt, dim, correction profiles)
-  - inputs: name, type, fader, mute, hardware preamp (gain, 48V, pad, low cut, phase, Hi-Z),
+  - inputs (visible channel strips; hidden ones listed by name): name, type, fader, mute, hardware preamp (gain, 48V, pad, low cut, phase, Hi-Z),
     Unison preamp plugin, inserts with their parameters, and aux / cue (monitor-mix) sends
+  - driver (I/O Matrix) route counts and I/O preset
   - outputs: monitor and cue outputs with source (main mix vs cue), mirror and mono
 
 Writes data/snapshots/ua-console/<YYYY-MM-DD_HHMM>.toml and .md, plus latest.toml / latest.md.
@@ -33,7 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "snapshots" / "ua-console"
 HOST, PORT = "127.0.0.1", 4710
 THROTTLE_S = 0.03   # pause between queries; the engine crashed once under a burst (R15)
-SKIP_TYPES = {"ADAT", "S/PDIF", "TalkbackMic"}
+NOT_STRIPS = {"TalkbackMic", "None"}   # mixer slots Console never shows as channel strips
 
 
 _sock: socket.socket | None = None
@@ -100,12 +101,15 @@ def plugin(path: str) -> dict | None:
 
 
 def snapshot_input(base: str) -> dict | None:
+    """A visible channel strip, the way Console decides it: Active and not ChannelHidden.
+    The right side of a stereo pair reports Active = false, so a pair is one strip.
+    Hidden-but-active inputs come back as a stub (no deep read): hiding is a view setting."""
     p = props(base)
     io = p.get("IOType", "")
-    if io in SKIP_TYPES or p.get("Name") in (None, "N/A 1"):
+    if io in NOT_STRIPS or not p.get("Active"):
         return None
-    if io == "Virtual" and not p.get("Active"):
-        return None
+    if p.get("ChannelHidden"):
+        return {"name": p.get("Name"), "type": io, "hidden": True}
     rec = {"name": p.get("Name"), "type": io, "active": p.get("Active"),
            "fader_db": p.get("FaderLevel"), "mute": p.get("Mute"), "stereo": p.get("Stereo")}
     kids = children(base)
@@ -149,6 +153,10 @@ def snapshot_output(base: str) -> dict | None:
 
 
 def snapshot() -> dict:
+    root = props("/")
+    driver = clean({"input_routes": root.get("TotalDriverInputRoutes"), "output_routes": root.get("TotalDriverOutputRoutes"),
+                    "io_preset": root.get("IOMapPreset") or None, "io_default": root.get("IOMapUsingDefault"),
+                    "sample_rate": root.get("SampleRate")})
     devices = []
     for d in children("/devices"):
         p = props(f"/devices/{d}")
@@ -160,10 +168,12 @@ def snapshot() -> dict:
             "speaker_correction": clean({"profile": p.get("SpeakerCorrectionName"), "power": p.get("SpeakerCorrectionPower")}),
             "headphone_correction": clean({"profile": p.get("HeadphoneCorrectionName"), "enabled": p.get("HeadphoneCorrectionEnable")}),
         })
-        dev["inputs"] = [r for i in children(f"/devices/{d}/inputs") if (r := snapshot_input(f"/devices/{d}/inputs/{i}"))]
+        ins = [r for i in children(f"/devices/{d}/inputs") if (r := snapshot_input(f"/devices/{d}/inputs/{i}"))]
+        dev["inputs"] = [r for r in ins if not r.get("hidden")]
+        dev["hidden_inputs"] = [r["name"] for r in ins if r.get("hidden")]
         dev["outputs"] = [r for o in children(f"/devices/{d}/outputs") if (r := snapshot_output(f"/devices/{d}/outputs/{o}"))]
         devices.append(dev)
-    return {"devices": devices}
+    return {"driver": driver, "devices": devices}
 
 
 def onoff(b) -> str:
@@ -177,6 +187,11 @@ def markdown(data: dict) -> str:
         lines += [f"**Label:** {s['label']}", ""]
     lines += [f"Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `{s['file']}`.",
               "Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.md §4.7).", ""]
+    drv = data.get("driver", {})
+    n_strips = sum(len(d["inputs"]) for d in data["devices"])
+    lines += [f"**Channels:** {n_strips} visible strips · driver (I/O Matrix) {drv.get('input_routes', '?')} in / "
+              f"{drv.get('output_routes', '?')} out · I/O preset: {drv.get('io_preset') or ('Default' if drv.get('io_default') else '(untitled)')}"
+              " (see docs/studio/inventory-first-pass.md §3.1)", ""]
     for dev in data["devices"]:
         lines += [f"## {dev['name']}", ""]
         roles = []
@@ -205,6 +220,8 @@ def markdown(data: dict) -> str:
             if i.get("mute"):
                 fader += " (muted)"
             lines.append(f"| {i['name']} | {i.get('type', '')} | {fader} | {pre_s} | {uni_s} | {ins_s} | {sends_s} |")
+        if dev.get("hidden_inputs"):
+            lines += ["", f"Hidden in Console (active, not shown): {', '.join(dev['hidden_inputs'])}"]
         lines += ["", "**Outputs (main mix and monitor mixes)**", "",
                   "| Output | Type | Source | Mirror to | Mono | Level | State |", "|---|---|---|---|---|---|---|"]
         for o in dev["outputs"]:
@@ -240,7 +257,9 @@ def main() -> None:
     shutil.copyfile(toml_path, OUT / "latest.toml")
     shutil.copyfile(md_path, OUT / "latest.md")
     n_in = sum(len(d["inputs"]) for d in data["devices"])
-    print(f"wrote {toml_path.relative_to(ROOT)} and .md ({len(data['devices'])} devices, {n_in} inputs); latest.* updated")
+    n_hid = sum(len(d["hidden_inputs"]) for d in data["devices"])
+    print(f"wrote {toml_path.relative_to(ROOT)} and .md ({len(data['devices'])} devices, {n_in} visible strips, "
+          f"{n_hid} hidden); latest.* updated")
 
 
 if __name__ == "__main__":
