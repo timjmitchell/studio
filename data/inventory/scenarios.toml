@@ -1,6 +1,7 @@
 # Scenarios: an intent (who listens, on what, hearing what) plus Tim's PREFERRED realization.
 # Possible realizations are derived from the inventory; only preferred ones are recorded here.
 # Model: docs/studio/model.md §2 (intent vs realization), §4.7 (monitor mix).
+# default = true: part of the studio's default setup. A snapshot that differs is drift from the default.
 
 [[scenario]]
 id = "desk-headphones"
@@ -12,6 +13,7 @@ realization = [
   "UA cue 1 (Twin X 'HP'): MIX lit → carries the main mix",
   "logic-pro:main-out → apollo-twin-x:virtual-1/2",
 ]
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
 status = "live"   # matches the UA engine 2026-10-11
 
 [[scenario]]
@@ -24,6 +26,7 @@ realization = [
   "UA CUE 3: own cue mix, MONO lit (one speaker)",
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
 status = "routed"   # set by Tim in Console 2026-10-11 ~23:15, read back from the engine. Not saved to the
                     # "Tracking" session; not yet signal-tested at the wedge. (22:05 snapshot had no mirror.)
 # CUE 3 blend at 22:05: A1 Mic Dyn −18.2 dB, B1 PdlBrd −41.6 dB.
@@ -38,6 +41,7 @@ realization = [
   "UA CUE 2: own cue mix, stereo",
   "Cue Mirror to: Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
 ]
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
 status = "routed"   # set by Tim in Console 2026-10-11 ~23:15, read back from the engine. Not saved to the
                     # "Tracking" session; not yet signal-tested at the pack.
 # Cue buses are shared across both Apollos (UAD Console manual, multi-unit cascading ✅), so the Twin X
