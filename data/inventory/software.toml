@@ -15,6 +15,25 @@ ports = [
 ]
 
 [[unit]]
+id = "ableton-live"
+name = "Ableton Live 12 Standard"
+kind = "daw"
+status = "owned"
+product = { vendor = "Ableton", model = "Live 12", variant = "Standard", version = "12.2.2" }
+functions = ["record", "play", "mix", "host"]
+runs_on = "mac-studio"
+notes = """Version from the app bundle (2026-10-11). Standard edition, so no Max for Live (Suite or
+the Max add-on needed). Python control scripts and AbletonOSC work on Standard. 'Ableton Live 12
+Intro' 12.2 is also installed, a leftover. Planned live-rig DAW: see
+docs/studio/rigs/one-man-band-ableton-ableset.md. No standing route to Console yet; the Logic
+pattern (main out → Twin X VIRTUAL 1/2) applies."""
+manual = "data/manuals/daw-video/Ableton-Live-12-Manual.md"
+
+ports = [
+  { id = "main-out", label = "Main track output (Ext. Out 1/2)", direction = "out", signal = "audio", medium = "virtual" },
+]
+
+[[unit]]
 id = "macos-audio"
 name = "macOS default output"
 kind = "system-audio"

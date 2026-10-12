@@ -4,6 +4,7 @@ Cover songs for my one-man looping / live performance project (name TBD). One fo
 song. Each folder has a song doc (`<song>.md`), plus lyrics and charts where I have them.
 
 - **Live rig (planned):** [docs/studio/rigs/one-man-band-live-rig.md](../../docs/studio/rigs/one-man-band-live-rig.md)
+- **Ableton / AbleSet control notes:** [docs/studio/rigs/one-man-band-ableton-ableset.md](../../docs/studio/rigs/one-man-band-ableton-ableset.md)
 - **Unsorted files:** [_inbox/](_inbox/)
 
 ## Songs

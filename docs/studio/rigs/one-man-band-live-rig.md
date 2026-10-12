@@ -9,6 +9,9 @@
 > - The owned **GM-800** and the **Apollo** interfaces might stand in for the VG-800 and the
 >   M4.
 >
+> Ableton/AbleSet versions, scripting options, AbleSet OSC/MIDI control and manual pointers:
+> [one-man-band-ableton-ableset.md](one-man-band-ableton-ableset.md).
+>
 > When it's built, its wiring goes in `data/inventory/connections.live-one-man.toml` (rig
 > `live-one-man`).
 
@@ -153,7 +156,7 @@ The VG-800 supports multiple configurations within a song via Ableton-driven MID
 
 ## Open Questions / Next Steps
 1. Verify VG-800 CC implementation in detail (which CC numbers map to which functions)
-2. Confirm AbleSet compatibility with current Ableton Live 12 version
+2. ~~Confirm AbleSet compatibility with current Ableton Live 12 version~~ Works with all editions of Live 10–12, including Standard; Max for Live not required ([notes](one-man-band-ableton-ableset.md))
 3. Choose specific foot controller (4-button minimum: next song, previous, stop, panic)
 4. Evaluate wired vs wireless IEM — depends on how much you move on stage
 5. Acoustic guitar — confirm NUX Optima Air output level is line-level compatible with interface input
