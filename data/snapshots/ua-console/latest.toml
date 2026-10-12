@@ -1,8 +1,8 @@
 [snapshot]
-taken = "2026-10-11T23:00:36"
-label = "after opening Logic project (issue 9)"
+taken = "2026-10-11T23:22:05"
+label = "port identity: label vs generic vs driver name"
 source = "UA Mixer Engine 127.0.0.1:4710 (read-only get)"
-file = "data/snapshots/ua-console/2026-10-11_2300.toml"
+file = "data/snapshots/ua-console/2026-10-11_2322.toml"
 
 [driver]
 input_routes = 44
@@ -13,6 +13,8 @@ sample_rate = 48000
 [[devices]]
 index = 0
 name = "Apollo x8"
+unit = "apollo-x8"
+hw_id = 843593281
 order = 0
 cue_bus_count = 3
 alt_monitor_selection = 0
@@ -39,12 +41,15 @@ profile = "Sony MDR-7506 Wired Average"
 enabled = false
 
 [[devices.inputs]]
+port = "apollo-x8:in-1"
 name = "A1 Mic Dyn"
+generic = "ANALOG 1"
 type = "Mic"
 active = true
 fader_db = -0.74
 mute = false
 stereo = false
+driver = "A MIC/LINE/HIZ 1"
 
 [devices.inputs.preamp]
 gain = 39.0
@@ -107,12 +112,15 @@ Power = "On"
 "CUE 3" = -18.2
 
 [[devices.inputs]]
+port = "apollo-x8:in-2"
 name = "A2 Mic"
+generic = "ANALOG 2"
 type = "Mic"
 active = true
 fader_db = -1.19
 mute = true
 stereo = false
+driver = "A MIC/LINE/HIZ 2"
 
 [devices.inputs.preamp]
 gain = 17.0
@@ -126,12 +134,15 @@ hi_z = false
 "CUE 2" = -52.1
 
 [[devices.inputs]]
+port = "apollo-x8:in-3"
 name = "A3 Mic Cond."
+generic = "ANALOG 3"
 type = "Mic"
 active = true
 fader_db = -0.09
 mute = false
 stereo = false
+driver = "A MIC/LINE 3"
 
 [devices.inputs.preamp]
 gain = 12.0
@@ -173,12 +184,15 @@ Power = "On"
 "AUX 1" = -24.1
 
 [[devices.inputs]]
+port = "apollo-x8:in-4"
 name = "A4 Mic"
+generic = "ANALOG 4"
 type = "Mic"
 active = true
 fader_db = -4.93
 mute = true
 stereo = false
+driver = "A MIC/LINE 4"
 
 [devices.inputs.preamp]
 gain = 18.0
@@ -245,58 +259,76 @@ Level = "-0.0 dB"
 Power = "Off"
 
 [[devices.inputs]]
+port = "apollo-x8:in-5"
 name = "A5 OX 1"
+generic = "ANALOG 5"
 type = "Line"
 active = true
 fader_db = -6.0
 mute = true
 stereo = false
+driver = "A LINE 5"
 
 [devices.inputs.sends_db]
 "CUE 2" = 0.0
 
 [[devices.inputs]]
+port = "apollo-x8:in-6"
 name = "A6 OX2"
+generic = "ANALOG 6"
 type = "Line"
 active = true
 fader_db = -19.27
 mute = true
 stereo = false
+driver = "A LINE 6"
 
 [devices.inputs.sends_db]
 "CUE 2" = -9.7
 
 [[devices.inputs]]
+port = "apollo-x8:in-7"
 name = "A7"
+generic = "ANALOG 7"
 type = "Line"
 active = true
 fader_db = -13.43
 mute = false
 stereo = false
+driver = "A LINE 7"
 
 [[devices.inputs]]
+port = "apollo-x8:in-8"
 name = "A8"
+generic = "ANALOG 8"
 type = "Line"
 active = true
 fader_db = -14.17
 mute = false
 stereo = false
+driver = "A LINE 8"
 
 [[devices.inputs]]
+port = "apollo-x8:virtual-1"
 name = "VIRTUAL 1"
+generic = "VIRTUAL 1/2"
 type = "Virtual"
 active = true
 fader_db = -17.66
 mute = false
 stereo = true
+driver = "A VIRTUAL 1"
 
 [[devices.inputs]]
+port = "apollo-x8:virtual-3"
 name = "VIRTUAL 3"
+generic = "VIRTUAL 3/4"
 type = "Virtual"
 active = true
 fader_db = -14.05
 mute = false
 stereo = true
+driver = "A VIRTUAL 3"
 
 [devices.inputs.sends_db]
 "CUE 2" = 0.0
@@ -314,7 +346,7 @@ name = "CUE 2"
 type = "Cue"
 active = true
 source = "cue"
-mirror_to = "None"
+mirror_to = "Line 7-8"
 mono = false
 
 [[devices.outputs]]
@@ -322,8 +354,8 @@ name = "CUE 3"
 type = "Cue"
 active = true
 source = "cue"
-mirror_to = "None"
-mono = false
+mirror_to = "Line 3-4"
+mono = true
 
 [[devices.outputs]]
 name = "CUE 4"
@@ -358,6 +390,8 @@ source = "cue2"
 [[devices]]
 index = 1
 name = "Apollo Twin X"
+unit = "apollo-twin-x"
+hw_id = 689459886
 order = 1
 remote_monitor_controller = true
 cue_bus_count = 3
@@ -366,12 +400,15 @@ hidden_inputs = [
 ]
 
 [[devices.inputs]]
+port = "apollo-twin-x:in-1"
 name = "B1 PdlBrd"
+generic = "ANALOG 1"
 type = "Line"
 active = true
 fader_db = -6.58
 mute = false
 stereo = false
+driver = "B MIC/LINE/HIZ 1"
 
 [devices.inputs.preamp]
 gain = 25.0
@@ -386,12 +423,15 @@ hi_z = true
 "CUE 3" = -41.6
 
 [[devices.inputs]]
+port = "apollo-twin-x:in-2"
 name = "B2 Guit Dir"
+generic = "ANALOG 2"
 type = "Mic"
 active = true
 fader_db = -0.49
 mute = true
 stereo = false
+driver = "B MIC/LINE 2"
 
 [devices.inputs.preamp]
 gain = 13.0
@@ -435,15 +475,18 @@ Power = "Off"
 "LINE 3-4" = -4.4
 
 [[devices.inputs]]
+port = "apollo-twin-x:virtual-1"
 name = "VIRTUAL 1"
+generic = "VIRTUAL 1/2"
 type = "Virtual"
 active = true
 fader_db = -16.87
 mute = false
 stereo = true
+driver = "B VIRTUAL 1"
 
 [devices.inputs.sends_db]
-"LINE 3-4" = -8.6
+"LINE 3-4" = -23.0
 
 [[devices.outputs]]
 name = "HP"

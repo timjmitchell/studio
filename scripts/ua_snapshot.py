@@ -35,6 +35,10 @@ OUT = ROOT / "data" / "snapshots" / "ua-console"
 HOST, PORT = "127.0.0.1", 4710
 THROTTLE_S = 0.03   # pause between queries; the engine crashed once under a burst (R15)
 NOT_STRIPS = {"TalkbackMic", "None"}   # mixer slots Console never shows as channel strips
+UNIT_IDS = {"Apollo x8": "apollo-x8", "Apollo Twin X": "apollo-twin-x"}   # inventory unit ids
+# Port families: engine input IOType / driver route IOType → inventory port prefix
+FAMILY = {"Mic": "in", "Line": "in", "Hi-Z": "in", "MicLine": "in", "MicLineHiZ": "in",
+          "Virtual": "virtual", "ADAT": "adat", "S/PDIF": "spdif", "SPDIF": "spdif"}
 
 
 _sock: socket.socket | None = None
@@ -100,17 +104,32 @@ def plugin(path: str) -> dict | None:
                   "params": params})
 
 
-def snapshot_input(base: str) -> dict | None:
-    """A visible channel strip, the way Console decides it: Active and not ChannelHidden.
-    The right side of a stereo pair reports Active = false, so a pair is one strip.
-    Hidden-but-active inputs come back as a stub (no deep read): hiding is a view setting."""
-    p = props(base)
+def driver_names() -> dict:
+    """Driver (I/O Matrix) input names, keyed by (device hw id, port family, channel). These are the
+    only names the DAW sees: Console labels never reach Core Audio."""
+    names = {}
+    for r in children("/inputroutes"):
+        rp = props(f"/inputroutes/{r}")
+        fam = FAMILY.get(rp.get("IOType", ""))
+        if fam:
+            names[(rp.get("DeviceHwID"), fam, rp.get("ChannelIndex"))] = rp.get("Name")
+    return names
+
+
+def snapshot_input(base: str) -> tuple[str, dict | None]:
+    """Returns (IOType, record). The record is a visible channel strip, the way Console decides it:
+    Active and not ChannelHidden. The right side of a stereo pair reports Active = false, so a pair
+    is one strip. Hidden-but-active inputs come back as a stub (no deep read): hiding is a view
+    setting. `generic` is the engine's default name for the slot, which a Console label hides."""
+    raw = get(base).get("properties", {})
+    p = {k: v.get("value") for k, v in raw.items() if "value" in v}
     io = p.get("IOType", "")
     if io in NOT_STRIPS or not p.get("Active"):
-        return None
+        return io, None
+    generic = raw.get("Name", {}).get("default")
     if p.get("ChannelHidden"):
-        return {"name": p.get("Name"), "type": io, "hidden": True}
-    rec = {"name": p.get("Name"), "type": io, "active": p.get("Active"),
+        return io, {"name": p.get("Name"), "generic": generic, "type": io, "hidden": True}
+    rec = {"name": p.get("Name"), "generic": generic, "type": io, "active": p.get("Active"),
            "fader_db": p.get("FaderLevel"), "mute": p.get("Mute"), "stereo": p.get("Stereo")}
     kids = children(base)
     if "preamps" in kids:
@@ -137,7 +156,7 @@ def snapshot_input(base: str) -> dict | None:
             if sp.get("Gain", -144) > -144:
                 sends[sp["Name"]] = round(sp["Gain"], 1)
         rec["sends_db"] = sends
-    return clean(rec)
+    return io, clean(rec)
 
 
 def snapshot_output(base: str) -> dict | None:
@@ -157,18 +176,33 @@ def snapshot() -> dict:
     driver = clean({"input_routes": root.get("TotalDriverInputRoutes"), "output_routes": root.get("TotalDriverOutputRoutes"),
                     "io_preset": root.get("IOMapPreset") or None, "io_default": root.get("IOMapUsingDefault"),
                     "sample_rate": root.get("SampleRate")})
+    drivers = driver_names()
     devices = []
     for d in children("/devices"):
         p = props(f"/devices/{d}")
         dev = clean({
-            "index": int(d), "name": p.get("DeviceName"), "order": p.get("MultiUnitOrder"),
+            "index": int(d), "name": p.get("DeviceName"), "unit": UNIT_IDS.get(p.get("DeviceName")),
+            "hw_id": p.get("DeviceHwID"), "order": p.get("MultiUnitOrder"),
             "remote_monitor_controller": p.get("RemoteMonitorController"),
             "cue_bus_count": p.get("CueBusCount"), "alt_monitor_selection": p.get("AltMonSelection"),
             "dim_db": p.get("DimAttenuation"), "function_switch": p.get("FuncSwitchMode"),
             "speaker_correction": clean({"profile": p.get("SpeakerCorrectionName"), "power": p.get("SpeakerCorrectionPower")}),
             "headphone_correction": clean({"profile": p.get("HeadphoneCorrectionName"), "enabled": p.get("HeadphoneCorrectionEnable")}),
         })
-        ins = [r for i in children(f"/devices/{d}/inputs") if (r := snapshot_input(f"/devices/{d}/inputs/{i}"))]
+        unit = UNIT_IDS.get(p.get("DeviceName"), str(p.get("DeviceName", d)).lower().replace(" ", "-"))
+        ins, count = [], {}
+        for i in children(f"/devices/{d}/inputs"):
+            io, r = snapshot_input(f"/devices/{d}/inputs/{i}")
+            fam = FAMILY.get(io)
+            if fam:
+                count[fam] = count.get(fam, 0) + 1   # channel number within the family, in engine order
+            if r is None:
+                continue
+            if fam:
+                r = {"port": f"{unit}:{fam}-{count[fam]}", **r}
+                if drv := drivers.get((p.get("DeviceHwID"), fam, count[fam])):
+                    r["driver"] = drv
+            ins.append(r)
         dev["inputs"] = [r for r in ins if not r.get("hidden")]
         dev["hidden_inputs"] = [r["name"] for r in ins if r.get("hidden")]
         dev["outputs"] = [r for o in children(f"/devices/{d}/outputs") if (r := snapshot_output(f"/devices/{d}/outputs/{o}"))]
@@ -204,7 +238,8 @@ def markdown(data: dict) -> str:
             roles.append(f"headphone correction '{hc['profile']}' ({onoff(hc.get('enabled'))})")
         if roles:
             lines += ["- " + "\n- ".join(roles), ""]
-        lines += ["**Inputs**", "", "| Input | Type | Fader | Preamp | Unison | Inserts | Sends |", "|---|---|---|---|---|---|---|"]
+        lines += ["**Inputs**", "", "| Input (Console label) | Port · DAW sees | Type | Fader | Preamp | Unison | Inserts | Sends |",
+                  "|---|---|---|---|---|---|---|---|"]
         for i in dev["inputs"]:
             pre = i.get("preamp", {})
             pre_s = ", ".join(x for x in [
@@ -219,7 +254,8 @@ def markdown(data: dict) -> str:
             fader = f"{i['fader_db']:g} dB" if "fader_db" in i else ""
             if i.get("mute"):
                 fader += " (muted)"
-            lines.append(f"| {i['name']} | {i.get('type', '')} | {fader} | {pre_s} | {uni_s} | {ins_s} | {sends_s} |")
+            port_s = f"`{i['port'].split(':')[1]}` · {i['driver']}" if "driver" in i else f"`{i.get('port', '?')}`"
+            lines.append(f"| {i['name']} | {port_s} | {i.get('type', '')} | {fader} | {pre_s} | {uni_s} | {ins_s} | {sends_s} |")
         if dev.get("hidden_inputs"):
             lines += ["", f"Hidden in Console (active, not shown): {', '.join(dev['hidden_inputs'])}"]
         lines += ["", "**Outputs (main mix and monitor mixes)**", "",

@@ -1,8 +1,8 @@
-# UAD Console snapshot: 2026-10-11T23:00:36
+# UAD Console snapshot: 2026-10-11T23:22:05
 
-**Label:** after opening Logic project (issue 9)
+**Label:** port identity: label vs generic vs driver name
 
-Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2300.toml`.
+Read-only from the UA Mixer Engine by `scripts/ua_snapshot.py`. Data: `data/snapshots/ua-console/2026-10-11_2322.toml`.
 Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.md §4.7).
 
 **Channels:** 13 visible strips · driver (I/O Matrix) 44 in / 42 out · I/O preset: Default (see docs/studio/inventory-first-pass.md §3.1)
@@ -14,18 +14,18 @@ Terms: *main mix* = MONITOR; a *monitor mix* = a UA cue (see docs/studio/model.m
 
 **Inputs**
 
-| Input | Type | Fader | Preamp | Unison | Inserts | Sends |
-|---|---|---|---|---|---|---|
-| A1 Mic Dyn | Mic | -0.74 dB | gain 39, low cut | Manley VOXBOX (on) | UA 1176 Rev A (off) | AUX 1 -23.7, CUE 2 -0.3, CUE 3 -18.2 |
-| A2 Mic | Mic | -1.19 dB (muted) | gain 17, low cut |  |  | CUE 2 -52.1 |
-| A3 Mic Cond. | Mic | -0.09 dB | gain 12, low cut | Neve Preamp (on) | UA 1176 Rev A (off) | AUX 1 -24.1 |
-| A4 Mic | Mic | -4.93 dB (muted) | gain 18 | API Vision Channel Strip (off) |  |  |
-| A5 OX 1 | Line | -6 dB (muted) |  |  |  | CUE 2 0 |
-| A6 OX2 | Line | -19.27 dB (muted) |  |  |  | CUE 2 -9.7 |
-| A7 | Line | -13.43 dB |  |  |  |  |
-| A8 | Line | -14.17 dB |  |  |  |  |
-| VIRTUAL 1 | Virtual | -17.66 dB |  |  |  |  |
-| VIRTUAL 3 | Virtual | -14.05 dB |  |  |  | CUE 2 0 |
+| Input (Console label) | Port · DAW sees | Type | Fader | Preamp | Unison | Inserts | Sends |
+|---|---|---|---|---|---|---|---|
+| A1 Mic Dyn | `in-1` · A MIC/LINE/HIZ 1 | Mic | -0.74 dB | gain 39, low cut | Manley VOXBOX (on) | UA 1176 Rev A (off) | AUX 1 -23.7, CUE 2 -0.3, CUE 3 -18.2 |
+| A2 Mic | `in-2` · A MIC/LINE/HIZ 2 | Mic | -1.19 dB (muted) | gain 17, low cut |  |  | CUE 2 -52.1 |
+| A3 Mic Cond. | `in-3` · A MIC/LINE 3 | Mic | -0.09 dB | gain 12, low cut | Neve Preamp (on) | UA 1176 Rev A (off) | AUX 1 -24.1 |
+| A4 Mic | `in-4` · A MIC/LINE 4 | Mic | -4.93 dB (muted) | gain 18 | API Vision Channel Strip (off) |  |  |
+| A5 OX 1 | `in-5` · A LINE 5 | Line | -6 dB (muted) |  |  |  | CUE 2 0 |
+| A6 OX2 | `in-6` · A LINE 6 | Line | -19.27 dB (muted) |  |  |  | CUE 2 -9.7 |
+| A7 | `in-7` · A LINE 7 | Line | -13.43 dB |  |  |  |  |
+| A8 | `in-8` · A LINE 8 | Line | -14.17 dB |  |  |  |  |
+| VIRTUAL 1 | `virtual-1` · A VIRTUAL 1 | Virtual | -17.66 dB |  |  |  |  |
+| VIRTUAL 3 | `virtual-3` · A VIRTUAL 3 | Virtual | -14.05 dB |  |  |  | CUE 2 0 |
 
 Hidden in Console (active, not shown): ADAT 1, ADAT 2, ADAT 3, ADAT 4, ADAT 5, ADAT 6, ADAT 7, ADAT 8, S/PDIF L
 
@@ -34,8 +34,8 @@ Hidden in Console (active, not shown): ADAT 1, ADAT 2, ADAT 3, ADAT 4, ADAT 5, A
 | Output | Type | Source | Mirror to | Mono | Level | State |
 |---|---|---|---|---|---|---|
 | CUE 1 | Cue | main mix |  |  |  | active |
-| CUE 2 | Cue | own monitor mix |  |  |  | active |
-| CUE 3 | Cue | own monitor mix |  |  |  | active |
+| CUE 2 | Cue | own monitor mix | Line 7-8 |  |  | active |
+| CUE 3 | Cue | own monitor mix | Line 3-4 | yes |  | active |
 | CUE 4 | Cue | main mix |  |  |  | inactive |
 | MONITOR | Monitor | main mix |  |  | -43 dB | inactive |
 | HP 1 | Headphone | cue1 |  |  |  | inactive |
@@ -55,11 +55,11 @@ Hidden in Console (active, not shown): ADAT 1, ADAT 2, ADAT 3, ADAT 4, ADAT 5, A
 
 **Inputs**
 
-| Input | Type | Fader | Preamp | Unison | Inserts | Sends |
-|---|---|---|---|---|---|---|
-| B1 PdlBrd | Line | -6.58 dB | gain 25, Hi-Z |  |  | AUX 1 -19.6, CUE 3 -41.6 |
-| B2 Guit Dir | Mic | -0.49 dB (muted) | gain 13 | Manley VOXBOX (off) |  | AUX 1 -32.4, LINE 3-4 -4.4 |
-| VIRTUAL 1 | Virtual | -16.87 dB |  |  |  | LINE 3-4 -8.6 |
+| Input (Console label) | Port · DAW sees | Type | Fader | Preamp | Unison | Inserts | Sends |
+|---|---|---|---|---|---|---|---|
+| B1 PdlBrd | `in-1` · B MIC/LINE/HIZ 1 | Line | -6.58 dB | gain 25, Hi-Z |  |  | AUX 1 -19.6, CUE 3 -41.6 |
+| B2 Guit Dir | `in-2` · B MIC/LINE 2 | Mic | -0.49 dB (muted) | gain 13 | Manley VOXBOX (off) |  | AUX 1 -32.4, LINE 3-4 -4.4 |
+| VIRTUAL 1 | `virtual-1` · B VIRTUAL 1 | Virtual | -16.87 dB |  |  |  | LINE 3-4 -23 |
 
 Hidden in Console (active, not shown): S/PDIF L
 

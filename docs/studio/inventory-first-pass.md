@@ -157,6 +157,20 @@ map that the agent can read.
 | both | ADAT 1–8, S/PDIF | | unnamed | mostly muted / unused; Twin X optical set to S/PDIF |
 | both | VIRTUAL 1–8 | | | software returns (V1, V3 active on the x8) |
 
+**Three names per channel** (Tim + engine, 2026-10-11 🧪). A Console label hides which port a
+channel really is, and **the DAW never sees Console labels**: Logic's I/O settings show only the
+driver (I/O Matrix) names. So the stable identity is the inventory port, and the names hang off it:
+
+| Identity (inventory port) | Hardware name (engine default) | Driver name (what Logic sees) | Console label |
+|---|---|---|---|
+| `apollo-x8:in-4` | ANALOG 4 | A MIC/LINE 4 | A4 Mic |
+| `apollo-x8:in-5` | ANALOG 5 | A LINE 5 (or "UAD OX1" with I/O preset `Preset 1`) | A5 OX 1 |
+| `apollo-twin-x:in-1` | ANALOG 1 | B MIC/LINE/HIZ 1 | B1 PdlBrd |
+
+`ua_snapshot.py` records all three on every input (`port`, `generic`, `driver`, `name`). The
+driver name can be changed in the I/O Matrix and saved in a `.uadio` preset; that is the only way
+to give Logic a meaningful channel name.
+
 **Naming history** (from 33 saved `.uadmix` sessions, 2023–2025 🏷). The physical inputs have
 moved around. Recurring patterns:
 - **x8 1–2:** SM7 / Vox, Pedalboard "O2", Bass, Tonex, Mod5.
