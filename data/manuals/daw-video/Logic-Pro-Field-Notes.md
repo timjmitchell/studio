@@ -140,7 +140,7 @@ Gotchas:
 | Project sample rate | `<project>.logicx/Alternatives/NNN/MetaData.plist` `SampleRate` | 48000 (both alternatives of arbitrary-overlord) |
 | UAD plugins used | `strings` on `Alternatives/NNN/ProjectData` | alt 001: UAD Teletronix LA-2A Silver, UAD Pure Plate, UAD dbx 160 |
 | UAD-2 DSP vs Native | `/Library/Audio/Plug-Ins/Components/` | 224 `UAD …` (DSP) components, 0 `UADx …` (Native): every UAD plugin in Logic runs on Apollo/Satellite DSP |
-| Console Recall | the same scans | installed (`Console Recall.component`), **not in this project** 🔶 (no match in ProjectData strings) |
+| Console Recall | the same scans | installed (`Console Recall.component`). Wasn't in the project at first 🔶 (no match in ProjectData strings); **Tim added it with SYNC on, 2026-10-11 ~23:40**. Console still showed session `Default-20261011` (SYNC acts only on save + reload ✅) |
 
 - Logic shows only the **driver names** (I/O Matrix) for inputs and outputs, never Console labels (Tim).
 - The new-track defaults are stored in the same plist (`InputIndex`, `OutputIndex`, `InputMonitoring` per track type). For example, Vocals defaults to InputIndex 34 = driver input 35 = B MIC/LINE/HIZ 1 (the Twin X's input 1).
