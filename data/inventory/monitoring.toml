@@ -5,9 +5,10 @@ id = "hr824-pair"
 name = "Mackie HR824 (pair)"
 kind = "studio-monitor"
 status = "owned"
-product = { vendor = "Mackie", model = "HR824", variant = "?" }   # mk1 or mk2? [I13]
+product = { vendor = "Mackie", model = "HR824", variant = "mk1" }   # Tim, 2026-10-11
 functions = ["transduce"]
 place = "desk"
+manual = "data/manuals/monitors/Mackie-HR824-Owners-Manual.md"
 notes = "Main monitors. EQ'd flat for reference monitoring with SoundID, integrated in Console (Apollo Monitor Correction). Profile on the x8: 'Mackie left mix – 2023-06-14'."
 
 ports = [

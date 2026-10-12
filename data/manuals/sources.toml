@@ -456,6 +456,15 @@ vendor = "Turbosound"
 version = ""
 url = ""
 
+# Original (mk1) HR824 manual, Part No. 820-226-00 Rev. A 12/00. Captured from
+# manualslib (wkhtmltopdf web capture), so it includes some site chrome.
+[[manual]]
+file = "monitors/Mackie-HR824-Owners-Manual.pdf"
+name = "HR824 Studio Monitor Owner's Manual"
+vendor = "Mackie"
+version = "Rev. A (12/00)"
+url = "https://www.manualslib.com/manual/97201/Mackie-Hr824.html"
+
 # =============================== loopers ===============================
 
 [[manual]]
