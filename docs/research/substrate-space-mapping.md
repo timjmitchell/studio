@@ -252,6 +252,41 @@ How the dimensions meet:
 - **Digital limits are capacity constraints.** Sample rate, for example: UA cues 3–4 aren't
   available at 176.4 or 192 kHz.
 
+### 4.5 One device, top to bottom: the compressor
+
+*A sketch: the levels and their order aren't settled.* At a single place, a product has its own stack, running from the reference down into the
+infrastructure. Example: the **UAD 1176 Rev A** on A1 in the 2026-10-11 snapshot.
+
+| Level | What it holds | 1176 Rev A on A1 | In the model |
+|---|---|---|---|
+| **Reference: purpose** | what a compressor does and why you'd use one | reduces dynamic range (amplitude over time); used to control, add punch or sustain, glue, duck | effect types (§4.6); *why* = the patterns (§4.3) |
+| **Product + emulated product** | the product's own properties, plus those of the device it emulates | UAD 1176 Rev A → emulates the UA 1176 "blue stripe" (1967, FET) | §6.3 Emulation; traits on the reference Product |
+| **Character** | low-level traits: fast attack, program-dependent release, saturation, colour | fast attack, aggressive, forward; distortion when driven hard | §6.3 `traits` |
+| **Infrastructure** | the electrical circuit or the plugin format and host; which controls exist | UAD DSP on the Apollo (a Native version also exists); fixed threshold; attack 7 = fastest; ratio buttons | partly (Parameter §6.4); the model skips the "implementation layer" (§4.2) |
+
+The snapshot shows the state: Input −32.68 dB, Output −20.08 dB, Attack 7.00, Release 4.01, 4:1,
+power off.
+
+Two things this adds to the model:
+- **Character comes from state relative to the signal, not from the product alone.** An 1176
+  has a fixed threshold, so the input level against the source decides how hard it compresses
+  and whether it saturates. The same goes for hardware, by its electrical behaviour. So a
+  trait is often **conditional**: "fast attack" at attack 7; "saturates" when driven. The
+  model puts traits on the reference Product; some belong on a State plus an input level.
+- **The infrastructure level is in scope, to the extent an agent needs it.**
+  - Does a control exist? An LA-2A has no attack or release.
+  - Format and host: VST3 / AU / UAD DSP / Native, or hardware.
+  - For hardware: levels and impedance, and whether it sits at line or instrument level on an
+    insert.
+  - Latency.
+
+  The model currently skips the "implementation layer" (circuits, algorithms). Keep skipping
+  the internals, but record these interface facts.
+
+Reading the stack upwards answers *what is this and why use it*. Reading it downwards answers
+*how do I get that sound here*: purpose → products with those traits → the state that produces
+the character on this signal → the controls this format actually has.
+
 ## 5. Open questions
 
 - **X axis:** are the console-and-tape sections, §7 Functions, or both the "across" axis?
