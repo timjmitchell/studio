@@ -129,6 +129,25 @@ Gotchas:
 - 🧪 Submenus that Logic fills in when opened (e.g. File > Project Alternatives) read as empty until they're opened.
 - 🧪 Finder aliases to `.logicx` projects couldn't be resolved by script. Store real paths.
 
+### 4.1 Reading Logic's audio setup (read-only, 2026-10-11 🧪)
+
+| What | Where | Value now |
+|---|---|---|
+| Audio device | `defaults read com.apple.logic10 AudioHardwarePreferences` | "Universal Audio Thunderbolt" (in and out) |
+| Main output (I/O Assignments, Stereo Output) | `StereoOutputPair` in `com.apple.logic10` | **19**, a 0-based pair: driver outputs 39–40 = **B VIRTUAL 1/2** (Twin X virtual 1/2) |
+| Main output mirroring | `StereoOutputMirroring` | 0 (off) |
+| Low Latency Mode | `LowLatencyMode` | 0 (off) |
+| Project sample rate | `<project>.logicx/Alternatives/NNN/MetaData.plist` `SampleRate` | 48000 (both alternatives of arbitrary-overlord) |
+| UAD plugins used | `strings` on `Alternatives/NNN/ProjectData` | alt 001: UAD Teletronix LA-2A Silver, UAD Pure Plate, UAD dbx 160 |
+| UAD-2 DSP vs Native | `/Library/Audio/Plug-Ins/Components/` | 224 `UAD …` (DSP) components, 0 `UADx …` (Native): every UAD plugin in Logic runs on Apollo/Satellite DSP |
+| Console Recall | the same scans | installed (`Console Recall.component`), **not in this project** 🔶 (no match in ProjectData strings) |
+
+- Logic shows only the **driver names** (I/O Matrix) for inputs and outputs, never Console labels (Tim).
+- The new-track defaults are stored in the same plist (`InputIndex`, `OutputIndex`, `InputMonitoring` per track type). For example, Vocals defaults to InputIndex 34 = driver input 35 = B MIC/LINE/HIZ 1 (the Twin X's input 1).
+- ❓ **Software Monitoring** (Settings > Audio > Devices) wasn't found in the plist. Read it from the settings UI, or find its key.
+- 🔶 The open alternative of arbitrary-overlord ("arb-overlord-feb") is `001`: its folder changed when the project opened (22:59), and it has 17 tracks.
+- ⚠️ Counting tracks via `entire contents` of the Tracks splitter group failed this time; the query needs revisiting.
+
 ---
 
 ## Tests to run
