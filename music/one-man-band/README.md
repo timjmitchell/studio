@@ -25,6 +25,7 @@ song. Each folder has a song doc (`<song>.md`), plus lyrics and charts where I h
 | [Sauget Wind](sauget-wind/sauget-wind.md) | Uncle Tupelo |
 | [Seven Seas](seven-seas/seven-seas.md) | Echo & the Bunnymen |
 | [Solar Sister](solar-sister/solar-sister.md) | The Posies |
+| [Some Might Say](some-might-say/some-might-say.md) | Oasis |
 | [Stop Me If You Think You've Heard This One Before](stop-me-if-you-think/stop-me-if-you-think.md) | The Smiths |
 | [Sugar Spun Sister](sugar-spun-sister/sugar-spun-sister.md) | The Stone Roses |
 | [The Killing Moon](the-killing-moon/the-killing-moon.md) | Echo & the Bunnymen |

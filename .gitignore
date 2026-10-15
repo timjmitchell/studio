@@ -10,3 +10,8 @@ kb/indexes/
 
 # Research paper PDFs — re-downloadable from the url in each converted .md.
 docs/research/**/*.pdf
+
+# Song PDFs (chord sheets, tabs, scores) — downloaded or printed, often image-only and
+# copyrighted. Kept locally in music/_pdfs/<project>/<song>/, not tracked.
+music/_pdfs/*
+!music/_pdfs/README.md
