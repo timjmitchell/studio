@@ -155,6 +155,42 @@ Gotchas:
 - 🔶 The open alternative of arbitrary-overlord ("arb-overlord-feb") is `001`: its folder changed when the project opened (22:59), and it has 17 tracks.
 - ⚠️ Counting tracks via `entire contents` of the Tracks splitter group failed this time; the query needs revisiting.
 
+## 5. MIDI onto a Smart Tempo map (MIDI follows the audio)
+
+Tim's workflow: stem the record → Smart Tempo map from the **drum stem** → bring in a MIDI
+transcription. Then either (a) **the MIDI follows the tempo map** (what's used here) or
+(b) the audio is flexed to the MIDI's grid. First case: *Some Might Say*, 2026-10-12.
+
+**Setup before importing the recording** (Tim's steps 🧪, wording checked against UG § Smart
+Tempo project settings, line 38843):
+1. File > Project Settings > **Smart Tempo** > *Defaults for Flex & Follow Region Setting*:
+   set **Set Imported Files To = On**, so Smart Tempo analyzes imported audio and places
+   tempo markers.
+2. Tick **Trim start of new regions** (the checkbox under *Set Imported Files To*). The
+   imported region then starts at the file's **first downbeat**, which takes care of any
+   silence or count-in before the music (the *Some Might Say* source has about 10 s).
+3. Put the **playhead (cursor) on the first downbeat**, i.e. the bar line where the song's
+   bar 1 should be, so the trimmed region lands there.
+
+- ✅ **MIDI regions always follow the project tempo.** There's no Flex & Follow setting for
+  MIDI (UG § The Flex & Follow audio region parameter, line 27794). So once the map exists,
+  the MIDI rides it with nothing else to do.
+- ⚠️ **Set the LCD to Keep Project Tempo before importing.** In Adapt mode "the project tempo
+  does change to adapt to imported audio or MIDI files" (UG line 27894), which would overwrite
+  the drum map. Auto should behave like Keep here (the stems count as a tempo reference,
+  line 27902), but don't rely on it.
+- ❓ The import sections (UG line 10119) don't say whether a MIDI file's tempo or markers
+  come in on *import* (File > Open brings in both). Belt and braces: import a copy with the
+  tempo events stripped (e.g. `music/one-man-band/some-might-say/midi/some-might-say_no-tempo.mid`).
+- ✅ Import places the file at the playhead or drop point **rounded to the bar** (UG line 10121).
+  Line up on the transcription's **first full-band downbeat**, not on bar 1, because intros
+  (feedback, pickups) are often free-time on the record:
+  `import bar = (Logic bar of the band's first downbeat) − (MIDI bar of that downbeat − 1)`.
+- 🔶 If the MIDI drifts from a given section onward, the tempo map has a missing or extra bar
+  there (or a bar Smart Tempo got wrong). Fix it in the Smart Tempo Editor with downbeat
+  hints, not by moving MIDI.
+- ❓ Untested: whether marker events in an *imported* SMF become Logic markers.
+
 ---
 
 ## Tests to run
@@ -164,4 +200,5 @@ Gotchas:
 - [ ] Metronome = K with the stock U.S. set.
 - [ ] Copy Key Commands to Clipboard and save the output here as the authoritative map.
 - [ ] Inspect `com.apple.logic.pro.cs` for existing controller assignments.
+- [ ] Import an SMF that has markers and a tempo into a project in Keep mode: do markers come in? Does a tempo dialog appear?
 - [ ] `quit app` for non-session apps (Fastmail, Obsidian) via osascript.
