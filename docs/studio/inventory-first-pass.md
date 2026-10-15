@@ -290,7 +290,7 @@ per [model §4.1a](model.md#41a-two-layers-reference-and-solution-architecture))
 | **MIX** (switch) | UAD Console | Per cue output: main monitor mix (lit) or the cue bus (dim) | chooses main mix vs monitor mix | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
 | **MONO** (switch) | UAD Console | Per cue output: sums the cue to mono | mono sum (same, cue outputs only) | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
 | **Cue Mirror to** | UAD Console, rack models | Copies a cue to a line pair; that output is no longer available to the DAW | monitor mix delivery (implements) | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
-| **Digital Mirror** | Apollo / Console | Copies the monitor outputs to S/PDIF (AES on x16) | main mix (related) | [LUNA manual](../../data/manuals/plugins/LUNA-2.0.1-Manual.md#L10055) |
+| **Digital Mirror** | Apollo / Console | Copies the monitor outputs to S/PDIF (AES on x16) | main mix (related) | [LUNA manual](../../data/manuals/plugins/LUNA-3.0-Manual.md#L10509) |
 | **Virtual** (VIRTUAL 1–8) | UAD Console | Input strips fed from the computer's software outputs | virtual channel (same) | [Input Channel Strips](../../data/manuals/controllers-interfaces/UAD-Console/06-input-channel-strips.md) |
 | **Aux** (AUX 1/2) | UAD Console | Two stereo aux buses; returns host plug-in inserts | submix (related: an effects return) | [Aux Returns](../../data/manuals/controllers-interfaces/UAD-Console/21-aux-returns.md) |
 | **Flex Routing** | UAD Console, rack models | Input channel → any hardware output; not a mix bus | direct out (related) | [Output Flex Routing](../../data/manuals/controllers-interfaces/UAD-Console/19-output-flex-routing.md) |
@@ -321,7 +321,7 @@ per [model §4.1a](model.md#41a-two-layers-reference-and-solution-architecture))
   🔶 So the limit is driver I/O channels, not DSP.
 
 > Don't confuse **Digital Mirror** with the cue mirror. Digital Mirror copies the *main
-> monitor* outputs to S/PDIF ✅ ([LUNA manual](../../data/manuals/plugins/LUNA-2.0.1-Manual.md#L10055)).
+> monitor* outputs to S/PDIF ✅ ([LUNA manual](../../data/manuals/plugins/LUNA-3.0-Manual.md#L10509)).
 
 **How Console does it** (from Tim):
 - You choose **how many** monitor mixes you want. Monitor mixes and virtual channels **trade
