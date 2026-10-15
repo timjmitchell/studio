@@ -59,10 +59,10 @@ version = ""
 url = "https://help.uaudio.com/hc/en-us/articles/13443257772436-UAD-2-Plug-Ins-Manual-PDF"
 
 [[manual]]
-file = "plugins/LUNA-2.0.1-Manual.pdf"
+file = "plugins/LUNA-3.0-Manual.pdf"
 name = "LUNA Recording System Manual"
 vendor = "Universal Audio"
-version = "2.0.1"
+version = "3.0"
 url = "https://help.uaudio.com/hc/en-us/articles/360041758592-Download-LUNA-Manual"
 
 [[manual]]

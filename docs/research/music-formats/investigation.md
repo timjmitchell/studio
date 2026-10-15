@@ -3,7 +3,8 @@
 Goal: let an agent read/reason over MIDI, tablature (`.gpx`, ASCII/txt tab),
 notation, and other score formats to **extract, translate, and convert**.
 
-Status: reference only (no pipeline built yet). Drop example files in
+Status: reference only (no pipeline built yet). **Tested case study:** [some-might-say-case.md](some-might-say-case.md)
+(MIDI, GP7, PDF chords and tab, Logic stems for one song, 2026-10-12). Drop example files in
 `docs/music-formats/examples/` and we can prototype against them.
 
 ## Core insight

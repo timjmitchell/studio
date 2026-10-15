@@ -1,0 +1,536 @@
+[snapshot]
+taken = "2026-10-11T23:34:46"
+label = "Recall rerun C: after reopen without saving"
+source = "UA Mixer Engine 127.0.0.1:4710 (read-only get)"
+file = "data/snapshots/ua-console/2026-10-11_2334.toml"
+
+[driver]
+input_routes = 44
+output_routes = 42
+io_default = true
+sample_rate = 48000
+console_session = "../../../Library/Preferences/Universal Audio/extAppSyncSession"
+session_dirty = false
+
+[[devices]]
+index = 0
+name = "Apollo x8"
+unit = "apollo-x8"
+hw_id = 843593281
+order = 0
+cue_bus_count = 3
+alt_monitor_selection = 0
+dim_db = 17
+function_switch = "none"
+hidden_inputs = [
+    "ADAT 1",
+    "ADAT 2",
+    "ADAT 3",
+    "ADAT 4",
+    "ADAT 5",
+    "ADAT 6",
+    "ADAT 7",
+    "ADAT 8",
+    "S/PDIF L",
+]
+
+[devices.speaker_correction]
+profile = "Mackie left mix - 2023-06-14"
+power = false
+
+[devices.headphone_correction]
+profile = "Sony MDR-7506 Wired Average"
+enabled = false
+
+[[devices.inputs]]
+port = "apollo-x8:in-1"
+name = "A1 Mic Dyn"
+generic = "ANALOG 1"
+type = "Mic"
+active = true
+fader_db = -0.74
+mute = false
+stereo = false
+driver = "A MIC/LINE/HIZ 1"
+
+[devices.inputs.preamp]
+gain = 39.0
+phantom_48v = false
+pad = false
+low_cut = true
+phase = false
+hi_z = false
+
+[devices.inputs.unison]
+plugin = "UAD Manley VOXBOX"
+power = true
+
+[devices.inputs.unison.params]
+"Source Select" = "Mic"
+"Low Cut" = "80 Hz"
+Phase = "0"
+Input = "6.4"
+Gain = "50 dB"
+"SC Link" = "Link"
+"Comp Byp" = "In"
+"Comp Thresh" = "6.2"
+"Comp Attack" = "Fast"
+"Comp Rel" = "Medium"
+"EQ Byp" = "Byp"
+"Lo Peak" = "0.0 dB"
+"Lo Peak Freq" = "70 Hz"
+"Mid Dip" = "-7.4 dB"
+"Mid Dip Freq" = "500 Hz"
+"Hi Peak" = "1.5 dB"
+"Hi Peak Freq" = "12 kHz"
+"De Ess Byp" = "Byp"
+"De Ess Sel" = "6K"
+"De Ess Thr" = "6.5"
+Meter = "GR"
+"Transformer Byp" = "Byp"
+Output = "-0.3 dB"
+Power = "On"
+
+[[devices.inputs.inserts]]
+slot = 2
+plugin = "UAD UA 1176 Rev A"
+power = false
+
+[devices.inputs.inserts.params]
+Input = "-32.68 dB"
+Output = "-20.08 dB"
+Attack = "7.00"
+Release = "4.01"
+Ratio = "4:1"
+Meter = "GR"
+"SC Filter" = "Off"
+Mix = "100 %"
+Headroom = "16 dB"
+Power = "On"
+
+[devices.inputs.sends_db]
+"AUX 1" = -23.7
+"CUE 2" = -0.3
+"CUE 3" = -18.2
+
+[[devices.inputs]]
+port = "apollo-x8:in-2"
+name = "A2 Mic"
+generic = "ANALOG 2"
+type = "Mic"
+active = true
+fader_db = -1.19
+mute = true
+stereo = false
+driver = "A MIC/LINE/HIZ 2"
+
+[devices.inputs.preamp]
+gain = 17.0
+phantom_48v = false
+pad = false
+low_cut = true
+phase = false
+hi_z = false
+
+[devices.inputs.sends_db]
+"CUE 2" = -52.1
+
+[[devices.inputs]]
+port = "apollo-x8:in-3"
+name = "A3 Mic Cond."
+generic = "ANALOG 3"
+type = "Mic"
+active = true
+fader_db = -0.09
+mute = false
+stereo = false
+driver = "A MIC/LINE 3"
+
+[devices.inputs.preamp]
+gain = 12.0
+phantom_48v = false
+pad = false
+low_cut = true
+phase = false
+
+[devices.inputs.unison]
+plugin = "UAD Neve Preamp"
+power = true
+
+[devices.inputs.unison.params]
+"Input Select" = "Mic"
+Gain = "-50 dB"
+"HP Filt" = "80 Hz"
+Phase = "Normal"
+Output = "-0.5 dB"
+Power = "On"
+
+[[devices.inputs.inserts]]
+slot = 1
+plugin = "UAD UA 1176 Rev A"
+power = false
+
+[devices.inputs.inserts.params]
+Input = "-35.04 dB"
+Output = "-14.80 dB"
+Attack = "4.36"
+Release = "4.22"
+Ratio = "4:1"
+Meter = "GR"
+"SC Filter" = "Off"
+Mix = "100 %"
+Headroom = "16 dB"
+Power = "On"
+
+[devices.inputs.sends_db]
+"AUX 1" = -24.1
+
+[[devices.inputs]]
+port = "apollo-x8:in-4"
+name = "A4 Mic"
+generic = "ANALOG 4"
+type = "Mic"
+active = true
+fader_db = -4.93
+mute = true
+stereo = false
+driver = "A MIC/LINE 4"
+
+[devices.inputs.preamp]
+gain = 18.0
+phantom_48v = false
+pad = false
+low_cut = false
+phase = false
+
+[devices.inputs.unison]
+plugin = "UAD API Vision Channel Strip"
+power = false
+
+[devices.inputs.unison.params]
+"Input Select" = "Mic"
+"Mic Gain" = "40.5 dB"
+"Line Gain" = "0.0 dB"
+Pad = "Off"
+Phase = "Normal"
+"Cut Filter" = "Off"
+"215 LP Filter" = "40.8 k"
+"215 HP Filter" = "21.3 Hz"
+"215 Dyn SC" = "Off"
+"215 On" = "50 Hz"
+"235 Thresh" = "-12.7 dB"
+"235 Depth" = "46.7 dB"
+"235 Attack" = "Normal"
+"235 Release" = "0.72 s"
+"235 R/H" = "Release"
+"235 G/E" = "Gate"
+"235 On" = "Off"
+"225 Thresh" = "-4.5 dB"
+"225 Ratio" = "3.1"
+"225 Attack" = "Medium"
+"225 Release" = "0.35 s"
+"225 Knee" = "Soft"
+"225 Type" = "New (FF)"
+"225 On" = "On"
+"550 HF Freq" = "15 kHz"
+"550 HF Gain" = "4 dB"
+"550 HF Filter" = "Shelf"
+"550 HMF Freq" = "5 kHz"
+"550 HMF Gain" = "2 dB"
+"550 LMF Freq" = "700 Hz"
+"550 LMF Gain" = "0 dB"
+"550 LF Freq" = "100 Hz"
+"550 LF Gain" = "0 dB"
+"550 LF Filter" = "Shelf"
+"560 16kHz" = "0.3 dB"
+"560 8kHz" = "-0.9 dB"
+"560 4kHz" = "1.8 dB"
+"560 2kHz" = "0.0 dB"
+"560 1kHz" = "1.8 dB"
+"560 500Hz" = "-6.8 dB"
+"560 250Hz" = "0.0 dB"
+"560 125Hz" = "0.0 dB"
+"560 63Hz" = "4.6 dB"
+"560 31Hz" = "4.9 dB"
+"EQ Predyn" = "Off"
+"EQ Dyn SC" = "Off"
+"EQ Type" = "550L"
+"EQ On" = "On"
+Level = "-0.0 dB"
+"SC Link" = "On"
+Power = "Off"
+
+[[devices.inputs]]
+port = "apollo-x8:in-5"
+name = "A5 OX 1"
+generic = "ANALOG 5"
+type = "Line"
+active = true
+fader_db = -6.0
+mute = true
+stereo = false
+driver = "A LINE 5"
+
+[devices.inputs.sends_db]
+"CUE 2" = 0.0
+
+[[devices.inputs]]
+port = "apollo-x8:in-6"
+name = "A6 OX2"
+generic = "ANALOG 6"
+type = "Line"
+active = true
+fader_db = -19.27
+mute = true
+stereo = false
+driver = "A LINE 6"
+
+[devices.inputs.sends_db]
+"CUE 2" = -9.7
+
+[[devices.inputs]]
+port = "apollo-x8:in-7"
+name = "A7"
+generic = "ANALOG 7"
+type = "Line"
+active = true
+fader_db = -13.43
+mute = false
+stereo = false
+driver = "A LINE 7"
+
+[[devices.inputs]]
+port = "apollo-x8:in-8"
+name = "A8"
+generic = "ANALOG 8"
+type = "Line"
+active = true
+fader_db = -14.17
+mute = false
+stereo = false
+driver = "A LINE 8"
+
+[[devices.inputs]]
+port = "apollo-x8:virtual-1"
+name = "VIRTUAL 1"
+generic = "VIRTUAL 1/2"
+type = "Virtual"
+active = true
+fader_db = -17.66
+mute = false
+stereo = true
+driver = "A VIRTUAL 1"
+
+[[devices.inputs]]
+port = "apollo-x8:virtual-3"
+name = "VIRTUAL 3"
+generic = "VIRTUAL 3/4"
+type = "Virtual"
+active = true
+fader_db = -14.05
+mute = false
+stereo = true
+driver = "A VIRTUAL 3"
+
+[devices.inputs.sends_db]
+"CUE 2" = 0.0
+
+[[devices.outputs]]
+name = "CUE 1"
+type = "Cue"
+active = true
+source = "mon"
+mirror_to = "None"
+mono = false
+
+[[devices.outputs]]
+name = "CUE 2"
+type = "Cue"
+active = true
+source = "cue"
+mirror_to = "Line 7-8"
+mono = false
+
+[[devices.outputs]]
+name = "CUE 3"
+type = "Cue"
+active = true
+source = "cue"
+mirror_to = "None"
+mono = false
+
+[[devices.outputs]]
+name = "CUE 4"
+type = "Cue"
+active = false
+source = "mon"
+mirror_to = "None"
+mono = false
+
+[[devices.outputs]]
+name = "MONITOR"
+type = "Monitor"
+active = false
+source = "mon"
+mono = false
+level_db = -43.0
+mute = false
+dim = false
+
+[[devices.outputs]]
+name = "HP 1"
+type = "Headphone"
+active = false
+source = "cue1"
+
+[[devices.outputs]]
+name = "HP 2"
+type = "Headphone"
+active = false
+source = "cue2"
+
+[[devices]]
+index = 1
+name = "Apollo Twin X"
+unit = "apollo-twin-x"
+hw_id = 689459886
+order = 1
+remote_monitor_controller = true
+cue_bus_count = 3
+hidden_inputs = [
+    "S/PDIF L",
+]
+
+[[devices.inputs]]
+port = "apollo-twin-x:in-1"
+name = "B1 PdlBrd"
+generic = "ANALOG 1"
+type = "Line"
+active = true
+fader_db = -6.58
+mute = false
+stereo = false
+driver = "B MIC/LINE/HIZ 1"
+
+[devices.inputs.preamp]
+gain = 25.0
+phantom_48v = false
+pad = false
+low_cut = false
+phase = false
+hi_z = true
+
+[devices.inputs.sends_db]
+"AUX 1" = -19.6
+"CUE 3" = -41.6
+
+[[devices.inputs]]
+port = "apollo-twin-x:in-2"
+name = "B2 Guit Dir"
+generic = "ANALOG 2"
+type = "Mic"
+active = true
+fader_db = -0.49
+mute = true
+stereo = false
+driver = "B MIC/LINE 2"
+
+[devices.inputs.preamp]
+gain = 13.0
+phantom_48v = false
+pad = false
+low_cut = false
+phase = false
+
+[devices.inputs.unison]
+plugin = "UAD Manley VOXBOX"
+power = false
+
+[devices.inputs.unison.params]
+"Source Select" = "Mic"
+"Low Cut" = "Off"
+Phase = "0"
+Input = "7.5"
+Gain = "50 dB"
+"SC Link" = "Link"
+"Comp Byp" = "In"
+"Comp Thresh" = "5.9"
+"Comp Attack" = "Med Fast"
+"Comp Rel" = "Med Slow"
+"EQ Byp" = "Byp"
+"Lo Peak" = "0.0 dB"
+"Lo Peak Freq" = "70 Hz"
+"Mid Dip" = "-7.3 dB"
+"Mid Dip Freq" = "500 Hz"
+"Hi Peak" = "1.0 dB"
+"Hi Peak Freq" = "10 kHz"
+"De Ess Byp" = "Byp"
+"De Ess Sel" = "6K"
+"De Ess Thr" = "3.3"
+Meter = "GR"
+"Transformer Byp" = "Byp"
+Output = "7.1 dB"
+Power = "Off"
+
+[devices.inputs.sends_db]
+"AUX 1" = -32.4
+"LINE 3-4" = -4.4
+
+[[devices.inputs]]
+port = "apollo-twin-x:virtual-1"
+name = "VIRTUAL 1"
+generic = "VIRTUAL 1/2"
+type = "Virtual"
+active = true
+fader_db = -16.87
+mute = false
+stereo = true
+driver = "B VIRTUAL 1"
+
+[devices.inputs.sends_db]
+"LINE 3-4" = -23.0
+
+[[devices.outputs]]
+name = "HP"
+type = "Cue"
+active = true
+source = "mon"
+
+[[devices.outputs]]
+name = "LINE 3/4"
+type = "Cue"
+active = true
+source = "cue"
+
+[[devices.outputs]]
+name = "CUE 3"
+type = "Cue"
+active = true
+source = "cue"
+
+[[devices.outputs]]
+name = "CUE 4"
+type = "Cue"
+active = false
+source = "mon"
+
+[[devices.outputs]]
+name = "MONITOR"
+type = "Monitor"
+active = false
+source = "mon"
+level_db = -43.0
+mute = false
+dim = false
+
+[[devices.outputs]]
+name = "HP"
+type = "Headphone"
+active = true
+source = "cue1"
+
+[[devices.outputs]]
+name = "LINE 3/4"
+type = "Headphone"
+active = true
+source = "cue2"

@@ -4,7 +4,7 @@ My projects and their songs. This is where I work.
 
 ```text
 music/
-  <project>/                 hot-fog, one-man-band, …
+  <project>/                 hot-fog, one-man-band, club-business, …
     README.md                the project: what it is, links, song list
     <song>/                  one folder per song, named with a slug (the-killing-moon)
       <song>.md              the song doc: frontmatter + links (source of truth)
@@ -13,6 +13,7 @@ music/
       midi/                  MIDI and MusicXML, with readable text dumps
       session-notes.md       notes from working sessions (dated observations)
     _inbox/                  files not yet sorted into a song
+  _pdfs/<project>/<song>/    song PDFs (chord sheets, tabs, scores). Not tracked by git
 ```
 
 ## The song doc
@@ -24,11 +25,11 @@ Every song folder has `<song>.md` with YAML frontmatter:
 | `type` | `song` |
 | `title` | The song's title |
 | `artist` | Covers: the original artist. Originals: the project |
-| `project` | `hot-fog`, `one-man-band`, … |
+| `project` | `hot-fog`, `one-man-band`, `club-business`, … |
 | `version` | `cover` or `original` (our take on the song; see the [model](../docs/studio/model.md) §5) |
 | `status` | `idea` · `demo` · `arranging` · `tracking` · `mixing` · `done` |
 | `key`, `tuning`, `capo`, `tempo`, `time_signature` | The musical facts of *our* version |
-| `logic`, `drive`, `lyrics` | Where the session, the Drive folders and the canonical lyrics live (Hot Fog) |
+| `logic`, `luna`, `ableton`, `drive`, `lyrics` | Where the Logic project, the LUNA session, the Ableton set, the Drive folders and the canonical lyrics live |
 
 The song doc wins over session notes or the Logic project if they disagree.
 

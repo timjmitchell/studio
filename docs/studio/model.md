@@ -1,7 +1,13 @@
 # Studio Model
 
-> **Status:** draft v0.3 (2026-10-11). This is a conceptual model, not a formal schema yet.
+> **Status:** draft v0.4 (2026-10-11). This is a conceptual model, not a formal schema yet.
 > Decisions still open are marked **[Q#]** and collected in [§12 Open questions](#12-open-questions).
+>
+> **v0.4 changes** (from the first UA Console snapshot, issue #9):
+> - **Capability vs captured state.** Every fact has a scope: capability, configuration,
+>   session or live. A snapshot captures state, and suggestions are searched across
+>   capability (§2, §6.4). Exploratory mapping to SemOps' reference / solution / data layers:
+>   [substrate-space mapping](../research/substrate-space-mapping.md).
 >
 > **v0.3 changes** (from a review of the [Studio Ontology Framework](../research/papers/Fazekas-Sandler-2011-Studio-Ontology-Framework.md)):
 > - **Emulation** is now first-class. An effect or instrument can *emulate* a reference
@@ -168,6 +174,29 @@ this studio, and how far each has been tested, are tracked in the
   - **possible** realizations are *derived* from the graph and constraints, never written
     down;
   - the **preferred** realization per scenario *is* recorded, as prescriptive state.
+- **Capability vs captured state.** What a product *can* do and what a unit *is set to* are
+  different facts. A snapshot captures state, and the agent must be able to propose solutions
+  outside it. "There's no free cue" is a fact about the current configuration, not a limit of
+  the hardware. Every fact has one scope, and each scope can only narrow the one above:
+
+  | Scope | Question | UA example (2026-10-11) | Stored in |
+  |---|---|---|---|
+  | **capability** | What can this product do? | x8: 8 analog, 8 ADAT, 8 virtual, 2–4 cues | Product: manual, factory port lists |
+  | **configuration** | What is enabled from that? | 3 cues, x8 virtual 1–4, I/O Matrix 44 in / 42 out, 48 kHz, **cue mirrors** (global: not saved in sessions ✅) | the unit or driver; I/O preset (`.uadio`) |
+  | **session** | What is chosen and laid out from what's enabled? | 13 visible strips, names, sends, plugins | Console session (`.uadmix`), Logic project |
+  | **live** | What is it doing right now? | unsaved tweaks, mutes, meters | the device only |
+
+  - **Search across capability, rank by scope.** The agent derives possible realizations from
+    capability and constraints, not just from the current state. Each suggestion says the
+    highest scope it changes: a live or session change is cheap, while a configuration change
+    is disruptive (e.g. a new cue count changes the Core Audio channels Logic sees) and is
+    called out as such.
+  - **"Why isn't X there?" is answered top-down:** not supported (capability), not enabled
+    (configuration), hidden or not routed (session), muted or silent (live).
+  - **Drift is compared within one scope.** Engine vs saved session = unsaved changes. Saved
+    session vs declared intent = stale wiring or scenario.
+  - **Hidden is not absent.** Hiding a Console strip is a session view choice; the input is
+    still enabled at the configuration layer.
 - **Ports have one owner at a time.** A hardware output claimed by one mechanism (on UA: a
   monitor-mix mirror, Flex Routing, or an alt-monitor assignment) is no longer available to
   others, such as the DAW. The agent checks ownership before routing.
@@ -915,13 +944,15 @@ to*. This includes unsaved tweaks, which a Preset alone can't capture.
 | Property | Notes |
 |---|---|
 | `of` | → Unit or Component |
+| `scope` | `configuration`, `session` or `live` (§2 Capability vs captured state). Capability lives on the Product, not in a State |
 | `values` | parameter → value; can be partial ("only what matters") |
 | `based_on` | → Preset, plus `modified: true/false` |
 | `at` | → Event, or a timestamp |
 | `source` | `declared` (written down), `observed` (editor dump, SysEx dump, plugin state in a session, screenshot, photo of the knobs) |
 | `confidence` | |
 
-**Preset.** A named, saved State, stored in a device slot or a file.
+**Preset.** A named, saved State, stored in a device slot or a file. A preset saves one
+scope: a UA I/O preset saves configuration; a Console session saves session state.
 
 | Property | Notes |
 |---|---|

@@ -225,7 +225,8 @@ uv run scripts/inventory.py scenarios          # intents and preferred realizati
 
 ### Execution surfaces
 
-The ways an agent can *act on* the studio: the bottom stage of the cascade.
+The ways an agent can *act on* the studio: the bottom stage of the cascade. Full detail,
+including the engine's command list, MIDI and key commands: [control.md](control.md).
 
 | Surface | Reaches | Read | Write | Notes |
 |---|---|---|---|---|

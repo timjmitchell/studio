@@ -1,0 +1,3426 @@
+{
+ "protocol": "1.0.0",
+ "version": "12.0.0",
+ "nodes": {
+  "/": {
+   "Type": {
+    "type": "string",
+    "value": "root"
+   },
+   "SampleRate": {
+    "type": "int",
+    "values": [
+     {
+      "value": 44100,
+      "string": "44.1 kHz",
+      "enabled": true
+     },
+     {
+      "value": 48000,
+      "string": "48 kHz",
+      "enabled": true
+     },
+     {
+      "value": 88200,
+      "string": "88.2 kHz",
+      "enabled": true
+     },
+     {
+      "value": 96000,
+      "string": "96 kHz",
+      "enabled": true
+     },
+     {
+      "value": 176400,
+      "string": "176.4 kHz",
+      "enabled": true
+     },
+     {
+      "value": 192000,
+      "string": "192 kHz",
+      "enabled": true
+     }
+    ],
+    "value": 48000
+   },
+   "ClockSource": {
+    "type": "string",
+    "values": [
+     "Internal",
+     "Word Clock",
+     "ADAT",
+     "S/PDIF"
+    ],
+    "value": "Internal"
+   },
+   "ClipHold": {
+    "type": "string",
+    "values": [
+     "NONE",
+     "1 SEC",
+     "3 SEC",
+     "5 SEC",
+     "10 SEC",
+     "INFINITE"
+    ],
+    "value": "3 SEC"
+   },
+   "PeakHold": {
+    "type": "string",
+    "values": [
+     "NONE",
+     "1 SEC",
+     "3 SEC",
+     "5 SEC",
+     "10 SEC"
+    ],
+    "value": "3 SEC"
+   },
+   "PostFaderMetering": {
+    "type": "bool",
+    "value": false
+   },
+   "ClockLocked": {
+    "type": "bool",
+    "value": true
+   },
+   "SampleRateListChanged": {
+    "type": "bool",
+    "value": false
+   },
+   "ClockSourceListChanged": {
+    "type": "bool",
+    "value": false
+   },
+   "MaxDelayComp": {
+    "type": "string",
+    "values": [
+     "Off",
+     "Short",
+     "Medium",
+     "Medium-Long",
+     "Long"
+    ],
+    "value": "Medium-Long"
+   },
+   "AppCommand": {
+    "type": "int64",
+    "min": 0.0,
+    "max": 9.223372036854776e+18,
+    "value": 0
+   },
+   "MixerState": {
+    "type": "int",
+    "min": 0.0,
+    "max": 65336.0,
+    "value": 1
+   },
+   "ControlsMode": {
+    "type": "string",
+    "values": [
+     "Circular",
+     "Relative Circular",
+     "Linear"
+    ],
+    "value": "Linear"
+   },
+   "PTMode": {
+    "type": "bool",
+    "value": false
+   },
+   "Dirty": {
+    "type": "bool",
+    "value": false
+   },
+   "Session": {
+    "type": "string",
+    "values": [
+     {
+      "value": "acoustic1",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Basic",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Bass n Vox",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Default 241101",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Default-20261011",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Default1",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "edge17",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Electric Co",
+      "type": "file",
+      "locked": false
+     },
+     "\u2026 32 total"
+    ],
+    "value": "../../../Library/Preferences/Universal Audio/extAppSyncSession"
+   },
+   "Snapshot": {
+    "type": "string",
+    "values": null,
+    "volumes": [
+     {
+      "volume": "Kontakt 8",
+      "user": false,
+      "removable": true,
+      "locked": true
+     },
+     {
+      "volume": "Macintosh HD",
+      "user": false,
+      "removable": false,
+      "locked": true
+     },
+     {
+      "volume": "RAID",
+      "user": false,
+      "removable": true,
+      "locked": false
+     },
+     {
+      "volume": "Samsung_X5",
+      "user": false,
+      "removable": false,
+      "locked": false
+     },
+     {
+      "volume": "Native Access 3.26.0-arm64",
+      "user": false,
+      "removable": true,
+      "locked": true
+     },
+     {
+      "volume": "Data",
+      "user": true,
+      "removable": false,
+      "locked": false
+     },
+     {
+      "volume": ".timemachine",
+      "user": true,
+      "removable": false,
+      "locked": false
+     }
+    ],
+    "value": ""
+   },
+   "PrimedSnapshot": {
+    "type": "string",
+    "value": ""
+   },
+   "Tempo": {
+    "type": "float",
+    "min": 1.0,
+    "max": 999.0,
+    "value": 120.0
+   },
+   "FirstMADIChannelBlockIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 3.0,
+    "value": 0
+   },
+   "TotalDSPLoad": {
+    "type": "float",
+    "min": 0.0,
+    "max": 100.0,
+    "readonly": true,
+    "value": 17.63428688049316
+   },
+   "TotalPGMLoad": {
+    "type": "float",
+    "min": 0.0,
+    "max": 100.0,
+    "readonly": true,
+    "value": 14.53359985351562
+   },
+   "TotalMEMLoad": {
+    "type": "float",
+    "min": 0.0,
+    "max": 100.0,
+    "readonly": true,
+    "value": 0.1053561121225357
+   },
+   "Version": {
+    "type": "string",
+    "value": "12.0.0"
+   },
+   "SerialNumber": {
+    "type": "string",
+    "value": "20372018009272"
+   },
+   "CueBusCount": {
+    "type": "int",
+    "values": [
+     {
+      "value": 0,
+      "enabled": true
+     },
+     {
+      "value": 1,
+      "enabled": true
+     },
+     {
+      "value": 2,
+      "enabled": true
+     },
+     {
+      "value": 3,
+      "enabled": true
+     },
+     {
+      "value": 4,
+      "enabled": true
+     }
+    ],
+    "value": 3
+   },
+   "TotalDriverInputRoutes": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0,
+    "value": 44
+   },
+   "TotalDriverOutputRoutes": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0,
+    "value": 42
+   },
+   "UndoRedo": {
+    "type": "int",
+    "values": [
+     {
+      "value": 17,
+      "type": "undo",
+      "enabled": true
+     },
+     {
+      "value": 18,
+      "type": "current",
+      "enabled": true
+     },
+     {
+      "value": 19,
+      "type": "redo",
+      "enabled": false
+     }
+    ],
+    "value": 18
+   },
+   "UndoRecording": {
+    "type": "bool",
+    "value": false
+   },
+   "IOMapPreset": {
+    "type": "string",
+    "values": [
+     {
+      "value": "Multi-A16 Legacy",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Multi-A16 PT Legacy",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Multi-Apollo PT",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Preset 1",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Reset?",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Screencapture",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Single-A16 Legacy",
+      "type": "file",
+      "locked": false
+     },
+     {
+      "value": "Single-A16 PT Legacy",
+      "type": "file",
+      "locked": false
+     },
+     "\u2026 18 total"
+    ],
+    "value": ""
+   },
+   "IOMapUsingDefault": {
+    "type": "bool",
+    "value": true
+   },
+   "MidiInputDevice": {
+    "type": "string",
+    "values": [
+     {
+      "value": "Network Daw Control Session"
+     },
+     {
+      "value": "IAC Driver Bus 1"
+     },
+     {
+      "value": "IAC Driver StreamDeck UAD"
+     },
+     {
+      "value": "UM-ONE"
+     },
+     {
+      "value": "Launchkey Mini MK4 25 MIDI Out"
+     },
+     {
+      "value": "Launchkey Mini MK4 25 DAW Out"
+     },
+     {
+      "value": "VE-500"
+     },
+     {
+      "value": "VE-500 CTRL"
+     },
+     "\u2026 12 total"
+    ],
+    "value": ""
+   },
+   "MeterPulse": {
+    "type": "int64",
+    "min": 0.0,
+    "max": 9.223372036854776e+18,
+    "value": 3626961
+   },
+   "IOMapPresetDirty": {
+    "type": "bool",
+    "value": true
+   },
+   "ModifiedSessions": {
+    "type": "string",
+    "values": [
+     {
+      "value": "Default-20261011",
+      "time": "Oct 11, 2026 11:34:29 PM"
+     },
+     {
+      "value": "newSession",
+      "time": "Mar 25, 2026 06:02:49 PM"
+     },
+     {
+      "value": "Basic",
+      "time": "Oct 21, 2023 02:12:43 PM"
+     }
+    ],
+    "value": "Default-20261011"
+   },
+   "UseAlternateResetKey": {
+    "type": "bool",
+    "readonly": true,
+    "value": false
+   },
+   "AudioStreaming": {
+    "type": "bool",
+    "value": false
+   },
+   "DeviceConnectionMode": {
+    "type": "string",
+    "values": [
+     "Unset",
+     "FW",
+     "TB",
+     "USB"
+    ],
+    "value": "TB"
+   },
+   "TalkbackOn": {
+    "type": "bool",
+    "value": false
+   },
+   "TalkbackInPhysicalCR": {
+    "type": "bool",
+    "value": false
+   },
+   "Enable24dBMode": {
+    "type": "bool",
+    "value": false
+   },
+   "TalkbackMaster": {
+    "type": "int",
+    "min": -1.0,
+    "max": 100.0,
+    "value": 1
+   },
+   "OverridingApp": {
+    "type": "string",
+    "value": ""
+   },
+   "TalkbackMicSelect": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2.0,
+    "value": 0
+   },
+   "RemoteSolo": {
+    "type": "bool",
+    "value": false
+   },
+   "PeerToPeerLatency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 16.0,
+    "readonly": true,
+    "value": 4
+   },
+   "ProtocolVersion": {
+    "type": "string",
+    "value": "1.0.0"
+   },
+   "Progress": {
+    "type": "string",
+    "value": ""
+   },
+   "DanteDeviceLatency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 5000.0,
+    "value": 0
+   }
+  },
+  "/devices": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N": {
+   "Type": {
+    "type": "string"
+   },
+   "DeviceHwID": {
+    "type": "int64",
+    "readonly": true
+   },
+   "DeviceOnline": {
+    "type": "bool"
+   },
+   "DeviceName": {
+    "type": "string"
+   },
+   "MultiUnitOrder": {
+    "type": "int",
+    "min": -1.0,
+    "max": 100.0
+   },
+   "DeviceTypeID": {
+    "type": "string"
+   },
+   "CueBusCount": {
+    "type": "int",
+    "readonly": true,
+    "min": 0,
+    "max": 4
+   },
+   "AltMonSelection": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2.0,
+    "default": 0
+   },
+   "FuncSwitchMode": {
+    "type": "string",
+    "values": [
+     {
+      "value": "none",
+      "enabled": true
+     },
+     {
+      "value": "mono",
+      "enabled": true
+     },
+     {
+      "value": "dim",
+      "enabled": true
+     },
+     {
+      "value": "talkback",
+      "enabled": true
+     }
+    ]
+   },
+   "DimAttenuation": {
+    "type": "int",
+    "min": 0.0,
+    "max": 60.0,
+    "default": 17
+   },
+   "InputJackSensingDisabled": {
+    "type": "bool"
+   },
+   "Enable24dBMode": {
+    "type": "bool"
+   },
+   "SurroundMonitorMode": {
+    "type": "string",
+    "values": [
+     "STEREO",
+     "2.1",
+     "LCR",
+     "LCRS",
+     "QUAD",
+     "5.1",
+     "6.1",
+     "7.1"
+    ]
+   },
+   "TalkbackMaster": {
+    "type": "int",
+    "min": -1.0,
+    "max": 100.0
+   },
+   "AvailableLLMDiskChannels": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2147483648.0,
+    "default": 0,
+    "readonly": true
+   },
+   "MaxSpans": {
+    "type": "int",
+    "min": 0.0,
+    "max": 8.0
+   },
+   "HP1SendPostFader": {
+    "type": "bool"
+   },
+   "HP2SendPostFader": {
+    "type": "bool"
+   },
+   "HP3SendPostFader": {
+    "type": "bool"
+   },
+   "HP4SendPostFader": {
+    "type": "bool"
+   },
+   "DSPSpanning": {
+    "type": "bool"
+   },
+   "DefaultSpans": {
+    "type": "int",
+    "min": 0.0,
+    "max": 8.0
+   },
+   "ActiveSpans": {
+    "type": "int",
+    "min": 0.0,
+    "max": 8.0,
+    "default": 0
+   },
+   "AnalogBoardID": {
+    "type": "int",
+    "min": 0.0,
+    "max": 7.0,
+    "default": -1
+   },
+   "SpeakerCorrectionMode": {
+    "type": "int",
+    "min": -1.0,
+    "max": 1.0,
+    "default": 0
+   },
+   "HeadphoneCorrectionEnable": {
+    "type": "bool"
+   },
+   "Headphone2CorrectionEnable": {
+    "type": "bool"
+   },
+   "SpeakerCorrectionPower": {
+    "type": "bool"
+   },
+   "HeadphoneCorrectionPower": {
+    "type": "bool"
+   },
+   "Headphone2CorrectionPower": {
+    "type": "bool"
+   },
+   "SupportsDante": {
+    "type": "bool",
+    "readonly": true
+   },
+   "UseSpeakerCorrectionSafeHeadroom": {
+    "type": "bool"
+   },
+   "BassMgrXOverFilterType": {
+    "type": "string",
+    "default": "LR24"
+   },
+   "BassMgrEnable": {
+    "type": "bool"
+   },
+   "UseHeadphoneCorrectionSafeHeadroom": {
+    "type": "bool"
+   },
+   "UseHeadphone2CorrectionSafeHeadroom": {
+    "type": "bool"
+   },
+   "SupportsSpeakerCorrection": {
+    "type": "bool",
+    "readonly": true
+   },
+   "SupportsHeadphoneCorrection": {
+    "type": "bool",
+    "readonly": true
+   },
+   "SupportsHeadphone2Correction": {
+    "type": "bool",
+    "readonly": true
+   },
+   "MaxAltMons": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2.0,
+    "readonly": true
+   },
+   "SpeakerCorrectionSafeHeadroom": {
+    "type": "float",
+    "min": -144.0,
+    "max": 0.0,
+    "readonly": true
+   },
+   "HeadphoneCorrectionSafeHeadroom": {
+    "type": "float",
+    "min": -144.0,
+    "max": 0.0,
+    "readonly": true
+   },
+   "Headphone2CorrectionSafeHeadroom": {
+    "type": "float",
+    "min": -144.0,
+    "max": 0.0,
+    "readonly": true
+   },
+   "SpeakerCorrectionName": {
+    "type": "string",
+    "readonly": true
+   },
+   "HeadphoneCorrectionName": {
+    "type": "string",
+    "readonly": true
+   },
+   "Headphone2CorrectionName": {
+    "type": "string",
+    "readonly": true
+   },
+   "SupportsBassManagement": {
+    "type": "bool",
+    "readonly": true
+   },
+   "SpeakerCorrectionImageUpdateCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2147483648.0,
+    "readonly": true
+   },
+   "HeadphoneCorrectionImageUpdateCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2147483648.0,
+    "readonly": true
+   },
+   "Headphone2CorrectionImageUpdateCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 2147483648.0,
+    "readonly": true
+   },
+   "SupportsSpeakerCorrectionDetails": {
+    "type": "int",
+    "min": 0.0,
+    "max": 4.0,
+    "readonly": true
+   },
+   "SupportsBassMgrDetails": {
+    "type": "int",
+    "min": 0.0,
+    "max": 4.0,
+    "readonly": true
+   },
+   "SupportsAutogain": {
+    "type": "bool",
+    "readonly": true
+   },
+   "AdatDeviceUid": {
+    "type": "string"
+   },
+   "SupportsVolt876ADATPreamps": {
+    "type": "bool",
+    "readonly": true
+   },
+   "AdatPreampDeviceOnline": {
+    "type": "bool",
+    "readonly": true
+   }
+  },
+  "/devices/N/inputs": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string",
+    "default": "ANALOG 1"
+   },
+   "IOType": {
+    "type": "string",
+    "values": [
+     "Line",
+     "Mic",
+     "Dante"
+    ],
+    "enabled": true
+   },
+   "Mute": {
+    "type": "bool"
+   },
+   "Solo": {
+    "type": "bool"
+   },
+   "FaderLevel": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": 0.0
+   },
+   "RecordPreEffects": {
+    "type": "bool"
+   },
+   "OutputDestination": {
+    "type": "string",
+    "values": [
+     {
+      "value": "Monitor",
+      "enabled": true
+     },
+     {
+      "value": "Line 1",
+      "enabled": true
+     },
+     {
+      "value": "Line 2",
+      "enabled": true
+     },
+     {
+      "value": "Line 3",
+      "enabled": true
+     },
+     {
+      "value": "Line 4",
+      "enabled": true
+     },
+     {
+      "value": "Line 5",
+      "enabled": true
+     },
+     {
+      "value": "Line 6",
+      "enabled": true
+     },
+     {
+      "value": "Line 7",
+      "enabled": false
+     },
+     "\u2026 19 total"
+    ],
+    "enabled": true,
+    "routes_available": "16 Mono or 8 Stereo"
+   },
+   "Stereo": {
+    "type": "bool",
+    "enabled": true
+   },
+   "FaderLevelTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   },
+   "SelectedOnFront": {
+    "type": "bool"
+   },
+   "Preset": {
+    "plugin": "Channel Strip",
+    "type": "string",
+    "values": [
+     {
+      "value": "Bass",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Andrew Scheps - Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Fat Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Pop Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Amp'd Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Blown Up Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Aggressive Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Classic Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass Cab 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass Cab 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - DI Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Bass DI Helper",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Drums",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Andrew Scheps - Crushed OHs",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Andrew Scheps - Kick",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Andrew Scheps - Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Kick In",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Kick Out",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Overheads 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Overheads 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Snare Bottom",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Snare Top",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - HiHat 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - HiHat 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 4",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Overheads 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Overheads 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Bottom",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Pop",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Rock",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Bass Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - SM57 Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Tom Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Big Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Fat Kick",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Power Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Big Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Kick Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Smashed Snare Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Snare Drum",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Fender 55 Tweed Deluxe",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Bluesbreaking Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Clean Edgy Squish",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Clean Worble Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Cranked Amp Big Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Flanging Sky",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Freakin Out in Space",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Fuzzy Destruction",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Melodic Floyd",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Spin Around",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Straty Spank",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tape Slap Attack",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Vibratos Church",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Guitar",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Darrell Thorp - Electric Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Acoustic w 57",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Acoustic",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Electric Guitar Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - In Your Face Electric",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Solo Electric",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Punchy Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Big Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Chorus Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Smooth Acoustic",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Vintage Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Dark EGT Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Flange Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Slap Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Nasty Electric Guitar",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Keyboards",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Dave Isaac - Cali Synth",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - DeBarge Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Energy Lead",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Key Lifter",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Pop Chart Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Sunday Organ",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Organ",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Wurly",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Marshall Plexi Classic",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Big Distorted Plate",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Cocked Wah",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Comfortable Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Fat Slap",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Pedal Metal",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Roomy Crunch",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Squashed Flangers",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Swirling Crunch",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Wavey Ambience",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Vocals",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Darrell Thorp - Vocals",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - BG Vox Thickener",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Lead Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - BG Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - BG Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Lead Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Lead Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Gentle Vox Compression",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Vintage Vox Compression",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Forward Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vox Doubler 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vox Doubler 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Clean",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Lead Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Pop Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Pop Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Smashed Vox",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     }
+    ]
+   },
+   "OutputMonitorMixEnable": {
+    "type": "bool"
+   },
+   "DelayCompGroup": {
+    "type": "int",
+    "min": -1.0,
+    "max": 32.0,
+    "default": 0
+   },
+   "Latency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 100000000.0,
+    "default": 0,
+    "readonly": true
+   },
+   "Isolate": {
+    "type": "bool"
+   },
+   "Pan": {
+    "type": "float",
+    "min": -1.0,
+    "max": 1.0,
+    "default": 0.0
+   },
+   "Pan2": {
+    "type": "float",
+    "min": -1.0,
+    "max": 1.0,
+    "default": 0.0
+   },
+   "EnabledByUser": {
+    "type": "bool"
+   },
+   "PGADisabledInLineMode": {
+    "type": "bool"
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   },
+   "TalkbackEnabled": {
+    "type": "bool"
+   },
+   "LLMDiskEnabled": {
+    "type": "bool"
+   },
+   "LLMDiskChannel": {
+    "type": "string",
+    "readonly": true
+   },
+   "LLMDiskSwitch": {
+    "type": "bool"
+   },
+   "LLMDiskChannelR": {
+    "type": "string",
+    "readonly": true
+   },
+   "LLMDiskTrimLevel": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": 0.0
+   },
+   "LLMDiskTrimLevelTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   },
+   "StereoName": {
+    "type": "string",
+    "default": "ANALOG 1"
+   },
+   "ChannelHidden": {
+    "type": "bool"
+   },
+   "LLMDiskMix": {
+    "type": "bool"
+   },
+   "SoloSafe": {
+    "type": "bool"
+   },
+   "CustomIntegratedPreampInputMeter": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   }
+  },
+  "/devices/N/inputs/N/effects": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/effects/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Dirty": {
+    "type": "bool"
+   },
+   "EffectInstance": {
+    "type": "pointer",
+    "readonly": true
+   },
+   "EffectName": {
+    "type": "string"
+   },
+   "Power": {
+    "type": "bool"
+   },
+   "Preset": {
+    "type": "string"
+   },
+   "Latency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 100000000.0,
+    "readonly": true
+   },
+   "Status": {
+    "type": "string"
+   },
+   "VendorSpecific": {
+    "type": "string"
+   },
+   "CanPastePluginBarSettings": {
+    "type": "bool",
+    "readonly": true
+   },
+   "ChangeCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 32767.0,
+    "readonly": true
+   },
+   "ScenePluginUuid": {
+    "type": "string"
+   },
+   "PluginExistsInCurrentScene": {
+    "type": "bool"
+   },
+   "PluginExistsInAnyScene": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/inputs/N/meters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/meters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MeterLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterPeakLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterClip": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/inputs/N/preamps": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/preamps/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Gain": {
+    "type": "float",
+    "min": -144.0,
+    "max": 65.0,
+    "default": 10.0
+   },
+   "48V": {
+    "type": "bool",
+    "enabled": true
+   },
+   "Pad": {
+    "type": "bool",
+    "enabled": true
+   },
+   "HiZ": {
+    "type": "bool"
+   },
+   "LowCut": {
+    "type": "bool"
+   },
+   "Phase": {
+    "type": "bool"
+   },
+   "GainTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0
+   },
+   "PreampInputKnobSteps": {
+    "type": "int",
+    "min": 1.0,
+    "max": 4095.0,
+    "default": 1
+   },
+   "PreampGainCustomDisplayText": {
+    "type": "string",
+    "default": "---"
+   }
+  },
+  "/devices/N/inputs/N/preamps/N/effects": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/preamps/N/effects/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Dirty": {
+    "type": "bool"
+   },
+   "EffectInstance": {
+    "type": "pointer",
+    "readonly": true
+   },
+   "EffectName": {
+    "type": "string"
+   },
+   "Power": {
+    "type": "bool"
+   },
+   "Preset": {
+    "type": "string"
+   },
+   "Latency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 100000000.0,
+    "readonly": true
+   },
+   "Status": {
+    "type": "string"
+   },
+   "VendorSpecific": {
+    "type": "string"
+   },
+   "CanPastePluginBarSettings": {
+    "type": "bool",
+    "readonly": true
+   },
+   "ChangeCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 32767.0,
+    "readonly": true
+   },
+   "ScenePluginUuid": {
+    "type": "string"
+   },
+   "PluginExistsInCurrentScene": {
+    "type": "bool"
+   },
+   "PluginExistsInAnyScene": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/inputs/N/preamps/N/effects/N/parameters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/preamps/N/effects/N/parameters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "StringValue": {
+    "type": "string"
+   },
+   "NormalizedValue": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0
+   },
+   "StepValue": {
+    "type": "string",
+    "values": [
+     "Line",
+     "Mic"
+    ]
+   }
+  },
+  "/devices/N/inputs/N/sends": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/sends/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "Gain": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": -144.0
+   },
+   "GainTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   },
+   "Bypass": {
+    "type": "bool"
+   },
+   "Pan": {
+    "type": "float",
+    "min": -1.0,
+    "max": 1.0,
+    "default": 0.0
+   },
+   "ID": {
+    "type": "string"
+   },
+   "PostFaderOverride": {
+    "type": "int",
+    "min": -1.0,
+    "max": 1.0,
+    "default": -1
+   }
+  },
+  "/devices/N/inputs/N/sends/N/meters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/inputs/N/sends/N/meters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MeterLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterPeakLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterClip": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/auxs": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "Gain": {
+    "type": "float",
+    "min": -144.0,
+    "max": 65.0
+   },
+   "Mute": {
+    "type": "bool"
+   },
+   "FaderLevel": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": 0.0
+   },
+   "MixToMono": {
+    "type": "bool"
+   },
+   "FaderLevelTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   },
+   "GainTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0
+   },
+   "Preset": {
+    "plugin": "Channel Strip",
+    "type": "string",
+    "values": [
+     {
+      "value": "Bass",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Andrew Scheps - Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Fat Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Pop Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Amp'd Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Rock Pick Blown Up Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Aggressive Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Classic Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass Cab 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Bass Cab 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - DI Bass",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Bass DI Helper",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Drums",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Andrew Scheps - Crushed OHs",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Andrew Scheps - Kick",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Andrew Scheps - Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Kick In",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Kick Out",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Overheads 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Overheads 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Snare Bottom",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Darrell Thorp - Snare Top",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - HiHat 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - HiHat 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Kick 4",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Overheads 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Overheads 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Room Mics 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Bottom",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Pop",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Rock",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Snare Top Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Bass Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - SM57 Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Tom Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Big Toms",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Fat Kick",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Power Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Big Snare",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Kick Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Smashed Snare Drum",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Snare Drum",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Fender 55 Tweed Deluxe",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Bluesbreaking Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Clean Edgy Squish",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Clean Worble Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Cranked Amp Big Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Flanging Sky",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Freakin Out in Space",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Fuzzy Destruction",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Melodic Floyd",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Spin Around",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Straty Spank",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tape Slap Attack",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Vibratos Church",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Guitar",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Darrell Thorp - Electric Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Acoustic w 57",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Acoustic",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Electric Guitar Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - In Your Face Electric",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Solo Electric",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Punchy Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Big Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Chorus Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Smooth Acoustic",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Vintage Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Dark EGT Room",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Flange Guitar",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Slap Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Nasty Electric Guitar",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Keyboards",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Dave Isaac - Cali Synth",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - DeBarge Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Energy Lead",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Key Lifter",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Pop Chart Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Sunday Organ",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Organ",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Piano",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Wurly",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Marshall Plexi Classic",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Big Distorted Plate",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Cocked Wah",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Comfortable Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Fat Slap",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Pedal Metal",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Roomy Crunch",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Squashed Flangers",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Swirling Crunch",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Wavey Ambience",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     },
+     {
+      "value": "Vocals",
+      "type": "folder",
+      "locked": true,
+      "children": [
+       {
+        "value": "Darrell Thorp - Vocals",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - BG Vox Thickener",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Dave Isaac - Lead Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - BG Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - BG Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Lead Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Jeff Balding - Lead Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Gentle Vox Compression",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "JJ Blair - Vintage Vox Compression",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Richard Chycki - Forward Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vocals 3",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vox Doubler 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Ross Hogarth - Vox Doubler 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Clean",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Delay",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Steve Levine - Vox Verb",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Lead Vox",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Pop Vox 1",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Pop Vox 2",
+        "type": "file",
+        "locked": true
+       },
+       {
+        "value": "Tony Maserati - Smashed Vox",
+        "type": "file",
+        "locked": true
+       }
+      ]
+     }
+    ]
+   },
+   "Isolate": {
+    "type": "bool"
+   },
+   "EnabledByUser": {
+    "type": "bool"
+   },
+   "SendPostFader": {
+    "type": "bool"
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   },
+   "LLMDiskEnabled": {
+    "type": "bool"
+   },
+   "LLMDiskChannel": {
+    "type": "string",
+    "readonly": true
+   },
+   "LLMDiskChannelR": {
+    "type": "string",
+    "readonly": true
+   },
+   "LLMDiskTrimLevel": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": 0.0
+   },
+   "LLMDiskTrimLevelTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   }
+  },
+  "/devices/N/auxs/N/effects": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N/effects/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Dirty": {
+    "type": "bool"
+   },
+   "EffectInstance": {
+    "type": "pointer",
+    "readonly": true
+   },
+   "EffectName": {
+    "type": "string"
+   },
+   "Power": {
+    "type": "bool"
+   },
+   "Preset": {
+    "type": "string"
+   },
+   "Latency": {
+    "type": "int",
+    "min": 0.0,
+    "max": 100000000.0,
+    "readonly": true
+   },
+   "Status": {
+    "type": "string"
+   },
+   "VendorSpecific": {
+    "type": "string"
+   },
+   "CanPastePluginBarSettings": {
+    "type": "bool",
+    "readonly": true
+   },
+   "ChangeCount": {
+    "type": "int",
+    "min": 0.0,
+    "max": 32767.0,
+    "readonly": true
+   },
+   "ScenePluginUuid": {
+    "type": "string"
+   },
+   "PluginExistsInCurrentScene": {
+    "type": "bool"
+   },
+   "PluginExistsInAnyScene": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/auxs/N/effects/N/parameters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N/effects/N/parameters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "StringValue": {
+    "type": "string"
+   },
+   "NormalizedValue": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0
+   },
+   "StepValue": {
+    "type": "string",
+    "values": [
+     "Off",
+     "90 Hz",
+     "180 Hz"
+    ]
+   }
+  },
+  "/devices/N/auxs/N/meters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N/meters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MeterLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterPeakLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterClip": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/auxs/N/sends": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N/sends/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "Gain": {
+    "type": "float",
+    "min": -144.0,
+    "max": 12.0,
+    "default": -144.0
+   },
+   "GainTapered": {
+    "type": "float",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.7818182110786438
+   },
+   "Bypass": {
+    "type": "bool"
+   },
+   "Pan": {
+    "type": "float",
+    "min": -1.0,
+    "max": 1.0
+   },
+   "ID": {
+    "type": "string"
+   },
+   "PostFaderOverride": {
+    "type": "int",
+    "min": -1.0,
+    "max": 1.0,
+    "default": -1
+   }
+  },
+  "/devices/N/auxs/N/sends/N/meters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/auxs/N/sends/N/meters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MeterLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterPeakLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterClip": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/outputs": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/outputs/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "IOType": {
+    "type": "string"
+   },
+   "Pad": {
+    "type": "bool"
+   },
+   "Stereo": {
+    "type": "bool"
+   },
+   "AltMonTrim": {
+    "type": "float",
+    "min": -30.0,
+    "max": 30.0,
+    "default": 0.0
+   },
+   "AltMonEnabled": {
+    "type": "bool"
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   },
+   "SurroundTrimLevel": {
+    "type": "float",
+    "min": -10.0,
+    "max": 10.0
+   },
+   "SurroundSolo": {
+    "type": "bool"
+   },
+   "SurroundMute": {
+    "type": "bool"
+   },
+   "SurroundOutputEnabled": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/outputs/N/meters": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/outputs/N/meters/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MeterLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterPeakLevel": {
+    "type": "float",
+    "min": -77.0,
+    "max": 0.0
+   },
+   "MeterClip": {
+    "type": "bool"
+   }
+  },
+  "/devices/N/asioinputs": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/asioinputs/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "IOType": {
+    "type": "string",
+    "values": [
+     "MicLineHiZ",
+     "MicLine",
+     "Line",
+     "SPDIF",
+     "ADAT",
+     "Virtual",
+     "MADI",
+     "CtrlRoom",
+     "\u2026 14 total"
+    ]
+   },
+   "DeviceHwID": {
+    "type": "int64",
+    "readonly": true
+   },
+   "ChannelIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   }
+  },
+  "/devices/N/asiooutputs": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/devices/N/asiooutputs/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "IOType": {
+    "type": "string",
+    "values": [
+     "Line",
+     "SPDIF",
+     "ADAT",
+     "Virtual",
+     "MADI",
+     "CtrlRoom",
+     "Cue",
+     "AESEBU",
+     "\u2026 13 total"
+    ]
+   },
+   "DeviceHwID": {
+    "type": "int64",
+    "readonly": true
+   },
+   "ChannelIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   }
+  },
+  "/inputroutes": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/inputroutes/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "IOType": {
+    "type": "string",
+    "values": [
+     "MicLineHiZ",
+     "MicLine",
+     "Line",
+     "SPDIF",
+     "ADAT",
+     "AESEBU",
+     "Virtual",
+     "MADI",
+     "\u2026 14 total"
+    ]
+   },
+   "DeviceHwID": {
+    "type": "int64",
+    "min": 0.0,
+    "max": 1.844674407370955e+19
+   },
+   "ChannelIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   }
+  },
+  "/outputroutes": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/outputroutes/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string"
+   },
+   "IOType": {
+    "type": "string",
+    "values": [
+     "Line",
+     "SPDIF",
+     "ADAT",
+     "AESEBU",
+     "Virtual",
+     "MADI",
+     "CtrlRoom",
+     "Cue",
+     "\u2026 12 total"
+    ]
+   },
+   "DeviceHwID": {
+    "type": "int64",
+    "min": 0.0,
+    "max": 1.844674407370955e+19
+   },
+   "ChannelIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 512.0
+   },
+   "Active": {
+    "type": "bool",
+    "readonly": true
+   }
+  },
+  "/plugins": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/plugins/N": {
+   "Type": {
+    "type": "string"
+   },
+   "Name": {
+    "type": "string",
+    "values": [
+     {
+      "value": "4K Buss"
+     },
+     {
+      "value": "4K Buss Comp"
+     }
+    ]
+   },
+   "Preset": {
+    "type": "string",
+    "values": [
+     {
+      "value": "BUSS-Crunchy",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Drum Buss",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-In Your Face",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Peak Limiter",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Room Mics",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Slow Attack",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Slow Release",
+      "type": "file",
+      "locked": true
+     },
+     {
+      "value": "BUSS-Smooth",
+      "type": "file",
+      "locked": true
+     },
+     "\u2026 32 total"
+    ]
+   },
+   "Status": {
+    "type": "string"
+   },
+   "Categories": {
+    "type": "string",
+    "readonly": true
+   },
+   "Unison": {
+    "type": "bool",
+    "readonly": true
+   },
+   "Authorized": {
+    "type": "bool",
+    "readonly": true
+   },
+   "Demoing": {
+    "type": "bool",
+    "readonly": true
+   },
+   "DemoAvailable": {
+    "type": "bool",
+    "readonly": true
+   },
+   "DemoDaysRemaining": {
+    "type": "int",
+    "min": 0.0,
+    "max": 100000000.0,
+    "readonly": true
+   },
+   "AuthUpdateRequired": {
+    "type": "bool",
+    "readonly": true
+   },
+   "AuthHardware": {
+    "type": "bool",
+    "readonly": true
+   },
+   "RemoteGUI": {
+    "type": "string",
+    "readonly": true
+   },
+   "VstID": {
+    "type": "string"
+   },
+   "DefaultPreset": {
+    "type": "string"
+   }
+  },
+  "/pluginscenes": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/pluginscenes/N": {
+   "Type": {
+    "type": "string"
+   },
+   "MaxPluginScenes": {
+    "type": "int",
+    "min": 128.0,
+    "max": 128.0,
+    "readonly": true
+   },
+   "RecalledSceneIndex": {
+    "type": "int",
+    "min": -1.0,
+    "max": 127.0
+   },
+   "EmptySceneName": {
+    "type": "string",
+    "readonly": true
+   }
+  },
+  "/pluginscenes/N/scenes": {
+   "Type": {
+    "type": "string"
+   }
+  },
+  "/pluginscenes/N/scenes/N": {
+   "Type": {
+    "type": "string"
+   },
+   "SceneIndex": {
+    "type": "int",
+    "min": 0.0,
+    "max": 127.0
+   },
+   "SceneName": {
+    "type": "string"
+   },
+   "SceneTempo": {
+    "type": "float",
+    "min": 0.0,
+    "max": 999.0
+   }
+  }
+ },
+ "commands": {
+  "AddDevice": {
+   "type": "<Device Name>",
+   "values": {
+    "0": "Apollo",
+    "1": "Apollo 16",
+    "4": "Apollo 8",
+    "5": "Apollo 8p",
+    "6": "Apollo 16 MkII",
+    "9": "Apollo x6",
+    "10": "Apollo x8",
+    "11": "Apollo x8p",
+    "12": "Apollo x16",
+    "18": "Apollo x16D",
+    "19": "Apollo x6 Gen 2",
+    "20": "Apollo x8 Gen 2",
+    "21": "Apollo x8p Gen 2",
+    "22": "Apollo x16 Gen 2"
+   }
+  },
+  "BeginSpeakerMeasurement": {
+   "BeginSpeakerMeasurement": "<path>"
+  },
+  "ClearClips": {
+   "path": "[path]",
+   "reset": "true|false"
+  },
+  "ClearSolos": {},
+  "CloseModalDialog": {},
+  "CloseWindow": {
+   "type": "Console|Plug-In",
+   "all": "true",
+   "path": "<path>"
+  },
+  "Connectfromaestest": {
+   "path": "<path>"
+  },
+  "Connectfromandtospdiftest": {
+   "path": "<path>"
+  },
+  "Connectfromspdiftest": {
+   "path": "<path>"
+  },
+  "Connecttospdiftest": {
+   "path": "<path>"
+  },
+  "CopyChannel": {
+   "channelPath": "<path>"
+  },
+  "CopyInsert": {
+   "effectPath": "<path>"
+  },
+  "CopyToSends": {
+   "send": "<index>"
+  },
+  "DeleteFolder": {
+   "path": "<property path>",
+   "folder": "<folder>"
+  },
+  "DeleteIOMapPreset": {
+   "ioPresetName": "<iomap>"
+  },
+  "DeletePreset": {
+   "pluginName": "<plugInName>|Channel Strip",
+   "presetName": "[folder/]<preset>"
+  },
+  "DeleteSession": {
+   "name": "<name>"
+  },
+  "DeleteSnapshot": {
+   "snapshotName": "[folder/]<preset>"
+  },
+  "DumpChains": {
+   "DumpChains": "<path>"
+  },
+  "DumpDanteConnectionState": {},
+  "EndSpeakerMeasurement": {
+   "EndSpeakerMeasurement": "<path>"
+  },
+  "Export": {
+   "type": "IOMapPreset"
+  },
+  "ExportSnapshots": {
+   "volume": "<volume>",
+   "folder": "<folder>"
+  },
+  "FromXML": {
+   "path": "<path>",
+   "xml": "<xml>"
+  },
+  "GetBassManagementSpec": {},
+  "GetCorrectionImage": {
+   "type": "<speaker|headphone|headphone2>"
+  },
+  "GetHeadphone2CorrectionSpec": {},
+  "GetHeadphoneCorrectionSpec": {},
+  "GetMidiBuffers": {},
+  "GetSpeakerCorrectionSpec": {},
+  "GetSpeakerTrims": {},
+  "Identify": {
+   "path": "<path>"
+  },
+  "Import": {
+   "type": "<IOMapPreset>"
+  },
+  "ImportSnapshots": {
+   "volume": "<volume>",
+   "folder": "<folder>"
+  },
+  "Ledtest": {
+   "path": "<path>"
+  },
+  "MoveChannel": {
+   "srcPath": "<track source path>",
+   "dstPath": "<track destination path>"
+  },
+  "MoveInsert": {
+   "srcPath": "<source effect>",
+   "dstPath": "<destination effect>",
+   "copy": "<true|false>"
+  },
+  "MovePreset": {
+   "pluginName": "<plugInName>|Channel Strip",
+   "origPresetName": "[folder/]<preset>",
+   "newPresetName": "[folder/]<preset>",
+   "isFolder": "<isFolder>"
+  },
+  "MoveSnapshot": {
+   "origName": "[folder/]<preset>",
+   "newName": "[folder/]<preset>",
+   "shuffle": "[true/false]"
+  },
+  "NewFolder": {
+   "path": "<property path>",
+   "folder": "<folder>"
+  },
+  "NewSession": {
+   "type": "<Apollo|Apollo 16|Apollo Twin||Apollo 8|Apollo 8p|Apollo 16 MkII|Apollo Twin MkII|Arrow|Apollo x6|Apollo x8|Apollo x8p|Apollo x16|Apollo Twin X|Apollo x4|Apollo Solo USB|Apollo Solo|Apollo Twin X USB|Apollo x16D|Apollo x6 Gen 2|Apollo x8 Gen 2|Apollo x8p Gen 2|Apollo x16 Gen 2|Apollo Twin X Gen 2|Apollo x4 Gen 2>"
+  },
+  "OpenSession": {},
+  "OpenWindow": {
+   "type": "Console|Plug-In",
+   "path": "<path>"
+  },
+  "PasteChannel": {
+   "channelPaths": [
+    "<path 1>",
+    "<path 2>",
+    "<------>",
+    "<path N>"
+   ]
+  },
+  "PasteInsert": {
+   "effectPaths": [
+    "<path 1>",
+    "<path 2>",
+    "<path 3>",
+    "<path 4>"
+   ]
+  },
+  "PluginBarCopySettings": {
+   "effectPath": "<path>"
+  },
+  "PluginBarPasteSettings": {
+   "effectPath": "<path>"
+  },
+  "PluginStartDemo": {
+   "pluginPath": "<pluginPath>"
+  },
+  "RemoveDevice": {
+   "path": "<path>"
+  },
+  "RenameIOMapPreset": {
+   "origPreset": "<orig name>",
+   "newPreset": "<new name>"
+  },
+  "RenameSession": {
+   "origName": "<original name>",
+   "newName": "<new name>"
+  },
+  "ResetDanteNetwork": {
+   "path": "<path>"
+  },
+  "SIDRLicenseStateUpdated": {},
+  "SaveAsPreset": {
+   "pluginName": "<plugInName>|Channel Strip",
+   "path": "<effectPath>|<channelPath>",
+   "presetName": "[folder/]<preset>"
+  },
+  "SaveAsSnapshot": {
+   "snapshotName": "<snapshot>",
+   "isNew": "[true|false]"
+  },
+  "SaveIOMapPreset": {
+   "ioPresetName": "<iomap>"
+  },
+  "SaveLastUsedSession": {},
+  "SaveSession": {},
+  "SaveSessionAs": {},
+  "SceneOperation": {},
+  "SetHeadphone2CorrectionSpec": {
+   "SetHeadphone2CorrectionSpec": "<path>"
+  },
+  "SetHeadphoneCorrectionSpec": {
+   "SetHeadphoneCorrectionSpec": "<path>"
+  },
+  "SetSpeakerCorrectionSpec": {
+   "SetSpeakerCorrectionSpec": "<path>"
+  },
+  "SetSpeakerTrims": {
+   "SetSpeakerTrims": "<path>"
+  },
+  "SetTouch": {
+   "path": "<path>",
+   "value": "<true|false>"
+  },
+  "Sethizimpedancetest": {
+   "path": "<path>"
+  },
+  "Sethizonofftest": {
+   "path": "<path>"
+  },
+  "Sethpleveltest": {
+   "path": "<path>"
+  },
+  "Setmadiconvertertest": {
+   "path": "<path>"
+  },
+  "Setparamtest": {
+   "path": "<path>"
+  },
+  "ShowSoundIDReference": {
+   "type": "<speaker|headphone|headphone2>"
+  },
+  "ShuffleInserts": {
+   "channelPath": "<path>",
+   "srcIndex": "<source>",
+   "dstIndex": "<destination>"
+  },
+  "ToXML": {
+   "path": "<path>"
+  },
+  "UpdatePlugInStatus": {}
+ }
+}

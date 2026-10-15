@@ -157,6 +157,20 @@ map that the agent can read.
 | both | ADAT 1–8, S/PDIF | | unnamed | mostly muted / unused; Twin X optical set to S/PDIF |
 | both | VIRTUAL 1–8 | | | software returns (V1, V3 active on the x8) |
 
+**Three names per channel** (Tim + engine, 2026-10-11 🧪). A Console label hides which port a
+channel really is, and **the DAW never sees Console labels**: Logic's I/O settings show only the
+driver (I/O Matrix) names. So the stable identity is the inventory port, and the names hang off it:
+
+| Identity (inventory port) | Hardware name (engine default) | Driver name (what Logic sees) | Console label |
+|---|---|---|---|
+| `apollo-x8:in-4` | ANALOG 4 | A MIC/LINE 4 | A4 Mic |
+| `apollo-x8:in-5` | ANALOG 5 | A LINE 5 (or "UAD OX1" with I/O preset `Preset 1`) | A5 OX 1 |
+| `apollo-twin-x:in-1` | ANALOG 1 | B MIC/LINE/HIZ 1 | B1 PdlBrd |
+
+`ua_snapshot.py` records all three on every input (`port`, `generic`, `driver`, `name`). The
+driver name can be changed in the I/O Matrix and saved in a `.uadio` preset; that is the only way
+to give Logic a meaningful channel name.
+
 **Naming history** (from 33 saved `.uadmix` sessions, 2023–2025 🏷). The physical inputs have
 moved around. Recurring patterns:
 - **x8 1–2:** SM7 / Vox, Pedalboard "O2", Bass, Tonex, Mod5.
@@ -170,6 +184,43 @@ inserts were **Pure Plate** (15), **1176 Rev A** (11) and **RealVerb-Pro** (6).
 > **Recommendation:** keep Console input names in a fixed `A#`/`B#` + source form (e.g.
 > `A5 OX 1`, `B2 Guit Dir`). That makes them a reliable wiring declaration the agent can read
 > live.
+
+**Channel counts: three levels** (read from the engine 2026-10-11 22:05 🧪, 13 confirmed by Tim
+in the Console UI). "How many channels" means a different thing at each layer:
+
+| Layer | Count now | What it is | Engine source |
+|---|---|---|---|
+| **Driver routes** (I/O Matrix) | **44 in / 42 out** (36 / 34 active) | Core Audio channels Logic sees. Mode Default, no I/O preset loaded | `/` `TotalDriverInputRoutes` / `TotalDriverOutputRoutes`; `/inputroutes/N`, `/outputroutes/N` |
+| **Mixer input slots** | **50** (x8 28, Twin X 22) | Every input the Console mixer could show, including talkback and `N/A` placeholders | `/devices/N/inputs/M` |
+| **Visible channel strips** | **13** (x8 10, Twin X 3) | What Console shows | input slots where `Active` and not `ChannelHidden`, minus talkback |
+
+- The 44 driver inputs are split as follows. x8 has 34: 8 analog, 8 ADAT, 2 S/PDIF, 8 virtual (5–8 inactive), MON L/R, AUX 1–2 L/R and talkback 1–2 (inactive). Twin X has 10: 2 analog, 4 virtual (3–4 inactive), 2 S/PDIF and talkback 1–2. MON, AUX and talkback appear only as driver inputs (for recording the mix), not as strips.
+- The 42 driver outputs are split as follows. x8 has 36: MON L/R, LINE 1–8, 8 ADAT, 2 S/PDIF, 8 virtual (5–8 inactive) and CUE 1–4 L/R (CUE 4 inactive). Twin X has 6: MON L/R and 4 virtual (3–4 inactive).
+- **A stereo pair is one strip.** The right side reports `Active = false` (e.g. VIRTUAL 2, VIRTUAL 4, S/PDIF R).
+- **Hidden is not off.** x8 ADAT 1–8 and both units' S/PDIF L are `Active` but `ChannelHidden`, so they are hidden with Show/Hide Inputs. Hiding removes the strip and its meter-bridge meter ✅ ([Meter Bridge](../../data/manuals/controllers-interfaces/UAD-Console/03-meter-bridge.md)). 🔶 It probably doesn't stop audio, so a hidden input could still feed a mix. ❓ to test.
+- **Talkback isn't a strip.** The Twin X TALKBACK slot is `Active` and not hidden, but Console doesn't show it as a channel.
+- **What gets saved where** (from the files 🏷):
+  - A **Console session** (`Sessions/*.uadmix`) saves each input's `kPropChannelHidden` and `kPropEnabledByUser` (the "selected" part), plus its name, fader, sends and plugins. It does **not** save Cue Outputs (cue mirrors and their assignments), hardware gains, sample rate or the I/O Matrix: those are global and stay the same across session loads ✅ ([Console Sessions](../../data/manuals/controllers-interfaces/UAD-Console/25-console-sessions.md)). Confirmed in `Default-20261011.uadmix` 🧪: the cue outputs carry only fixed bus numbers (`kPropSynchOut`), with no mirror.
+  - **Global settings live in `~/Library/Preferences/Universal Audio/UA Mixer Engine.ini`** (XML) 🧪 2026-10-11. It can be read without touching the engine:
+    - `CueOutputDestinations`: the cue mirrors, per cue (`cueNum` 0 = CUE 1). The values use the session's `kPropSynchOut` numbers for x8 outputs: −1 = none, 8–15 = Line 1–8 (the first of the pair), 16–23 = ADAT 1–8, 6 = S/PDIF. Now: CUE 2 = 14 (Line 7-8), CUE 3 = 10 (Line 3-4), matching the engine.
+    - `CueMixInSources`: 0 = main mix, 2 = the cue's own mix (CUE 2 and 3 own).
+    - Also held here: `CueBusCount`, `MonMixToMono`, sample rate, clock, buffer size, alt monitors, dim, the correction on/off states, and the monitor level.
+    - ❓ The per-cue **mono** setting isn't in the ini, and isn't on the cue outputs in the session file. Where it persists is to test (does it survive a session load or a restart?).
+  - **I/O Matrix presets** (`IOPresets/*.uadio`) 🧪 2026-10-11. The live map is **Default** (`IOMapUsingDefault`, no preset loaded; the engine also reports `IOMapPresetDirty = true` ❓). Compared by slot name with the live driver routes:
+
+    | Preset | Saved | What it changes from the live Default | Use 🔶 |
+    |---|---|---|---|
+    | `Preset 1` | 2023-04-03 | same map; driver inputs 5–6 renamed **UAD OX1 / UAD OX2** | names in the DAW's I/O labels |
+    | `Stream` | 2023-08-13 | driver inputs 1–2 = **MON L/R** (the main mix) | streaming apps that record the first two inputs |
+    | `Screencapture` | 2024-12-08 | driver inputs 1–2 = **AUX 2 L/R** | screen recording with a dedicated aux mix |
+    | `Reset?` | 2024-11-22 | an older order: outputs without CUE 4, MON after the virtuals | probably a reset/backup |
+    | 14 factory presets | (installer, 2026-09-09) | other Apollo models (A16, x16, 8p…), PT and Legacy layouts | not this rig |
+
+  - **Why the I/O Matrix matters to the DAW:** a Logic project's inputs and outputs refer to driver channel numbers, not to Apollo inputs. Loading `Stream` or `Screencapture` would make Logic's Input 1 record the main mix or Aux 2 instead of x8 mic 1. So an I/O preset change is a configuration-scope change that ripples into every DAW project. It needs the DAW closed (manual) and a check of the project's I/O afterwards.
+  - Two root flags, `kPropHiddenChannelsInSession` and `kPropChannelNamesInSession` (both on in `Tracking.uadmix`), 🔶 decide whether hidden state and names load with the session or stay global.
+  - An **I/O preset** (`IOPresets/*.uadio`) saves only the driver map: which hardware channel sits in each of the 44/42 driver slots, and their names (e.g. "UAD OX1").
+  - Neither file holds the cue bus count or sample rate. Those are hardware settings.
+- The virtual channel count is set per unit: x8 V1–4 (2 stereo strips: V1, V3), Twin X V1–2 (1 strip). Twin X VIRTUAL 5–8 also have `EnabledByUser = false`.
 
 ### 3.2 How the UA system is used (from Tim, 2026-10-11)
 
@@ -239,7 +290,7 @@ per [model §4.1a](model.md#41a-two-layers-reference-and-solution-architecture))
 | **MIX** (switch) | UAD Console | Per cue output: main monitor mix (lit) or the cue bus (dim) | chooses main mix vs monitor mix | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
 | **MONO** (switch) | UAD Console | Per cue output: sums the cue to mono | mono sum (same, cue outputs only) | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
 | **Cue Mirror to** | UAD Console, rack models | Copies a cue to a line pair; that output is no longer available to the DAW | monitor mix delivery (implements) | [Cues](../../data/manuals/controllers-interfaces/UAD-Console/18-cues.md) |
-| **Digital Mirror** | Apollo / Console | Copies the monitor outputs to S/PDIF (AES on x16) | main mix (related) | [LUNA manual](../../data/manuals/plugins/LUNA-2.0.1-Manual.md#L10055) |
+| **Digital Mirror** | Apollo / Console | Copies the monitor outputs to S/PDIF (AES on x16) | main mix (related) | [LUNA manual](../../data/manuals/plugins/LUNA-3.0-Manual.md#L10509) |
 | **Virtual** (VIRTUAL 1–8) | UAD Console | Input strips fed from the computer's software outputs | virtual channel (same) | [Input Channel Strips](../../data/manuals/controllers-interfaces/UAD-Console/06-input-channel-strips.md) |
 | **Aux** (AUX 1/2) | UAD Console | Two stereo aux buses; returns host plug-in inserts | submix (related: an effects return) | [Aux Returns](../../data/manuals/controllers-interfaces/UAD-Console/21-aux-returns.md) |
 | **Flex Routing** | UAD Console, rack models | Input channel → any hardware output; not a mix bus | direct out (related) | [Output Flex Routing](../../data/manuals/controllers-interfaces/UAD-Console/19-output-flex-routing.md) |
@@ -270,7 +321,7 @@ per [model §4.1a](model.md#41a-two-layers-reference-and-solution-architecture))
   🔶 So the limit is driver I/O channels, not DSP.
 
 > Don't confuse **Digital Mirror** with the cue mirror. Digital Mirror copies the *main
-> monitor* outputs to S/PDIF ✅ ([LUNA manual](../../data/manuals/plugins/LUNA-2.0.1-Manual.md#L10055)).
+> monitor* outputs to S/PDIF ✅ ([LUNA manual](../../data/manuals/plugins/LUNA-3.0-Manual.md#L10509)).
 
 **How Console does it** (from Tim):
 - You choose **how many** monitor mixes you want. Monitor mixes and virtual channels **trade

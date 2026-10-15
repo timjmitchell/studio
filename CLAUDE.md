@@ -10,7 +10,7 @@ so keep the layout human-friendly.
 
 | Path | What | Notes |
 |---|---|---|
-| `music/<project>/<song>/` | **Songs**: one folder per song, per project (`hot-fog`, `one-man-band`) | `<song>.md` is the song doc (frontmatter) and the **source of truth** for that song. See `music/README.md` |
+| `music/<project>/<song>/` | **Songs**: one folder per song, per project (`hot-fog`, `one-man-band`, `club-business`) | `<song>.md` is the song doc (frontmatter) and the **source of truth** for that song. See `music/README.md` |
 | `docs/studio/` | **Studio docs**: [overview](docs/studio/overview.md) (one page: devices and routing), [model](docs/studio/model.md) (theory: concepts, vocabulary, entities, the cascade), [inventory](docs/studio/inventory.md) (rules for deriving the inventory), [first-pass notes](docs/studio/inventory-first-pass.md) (evidence, UA live snapshot, vendor glossary, open questions), `rigs/` (planned rigs, e.g. the one-man-band live rig) | Start with the overview |
 | `data/inventory/` | **Structured inventory** (TOML): units, ports, connections, scenarios | Query with `uv run scripts/inventory.py check / ports / trace / find / scenarios` |
 | `data/manuals/` | **Manuals** for owned gear and software, converted to Markdown, plus hand-written `*-Field-Notes.md` | Registry: `data/manuals/sources.toml`. Mirrors: UAD Console, MIDI Guitar 3, music21 |
@@ -19,7 +19,8 @@ so keep the layout human-friendly.
 | `scripts/` | Converters, fetchers, `sync_bounces.py`, `inventory.py`, `midi_dump.py` | Each has usage in its docstring |
 
 **Outside the repo:** Logic projects live on `/Volumes/Samsung_X5/Hot Fog/` (check it's
-mounted). Rehearsal recordings are on `/Volumes/RAID/`. Bounces are in Google Drive (`My
+mounted). Club Business and other soul/originals sessions (Logic, LUNA and Ableton) are in
+`/Volumes/Samsung_X5/Soul Originals/`. Rehearsal recordings are on `/Volumes/RAID/`. Bounces are in Google Drive (`My
 Drive/Hot Fog/New- 3rd Album/Bounces`).
 
 ## How to answer and act
@@ -43,7 +44,8 @@ Drive/Hot Fog/New- 3rd Album/Bounces`).
   engine (and Console) once; see `docs/studio/inventory.md` R15. Paths: `/devices/N`, `/devices/N/inputs/M`, `/devices/N/outputs/M`. Device 0 is
   the Apollo x8, device 1 the Twin X.
 - **Console files:** `~/Documents/Universal Audio/Sessions/*.uadmix` and `IOPresets/*.uadio`
-  (XML).
+  (XML). Global settings that sessions don't save (cue mirrors, cue count, sample rate,
+  clock) are in `~/Library/Preferences/Universal Audio/UA Mixer Engine.ini` (XML).
 - **Logic Pro:** AppleScript via System Events (the `applescript` MCP server); snippets are in
   the Logic Field Notes and the Arbitrary Overlord session notes.
 - **Machine probes:** `system_profiler`, `ioreg` (vendor device names), CoreMIDI, plugin

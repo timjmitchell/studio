@@ -129,6 +129,68 @@ Gotchas:
 - 🧪 Submenus that Logic fills in when opened (e.g. File > Project Alternatives) read as empty until they're opened.
 - 🧪 Finder aliases to `.logicx` projects couldn't be resolved by script. Store real paths.
 
+### 4.1 Reading Logic's audio setup (read-only, 2026-10-11 🧪)
+
+| What | Where | Value now |
+|---|---|---|
+| Audio device | `defaults read com.apple.logic10 AudioHardwarePreferences` | "Universal Audio Thunderbolt" (in and out) |
+| Main output (I/O Assignments, Stereo Output) | `StereoOutputPair` in `com.apple.logic10` | **19**, a 0-based pair: driver outputs 39–40 = **B VIRTUAL 1/2** (Twin X virtual 1/2) |
+| Main output mirroring | `StereoOutputMirroring` | 0 (off) |
+| Low Latency Mode | `LowLatencyMode` | 0 (off) |
+| Project sample rate | `<project>.logicx/Alternatives/NNN/MetaData.plist` `SampleRate` | 48000 (both alternatives of arbitrary-overlord) |
+| UAD plugins used | `strings` on `Alternatives/NNN/ProjectData` | alt 001: UAD Teletronix LA-2A Silver, UAD Pure Plate, UAD dbx 160 |
+| UAD-2 DSP vs Native | `/Library/Audio/Plug-Ins/Components/` | 224 `UAD …` (DSP) components, 0 `UADx …` (Native): every UAD plugin in Logic runs on Apollo/Satellite DSP |
+| Console Recall | the same scans | installed (`Console Recall.component`). Wasn't in the project at first 🔶 (no match in ProjectData strings); **Tim added it with SYNC on, 2026-10-11 ~23:40**. Console still showed session `Default-20261011` (SYNC acts only on save + reload ✅) |
+
+- 🧪 **Console Recall test (2026-10-11, snapshots `ua-console/2026-10-11_2331` → `_2332` → `_2334`).**
+  Baseline A7 −10.5 dB and CUE 3 mono on, mirror Line 3-4. Logic project saved 23:31:29. Then A7 → −31 dB and mono off, nothing saved.
+  Closed without saving and reopened:
+  - Console session became `../../../Library/Preferences/Universal Audio/extAppSyncSession`, so Recall loaded. That path held no file afterwards.
+  - **A7 came back as −13.43 dB**, the `Default-20261011` value, not the −10.5 dB that was live at the save. 🔶 So Recall seems to capture Console's state when SYNC is switched on (Default at the time), not at each save. ❓ To retest: change something, save, reopen.
+  - **CUE 3's mirror was cleared (Line 3-4 → None), and mono was off.** CUE 2's mirror (Line 7-8) survived. `UA Mixer Engine.ini` was rewritten at 23:34:32 with CUE 3 = −1. So a Recall load **can change the global cue mirrors**, even though Console sessions don't save them. ❓ Why only CUE 3?
+  - ⚠️ Practical: after opening a project with Recall, check the monitor mixes (in-ears, wedge) before playing.
+- Logic shows only the **driver names** (I/O Matrix) for inputs and outputs, never Console labels (Tim).
+- The new-track defaults are stored in the same plist (`InputIndex`, `OutputIndex`, `InputMonitoring` per track type). For example, Vocals defaults to InputIndex 34 = driver input 35 = B MIC/LINE/HIZ 1 (the Twin X's input 1).
+- ❓ **Software Monitoring** (Settings > Audio > Devices) wasn't found in the plist. Read it from the settings UI, or find its key.
+- 🔶 The open alternative of arbitrary-overlord ("arb-overlord-feb") is `001`: its folder changed when the project opened (22:59), and it has 17 tracks.
+- ⚠️ Counting tracks via `entire contents` of the Tracks splitter group failed this time; the query needs revisiting.
+
+## 5. MIDI onto a Smart Tempo map (MIDI follows the audio)
+
+Tim's workflow: stem the record → Smart Tempo map from the **drum stem** → bring in a MIDI
+transcription. Then either (a) **the MIDI follows the tempo map** (what's used here) or
+(b) the audio is flexed to the MIDI's grid. First case: *Some Might Say*, 2026-10-12.
+
+**Setup before importing the recording** (Tim's steps 🧪, wording checked against UG § Smart
+Tempo project settings, line 38843):
+1. File > Project Settings > **Smart Tempo** > *Defaults for Flex & Follow Region Setting*:
+   set **Set Imported Files To = On**, so Smart Tempo analyzes imported audio and places
+   tempo markers.
+2. Tick **Trim start of new regions** (the checkbox under *Set Imported Files To*). The
+   imported region then starts at the file's **first downbeat**, which takes care of any
+   silence or count-in before the music (the *Some Might Say* source has about 10 s).
+3. Put the **playhead (cursor) on the first downbeat**, i.e. the bar line where the song's
+   bar 1 should be, so the trimmed region lands there.
+
+- ✅ **MIDI regions always follow the project tempo.** There's no Flex & Follow setting for
+  MIDI (UG § The Flex & Follow audio region parameter, line 27794). So once the map exists,
+  the MIDI rides it with nothing else to do.
+- ⚠️ **Set the LCD to Keep Project Tempo before importing.** In Adapt mode "the project tempo
+  does change to adapt to imported audio or MIDI files" (UG line 27894), which would overwrite
+  the drum map. Auto should behave like Keep here (the stems count as a tempo reference,
+  line 27902), but don't rely on it.
+- ❓ The import sections (UG line 10119) don't say whether a MIDI file's tempo or markers
+  come in on *import* (File > Open brings in both). Belt and braces: import a copy with the
+  tempo events stripped (e.g. `music/one-man-band/some-might-say/midi/some-might-say_no-tempo.mid`).
+- ✅ Import places the file at the playhead or drop point **rounded to the bar** (UG line 10121).
+  Line up on the transcription's **first full-band downbeat**, not on bar 1, because intros
+  (feedback, pickups) are often free-time on the record:
+  `import bar = (Logic bar of the band's first downbeat) − (MIDI bar of that downbeat − 1)`.
+- 🔶 If the MIDI drifts from a given section onward, the tempo map has a missing or extra bar
+  there (or a bar Smart Tempo got wrong). Fix it in the Smart Tempo Editor with downbeat
+  hints, not by moving MIDI.
+- ❓ Untested: whether marker events in an *imported* SMF become Logic markers.
+
 ---
 
 ## Tests to run
@@ -138,4 +200,5 @@ Gotchas:
 - [ ] Metronome = K with the stock U.S. set.
 - [ ] Copy Key Commands to Clipboard and save the output here as the authoritative map.
 - [ ] Inspect `com.apple.logic.pro.cs` for existing controller assignments.
+- [ ] Import an SMF that has markers and a tempo into a project in Keep mode: do markers come in? Does a tempo dialog appear?
 - [ ] `quit app` for non-session apps (Fastmail, Obsidian) via osascript.

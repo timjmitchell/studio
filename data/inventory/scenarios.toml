@@ -1,6 +1,7 @@
 # Scenarios: an intent (who listens, on what, hearing what) plus Tim's PREFERRED realization.
 # Possible realizations are derived from the inventory; only preferred ones are recorded here.
 # Model: docs/studio/model.md §2 (intent vs realization), §4.7 (monitor mix).
+# default = true: part of the studio's default setup. A snapshot that differs is drift from the default.
 
 [[scenario]]
 id = "desk-headphones"
@@ -12,6 +13,7 @@ realization = [
   "UA cue 1 (Twin X 'HP'): MIX lit → carries the main mix",
   "logic-pro:main-out → apollo-twin-x:virtual-1/2",
 ]
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
 status = "live"   # matches the UA engine 2026-10-11
 
 [[scenario]]
@@ -21,21 +23,34 @@ listener = "tim"
 transducer = "turbosound-wedge:in"
 mix = "monitor mix (own blend, mono)"
 realization = [
-  "UA CUE 3: MIX dim (own cue mix), MONO lit",
+  "UA CUE 3: own cue mix, MONO lit (one speaker)",
   "Cue Mirror to: Line 3-4 → apollo-x8:line-out-3",
 ]
-status = "live"
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
+status = "not-routed"   # 2026-10-11 23:34: opening arbitrary-overlord with Console Recall SYNC cleared the CUE 3
+                        # mirror (→ None) and mono. Default realization above (🧪 tested 23:15). Restore: CUE 3 mirror
+                        # Line 3-4, MONO on. See Logic Field Notes §4.1, Recall test.
+# CUE 3 blend at 22:05: A1 Mic Dyn −18.2 dB, B1 PdlBrd −41.6 dB.
 
 [[scenario]]
 id = "in-ears"
 intent = "Recording or rehearsing on in-ears"
 listener = "tim"
 transducer = "psm300-pack:rf"
-mix = "monitor mix"
+mix = "monitor mix (stereo)"
 realization = [
-  "A UA cue mirrored to Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
+  "UA CUE 2: own cue mix, stereo",
+  "Cue Mirror to: Line 7-8 → apollo-x8:line-out-7/8 → psm300-tx",
 ]
-status = "not-routed"   # no cue mirrors to Line 7-8 right now [I24]
+default = true   # part of the studio default monitoring setup (Tim, 2026-10-11)
+status = "tested"   # 🧪 2026-10-11: set by Tim in Console (by 23:08, engine ini), read back from the engine, signal heard on
+                    # the in-ears. Cue mirrors are global (not in sessions); Console session "Default-20261011" saved.
+# Cue buses are shared across both Apollos (UAD Console manual, multi-unit cascading ✅), so the Twin X
+# names CUE 2 "LINE 3/4": its sends to "LINE 3-4" are sends to CUE 2. CUE 2 blend at 22:05:
+# A1 Mic Dyn −0.3, A5 OX 1 0, A6 OX2 −9.7, x8 VIRTUAL 3 0 (spare DAW return), B2 −4.4 (stale label),
+# Twin X VIRTUAL 1 = Logic main out −8.6, A2 −52 dB.
+# The Twin X's physical LINE 3/4 outputs also carry CUE 2 (its "LINE 3/4" output source = cue2), but nothing
+# is cabled to them (Tim, 2026-10-11), so it goes nowhere.
 
 [[scenario]]
 id = "guest-headphones"
@@ -44,7 +59,8 @@ listener = "guest"
 transducer = "apollo-x8:hp-2"
 mix = "monitor mix (own blend)"
 realization = ["UA CUE 2 → x8 HP 2 (front jack)"]
-status = "inferred"
+status = "inferred"   # conflict 2026-10-11: CUE 2 is now the in-ears mix, so HP 2 (source cue2) would
+                      # carry Tim's in-ears blend. A guest would need CUE 4 (inactive) or a shared mix.
 
 [[scenario]]
 id = "more-drums-in-cans"
@@ -57,6 +73,10 @@ realization = [
   "balance virtual 3/4 against virtual 1/2 and live inputs in the monitor mix",
 ]
 status = "described"
+# x8 VIRTUAL 3/4 is kept active as a spare DAW return for this: nothing routed to it by default.
+# Tim routes a Logic aux/subgroup there when he wants, e.g., drums separate in the monitor mix
+# while recording (Tim, 2026-10-11). Console already sends VIRTUAL 3 to CUE 2 at 0 dB (snapshot
+# 2026-10-11), so a routed submix would appear in CUE 2.
 
 [[scenario]]
 id = "guitar-with-clean-di"
