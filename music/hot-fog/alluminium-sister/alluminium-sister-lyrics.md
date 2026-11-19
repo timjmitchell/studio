@@ -13,7 +13,7 @@ i;ve tried to quit you so much, i can;t get free
 
 ## Chorus
 
-Chromium panddemonium shine on 
+Chromium panddemonium alive 
 Alluminium Sister
 
 ## Part B
@@ -25,7 +25,6 @@ On your own supply of ego baby
 Lie!
 
 and cheat and steal from your own
-
 
 
 i can see it in your eyes

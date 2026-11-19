@@ -9,8 +9,8 @@ Bathed in light an crimson
 
 What I need is magic
 From the reptile sea
-Where they borrow madness
-And lend it back to me
+thats Where they borrow madness 
+And lend it back to me 
 
 How many times can he die
 what will he do to survive
@@ -20,9 +20,18 @@ what will he do to survive
 Snake lender!
 
 
-hell in banker's ...
+## VErse 2
+
+I've had a million nightmares
+all one secret dream
+a motling heart resists me
+and then i start to scream
 
 What I need is magic
 From the reptile sea
 But all i feel is madness
 So I guess we'll see
+
+hell in banker's ...
+
+
